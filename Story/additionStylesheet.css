@@ -1,0 +1,204 @@
+﻿.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    margin: 20px 100px 20px;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+}
+
+.grid-item {
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+}
+
+.button1 {
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+
+    .button1:hover {
+        background-color: black;
+        color: white;
+    }
+
+
+
+
+.first {
+    margin: 0px;
+    padding: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Comic Sans MS';
+    font-size: 30px;
+}
+
+.second {
+    margin: 50px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Comic Sans MS';
+    font-size: 30px;
+}
+
+.secBlack {
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fonts {
+    font-family: 'Comic Sans MS';
+    font-weight: 900;
+}
+
+.img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.input1 {
+    padding-left: 15px;
+    height: 65px;
+    width: 180px;
+    position: relative;
+    left: -90px;
+    top: -175px;
+}
+
+.button2 {
+    padding: 9px 25px;
+    background-color: yellow;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+    width: 20%;
+}
+
+    .button2:hover {
+        background-color: black;
+        color: white;
+    }
+
+.picSize {
+    height: 150%;
+    width: 150%;
+    padding: 20%;
+}
+
+
+
+
+
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+
+    input.invalid {
+        background-color: #ffdddd;
+    }
+
+
+button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+#prevBtn {
+    background-color: #bbbbbb;
+}
+
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+    .step.active {
+        opacity: 1;
+    }
+
+
+    .step.finish {
+        background-color: #04AA6D;
+    }

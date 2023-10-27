@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="MATH1.Admin.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        .bgPattern{    
+           background-color: #f5ad42;
+            opacity: 1;
+            background-image: radial-gradient(#000000 0.75px, #f5ad42 0.75px);
+            background-size: 15px 15px;
+            margin:0;
+            padding:0;
+            
+        }
+              
+        li, a, button{
+            font-family:"Calibri", sans-serif;
+            font-weight: 500;
+            font-size:16px;
+            color: #000000;
+            text-decoration: none;
+        }
+        header{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            padding: 30px 10%;
+        }
+        .title{
+            cursor:pointer;
+            font-family:"Calibri", sans-serif;
+            font-weight: 500;
+            font-size:16px;
+            color: #000000;
+            text-decoration: none;
+        }
+        .nav_links{
+            list-style:none;
+
+        }
+        .nav_links li{
+            display:inline-block;
+            padding: 0px 20px;
+
+        }
+        .nav_links li a{
+            transition:all 0.3s ease 0s;
+        }
+        .nav_links li a:hover{
+            color:#ffffff;
+        }
+        .button1{
+            padding: 9px 25px;
+            background-color: white;
+            border:none;
+            border-radius:50px;
+            cursor:pointer;
+            transition:all 0.3s ease 0s;
+            color:black;
+
+        }
+        .button1:hover {
+            background-color: black;
+            color:white;
+        }
+        nik{
+            color:white;
+        }
+    </style>
+</head>
+<body class="bgPattern">
+    <form id="form1" runat="server">
+        <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+             <h3 class="w3-bar-item">MATHiNIQUE</h3>
+              <a href="/Admin/AdminDash.aspx" class="w3-bar-item w3-button"><asp:Label ID="Label1" runat="server" Text=" Admin"></asp:Label></a>
+            <a href="ManageAccount.aspx" class="w3-bar-item w3-button">Manage user</a>
+            <a href="SetTeacher.aspx" class="w3-bar-item w3-button">Enroll Student</a>
+            <asp:Button ID="logout" runat="server" Text="logout" OnClick="logout_Click" CssClass="w3-bar-item w3-button" />
+        </div>
+        <li></li>
+        <div style="margin-left: 5%">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

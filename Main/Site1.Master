@@ -1,0 +1,164 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MATH1.Main.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>MATHiNIQUE</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="cloud.css">
+    <style>
+ 
+        .bgPattern {
+            background-color: #f5ad42;
+            opacity: 1;
+            background: linear-gradient(to bottom, #f5ad42 1%,#5d3c96 100%);
+            background-size: 15px 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        li, a, button {
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10%;
+            position: fixed;
+            left: 0;
+            width:100%;
+          
+          
+        }
+
+        .title {
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .nav_links {
+            list-style: none;
+            float: right;
+        }
+
+            .nav_links li {
+                display: inline-block;
+                padding: 0px 10px;
+            }
+
+                .nav_links li a {
+                    transition: all 0.3s ease 0s;
+                }
+
+                    .nav_links li a:hover {
+                        color: #000000;
+                    }
+
+        .button1 {
+            padding: 9px 25px;
+            background-color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            color: black;
+        }
+
+        .button2 {
+            padding: 9px 25px;
+            background-color: black;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            color: white;
+        }
+
+        .button1:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .button2:hover {
+            background-color: white;
+            color: black;
+        }
+
+        nik {
+            color: white;
+        }
+
+        .fontfam {
+            font-family: 'Gill Sans MT';
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body class="container">
+    <div id="cloud-intro">
+        <form id="form1" runat="server">
+            <header class="w3-hide-small w3-hide-medium w3-amber">
+                <a style="height: 15%; width: 15%;" href="/Main/NewHomePage.aspx">
+                    <img style="height: 100%; width: 100%;" src="https://i.imgur.com/RvPd3UI.png" title="source: imgur.com" /></a>
+                <nav>
+                    <ul class="nav_links">
+
+                        <li><a style="font-size: 25px; color:white;" class="fontfam" href="/Main/NewHomePage.aspx">Home</a></li>
+                        <li><a style="font-size: 25px; color:white;" class="fontfam" href="/Main/aboutUs.aspx">About Us</a></li>
+                        <li><a style="font-size: 25px; color:white;" class="fontfam" href="/Main/contacts.aspx">Contacts</a></li>
+                    </ul>
+                </nav>
+                <a class="button1 fontfam" href="/Main/Login/LogIn.aspx">LOGIN</a>
+            </header>
+            <div class="w3-dropdown-hover w3-container w3-hide-large w3-medium">
+                <h1>≡</h1>
+                <div class="w3-dropdown-content">
+                    <ul class="nav_links">
+                        <li><a class="w3-button w3-black" style="font-size: 25px" href="/Main/NewHomePage.aspx">Home</a></li>
+
+                        <li><a class="w3-button w3-black" style="font-size: 25px" href="/Main/testing.aspx">About Us</a></li>
+
+
+                        <li><a class="w3-button w3-black" style="font-size: 25px" href="/Main/contacts.aspx">Contacts</a></li>
+
+
+                        <li><a class="w3-button w3-black" style="font-size: 25px" href="/Main/Login/LogIn.aspx">Log-In</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+       
+    </div>
+</body>
+
+ <footer style="background-color: black; color: white; display: flex; flex-direction: column; align-items: center;">
+            <p>MATHiNIQUE by ARCIAGA,BANEZ,BLANCAFLOR, & MACARASIG 2022</p>
+        </footer>
+</html>

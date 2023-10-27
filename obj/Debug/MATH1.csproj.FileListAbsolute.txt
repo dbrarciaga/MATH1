@@ -1,0 +1,1375 @@
+C:\Users\Danniell\source\repos\MATH1\bin\MATH1.dll.config
+C:\Users\Danniell\source\repos\MATH1\bin\MATH1.dll
+C:\Users\Danniell\source\repos\MATH1\bin\MATH1.pdb
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\csc.exe
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\csc.exe.config
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\csc.rsp
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\csi.exe
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\csi.exe.config
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\csi.rsp
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.AppContext.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Console.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Net.Http.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\vbc.exe
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\vbc.exe.config
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\vbc.rsp
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Danniell\source\repos\MATH1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Danniell\source\repos\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Danniell\source\repos\MATH1\bin\Newtonsoft.Json.dll
+C:\Users\Danniell\source\repos\MATH1\bin\System.Net.Http.Formatting.dll
+C:\Users\Danniell\source\repos\MATH1\bin\System.Web.Http.dll
+C:\Users\Danniell\source\repos\MATH1\bin\System.Web.Http.WebHost.dll
+C:\Users\Danniell\source\repos\MATH1\bin\Newtonsoft.Json.xml
+C:\Users\Danniell\source\repos\MATH1\bin\System.Net.Http.Formatting.xml
+C:\Users\Danniell\source\repos\MATH1\bin\System.Web.Http.xml
+C:\Users\Danniell\source\repos\MATH1\bin\System.Web.Http.WebHost.xml
+C:\Users\Danniell\source\repos\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Danniell\source\repos\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+C:\Users\Danniell\source\repos\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+C:\Users\Danniell\source\repos\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+C:\Users\Danniell\source\repos\MATH1\obj\Debug\MATH1.dll
+C:\Users\Danniell\source\repos\MATH1\obj\Debug\MATH1.pdb
+C:\Users\Danniell\source\repos\MATH1\bin\MySql.Data.dll
+C:\Users\Danniell\source\repos\MATH1\bin\Google.Protobuf.dll
+C:\Users\Danniell\source\repos\MATH1\bin\Zstandard.Net.dll
+C:\Users\Danniell\source\repos\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\Danniell\source\repos\MATH1\bin\BouncyCastle.Crypto.dll
+C:\Users\Danniell\source\repos\MATH1\bin\Ubiety.Dns.Core.dll
+C:\Users\Danniell\source\repos\MATH1\bin\Renci.SshNet.dll
+C:\Users\Danniell\source\repos\MATH1\bin\System.Buffers.dll
+C:\Users\Danniell\source\repos\MATH1\bin\K4os.Compression.LZ4.dll
+C:\Users\Danniell\source\repos\MATH1\bin\K4os.Hash.xxHash.dll
+C:\Users\Danniell\source\repos\MATH1\bin\System.Memory.dll
+C:\Users\Danniell\source\repos\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Danniell\source\repos\MATH1\bin\System.Numerics.Vectors.dll
+C:\Users\Danniell\source\repos\MATH1\bin\MySql.Data.xml
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\MATH1.dll.config
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\MATH1.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\MATH1.pdb
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\csc.exe
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\csc.exe.config
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\csc.rsp
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\csi.exe
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\csi.exe.config
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\csi.rsp
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.AppContext.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Collections.Immutable.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Console.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.IO.Compression.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.IO.FileSystem.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Net.Http.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Net.Sockets.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.ValueTuple.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Xml.XPath.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\vbc.exe
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\vbc.exe.config
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\vbc.rsp
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\VBCSCompiler.exe
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\roslyn\VBCSCompiler.exe.config
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\Newtonsoft.Json.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\System.Net.Http.Formatting.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\System.Web.Http.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\System.Web.Http.WebHost.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\Google.Protobuf.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\Zstandard.Net.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\BouncyCastle.Crypto.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\Ubiety.Dns.Core.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\Renci.SshNet.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\System.Buffers.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\K4os.Compression.LZ4.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\K4os.Hash.xxHash.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\System.Memory.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\System.Numerics.Vectors.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\MySql.Data.xml
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\Newtonsoft.Json.xml
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\System.Net.Http.Formatting.xml
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\System.Web.Http.xml
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\System.Web.Http.WebHost.xml
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\obj\Debug\MATH1.dll
+E:\1_Rencee MyFiles\2_School Files\1_thesis\1\MATH1\obj\Debug\MATH1.pdb
+G:\backup\MATH1\bin\MATH1.dll.config
+G:\backup\MATH1\bin\MATH1.dll
+G:\backup\MATH1\bin\MATH1.pdb
+G:\backup\MATH1\bin\roslyn\csc.exe
+G:\backup\MATH1\bin\roslyn\csc.exe.config
+G:\backup\MATH1\bin\roslyn\csc.rsp
+G:\backup\MATH1\bin\roslyn\csi.exe
+G:\backup\MATH1\bin\roslyn\csi.exe.config
+G:\backup\MATH1\bin\roslyn\csi.rsp
+G:\backup\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\backup\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\backup\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\backup\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\backup\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+G:\backup\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\backup\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\backup\MATH1\bin\roslyn\System.AppContext.dll
+G:\backup\MATH1\bin\roslyn\System.Collections.Immutable.dll
+G:\backup\MATH1\bin\roslyn\System.Console.dll
+G:\backup\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\backup\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\backup\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\backup\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+G:\backup\MATH1\bin\roslyn\System.IO.Compression.dll
+G:\backup\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\backup\MATH1\bin\roslyn\System.IO.FileSystem.dll
+G:\backup\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\backup\MATH1\bin\roslyn\System.Net.Http.dll
+G:\backup\MATH1\bin\roslyn\System.Net.Sockets.dll
+G:\backup\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+G:\backup\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\backup\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\backup\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\backup\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\backup\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\backup\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\backup\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\backup\MATH1\bin\roslyn\System.ValueTuple.dll
+G:\backup\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\backup\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+G:\backup\MATH1\bin\roslyn\System.Xml.XPath.dll
+G:\backup\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\backup\MATH1\bin\roslyn\vbc.exe
+G:\backup\MATH1\bin\roslyn\vbc.exe.config
+G:\backup\MATH1\bin\roslyn\vbc.rsp
+G:\backup\MATH1\bin\roslyn\VBCSCompiler.exe
+G:\backup\MATH1\bin\roslyn\VBCSCompiler.exe.config
+G:\backup\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\backup\MATH1\bin\MySql.Data.dll
+G:\backup\MATH1\bin\Newtonsoft.Json.dll
+G:\backup\MATH1\bin\System.Net.Http.Formatting.dll
+G:\backup\MATH1\bin\System.Web.Http.dll
+G:\backup\MATH1\bin\System.Web.Http.WebHost.dll
+G:\backup\MATH1\bin\Google.Protobuf.dll
+G:\backup\MATH1\bin\Zstandard.Net.dll
+G:\backup\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+G:\backup\MATH1\bin\BouncyCastle.Crypto.dll
+G:\backup\MATH1\bin\Ubiety.Dns.Core.dll
+G:\backup\MATH1\bin\Renci.SshNet.dll
+G:\backup\MATH1\bin\System.Buffers.dll
+G:\backup\MATH1\bin\K4os.Compression.LZ4.dll
+G:\backup\MATH1\bin\K4os.Hash.xxHash.dll
+G:\backup\MATH1\bin\System.Memory.dll
+G:\backup\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+G:\backup\MATH1\bin\System.Numerics.Vectors.dll
+G:\backup\MATH1\bin\MySql.Data.xml
+G:\backup\MATH1\bin\Newtonsoft.Json.xml
+G:\backup\MATH1\bin\System.Net.Http.Formatting.xml
+G:\backup\MATH1\bin\System.Web.Http.xml
+G:\backup\MATH1\bin\System.Web.Http.WebHost.xml
+G:\backup\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\backup\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+G:\backup\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+G:\backup\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+G:\backup\MATH1\obj\Debug\MATH1.dll
+G:\backup\MATH1\obj\Debug\MATH1.pdb
+F:\backup\MATH1\bin\MATH1.dll.config
+F:\backup\MATH1\bin\MATH1.dll
+F:\backup\MATH1\bin\MATH1.pdb
+F:\backup\MATH1\bin\roslyn\csc.exe
+F:\backup\MATH1\bin\roslyn\csc.exe.config
+F:\backup\MATH1\bin\roslyn\csc.rsp
+F:\backup\MATH1\bin\roslyn\csi.exe
+F:\backup\MATH1\bin\roslyn\csi.exe.config
+F:\backup\MATH1\bin\roslyn\csi.rsp
+F:\backup\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\backup\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\backup\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\backup\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\backup\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+F:\backup\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\backup\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\backup\MATH1\bin\roslyn\System.AppContext.dll
+F:\backup\MATH1\bin\roslyn\System.Collections.Immutable.dll
+F:\backup\MATH1\bin\roslyn\System.Console.dll
+F:\backup\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\backup\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\backup\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\backup\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+F:\backup\MATH1\bin\roslyn\System.IO.Compression.dll
+F:\backup\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\backup\MATH1\bin\roslyn\System.IO.FileSystem.dll
+F:\backup\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\backup\MATH1\bin\roslyn\System.Net.Http.dll
+F:\backup\MATH1\bin\roslyn\System.Net.Sockets.dll
+F:\backup\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+F:\backup\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\backup\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\backup\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\backup\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\backup\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\backup\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\backup\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\backup\MATH1\bin\roslyn\System.ValueTuple.dll
+F:\backup\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\backup\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+F:\backup\MATH1\bin\roslyn\System.Xml.XPath.dll
+F:\backup\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\backup\MATH1\bin\roslyn\vbc.exe
+F:\backup\MATH1\bin\roslyn\vbc.exe.config
+F:\backup\MATH1\bin\roslyn\vbc.rsp
+F:\backup\MATH1\bin\roslyn\VBCSCompiler.exe
+F:\backup\MATH1\bin\roslyn\VBCSCompiler.exe.config
+F:\backup\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\backup\MATH1\bin\Newtonsoft.Json.dll
+F:\backup\MATH1\bin\System.Net.Http.Formatting.dll
+F:\backup\MATH1\bin\System.Web.Http.dll
+F:\backup\MATH1\bin\System.Web.Http.WebHost.dll
+F:\backup\MATH1\bin\Google.Protobuf.dll
+F:\backup\MATH1\bin\Zstandard.Net.dll
+F:\backup\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+F:\backup\MATH1\bin\BouncyCastle.Crypto.dll
+F:\backup\MATH1\bin\Ubiety.Dns.Core.dll
+F:\backup\MATH1\bin\Renci.SshNet.dll
+F:\backup\MATH1\bin\System.Buffers.dll
+F:\backup\MATH1\bin\K4os.Compression.LZ4.dll
+F:\backup\MATH1\bin\K4os.Hash.xxHash.dll
+F:\backup\MATH1\bin\System.Memory.dll
+F:\backup\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+F:\backup\MATH1\bin\System.Numerics.Vectors.dll
+F:\backup\MATH1\bin\MySql.Data.xml
+F:\backup\MATH1\bin\Newtonsoft.Json.xml
+F:\backup\MATH1\bin\System.Net.Http.Formatting.xml
+F:\backup\MATH1\bin\System.Web.Http.xml
+F:\backup\MATH1\bin\System.Web.Http.WebHost.xml
+F:\backup\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\backup\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+F:\backup\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+F:\backup\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+F:\backup\MATH1\obj\Debug\MATH1.dll
+F:\backup\MATH1\obj\Debug\MATH1.pdb
+E:\backup\MATH1\bin\MATH1.dll.config
+E:\backup\MATH1\bin\MATH1.dll
+E:\backup\MATH1\bin\MATH1.pdb
+E:\backup\MATH1\bin\roslyn\csc.exe
+E:\backup\MATH1\bin\roslyn\csc.exe.config
+E:\backup\MATH1\bin\roslyn\csc.rsp
+E:\backup\MATH1\bin\roslyn\csi.exe
+E:\backup\MATH1\bin\roslyn\csi.exe.config
+E:\backup\MATH1\bin\roslyn\csi.rsp
+E:\backup\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\backup\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\backup\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\backup\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\backup\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+E:\backup\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\backup\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\backup\MATH1\bin\roslyn\System.AppContext.dll
+E:\backup\MATH1\bin\roslyn\System.Collections.Immutable.dll
+E:\backup\MATH1\bin\roslyn\System.Console.dll
+E:\backup\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\backup\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\backup\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\backup\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+E:\backup\MATH1\bin\roslyn\System.IO.Compression.dll
+E:\backup\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\backup\MATH1\bin\roslyn\System.IO.FileSystem.dll
+E:\backup\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\backup\MATH1\bin\roslyn\System.Net.Http.dll
+E:\backup\MATH1\bin\roslyn\System.Net.Sockets.dll
+E:\backup\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+E:\backup\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\backup\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\backup\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\backup\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\backup\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\backup\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\backup\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\backup\MATH1\bin\roslyn\System.ValueTuple.dll
+E:\backup\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\backup\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+E:\backup\MATH1\bin\roslyn\System.Xml.XPath.dll
+E:\backup\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\backup\MATH1\bin\roslyn\vbc.exe
+E:\backup\MATH1\bin\roslyn\vbc.exe.config
+E:\backup\MATH1\bin\roslyn\vbc.rsp
+E:\backup\MATH1\bin\roslyn\VBCSCompiler.exe
+E:\backup\MATH1\bin\roslyn\VBCSCompiler.exe.config
+E:\backup\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\backup\MATH1\bin\MySql.Data.dll
+E:\backup\MATH1\bin\Newtonsoft.Json.dll
+E:\backup\MATH1\bin\System.Net.Http.Formatting.dll
+E:\backup\MATH1\bin\System.Web.Http.dll
+E:\backup\MATH1\bin\System.Web.Http.WebHost.dll
+E:\backup\MATH1\bin\Google.Protobuf.dll
+E:\backup\MATH1\bin\Zstandard.Net.dll
+E:\backup\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+E:\backup\MATH1\bin\BouncyCastle.Crypto.dll
+E:\backup\MATH1\bin\Ubiety.Dns.Core.dll
+E:\backup\MATH1\bin\Renci.SshNet.dll
+E:\backup\MATH1\bin\System.Buffers.dll
+E:\backup\MATH1\bin\K4os.Compression.LZ4.dll
+E:\backup\MATH1\bin\K4os.Hash.xxHash.dll
+E:\backup\MATH1\bin\System.Memory.dll
+E:\backup\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\backup\MATH1\bin\System.Numerics.Vectors.dll
+E:\backup\MATH1\bin\MySql.Data.xml
+E:\backup\MATH1\bin\Newtonsoft.Json.xml
+E:\backup\MATH1\bin\System.Net.Http.Formatting.xml
+E:\backup\MATH1\bin\System.Web.Http.xml
+E:\backup\MATH1\bin\System.Web.Http.WebHost.xml
+E:\backup\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\backup\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+E:\backup\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+E:\backup\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+E:\backup\MATH1\obj\Debug\MATH1.dll
+E:\backup\MATH1\obj\Debug\MATH1.pdb
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\MATH1.dll.config
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\MATH1.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\MATH1.pdb
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\csc.exe
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\csc.exe.config
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\csc.rsp
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\csi.exe
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\csi.exe.config
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\csi.rsp
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.AppContext.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Console.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.IO.Compression.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Net.Http.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.ValueTuple.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\vbc.exe
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\vbc.exe.config
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\vbc.rsp
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\VBCSCompiler.exe
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\Newtonsoft.Json.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\System.Net.Http.Formatting.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\System.Web.Http.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\System.Web.Http.WebHost.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\Google.Protobuf.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\Zstandard.Net.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\BouncyCastle.Crypto.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\Ubiety.Dns.Core.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\Renci.SshNet.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\System.Buffers.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\K4os.Compression.LZ4.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\K4os.Hash.xxHash.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\System.Memory.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\System.Numerics.Vectors.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\MySql.Data.xml
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\Newtonsoft.Json.xml
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\System.Net.Http.Formatting.xml
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\System.Web.Http.xml
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\System.Web.Http.WebHost.xml
+C:\Users\steve\Downloads\kaptson\backup\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\steve\Downloads\kaptson\backup\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+C:\Users\steve\Downloads\kaptson\backup\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+C:\Users\steve\Downloads\kaptson\backup\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+C:\Users\steve\Downloads\kaptson\backup\MATH1\obj\Debug\MATH1.dll
+C:\Users\steve\Downloads\kaptson\backup\MATH1\obj\Debug\MATH1.pdb
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\MATH1.dll.config
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\MATH1.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\MATH1.pdb
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\csc.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\csc.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\csc.rsp
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\csi.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\csi.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\csi.rsp
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.AppContext.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Console.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.IO.Compression.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Net.Http.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.ValueTuple.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\vbc.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\vbc.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\vbc.rsp
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\VBCSCompiler.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\Newtonsoft.Json.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\System.Net.Http.Formatting.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\System.Web.Http.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\System.Web.Http.WebHost.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\Google.Protobuf.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\Zstandard.Net.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\BouncyCastle.Crypto.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\Ubiety.Dns.Core.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\Renci.SshNet.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\System.Buffers.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\K4os.Compression.LZ4.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\K4os.Hash.xxHash.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\System.Memory.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\System.Numerics.Vectors.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\MySql.Data.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\Newtonsoft.Json.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\System.Net.Http.Formatting.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\System.Web.Http.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\System.Web.Http.WebHost.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\obj\Debug\MATH1.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest may 4\mathinique may4\backup\MATH1\obj\Debug\MATH1.pdb
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\MATH1.dll.config
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\MATH1.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\MATH1.pdb
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\csc.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\csc.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\csc.rsp
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\csi.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\csi.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\csi.rsp
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.AppContext.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Console.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.IO.Compression.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Net.Http.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.ValueTuple.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\vbc.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\vbc.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\vbc.rsp
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\VBCSCompiler.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\Newtonsoft.Json.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\System.Net.Http.Formatting.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\System.Web.Http.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\System.Web.Http.WebHost.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\Google.Protobuf.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\Zstandard.Net.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\BouncyCastle.Crypto.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\Ubiety.Dns.Core.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\Renci.SshNet.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\System.Buffers.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\K4os.Compression.LZ4.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\K4os.Hash.xxHash.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\System.Memory.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\System.Numerics.Vectors.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\MySql.Data.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\Newtonsoft.Json.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\System.Net.Http.Formatting.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\System.Web.Http.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\System.Web.Http.WebHost.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\obj\Debug\MATH1.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1__latest sept 12\mathinique sept 12 updates\backup\MATH1\obj\Debug\MATH1.pdb
+D:\v2\MATH1\bin\MATH1.dll.config
+D:\v2\MATH1\bin\MATH1.dll
+D:\v2\MATH1\bin\MATH1.pdb
+D:\v2\MATH1\bin\roslyn\csc.exe
+D:\v2\MATH1\bin\roslyn\csc.exe.config
+D:\v2\MATH1\bin\roslyn\csc.rsp
+D:\v2\MATH1\bin\roslyn\csi.exe
+D:\v2\MATH1\bin\roslyn\csi.exe.config
+D:\v2\MATH1\bin\roslyn\csi.rsp
+D:\v2\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\v2\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\v2\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\v2\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\v2\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\v2\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\v2\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\v2\MATH1\bin\roslyn\System.AppContext.dll
+D:\v2\MATH1\bin\roslyn\System.Collections.Immutable.dll
+D:\v2\MATH1\bin\roslyn\System.Console.dll
+D:\v2\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\v2\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\v2\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\v2\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+D:\v2\MATH1\bin\roslyn\System.IO.Compression.dll
+D:\v2\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\v2\MATH1\bin\roslyn\System.IO.FileSystem.dll
+D:\v2\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\v2\MATH1\bin\roslyn\System.Net.Http.dll
+D:\v2\MATH1\bin\roslyn\System.Net.Sockets.dll
+D:\v2\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+D:\v2\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\v2\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\v2\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\v2\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\v2\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\v2\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\v2\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\v2\MATH1\bin\roslyn\System.ValueTuple.dll
+D:\v2\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\v2\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\v2\MATH1\bin\roslyn\System.Xml.XPath.dll
+D:\v2\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\v2\MATH1\bin\roslyn\vbc.exe
+D:\v2\MATH1\bin\roslyn\vbc.exe.config
+D:\v2\MATH1\bin\roslyn\vbc.rsp
+D:\v2\MATH1\bin\roslyn\VBCSCompiler.exe
+D:\v2\MATH1\bin\roslyn\VBCSCompiler.exe.config
+D:\v2\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\v2\MATH1\bin\MySql.Data.dll
+D:\v2\MATH1\bin\Newtonsoft.Json.dll
+D:\v2\MATH1\bin\System.Net.Http.Formatting.dll
+D:\v2\MATH1\bin\System.Web.Http.dll
+D:\v2\MATH1\bin\System.Web.Http.WebHost.dll
+D:\v2\MATH1\bin\Google.Protobuf.dll
+D:\v2\MATH1\bin\Zstandard.Net.dll
+D:\v2\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+D:\v2\MATH1\bin\BouncyCastle.Crypto.dll
+D:\v2\MATH1\bin\Ubiety.Dns.Core.dll
+D:\v2\MATH1\bin\Renci.SshNet.dll
+D:\v2\MATH1\bin\System.Buffers.dll
+D:\v2\MATH1\bin\K4os.Compression.LZ4.dll
+D:\v2\MATH1\bin\K4os.Hash.xxHash.dll
+D:\v2\MATH1\bin\System.Memory.dll
+D:\v2\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\v2\MATH1\bin\System.Numerics.Vectors.dll
+D:\v2\MATH1\bin\MySql.Data.xml
+D:\v2\MATH1\bin\Newtonsoft.Json.xml
+D:\v2\MATH1\bin\System.Net.Http.Formatting.xml
+D:\v2\MATH1\bin\System.Web.Http.xml
+D:\v2\MATH1\bin\System.Web.Http.WebHost.xml
+D:\v2\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\v2\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+D:\v2\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+D:\v2\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+D:\v2\MATH1\obj\Debug\MATH1.dll
+D:\v2\MATH1\obj\Debug\MATH1.pdb
+C:\Users\Adee\source\repos\MATH1\bin\MATH1.dll.config
+C:\Users\Adee\source\repos\MATH1\bin\MATH1.dll
+C:\Users\Adee\source\repos\MATH1\bin\MATH1.pdb
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\csc.exe
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\csc.exe.config
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\csc.rsp
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\csi.exe
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\csi.exe.config
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\csi.rsp
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.AppContext.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Console.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Net.Http.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\vbc.exe
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\vbc.exe.config
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\vbc.rsp
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Adee\source\repos\MATH1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Adee\source\repos\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Adee\source\repos\MATH1\bin\MySql.Data.dll
+C:\Users\Adee\source\repos\MATH1\bin\Newtonsoft.Json.dll
+C:\Users\Adee\source\repos\MATH1\bin\System.Net.Http.Formatting.dll
+C:\Users\Adee\source\repos\MATH1\bin\System.Web.Http.dll
+C:\Users\Adee\source\repos\MATH1\bin\System.Web.Http.WebHost.dll
+C:\Users\Adee\source\repos\MATH1\bin\Google.Protobuf.dll
+C:\Users\Adee\source\repos\MATH1\bin\Zstandard.Net.dll
+C:\Users\Adee\source\repos\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\Adee\source\repos\MATH1\bin\BouncyCastle.Crypto.dll
+C:\Users\Adee\source\repos\MATH1\bin\Ubiety.Dns.Core.dll
+C:\Users\Adee\source\repos\MATH1\bin\Renci.SshNet.dll
+C:\Users\Adee\source\repos\MATH1\bin\System.Buffers.dll
+C:\Users\Adee\source\repos\MATH1\bin\K4os.Compression.LZ4.dll
+C:\Users\Adee\source\repos\MATH1\bin\K4os.Hash.xxHash.dll
+C:\Users\Adee\source\repos\MATH1\bin\System.Memory.dll
+C:\Users\Adee\source\repos\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Adee\source\repos\MATH1\bin\System.Numerics.Vectors.dll
+C:\Users\Adee\source\repos\MATH1\bin\MySql.Data.xml
+C:\Users\Adee\source\repos\MATH1\bin\Newtonsoft.Json.xml
+C:\Users\Adee\source\repos\MATH1\bin\System.Net.Http.Formatting.xml
+C:\Users\Adee\source\repos\MATH1\bin\System.Web.Http.xml
+C:\Users\Adee\source\repos\MATH1\bin\System.Web.Http.WebHost.xml
+C:\Users\Adee\source\repos\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Adee\source\repos\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+C:\Users\Adee\source\repos\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+C:\Users\Adee\source\repos\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+C:\Users\Adee\source\repos\MATH1\obj\Debug\MATH1.dll
+C:\Users\Adee\source\repos\MATH1\obj\Debug\MATH1.pdb
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\MATH1.dll.config
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\MATH1.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\MATH1.pdb
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\csc.exe
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\csc.exe.config
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\csc.rsp
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\csi.exe
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\csi.exe.config
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\csi.rsp
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.AppContext.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Console.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.IO.Compression.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Net.Http.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.ValueTuple.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\vbc.exe
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\vbc.exe.config
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\vbc.rsp
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\VBCSCompiler.exe
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\Newtonsoft.Json.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\System.Net.Http.Formatting.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\System.Web.Http.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\System.Web.Http.WebHost.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\Google.Protobuf.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\Zstandard.Net.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\BouncyCastle.Crypto.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\Ubiety.Dns.Core.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\Renci.SshNet.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\System.Buffers.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\K4os.Compression.LZ4.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\K4os.Hash.xxHash.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\System.Memory.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\System.Numerics.Vectors.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\MySql.Data.xml
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\Newtonsoft.Json.xml
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\System.Net.Http.Formatting.xml
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\System.Web.Http.xml
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\System.Web.Http.WebHost.xml
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\obj\Debug\MATH1.dll
+C:\Users\steve\OneDrive\Desktop\v2\MATH1\obj\Debug\MATH1.pdb
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\MATH1.dll.config
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\MATH1.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\MATH1.pdb
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\csc.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\csc.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\csc.rsp
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\csi.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\csi.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\csi.rsp
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.AppContext.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Console.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.IO.Compression.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Net.Http.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.ValueTuple.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\vbc.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\vbc.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\vbc.rsp
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\VBCSCompiler.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\Newtonsoft.Json.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\System.Net.Http.Formatting.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\System.Web.Http.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\System.Web.Http.WebHost.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\Google.Protobuf.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\Zstandard.Net.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\BouncyCastle.Crypto.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\Ubiety.Dns.Core.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\Renci.SshNet.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\System.Buffers.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\K4os.Compression.LZ4.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\K4os.Hash.xxHash.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\System.Memory.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\System.Numerics.Vectors.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\MySql.Data.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\Newtonsoft.Json.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\System.Net.Http.Formatting.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\System.Web.Http.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\System.Web.Http.WebHost.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\obj\Debug\MATH1.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\obj\Debug\MATH1.pdb
+C:\Users\Adee\Downloads\today\MATH1\bin\MATH1.dll.config
+C:\Users\Adee\Downloads\today\MATH1\bin\MATH1.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\MATH1.pdb
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\csc.exe
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\csc.exe.config
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\csc.rsp
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\csi.exe
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\csi.exe.config
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\csi.rsp
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.AppContext.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Console.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Net.Http.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\vbc.exe
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\vbc.exe.config
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\vbc.rsp
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Adee\Downloads\today\MATH1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Adee\Downloads\today\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\MySql.Data.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\Newtonsoft.Json.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\System.Net.Http.Formatting.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\System.Web.Http.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\System.Web.Http.WebHost.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\Google.Protobuf.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\Zstandard.Net.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\BouncyCastle.Crypto.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\Ubiety.Dns.Core.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\Renci.SshNet.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\System.Buffers.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\K4os.Compression.LZ4.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\K4os.Hash.xxHash.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\System.Memory.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\System.Numerics.Vectors.dll
+C:\Users\Adee\Downloads\today\MATH1\bin\MySql.Data.xml
+C:\Users\Adee\Downloads\today\MATH1\bin\Newtonsoft.Json.xml
+C:\Users\Adee\Downloads\today\MATH1\bin\System.Net.Http.Formatting.xml
+C:\Users\Adee\Downloads\today\MATH1\bin\System.Web.Http.xml
+C:\Users\Adee\Downloads\today\MATH1\bin\System.Web.Http.WebHost.xml
+C:\Users\Adee\Downloads\today\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Adee\Downloads\today\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+C:\Users\Adee\Downloads\today\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+C:\Users\Adee\Downloads\today\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+C:\Users\Adee\Downloads\today\MATH1\obj\Debug\MATH1.dll
+C:\Users\Adee\Downloads\today\MATH1\obj\Debug\MATH1.pdb
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\MATH1.dll.config
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\MATH1.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\MATH1.pdb
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\csc.exe
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\csc.exe.config
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\csc.rsp
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\csi.exe
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\csi.exe.config
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\csi.rsp
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.AppContext.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Console.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.IO.Compression.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Net.Http.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.ValueTuple.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\vbc.exe
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\vbc.exe.config
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\vbc.rsp
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\VBCSCompiler.exe
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\Newtonsoft.Json.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\System.Net.Http.Formatting.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\System.Web.Http.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\System.Web.Http.WebHost.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\Google.Protobuf.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\Zstandard.Net.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\BouncyCastle.Crypto.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\Ubiety.Dns.Core.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\Renci.SshNet.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\System.Buffers.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\K4os.Compression.LZ4.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\K4os.Hash.xxHash.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\System.Memory.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\System.Numerics.Vectors.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\MySql.Data.xml
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\Newtonsoft.Json.xml
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\System.Net.Http.Formatting.xml
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\System.Web.Http.xml
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\System.Web.Http.WebHost.xml
+C:\Users\steve\Downloads\math1 oct18\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\steve\Downloads\math1 oct18\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+C:\Users\steve\Downloads\math1 oct18\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+C:\Users\steve\Downloads\math1 oct18\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+C:\Users\steve\Downloads\math1 oct18\MATH1\obj\Debug\MATH1.dll
+C:\Users\steve\Downloads\math1 oct18\MATH1\obj\Debug\MATH1.pdb
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\obj\Debug\MATH1.Properties.Resources.resources
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\v2\v2\MATH1\obj\Debug\MATH1.csproj.GenerateResource.cache
+D:\v2\new\MATH1\bin\MATH1.dll.config
+D:\v2\new\MATH1\bin\MATH1.dll
+D:\v2\new\MATH1\bin\MATH1.pdb
+D:\v2\new\MATH1\bin\roslyn\csc.exe
+D:\v2\new\MATH1\bin\roslyn\csc.exe.config
+D:\v2\new\MATH1\bin\roslyn\csc.rsp
+D:\v2\new\MATH1\bin\roslyn\csi.exe
+D:\v2\new\MATH1\bin\roslyn\csi.exe.config
+D:\v2\new\MATH1\bin\roslyn\csi.rsp
+D:\v2\new\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\v2\new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\v2\new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\v2\new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\v2\new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\v2\new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\v2\new\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\v2\new\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\v2\new\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\v2\new\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\v2\new\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\v2\new\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\v2\new\MATH1\bin\roslyn\System.AppContext.dll
+D:\v2\new\MATH1\bin\roslyn\System.Collections.Immutable.dll
+D:\v2\new\MATH1\bin\roslyn\System.Console.dll
+D:\v2\new\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\v2\new\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\v2\new\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\v2\new\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+D:\v2\new\MATH1\bin\roslyn\System.IO.Compression.dll
+D:\v2\new\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\v2\new\MATH1\bin\roslyn\System.IO.FileSystem.dll
+D:\v2\new\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\v2\new\MATH1\bin\roslyn\System.Net.Http.dll
+D:\v2\new\MATH1\bin\roslyn\System.Net.Sockets.dll
+D:\v2\new\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+D:\v2\new\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\v2\new\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\v2\new\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\v2\new\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\v2\new\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\v2\new\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\v2\new\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\v2\new\MATH1\bin\roslyn\System.ValueTuple.dll
+D:\v2\new\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\v2\new\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\v2\new\MATH1\bin\roslyn\System.Xml.XPath.dll
+D:\v2\new\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\v2\new\MATH1\bin\roslyn\vbc.exe
+D:\v2\new\MATH1\bin\roslyn\vbc.exe.config
+D:\v2\new\MATH1\bin\roslyn\vbc.rsp
+D:\v2\new\MATH1\bin\roslyn\VBCSCompiler.exe
+D:\v2\new\MATH1\bin\roslyn\VBCSCompiler.exe.config
+D:\v2\new\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\v2\new\MATH1\bin\MySql.Data.dll
+D:\v2\new\MATH1\bin\Newtonsoft.Json.dll
+D:\v2\new\MATH1\bin\System.Net.Http.Formatting.dll
+D:\v2\new\MATH1\bin\System.Web.Http.dll
+D:\v2\new\MATH1\bin\System.Web.Http.WebHost.dll
+D:\v2\new\MATH1\bin\Google.Protobuf.dll
+D:\v2\new\MATH1\bin\Zstandard.Net.dll
+D:\v2\new\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+D:\v2\new\MATH1\bin\BouncyCastle.Crypto.dll
+D:\v2\new\MATH1\bin\Ubiety.Dns.Core.dll
+D:\v2\new\MATH1\bin\Renci.SshNet.dll
+D:\v2\new\MATH1\bin\System.Buffers.dll
+D:\v2\new\MATH1\bin\K4os.Compression.LZ4.dll
+D:\v2\new\MATH1\bin\K4os.Hash.xxHash.dll
+D:\v2\new\MATH1\bin\System.Memory.dll
+D:\v2\new\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\v2\new\MATH1\bin\System.Numerics.Vectors.dll
+D:\v2\new\MATH1\bin\MySql.Data.xml
+D:\v2\new\MATH1\bin\Newtonsoft.Json.xml
+D:\v2\new\MATH1\bin\System.Net.Http.Formatting.xml
+D:\v2\new\MATH1\bin\System.Web.Http.xml
+D:\v2\new\MATH1\bin\System.Web.Http.WebHost.xml
+D:\v2\new\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\v2\new\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+D:\v2\new\MATH1\obj\Debug\MATH1.Properties.Resources.resources
+D:\v2\new\MATH1\obj\Debug\MATH1.csproj.GenerateResource.cache
+D:\v2\new\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+D:\v2\new\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+D:\v2\new\MATH1\obj\Debug\MATH1.dll
+D:\v2\new\MATH1\obj\Debug\MATH1.pdb
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\MATH1.dll.config
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\MATH1.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\MATH1.pdb
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\csc.exe
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\csc.exe.config
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\csc.rsp
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\csi.exe
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\csi.exe.config
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\csi.rsp
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.AppContext.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Console.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.IO.Compression.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Net.Http.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.ValueTuple.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\vbc.exe
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\vbc.exe.config
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\vbc.rsp
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\VBCSCompiler.exe
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\Newtonsoft.Json.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\System.Net.Http.Formatting.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\System.Web.Http.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\System.Web.Http.WebHost.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\Google.Protobuf.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\Zstandard.Net.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\BouncyCastle.Crypto.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\Ubiety.Dns.Core.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\Renci.SshNet.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\System.Buffers.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\K4os.Compression.LZ4.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\K4os.Hash.xxHash.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\System.Memory.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\System.Numerics.Vectors.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\MySql.Data.xml
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\Newtonsoft.Json.xml
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\System.Net.Http.Formatting.xml
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\System.Web.Http.xml
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\System.Web.Http.WebHost.xml
+C:\Users\crcba\Downloads\v2\new\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\crcba\Downloads\v2\new\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+C:\Users\crcba\Downloads\v2\new\MATH1\obj\Debug\MATH1.Properties.Resources.resources
+C:\Users\crcba\Downloads\v2\new\MATH1\obj\Debug\MATH1.csproj.GenerateResource.cache
+C:\Users\crcba\Downloads\v2\new\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+C:\Users\crcba\Downloads\v2\new\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+C:\Users\crcba\Downloads\v2\new\MATH1\obj\Debug\MATH1.dll
+C:\Users\crcba\Downloads\v2\new\MATH1\obj\Debug\MATH1.pdb
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\MATH1.dll.config
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\MATH1.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\MATH1.pdb
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\csc.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\csc.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\csc.rsp
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\csi.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\csi.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\csi.rsp
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.AppContext.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Console.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.IO.Compression.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Net.Http.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.ValueTuple.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\vbc.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\vbc.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\vbc.rsp
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\VBCSCompiler.exe
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\Newtonsoft.Json.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\System.Net.Http.Formatting.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\System.Web.Http.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\System.Web.Http.WebHost.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\Google.Protobuf.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\Zstandard.Net.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\BouncyCastle.Crypto.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\Ubiety.Dns.Core.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\Renci.SshNet.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\System.Buffers.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\K4os.Compression.LZ4.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\K4os.Hash.xxHash.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\System.Memory.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\System.Numerics.Vectors.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\MySql.Data.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\Newtonsoft.Json.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\System.Net.Http.Formatting.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\System.Web.Http.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\System.Web.Http.WebHost.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\obj\Debug\MATH1.csproj.AssemblyReference.cache
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\obj\Debug\MATH1.Properties.Resources.resources
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\obj\Debug\MATH1.csproj.GenerateResource.cache
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\obj\Debug\MATH1.csproj.CoreCompileInputs.cache
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\obj\Debug\MATH1.csproj.CopyComplete
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\obj\Debug\MATH1.dll
+C:\Users\crcba\OneDrive\Desktop\theses\1_a.Latest\1.new\MATH1\obj\Debug\MATH1.pdb
