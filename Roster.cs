@@ -19,7 +19,7 @@ namespace MATH1
         }
         public Roster()
         {
-
+            //waow is great
         }
     }
 }
