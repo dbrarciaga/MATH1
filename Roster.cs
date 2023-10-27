@@ -19,7 +19,7 @@ namespace MATH1
         }
         public Roster()
         {
-            //waow DEGENERATE
+            //waow is great
         }
     }
 }
