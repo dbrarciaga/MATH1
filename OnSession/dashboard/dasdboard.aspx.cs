@@ -66,7 +66,17 @@ namespace MATH1.OnSession
                 Response.Redirect("/Main/Login/LogIn.aspx");
             }
             //user.Text = Session["username"].ToString();            
-            
+            else
+            {
+                if (blue.getValue(Session["username"].ToString()) == "teacher")
+                {
+                    Response.Redirect("/Teacher/WebForm1.aspx");
+                }
+                if (blue.getValue(Session["username"].ToString()) == "admin")
+                {
+                    Response.Redirect("/Admin/AdminDash.aspx");
+                }
+            }
 
 
 
