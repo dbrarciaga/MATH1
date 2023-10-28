@@ -30,10 +30,39 @@ namespace MATH1.OnSession
                 Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/34";
             }
 
+            string val = Session["username"].ToString();
+            string waow = "server=localhost;user id=root;database=math1";
+            using (MySqlConnection cons = new MySqlConnection(waow))
+            {
+                cons.Open();
 
+                string query = "SELECT id FROM students where username =@user";
+                try
+                {
+                    using (MySqlCommand cmd = new MySqlCommand(query, cons))
+                    {
+                        cmd.Parameters.AddWithValue("@user", val);
+
+                        if (cmd.ExecuteScalar() != null)
+                        {
+                            val = cmd.ExecuteScalar().ToString();
+                            //blue.query("select teacher from classlist where stud_id = '"+ Session["username"] + "'");
+                            Label2.Text = blue.getInfo(val);
+                            cons.Close();
+
+                        }
+
+
+                    }
+                }
+                catch (Exception error)
+                {
+             
+                }
+            }
 
             ////if no teacher star is hidden
-       
+
 
 
 

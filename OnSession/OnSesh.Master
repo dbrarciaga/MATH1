@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OnSesh.Master.cs" Inherits="MATH1.OnSession.Site1"  %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OnSesh.Master.cs" Inherits="MATH1.OnSession.Site1" %>
 
 <!DOCTYPE html>
 
@@ -9,78 +9,83 @@
     </asp:ContentPlaceHolder>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="cloud.css">
     <style>
-        .bgPattern{    
-            background-color: #f5ad42;
-            background: linear-gradient(to bottom, #f5ad42 1%,#5d3c96 100%);       
+        .bgPattern {
+            opacity: 1;
+            background-color: lightskyblue;
+            background: linear-gradient(to bottom, lightskyblue 1%,skyblue 100%);
+            background-size: 15px 15px;
+            margin: 0;
+            padding: 0;
         }
-              
-        li, a, button{
-            font-family:"Calibri", sans-serif;
+
+        li, a, button {
             font-weight: 500;
-            font-size:16px;
+            font-size: 16px;
             color: #000000;
             text-decoration: none;
         }
-        header{
-            display:flex;
+
+        header {
+            display: flex;
             justify-content: space-between;
-            align-items:center;
-            padding: 30px 10%;
+            background-color: white;
+            align-items: center;
+            padding: 10px 3%;
+            color: honeydew;
+            left: 0;
+            width: 100%;
+            text-align: center;
         }
-        .title{
-            cursor:pointer;
-            font-family:"Calibri", sans-serif;
+
+        .title {
+            cursor: pointer;
+            font-family: "Calibri", sans-serif;
             font-weight: 500;
-            font-size:16px;
+            font-size: 16px;
             color: #000000;
             text-decoration: none;
         }
-        .nav_links{
-            list-style:none;
 
+        .nav_links {
+            list-style: none;
         }
-        .nav_links li{
-            display:inline-block;
-            padding: 0px 20px;
 
-        }
-        .nav_links li a{
-            transition:all 0.3s ease 0s;
-        }
-        .nav_links li a:hover{
-            color:#ffffff;
-        }
-        .button1{
+            .nav_links li {
+                display: inline-block;
+                padding: 0px 20px;
+            }
+
+                .nav_links li a {
+                    transition: all 0.3s ease 0s;
+                }
+
+                    .nav_links li a:hover {
+                        color: #ffffff;
+                    }
+
+        .button1 {
             padding: 9px 25px;
             background-color: white;
-            border:none;            
-            cursor:pointer;
-            transition:all 0.3s ease 0s;
-            color:black;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            color: black;
+        }
 
-        }
-        .button1:hover {
-            background-color: black;
-            color:white;
-        }
-        nik{
-            color:white;
-        }
-        .mySidebar{
+            .button1:hover {
+                background-color: black;
+                color: white;
+            }
 
+        nik {
+            color: white;
+        }
+
+        .mySidebar {
         }
     </style>
-    <script>
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-    </script>
-
 
     <script type="text/javascript">
         function autoRefresh() {
@@ -90,31 +95,47 @@
         // Set a timer to refresh the page every 5000 milliseconds (5 seconds)
         setInterval(autoRefresh, 900000);
     </script>
+
+
+
+
 </head>
 <body class="bgPattern">
-    <form id="form1" runat="server">
-        <div class="w3-sidebar w3-bar-block w3-hide-small w3-hide-medium w3-card w3-animate-left" style="width: 300px;" id="mySidebar">
-            <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
-            <a class="w3-bar-item w3-amber w3-button">
-                <h3 class="w3-bar-item">MATHiNIQUE</h3>
-            </a>
-            <a style="font-family: 'Comic Sans MS'; font-size: 20px">
-                <img runat="server" src="https://i.imgur.com/AwHUIaV.png" title="source: imgur.com" style="height: 100px; width: 100px;" />
-                <asp:Label ID="Label1" runat="server" Text=""></asp:Label></a>
-            <a style="font-size: 25px;" href="/OnSession/dashboard/dasdboard.aspx" class="w3-bar-item w3-button">Dashboard</a>
-            <a style="font-size: 25px;" class="w3-bar-item w3-button"></a>
-            <a style="font-size: 25px;" href="#">
-                <asp:Button ID="logOut" runat="server" Text="Log-out" CssClass="w3-bar-item w3-button" OnClick="logOut_Click" /></a>
-        </div>
-        <div class="w3-main" style="margin-left: 200px">
-            <button onclick="w3_open()">&#9776;</button>
-        </div>
+   <div id="cloud-intro">
+        <form id="form1" runat="server">
+            <header>
+                <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
+                <a style="height: 15%; width: 15%; color: black; float: left">
+                    <img style="height: 100%; width: 100%;" src="https://i.imgur.com/RvPd3UI.png" title="source: imgur.com" />
+                </a>
 
-        <asp:Label ID="stars" runat="server" Text="Label"></asp:Label>
-        <div style="margin-left: 22%">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
+
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a style="height: 15%; width: 15%; font-family: 'Comic Sans MS'; font-size: 20px; color: black; float: initial">
+                <asp:Label ID="Label2" runat="server" Text="User"></asp:Label>
+                <img runat="server" src="https://i.imgur.com/AwHUIaV.png" title="source: imgur.com" style="height: 5%; width: 5%;" />
+                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+
+            </a>
+                <a style="height: 15%; width: 15%; font-size: 25px; color: black; float: right;" href="#">
+                    <asp:Button ID="logOut" runat="server" Text="Log-out" CssClass="w3-bar-item w3-button" OnClick="logOut_Click" />
+
+                </a>
+                <a style="font-size: 25px; color: black; float: right;" href="/OnSession/dashboard/dasdboard.aspx" class="w3-bar-item w3-button">Dashboard
+                </a>
+
+            </header>
+
+            <div>
+                <br />
+                <br />
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+
+            </div>
+        </form>
+    </div>
+
 </body>
 </html>
