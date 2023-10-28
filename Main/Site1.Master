@@ -33,7 +33,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 10%;
-            position: fixed;
+
             left: 0;
             width:100%;
           
