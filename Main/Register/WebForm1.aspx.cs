@@ -9,7 +9,8 @@ namespace MATH1.Main
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        
+        RegisterClass blue = new RegisterClass();
+        string age = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -23,21 +24,44 @@ namespace MATH1.Main
 
         protected void next_Click(object sender, EventArgs e)
         {
-            try
+            if(blue.hasSpecialChar(fname.Text))
             {
-                if(fname.Text=="" || lname.Text == "" || age.Text == "")
-                {
-                    Label1.Text = "Enter the required fields! ";
-                }
-                else
-                {
-                    RegisterClass obj = new RegisterClass(fname.Text, lname.Text, Int32.Parse(age.Text), Int32.Parse(DropDownList1.SelectedItem.Text));
-                    Response.Redirect("/Main/Register/WebForm9.aspx");
-                }
+                Label1.Text = "field 'Frist Name' has a special character";
             }
-            catch(Exception err)
+            else if (blue.hasSpecialChar(bday.Text))
             {
-                Label1.Text = err.ToString();
+                Label1.Text = "field 'age' has a special character";
+            }
+            else if (blue.hasSpecialChar(lname.Text))
+            {
+                Label1.Text = "field 'Last Name' has a special character";
+            }
+            else if(fname.Text.Length < 2)
+            {
+                Label1.Text = "field 'Frist Name' should be more than two (2) charaters";
+            }
+            else if (lname.Text.Length < 2)
+            {
+                Label1.Text = "field 'Last Name' should be more than two (2) charaters";
+            }           
+            else
+            {
+                try
+                {                    
+                    if (fname.Text == "" || lname.Text == "" || bday.Text == "")
+                    {
+                        Label1.Text = "Enter the required fields! ";
+                    }
+                    else
+                    {
+                        RegisterClass obj = new RegisterClass(fname.Text,lname.Text,int.Parse(bday.Text),int.Parse(DropDownList1.SelectedValue));
+                        Response.Redirect("/Main/Register/WebForm9.aspx");
+                    }
+                }
+                catch (Exception err)
+                {
+                    Label1.Text = err.ToString();
+                }
             }
            
             

@@ -4,6 +4,8 @@
         <div class="w3-containter w3-white w3-round-large" style="width:550px">
             <h4>Finalization</h4>
             <br />
+            <asp:Label ID="email" runat="server" Text="Label"></asp:Label>
+            <br />
             <asp:Label ID="user" runat="server" Text=""></asp:Label>
             <br />
              <br />

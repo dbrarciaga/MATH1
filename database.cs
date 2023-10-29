@@ -41,7 +41,7 @@ namespace MATH1
                 }
                 else
                 {
-                    return  "error";
+                    return  null;
                     //noice
                 }
             }

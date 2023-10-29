@@ -10,11 +10,12 @@
             <asp:TextBox ID="lname" runat="server"></asp:TextBox>
             <br />
              <p>Age:</p>
-            <asp:TextBox ID="age" runat="server"></asp:TextBox>
-            <br />
+            <asp:TextBox ID="bday" runat="server"></asp:TextBox>
+            <br />   
+            <p>Select grade level: </p>
             <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
             <br />
-            <br />
+            <br />            
             <asp:Button ID="next" runat="server" Text="Next" OnClick="next_Click" />
             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
         </div>
