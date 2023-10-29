@@ -23,7 +23,7 @@ namespace MATH1.OnSession
             {
                 cons.Open();
 
-                string query = "SELECT id FROM students where username =@user";
+                string query = "SELECT stud_id FROM students where username =@user";
                 try
                 {
                     using (MySqlCommand cmd = new MySqlCommand(query, cons))
@@ -51,37 +51,33 @@ namespace MATH1.OnSession
 
             ///////////////////
 
-            if (teacher.Text == "No teacher assigned")//if no teacher assigned
-            {
-                chal.Visible = false;
-                learn.Visible = false;
-                prog.Visible = false;
-                soon.Visible = true;
-                no_teacher.Visible = true;
-                request.Visible = true;
-       
-            }
+            
+                if (teacher.Text == "No teacher assigned")//if no teacher assigned
+               {
+                   chal.Visible = false;
+                   learn.Visible = false;
+                   prog.Visible = false;
+                   soon.Visible = true;
+                   no_teacher.Visible = true;
+                   request.Visible = true;
+
+               }
+
+            
             if (Session["username"] == null)
             {
                 Response.Redirect("/Main/Login/LogIn.aspx");
             }
             //user.Text = Session["username"].ToString();            
-            else
-            {
-                if (blue.getValue(Session["username"].ToString()) == "teacher")
-                {
-                    Response.Redirect("/Teacher/WebForm1.aspx");
-                }
-                if (blue.getValue(Session["username"].ToString()) == "admin")
-                {
-                    Response.Redirect("/Admin/AdminDash.aspx");
-                }
-            }
+<<<<<<< Updated upstream
+          
 
 
 
 
-
+=======
+            
+>>>>>>> Stashed changes
 
 
         }
