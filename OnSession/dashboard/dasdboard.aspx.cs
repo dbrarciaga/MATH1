@@ -12,12 +12,20 @@ namespace MATH1.OnSession
     {
         database blue = new database();
         static int requestCount = 0;
+        string val = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             
                numReq.Text = requestCount.ToString();
+           if(Session["username"]!=null)
+            {
+               val = Session["username"].ToString();
+            }
+            else
+            {
+                Response.Redirect("/Main/Login/LogIn.aspx");
+            }
 
-            string val = Session["username"].ToString();
             string waow = "server=localhost;user id=root;database=math1";
             using (MySqlConnection cons = new MySqlConnection(waow))
             {
