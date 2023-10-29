@@ -25,7 +25,9 @@ namespace MATH1.Main
             {
                
 
-                string query = "SELECT username,pass,userType FROM `students` WHERE username =@user AND pass=@pass";
+
+                string query = "SELECT stud_id from students where username = @user and pass =@pass";
+
                 try
                 {
                     cons.Open();
@@ -35,8 +37,9 @@ namespace MATH1.Main
                         cmd.Parameters.AddWithValue("@pass", pass);
                         if (cmd.ExecuteScalar() != null)
                         {
+                            
                             Session["username"] = username.Text;
-                            Label1.Text = "hello world!";
+                            Label1.Text = "running " + cmd.ExecuteScalar().ToString();
                             string v = Session["username"].ToString();
                             
                             Response.Redirect("/OnSession/dashboard/dasdboard.aspx");

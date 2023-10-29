@@ -15,21 +15,32 @@ namespace MATH1.OnSession
         int gradeLevel = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-            gradeLevel = gradeLevel = Int32.Parse(blue.getGradeLevel(Session["username"].ToString()));
+            if(Session["username"]==null)
+            {
+                Response.Redirect("/Login/LogIn.aspx");
+            }
+            try
+            {
+                gradeLevel = gradeLevel = Int32.Parse(blue.getGradeLevel(Session["username"].ToString()));
 
-            if (gradeLevel == 1 || gradeLevel == 2)
-            {
-                Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/16";
+                if (gradeLevel == 1 || gradeLevel == 2)
+                {
+                    Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/16";
+                }
+                else if (gradeLevel == 3 || gradeLevel == 4)
+                {
+                    Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/24";
+                }
+                else if (gradeLevel == 5 || gradeLevel == 6)
+                {
+                    Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/34";
+                }
             }
-            else if (gradeLevel == 3 || gradeLevel == 4)
+            catch(Exception err)
             {
-                Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/24";
+                Label1.Text = "May null sa database";
             }
-            else if (gradeLevel == 5 || gradeLevel == 6)
-            {
-                Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/34";
-            }
-
+            
 
 
             ////if no teacher star is hidden

@@ -80,24 +80,21 @@ namespace MATH1
             {
                 cons.Open();
 
-                string query = "SELECT score FROM students  where username =@user";
+                string query = "SELECT score FROM students where username =@user";
                 try
                 {
                     using (MySqlCommand cmd = new MySqlCommand(query, cons))
                     {
                         cmd.Parameters.AddWithValue("@user", val);
-
-                        if (cmd.ExecuteScalar() != null)
+                        score = cmd.ExecuteScalar().ToString();
+                        if (cmd.ExecuteScalar() == null)
                         {
-                            score = cmd.ExecuteScalar().ToString();
-                            return score;
-
+                            return "0";
                         }
                         else
                         {
-                            return "error";
+                            return score;
                         }
-
                     }
                 }
                 catch (Exception error)
@@ -223,7 +220,7 @@ namespace MATH1
             {
                 cons.Open();
 
-                string query = "SELECT teacher FROM classlist  where stud_id =@user";
+                string query = "SELECT teacher.FirstName FROM `classlist` inner join teacher on classlist.teacher_id = teacher.teacher_id where stud_id =@user";
                 try
                 {
                     using (MySqlCommand cmd = new MySqlCommand(query, cons))
@@ -259,7 +256,7 @@ namespace MATH1
             {
                 cons.Open();
 
-                string query = "SELECT concat(FirsName,' ',Lastname) FROM students  where id =@user or username =@user";
+                string query = "SELECT concat(FirstName,' ',Lastname) FROM students  where stud_id =@user or username =@user";
                 try
                 {
                     using (MySqlCommand cmd = new MySqlCommand(query, cons))
@@ -293,7 +290,7 @@ namespace MATH1
             {
                 cons.Open();
 
-                string query = "SELECT id FROM students  where id =@user or username =@user";
+                string query = "SELECT stud_id FROM students  where id =@user or username =@user";
                 try
                 {
                     using (MySqlCommand cmd = new MySqlCommand(query, cons))

@@ -34,13 +34,17 @@ namespace MATH1.OnSession
                 {
                     cons.Open();
 
-                    MySqlCommand utos = new MySqlCommand("select distinct topic, score from achievement where stud_id ='" + blue.getId(Session["username"].ToString()) + "' and typeOfTask ='exercise'", cons);
+                    MySqlCommand utos = new MySqlCommand("select distinct score_title, score from achievements where stud_id ='" + blue.getId(Session["username"].ToString()) + "' and typeOfTask ='exercise'", cons);
                     MySqlDataReader myRead = utos.ExecuteReader();
                     if (myRead.HasRows == true)
                     {
                         GridView1.DataSource = myRead;
                         GridView1.DataBind();
 
+                    }
+                    else
+                    {
+                        Label1.Text = "nothing here";
                     }
                     cons.Close();
                 }
@@ -56,13 +60,17 @@ namespace MATH1.OnSession
                 {
                     cons.Open();
 
-                    MySqlCommand utos = new MySqlCommand("select distinct topic, score from achievement where stud_id ='" + blue.getId(Session["username"].ToString()) + "' and typeOfTask ='quiz'", cons);
+                    MySqlCommand utos = new MySqlCommand("select distinct score_title, score from achievements where stud_id ='" + blue.getId(Session["username"].ToString()) + "' and typeOfTask ='quiz'", cons);
                     MySqlDataReader myRead = utos.ExecuteReader();
                     if (myRead.HasRows == true)
                     {
                         GridView2.DataSource = myRead;
                         GridView2.DataBind();
 
+                    }
+                    else
+                    {
+                        Label1.Text = "nothing here";
                     }
                     cons.Close();
                 }
