@@ -80,7 +80,7 @@
     <!--2nd-->
 
 
-    <div style="text-align: center;" class="w3-container w3-card w3-deep-purple">
+    <div style="text-align: center; color:black;" class="w3-container w3-card w3-white">
         <h3 style="font-family: 'Gill Sans MT'"><b>LEARN MATH, THE EASY WAY.</b></h3>
         <p style="margin: 5px; font-family: 'Gill Sans MT'; font-size: 25px;">MATHiNIQUE offers wide range of topics and concepts to learn in just touch of a finger.</p>
     </div>
@@ -132,7 +132,7 @@
 
 
     <!--4th-->
-    <div style="text-align: center;" class="w3-amber w3-hoverable ">
+    <div style="text-align: center;" class="w3-white w3-hoverable ">
         <h1 style="font-family: 'Gill Sans MT'; font-size: 35px"><b>TOPICS</b></h1>
         <center>
             <!--1-->
@@ -313,7 +313,7 @@
 
     </div>
 
-    <div style="font-family: 'Gill Sans MT'; font-size: 30px; border-radius: 10px 10px;" class="w3-row w3-margin-bottom w3-card w3-amber">
+    <div style="font-family: 'Gill Sans MT'; font-size: 30px; border-radius: 10px 10px;" class="w3-row w3-margin-bottom">
         <div style="background-size: cover; background-repeat: no-repeat; background-image: url('https://images.theconversation.com/files/339942/original/file-20200604-67393-1dej576.jpg?ixlib=rb-1.1.0&rect=0%2C22%2C994%2C633&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip')" class="w3-half">
             <br />
             <br />
@@ -355,8 +355,8 @@
     <!--join-->
 
     <section style="color: black;" class="first">
-
-        <a class="button2" href="/Main/AccountPge/AccountPge.aspx" style="font-size:50px;font-family: 'Gill Sans MT';"><b>LEARN MATH NOW!</b></a>
+        <p>Want to join?</p>
+        <a class="button2" href="/Main/AccountPge/AccountPge.aspx" style="font-size:50px;font-family: 'Gill Sans MT';"><b>Learn math now!</b></a>
     </section>
 
 

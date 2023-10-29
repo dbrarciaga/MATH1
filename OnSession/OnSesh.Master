@@ -8,11 +8,13 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="/Main/cloud.css">
     <style>
-        .bgPattern{    
-            background-color: #f5ad42;
-            background: linear-gradient(to bottom, #f5ad42 1%,#5d3c96 100%);       
+        .body{    
+            
+            background-color: #87cef5;      
         }
               
         li, a, button{
@@ -91,30 +93,48 @@
         setInterval(autoRefresh, 900000);
     </script>
 </head>
-<body class="bgPattern">
-    <form id="form1" runat="server">
-        <div class="w3-sidebar w3-bar-block w3-hide-small w3-hide-medium w3-card w3-animate-left" style="width: 300px;" id="mySidebar">
-            <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
-            <a class="w3-bar-item w3-amber w3-button">
-                <h3 class="w3-bar-item">MATHiNIQUE</h3>
-            </a>
-            <a style="font-family: 'Comic Sans MS'; font-size: 20px">
-                <img runat="server" src="https://i.imgur.com/AwHUIaV.png" title="source: imgur.com" style="height: 100px; width: 100px;" />
-                <asp:Label ID="Label1" runat="server" Text=""></asp:Label></a>
-            <a style="font-size: 25px;" href="/OnSession/dashboard/dasdboard.aspx" class="w3-bar-item w3-button">Dashboard</a>
-            <a style="font-size: 25px;" class="w3-bar-item w3-button"></a>
-            <a style="font-size: 25px;" href="#">
-                <asp:Button ID="logOut" runat="server" Text="Log-out" CssClass="w3-bar-item w3-button" OnClick="logOut_Click" /></a>
-        </div>
-        <div class="w3-main" style="margin-left: 200px">
-            <button onclick="w3_open()">&#9776;</button>
-        </div>
+<body style="background-color:#87cef5;" class="container">
+    <div id="cloud-intro">
+        <form id="form1" runat="server">
 
-        <asp:Label ID="stars" runat="server" Text="Label"></asp:Label>
-        <div style="margin-left: 22%">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <div class="w3-row w3-white w3-hide-small w3-hide-medium" style="height:53px;">
+              <div class="w3-col  w3-container" style="width:15%; height:53px;"></div>
+              <div class="w3-col  w3-container" style="width:35%; height:53px;"><h3 class="w3-bar-item">MATHiNIQUE</h3></div>
+              <div class="w3-col  w3-container" style="width:10%; height:53px;">
+                <img runat="server" src="https://i.imgur.com/AwHUIaV.png" title="source: imgur.com" style="height: 53px; width: 50px;" />
+                <asp:Label ID="Label1" runat="server" Text=""></asp:Label></div>
+              <div class="w3-col  w3-container" style="width:25%; height:53px;"><asp:Button ID="logOut" runat="server" Text="Log-out" style=" float:right;" CssClass="w3-bar-item w3-button" OnClick="logOut_Click" /></div>
+              <div class="w3-col  w3-container" style="width:15%; height:53px;"></div>
+            </div>
+
+            <div class="w3-dropdown-hover w3-container w3-hide-large w3-medium">
+                <h1>≡</h1>
+                <div class="w3-dropdown-content">
+                    <ul class="nav_links">
+                        <li><a class="w3-button w3-black" style="font-size: 25px">MATHiNIQUE</a></li>
+
+                        <li><a class="w3-button w3-black" style="font-size: 25px" href="/Main/testing.aspx">About Us</a></li>
+
+
+                        <li><a class="w3-button w3-black" style="font-size: 25px" href="/Main/contacts.aspx">Contacts</a></li>
+
+
+                        <li><a class="w3-button w3-black" style="font-size: 25px" href="/Main/Login/LogIn.aspx">Log-In</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+        
+        <div style="margin-left:8%">
+            <br />
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+           
+        
     </form>
+    </div>
 </body>
 </html>
