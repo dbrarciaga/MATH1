@@ -239,12 +239,12 @@ namespace MATH1.Story
 
             Label5.Text = score + "/4";
             Button5.Visible = false;
-            int isCompleted = 1;
+            
 
             //ex1 
             string connectionString = "server=localhost;user id=root;database=math1";
             MySqlConnection conn = new MySqlConnection(connectionString);
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO achievement(`stud_id`, `topic`, `isCompleted`, `score`, `typeOfTask`) values ('" + blue.getId(Session["username"].ToString()) + "','" + title1.Text + "','" + isCompleted + "','" + score + "','" + "Exercise" + "');", conn);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO achievements(`score_title`, `score`,`stud_id`, `typeOfTask`) values ('" + title1.Text + "','" + score + "','" + blue.getId(Session["username"].ToString()) + "','" + "Exercise" + "');", conn);
 
             try
             {

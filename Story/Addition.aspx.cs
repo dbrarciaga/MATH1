@@ -220,8 +220,7 @@ namespace MATH1.Story
         {
 
             Label5.Text = score + "/4";
-            Button5.Visible = false;
-            int isCompleted = 1;
+            Button5.Visible = false;         
 
             //ex1 
             string connectionString = "server=localhost;user id=root;database=math1";
