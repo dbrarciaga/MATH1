@@ -69,15 +69,13 @@ namespace MATH1.OnSession
                 Response.Redirect("/Main/Login/LogIn.aspx");
             }
             //user.Text = Session["username"].ToString();            
-<<<<<<< Updated upstream
+
           
 
 
 
 
-=======
-            
->>>>>>> Stashed changes
+
 
 
         }

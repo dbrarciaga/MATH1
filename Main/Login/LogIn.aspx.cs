@@ -25,11 +25,9 @@ namespace MATH1.Main
             {
                
 
-<<<<<<< Updated upstream
-                string query = "SELECT username,pass FROM `students` WHERE username =@user AND pass=@pass";
-=======
+
                 string query = "SELECT stud_id from students where username = @user and pass =@pass";
->>>>>>> Stashed changes
+
                 try
                 {
                     cons.Open();
