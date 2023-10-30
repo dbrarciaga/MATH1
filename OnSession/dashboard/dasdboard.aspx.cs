@@ -15,8 +15,9 @@ namespace MATH1.OnSession
         string val = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-               numReq.Text = requestCount.ToString();
+        int id = blue.getId(Session["username"].ToString());
+
+            numReq.Text = requestCount.ToString();
            if(Session["username"]!=null)
             {
                val = Session["username"].ToString();
@@ -42,7 +43,7 @@ namespace MATH1.OnSession
                         {
                             val = cmd.ExecuteScalar().ToString();
                             //blue.query("select teacher from classlist where stud_id = '"+ Session["username"] + "'");
-                            teacher.Text = blue.getTeacher(val);
+                            teacher.Text = blue.getTeacher(val) +'('+ blue.getTeacherID(id.ToString())+')';
                             Label1.Text = blue.getInfo(val);
                             cons.Close();
 

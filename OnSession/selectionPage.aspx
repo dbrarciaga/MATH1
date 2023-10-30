@@ -48,17 +48,17 @@
     </style>
     
     
-    <div style=" padding-bottom:31.01%;" id="form1" class="bgPattern w3-container">
+    <div style=" padding-bottom:31.01%; color:black;" id="form1" class="bgPattern w3-container">
         <a href="/OnSession/dashboard/dasdboard.aspx" class="w3-button w3-white w3-round-large"><h4><</h4>  </a>
 
-        <h2  class="w3-container" style="color:white; text-align:center"><b><asp:Label ID="Label1" runat="server" Text="Grade" CssClass="w3-container"></asp:Label></b></h2>
+        <h2  class="w3-container" style="color:black; text-align:center"><b><asp:Label ID="Label1" runat="server" Text="Grade" CssClass="w3-container"></asp:Label></b></h2>
        
 
        
-           <center><i style="color:white">Select a topic</i> </center>
+           <center><i style="color:black">Select a topic</i> </center>
             <!-- first row -->
         
-            <div class="w3-row-padding">
+            <div style="color:black;" class="w3-row-padding">
                 <asp:LinkButton ID="LinkButton1" runat="server" CssClass="w3-third w3-mobile w3-margin-top" OnClick="LinkButton1_Click" class="no-refresh">
   	                <img src="https://i.imgur.com/FmXDahQ.png" style="width:350px; height:350px" class="w3-round-large">
   	                <div style="width:350px; text-align:center; color:white;">

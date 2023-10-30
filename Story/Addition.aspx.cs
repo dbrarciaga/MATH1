@@ -220,12 +220,12 @@ namespace MATH1.Story
         {
 
             Label5.Text = score + "/4";
-            Button5.Visible = false;         
-
+            Button5.Visible = false;
+            int id = blue.getId(Session["username"].ToString());
             //ex1 
             string connectionString = "server=localhost;user id=root;database=math1";
             MySqlConnection conn = new MySqlConnection(connectionString);
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO achievements(`score_title`, `score`,`stud_id`, `typeOfTask`) values ('" + title1.Text + "','" + score + "','" + blue.getId(Session["username"].ToString()) + "','" + "Exercise" + "');", conn);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO achievements(`score_title`, `score`,`stud_id`,`teacher_id`, `typeOfTask`) values ('" + title1.Text + "','" + score + "','" + id  + "','"+blue.getTeacherID(id.ToString()) +"','" + "Exercise" + "');", conn);
 
             try
             {

@@ -247,6 +247,42 @@ namespace MATH1
             }
 
         }
+        //geting teacherID from classlist
+        public string getTeacherID(string val)
+        {
+            string score = "";
+            string waow = "server=localhost;user id=root;database=math1";
+            using (MySqlConnection cons = new MySqlConnection(waow))
+            {
+                cons.Open();
+
+                string query = "SELECT teacher_id FROM `classlist` where stud_id =@user";
+                try
+                {
+                    using (MySqlCommand cmd = new MySqlCommand(query, cons))
+                    {
+                        cmd.Parameters.AddWithValue("@user", val);
+
+                        if (cmd.ExecuteScalar() != null)
+                        {
+                            score = cmd.ExecuteScalar().ToString();
+                            return score;
+
+                        }
+                        else
+                        {
+                            return "No teacher assigned";
+                        }
+
+                    }
+                }
+                catch (Exception error)
+                {
+                    return error.ToString();
+                }
+            }
+
+        }
         //getting Firstname
         public string getInfo(string val)
         {
@@ -290,7 +326,7 @@ namespace MATH1
             {
                 cons.Open();
 
-                string query = "SELECT stud_id FROM students  where id =@user or username =@user";
+                string query = "SELECT stud_id FROM students  where stud_id =@user or username =@user";
                 try
                 {
                     using (MySqlCommand cmd = new MySqlCommand(query, cons))
