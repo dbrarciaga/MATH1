@@ -69,7 +69,7 @@ namespace MATH1.Teacher
             }
             else
             {
-                Label2.Text = blue.getInfo(Session["username"].ToString());
+                Label2.Text = blue.query2("Select FirstName from teacher where username = '"+Session["username"].ToString()+"'");
                 getRole(Session["username"].ToString());
             }
             if (gr1 == 1)
@@ -96,7 +96,38 @@ namespace MATH1.Teacher
             {
                 LinkButton6.Visible = true;
             }
+            string waow = "server=localhost;user id=root;database=math1";
+            using (MySqlConnection cons = new MySqlConnection(waow))
+            {
+                string teacher = blue.query2("select teacher_id from teacher where username='"+Session["username"]+"'");
 
+                try
+                {
+
+                    cons.Open();
+
+                    MySqlCommand utos = new MySqlCommand("select concat(students.FirstName ,' ', students.LastName) as 'Student Name', students.GradeLevel as 'Grade', section from classlist inner join students on classlist.stud_id = students.stud_id where teacher_id = '" + teacher + "'  ", cons);
+                    MySqlDataReader myRead = utos.ExecuteReader();
+
+                    if (myRead.HasRows == true)
+                    {
+                        GridView1.DataSource = myRead;
+                        GridView1.DataBind();
+                        Label1.Text = " ";
+                    }
+                    else
+                    {
+                        Label1.Text = "<div class='button1'> user not found! </div>";
+
+                    }
+
+                }
+                catch (Exception err)
+                {
+                    Label1.Text = err.ToString();
+                }
+                cons.Close();
+            }
 
         }
 

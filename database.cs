@@ -21,7 +21,29 @@ namespace MATH1
             set { role = value;  }
         }
         //methods
+        // QUERY
+        public string query2(string user)
+        {
+            string connectionString = "server=localhost;user id=root;database=math1";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
 
+                MySqlCommand cmd = new MySqlCommand(user, conn);
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    string wow = reader.GetString(0);
+                    return wow;
+                }
+                else
+                {
+                    return null;
+                    //noice
+                }
+            }
+        }
 
         // QUERY
         public string query(string user)
