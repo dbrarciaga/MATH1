@@ -25,6 +25,7 @@ namespace MATH1.OnSession
             {
                 Label1.Text = err.ToString();
             }
+            Label1.Text = blue.getScore(Session["username"].ToString());
             /////////////
             ///
             string waow = "server=localhost;user id=root;database=math1";
@@ -34,7 +35,7 @@ namespace MATH1.OnSession
                 {
                     cons.Open();
 
-                    MySqlCommand utos = new MySqlCommand("select distinct score_title, score from achievements where stud_id ='" + blue.getId(Session["username"].ToString()) + "' and typeOfTask ='exercise'", cons);
+                    MySqlCommand utos = new MySqlCommand("select distinct score_title as 'Name', score from achievements where stud_id ='" + blue.getId(Session["username"].ToString()) + "' and typeOfTask ='exercise'", cons);
                     MySqlDataReader myRead = utos.ExecuteReader();
                     if (myRead.HasRows == true)
                     {
