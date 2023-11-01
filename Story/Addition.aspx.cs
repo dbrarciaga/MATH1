@@ -25,6 +25,8 @@ namespace MATH1.Story
         static string qTitle11;
         static string addQ11;
         static string ex1Img1;
+        static string ex1Img2;
+        static string ex1Img3;
         static string ex1Aud1;
         static int ans11;
         
@@ -86,12 +88,17 @@ namespace MATH1.Story
                                 qTitle11 = reader.GetString("questionTitle");
                                 addQ11 = reader.GetString("question");
                                 ex1Img1 = reader.GetString("exercise_image");
+                                ex1Img2 = reader.GetString("exercise_image2");
+                                ex1Img3 = reader.GetString("exercise_image3");
+
                                 ex1Aud1 = reader.GetString("exercise_audio");
                                 ans11 = Int32.Parse(reader.GetString("answer"));
 
                                 qTitle1.Text = qTitle11;
                                 addQ1.Text = addQ11;
                                 ex1Img.Src = ex1Img1;
+                                ex1Img2s.Src = ex1Img2;
+                                ex1Img3s.Src = ex1Img3;
                                 ex1Aud.Src = ex1Aud1;
                                 ans1 = ans11;
 
@@ -114,6 +121,7 @@ namespace MATH1.Story
         protected void submit_Click1(object sender, EventArgs e)
 
         {
+   
 
             if (TextBox1.Text == "" || TextBox1.Text == "=")
             {
@@ -125,6 +133,8 @@ namespace MATH1.Story
             }
             else if (TextBox1.Text == ans11.ToString())
             {
+               
+
                 counter = counter + 1;
                 TextBox1.Text = "=";
                 Label1.Text = "Good Job your answer is correct, You Get (1) Star!";
@@ -242,6 +252,8 @@ namespace MATH1.Story
 
             
         }
+
+
 
 
     }

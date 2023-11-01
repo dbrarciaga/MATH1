@@ -24,6 +24,15 @@ namespace MATH1.Story
         protected global::System.Web.UI.WebControls.Label title1;
 
         /// <summary>
+        /// fire control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl fire;
+
+        /// <summary>
         /// xrsc control.
         /// </summary>
         /// <remarks>
@@ -76,6 +85,24 @@ namespace MATH1.Story
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlImage ex1Img;
+
+        /// <summary>
+        /// ex1Img2s control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage ex1Img2s;
+
+        /// <summary>
+        /// ex1Img3s control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage ex1Img3s;
 
         /// <summary>
         /// TextBox1 control.

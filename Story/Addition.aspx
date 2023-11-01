@@ -208,9 +208,165 @@
             .step.finish {
                 background-color: #04AA6D;
             }
+
+            .image{
+                height:80%;
+                width:80%;
+            }
+
+
+
+        @keyframes firework {
+            0% {
+                transform: translate(var(--x), var(--initialY));
+                width: var(--initialSize);
+                opacity: 1;
+            }
+
+            50% {
+                width: 0.5vmin;
+                opacity: 1;
+            }
+
+            100% {
+                width: var(--finalSize);
+                opacity: 0;
+            }
+        }
+
+        /* @keyframes fireworkPseudo {
+  0% { transform: translate(-50%, -50%); width: var(--initialSize); opacity: 1; }
+  50% { width: 0.5vmin; opacity: 1; }
+  100% { width: var(--finalSize); opacity: 0; }
+}
+ */
+        .firework,
+        .firework::before,
+        .firework::after {
+            --initialSize: 0.5vmin;
+            --finalSize: 45vmin;
+            --particleSize: 0.2vmin;
+            --color1: yellow;
+            --color2: khaki;
+            --color3: white;
+            --color4: lime;
+            --color5: gold;
+            --color6: mediumseagreen;
+            --y: -30vmin;
+            --x: -50%;
+            --initialY: 60vmin;
+            content: "";
+            animation: firework 2s infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, var(--y));
+            width: var(--initialSize);
+            aspect-ratio: 1;
+            background:
+            /*
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 0%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 0%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 100%,
+    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 100%,
+    */
+            radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 50% 0%, radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 50%, radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 50% 100%, radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 0% 50%,
+            /* bottom right */
+            radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 80% 90%, radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 95% 90%, radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 90% 70%, radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 60%, radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 55% 80%, radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 70% 77%,
+            /* bottom left */
+            radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 22% 90%, radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 45% 90%, radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 70%, radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 10% 60%, radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 31% 80%, radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 28% 77%, radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 13% 72%,
+            /* top left */
+            radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 80% 10%, radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 95% 14%, radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 90% 23%, radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 100% 43%, radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 85% 27%, radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 77% 37%, radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 60% 7%,
+            /* top right */
+            radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 22% 14%, radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 45% 20%, radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 34%, radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 10% 29%, radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 31% 37%, radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 28% 7%, radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 13% 42%;
+            background-size: var(--initialSize) var(--initialSize);
+            background-repeat: no-repeat;
+        }
+
+            .firework::before {
+                --x: -50%;
+                --y: -50%;
+                --initialY: -50%;
+                /*   transform: translate(-20vmin, -2vmin) rotate(40deg) scale(1.3) rotateY(40deg); */
+                transform: translate(-50%, -50%) rotate(40deg) scale(1.3) rotateY(40deg);
+                /*   animation: fireworkPseudo 2s infinite; */
+            }
+
+            .firework::after {
+                --x: -50%;
+                --y: -50%;
+                --initialY: -50%;
+                /*   transform: translate(44vmin, -50%) rotate(170deg) scale(1.15) rotateY(-30deg); */
+                transform: translate(-50%, -50%) rotate(170deg) scale(1.15) rotateY(-30deg);
+                /*   animation: fireworkPseudo 2s infinite; */
+            }
+
+            .firework:nth-child(2) {
+                --x: 30vmin;
+            }
+
+                .firework:nth-child(2),
+                .firework:nth-child(2)::before,
+                .firework:nth-child(2)::after {
+                    --color1: pink;
+                    --color2: violet;
+                    --color3: fuchsia;
+                    --color4: orchid;
+                    --color5: plum;
+                    --color6: lavender;
+                    --finalSize: 40vmin;
+                    left: 30%;
+                    top: 60%;
+                    animation-delay: -0.25s;
+                }
+
+            .firework:nth-child(3) {
+                --x: -30vmin;
+                --y: -50vmin;
+            }
+
+                .firework:nth-child(3),
+                .firework:nth-child(3)::before,
+                .firework:nth-child(3)::after {
+                    --color1: cyan;
+                    --color2: lightcyan;
+                    --color3: lightblue;
+                    --color4: PaleTurquoise;
+                    --color5: SkyBlue;
+                    --color6: lavender;
+                    --finalSize: 35vmin;
+                    left: 70%;
+                    top: 60%;
+                    animation-delay: -0.4s;
+                }
+
+                .input-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type=radio]:checked + label>img {
+  border: 1px solid #fff;
+  box-shadow: 0 0 3px 3px #090;
+}
+
+/* Stuff after this is only to make things more pretty */
+input[type=radio] + label>img {
+  width: 16px;
+  height: 16px;
+  transition: 500ms all;
+}
+
+input[type=radio]:checked + label>img {
+  transform: 
+    rotateZ(-10deg) 
+    rotateX(10deg);
+}
+
     </style>
 
 
+    
 
 
     <section style="text-align: center;" class="w3-container">
@@ -236,14 +392,12 @@
             <div class="w3-container w3-half">
                 <p style="font-family: 'Comic Sans MS'; text-align: center; font-size: 45px;"><b>How?</b></p>
                 <p style="font-family: 'Comic Sans MS'; text-align: center; font-size: 30px;">
-                    We add large numbers in the same way as we work with other numbers. 
-                    We arrange the numbers in a column according to their place values. 
-                    The addition process begins from the ones column, the next tens column, the hundreds column, and so on.         
+                    Addition is when you combine numbers to make a bigger number. Use + to show addition. To add 3 Monsters and 1 Monster together, you put them together and count them up.   
                 </p>
                 <p>
                     <center>
                         <audio controls>
-                            <source src="https://feeds.soundcloud.com/stream/1447506049-rencee-c-banez-addhow.mp3" type="audio/mpeg" />
+                            <source src="https://feeds.soundcloud.com/stream/1654265469-rencee-c-banez-addg1.mp3" type="audio/mpeg" />
                         </audio>
                     </center>
                 </p>
@@ -252,7 +406,7 @@
 
             <div class="w3-container w3-half w3-mobile">
                 <a>
-                    <img style="height: 100%; width: 100%;" src="https://i.imgur.com/fygWzCC.gif" title="source: imgur.com" /></a>
+                 <img class="image" src="https://i.imgur.com/N40OD7K.png" title="source: imgur.com" /></a>
             </div>
 
         </div>
@@ -266,9 +420,24 @@
 
 
     <div id="regForm">
-
-        <!-- 
-
+         <div id="fire" runat="server" class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        
       <!--Exercise1-->
         <section class="secBlack">
             <div runat="server" id="xrsc" visible="true">
@@ -280,7 +449,7 @@
                     <asp:label runat="server" ID="exercisenum" class="w3-container w3-mobile second" style="font-family: 'Comic Sans MS'; margin-bottom: 25px; font-size: 500%"/>
                 </center>
                 <!--first row-->
-                <div style="font-size: 30px;" class="w3-row w3-border w3-white w3-mobile">
+                <div style="font-size: 30px;" class="w3-row w3-border w3-white w3-mobile">   
                     <div style="font-family: 'Comic Sans MS'; text-align: center;" class="w3-container w3-half">
                         <h2 style="font-family: 'Comic Sans MS';">
                             <asp:Label runat="server" ID="qTitle1" Text=""></asp:Label>
@@ -294,9 +463,38 @@
                             </audio>
                         </center>
                     </div>
+                    <!--rad-->
                     <div class="w3-container w3-half">
-                        <img id="ex1Img" runat="server" style="height: 100%; width: 100%; padding: 20%;" src="" class="w3-half picSize" />
+                        <input  type="radio" name="opt" id="ew" class="input-hidden" value="12" onclick="displayRadioValue()"  />
+                        <label for="ew">
+                            <img  id="ex1Img" runat="server" style="height: 40%; width: 40%; padding: 1%;" src=""  />
+                        </label>
+
+                        <input  type="radio" name="opt" id="we" class="input-hidden" value="11" />
+                        <label for="we">
+                            <img  id="ex1Img2s" runat="server" style="height: 40%; width: 40%; padding: 1%;" src="" />
+                        </label>
+                         <input type="radio" name="opt" id="ww" class="input-hidden" value="13" />
+                        <label for="ww">
+                           <img  id="ex1Img3s" runat="server" style="height: 40%; width: 40%; padding: 1%;" src=""  />
+                        </label>
+                      
+                          <script>
+                              function displayRadioValue() {
+                                  var ele = document.getElementsByName('opt');
+
+                                  for (i = 0; i < ele.length; i++) {
+                                      if (ele[i].checked)
+                                          document.getElementById("TextBox1").innerHTML.t
+                                              = "Gender: " + ele[i].value;
+                                  }
+                              }
+                          </script>
+
                     </div>
+                    <!--rad-->
+                     <div>
+    
                 </div>
                 <!--2nd row-->
                 <div class="w3-row w3-border  w3-mobile">
@@ -305,6 +503,7 @@
 
                             <asp:TextBox Style="width: 30%" AutoCompleteType="Disabled" ID="TextBox1" runat="server" onFocus="if (this.value == this.defaultValue) { this.value = ''; }">=</asp:TextBox>
                             <br />
+                           
                             <asp:Button CssClass="button2" ID="Button2" runat="server" Text="SUBMIT" OnClick="submit_Click1" />
                         </div>
                     </center>
@@ -314,6 +513,8 @@
                 </h2>
             </div>
         </section>
+
+        
 
  <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -390,6 +591,14 @@
         <br />
         <br />
         <br />
+        
+        <audio id="mybg" controls autoplay loop hidden visible="false" >
+        <source src="https://feeds.soundcloud.com/stream/1654313922-rencee-c-banez-happy.mp3" loop="true" type="audio/mpeg" />
+    </audio>
+        <script>
+            var audio = document.getElementById("mybg");
+            audio.volume = 0.1;
+        </script>
     </section>
     <!--end-->
 

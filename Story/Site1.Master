@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
         .bgPattern{    
-           background-color: #f5ad42;
+             background-color:skyblue;     
             opacity: 1;           
-            background-image: radial-gradient(#000000 0.75px, #f5ad42 0.75px);
+            background-image: radial-gradient(#000000 0.75px, skyblue 0.75px);
             background-size: 15px 15px;
             margin:0;
             padding:0;
