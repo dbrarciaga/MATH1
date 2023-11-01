@@ -31,7 +31,7 @@
                     </a>
                 </div>
            <div style="width:1000px;" class="w3-row-padding">
-                    <a style="width:40%" href="TeacherList.aspx" class="w3-button w3-quarter w3-container w3-white w3-round-large w3-margin">
+                    <a href="Enroll.aspx" style="width:40%" href="TeacherList.aspx" class="w3-button w3-quarter w3-container w3-white w3-round-large w3-margin">
                         <h4>Enroll a student</h4>
                         
                     </a>
