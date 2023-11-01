@@ -43,6 +43,7 @@ namespace MATH1.Teacher
         }
         protected void Page_Load(object sender, EventArgs e)
         {
+            string teacher = blue.query2("select teacher_id from teacher where username='" + Session["username"] + "'");
             LinkButton1.Visible = false;
             LinkButton2.Visible = false;
             LinkButton3.Visible = false;
@@ -94,7 +95,7 @@ namespace MATH1.Teacher
 
                     cons.Open();
 
-                    MySqlCommand utos = new MySqlCommand("select * from achievement where stud_id = '" + TextBox1.Text + "' ", cons);
+                    MySqlCommand utos = new MySqlCommand("select concat(students.FirstName,' ',students.LastName) as 'Student', score_title as 'Activity', achievements.score as 'Score' from achievements inner join students on achievements.stud_id = students.stud_id where achievements.stud_id = '" + TextBox1.Text + "' or students.username = '"+TextBox1.Text+"' ", cons);
                     MySqlDataReader myRead = utos.ExecuteReader();
                     if (myRead.HasRows == true)
                     {
