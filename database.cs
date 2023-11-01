@@ -24,24 +24,31 @@ namespace MATH1
         // QUERY
         public string query2(string user)
         {
-            string connectionString = "server=localhost;user id=root;database=math1";
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            try
             {
-                conn.Open();
-
-                MySqlCommand cmd = new MySqlCommand(user, conn);
-
-                MySqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
+                string connectionString = "server=localhost;user id=root;database=math1";
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
-                    string wow = reader.GetString(0);
-                    return wow;
+                    conn.Open();
+
+                    MySqlCommand cmd = new MySqlCommand(user, conn);
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        string wow = reader.GetString(0);
+                        return wow;
+                    }
+                    else
+                    {
+                        return null;
+                        //noice
+                    }
                 }
-                else
-                {
-                    return null;
-                    //noice
-                }
+            }
+            catch(Exception error)
+            {
+                return error.ToString();
             }
         }
 

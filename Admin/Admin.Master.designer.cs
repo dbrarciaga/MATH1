@@ -42,13 +42,13 @@ namespace MATH1.Admin
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// logout control.
+        /// logOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button logout;
+        protected global::System.Web.UI.WebControls.Button logOut;
 
         /// <summary>
         /// ContentPlaceHolder1 control.

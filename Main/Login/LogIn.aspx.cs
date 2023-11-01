@@ -44,6 +44,11 @@ namespace MATH1.Main
                             
                             Response.Redirect("/OnSession/dashboard/dasdboard.aspx");
                         }
+                        else if(username.Text == "admin" && password.Text == "1234")
+                        {
+                            Session["username"] = username.Text;
+                            Response.Redirect("/Admin/AdminDash.aspx");
+                        }
                         else if (username.Text == "" || password.Text == "")
                         {
                             Label1.Text = "fill the required fields";

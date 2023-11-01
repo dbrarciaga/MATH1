@@ -8,7 +8,9 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="/Main/cloud.css">
 
     <style>
         .bgPattern{    
@@ -76,20 +78,21 @@
         }
     </style>
 </head>
-<body class="bgPattern">
-    <form id="form1" runat="server">
-        <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
-             <h3 class="w3-bar-item">MATHiNIQUE</h3>
-              <a href="/Admin/AdminDash.aspx" class="w3-bar-item w3-button"><asp:Label ID="Label1" runat="server" Text=" Admin"></asp:Label></a>
-            <a href="ManageAccount.aspx" class="w3-bar-item w3-button">Manage user</a>
-            <a href="SetTeacher.aspx" class="w3-bar-item w3-button">Enroll Student</a>
-            <asp:Button ID="logout" runat="server" Text="logout" OnClick="logout_Click" CssClass="w3-bar-item w3-button" />
-        </div>
-        <li></li>
-        <div style="margin-left: 5%">
+<body class="container">
+    <div id="cloud-intro">
+        <form id="form1" runat="server">
+        <div class="w3-row w3-white w3-hide-small w3-hide-medium" style="height:53px;">
+              <div class="w3-col  w3-container" style="width:15%; height:53px;"></div>
+              <div class="w3-col  w3-container" style="width:35%; height:53px;"><a href="dasdboard.aspx"><h3 class="w3-bar-item">MATHiNIQUE</h3></a></div>
+              <div class="w3-col  w3-container" style="width:10%; height:53px;"><asp:Label ID="Label1" runat="server" Text=""></asp:Label></div>
+              <div class="w3-col  w3-container" style="width:25%; height:53px;"><asp:Button ID="logOut" runat="server" Text="Log-out" style=" float:right;" CssClass="w3-bar-item w3-button" OnClick="logout_Click" /></div>
+              <div class="w3-col  w3-container" style="width:15%; height:53px;"></div>
+            </div>
+        <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
             </asp:ContentPlaceHolder>
         </div>
     </form>
+    </div>
 </body>
 </html>
