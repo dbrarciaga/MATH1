@@ -57,55 +57,29 @@
     </style>
 
 
-    <div style="margin-left: 25%">
-        <h2 style="text-align: center">Welcome Admin!</h2>
-        <br />
-        <br />
-        <center>
-            <div class="w3-row-padding">
-            <div class="w3-quarter w3-card w3-white  w3-margin w3-round-large">
-                <h4>Teachers</h4>
-            </div>
-             <div class="w3-quarter w3-card w3-white  w3-margin w3-round-large">
-                 <h4>Students</h4>
-            </div>
-             <div class="w3-quarter w3-card w3-white  w3-margin w3-round-large">
-                    <h4>Request</h4>
-            </div>
-
-        </div>
-        </center>
-
-            <div  style="height:500px;" class="w3-container w3-white w3-card w3-white w3-round-large w3-margin">
-                TEACHERS
-                <br />
-                <br />
-                <asp:GridView ID="GridView1" CssClass="w3-table-all w3-hoverable" runat="server"></asp:GridView>
-                <asp:Label ID="Label2" runat="server" Text="  " ForeColor="#990000"></asp:Label>
-            </div>
-
-
-            <div  style="height:500px;" class="w3-container w3-white w3-card w3-white w3-round-large w3-margin">
-                STUDENTS
-                 <br />
-                <br />
-                <asp:GridView ID="GridView2" CssClass="w3-table-all w3-hoverable" runat="server"></asp:GridView>
-                <asp:Label ID="Label3" runat="server" Text="  " ForeColor="#990000"></asp:Label>
-            </div>
+    <div style="height:1000px" class="w3-container">
+       <div>
+            <h2 style="text-align: center">Welcome Admin!</h2>
+            <br />
+            <br />
             
-            <div  style="height:500px;" class="w3-container w3-white w3-card w3-white w3-round-large w3-margin">
-                PASSWORD REQUEST
-                <br />
-                <asp:GridView ID="GridView3" CssClass="w3-table-all w3-hoverable" runat="server"></asp:GridView>
-            </div>
+                <div style="width:1000px; " class="w3-row-padding">
+                <div class="w3-third w3-container w3-white w3-round-large">
+                    <h4>Teachers</h4>
+                    <h1><asp:Label ID="teacher" runat="server" Text="////"></asp:Label></h1>
+                </div>
+                 <div  class="w3-third w3-card w3-white  w3-round-large">
+                     <h4>Students</h4>
+                      <h1><asp:Label ID="students" runat="server" Text="////"></asp:Label></h1>
+                </div>
+                 <div  class="w3-third w3-card w3-white  w3-round-large">
+                        <h4>Request</h4>
+                      <asp:Label ID="request" runat="server" Text="////"></asp:Label>
+                </div>
 
-             <div class="w3-container w3-white w3-card w3-white w3-round-large w3-margin">
-                ENROLLMENT REQUEST
-                <br />
-                <br />
-                <asp:GridView ID="GridView4" CssClass="w3-table-all w3-hoverable " runat="server"></asp:GridView>
-                <asp:Label ID="Label4" runat="server" Text="  " ForeColor="#990000"></asp:Label>
-            </div>
+            </div>        
+       </div>
+
         
        
     </div>
