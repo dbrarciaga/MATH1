@@ -7,8 +7,10 @@
     <title>MATHiNIQUE</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="/Main/cloud.css">
     <style>
         .bgPattern{    
             background-color: #f5ad42;
@@ -81,20 +83,18 @@
         }
     </script>
 </head>
-<body class="bgPattern">
+<body class="container">
     <form id="form1" runat="server">
-        <div class="w3-sidebar w3-bar-block w3-hide-small w3-hide-medium w3-card w3-animate-left" style="width:300px;" id="mySidebar">
-             <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
-            <a href="#" class="w3-bar-item w3-amber w3-button"><h3 class="w3-bar-item">MATHiNIQUE</h3></a>
-             <a style="font-size:25px;" href="/OnSession/dashboard/dasdboard.aspx" class="w3-bar-item w3-button">Teacher's Dashboard</a>              
-              <a style="font-size:25px;" href="#"><asp:Button ID="logOut" runat="server" Text="Log-out" CssClass="w3-bar-item w3-button" OnClick="logOut_Click"/></a>
-        </div>
-        <div class="w3-main" style="margin-left:200px">
-        <button onclick="w3_open()" >&#9776;</button>        
-        </div>
+         <div class="w3-row w3-white w3-hide-small w3-hide-medium w3-card" style="height:53px;">
+              <div class="w3-col  w3-container" style="width:15%; height:53px;"></div>
+              <div class="w3-col  w3-container" style="width:35%; height:53px;"><a href="/Teacher/WebForm1.aspx"><h3 class="w3-bar-item">MATHiNIQUE</h3></a></div>
+              <div class="w3-col  w3-container" style="width:10%; height:53px;"></div>                
+              <div class="w3-col  w3-container" style="width:25%; height:53px;"><asp:Button ID="logOut" runat="server" Text="Log-out" style=" float:right;" CssClass="w3-bar-item w3-button" OnClick="logOut_Click" /></div>
+              <div class="w3-col  w3-container" style="width:15%; height:53px;"></div>
+            </div>
         
-         <asp:Label ID="stars" runat="server" Text="Label"></asp:Label> 
-        <div style="margin-left:22%">
+         <asp:Label ID="stars" runat="server" Text=" "></asp:Label> 
+        <div style="margin:100px;">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

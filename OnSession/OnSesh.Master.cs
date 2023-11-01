@@ -15,54 +15,36 @@ namespace MATH1.OnSession
         int gradeLevel = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-            gradeLevel = gradeLevel = Int32.Parse(blue.getGradeLevel(Session["username"].ToString()));
-
-            if (gradeLevel == 1 || gradeLevel == 2)
+            if(Session["username"]==null)
             {
-                Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/16";
+                Response.Redirect("/Login/LogIn.aspx");
             }
-            else if (gradeLevel == 3 || gradeLevel == 4)
+            try
             {
-                Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/24";
-            }
-            else if (gradeLevel == 5 || gradeLevel == 6)
-            {
-                Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/34";
-            }
+                gradeLevel = gradeLevel = Int32.Parse(blue.getGradeLevel(Session["username"].ToString()));
 
-            string val = Session["username"].ToString();
-            string waow = "server=localhost;user id=root;database=math1";
-            using (MySqlConnection cons = new MySqlConnection(waow))
-            {
-                cons.Open();
-
-                string query = "SELECT id FROM students where username =@user";
-                try
+                if (gradeLevel == 1 || gradeLevel == 2)
                 {
-                    using (MySqlCommand cmd = new MySqlCommand(query, cons))
-                    {
-                        cmd.Parameters.AddWithValue("@user", val);
-
-                        if (cmd.ExecuteScalar() != null)
-                        {
-                            val = cmd.ExecuteScalar().ToString();
-                            //blue.query("select teacher from classlist where stud_id = '"+ Session["username"] + "'");
-                            Label2.Text = blue.getInfo(val);
-                            cons.Close();
-
-                        }
-
-
-                    }
+                    Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/16";
                 }
-                catch (Exception error)
+                else if (gradeLevel == 3 || gradeLevel == 4)
                 {
-             
+                    Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/24";
+                }
+                else if (gradeLevel == 5 || gradeLevel == 6)
+                {
+                    Label1.Text = Int32.Parse(blue.getScore(Session["username"].ToString())).ToString() + "/34";
                 }
             }
+            catch(Exception err)
+            {
+                Label1.Text = "May null sa database";
+            }
+            
+
 
             ////if no teacher star is hidden
-
+       
 
 
 

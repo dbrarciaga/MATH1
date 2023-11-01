@@ -96,6 +96,7 @@
     <Content Include="Main\Register\WebForm1.aspx" />
     <Content Include="Main\Register\WebForm9.aspx" />
     <Content Include="Main\Register\WebForm11.aspx" />
+    <Content Include="Main\Login\LoginForTeacher.aspx" />
     <Content Include="Main\WelcomePage.aspx" />
     <Content Include="OnSession\dashboard\addQuiz.aspx" />
     <Content Include="OnSession\dashboard\dasdboard.aspx" />
@@ -203,6 +204,14 @@
       <DependentUpon>SetTeacher.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Main\Login\LoginForTeacher.aspx.cs">
+      <DependentUpon>LoginForTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Login\LoginForTeacher.aspx.designer.cs">
+      <DependentUpon>LoginForTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Story_Class.cs" />
     <Compile Include="Roster.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>

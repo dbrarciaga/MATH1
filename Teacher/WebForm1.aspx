@@ -10,8 +10,8 @@
         }
           
         </style>
-    <div > 
-        <div class="box">
+    <div style="height:1000px;" class="w3-display-middle"> 
+        <div class="box" style="margin-top:20%">
                 <center>
                     <h1 style="font-weight:bold; color:white;">Welcome Teacher <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label> !</h1>
                 </center>          
@@ -32,9 +32,16 @@
                     </h2> 
                 </a>
             </div>
+        
             <div class="w3-row">
-                <div style="width:90%; text-align:center;" class="w3-card w3-white w3-round-large w3-rest w3-margin">
+                
+                <div style="width:96%; text-align:center;" class="w3-card w3-white w3-round-large w3-rest w3-margin">
                 <h2 style="font-weight:bold;">Your class</h2>  
+                    <br />
+                    <center>
+                        <asp:GridView ID="GridView1" runat="server" CssClass="w3-table-all" Width="500px"></asp:GridView>
+                    </center>
+                    
                     <div class="w3-row w3-margin">
                         <asp:LinkButton ID="LinkButton1" runat="server" CssClass="w3-button w3-gray w3-round-large" OnClick="LinkButton1_Click" Height="80" Width="500px">Grade 1</asp:LinkButton>
                     </div>

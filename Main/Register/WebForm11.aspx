@@ -4,6 +4,8 @@
         <div class="w3-containter w3-white w3-round-large" style="width:550px">
             <h4>Finalization</h4>
             <br />
+            <asp:Label ID="email" runat="server" Text="Label"></asp:Label>
+            <br />
             <asp:Label ID="user" runat="server" Text=""></asp:Label>
             <br />
              <br />
@@ -18,9 +20,12 @@
              <br />
             <asp:Label ID="level" runat="server" Text=""></asp:Label>
             <br />
-        </div>
+       
         <br />
-        <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+        <p>Your ID: <asp:Label ID="Label1" runat="server" Text=""></asp:Label></p>
+            <br />
         <asp:Button ID="register" runat="server" Text="Register" Cssclass="w3-button w3-white" OnClick="register_Click"/>
+            <br />
+        </div>
    </center>
 </asp:Content>

@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="cloud.css">
     <style>
+ 
         .bgPattern {
+            background-color: #f5ad42;
             opacity: 1;
-            background-color: lightskyblue;
-            background: linear-gradient(to bottom, lightskyblue 1%,skyblue 100%);
+            background: linear-gradient(to bottom, #f5ad42 1%,#5d3c96 100%);
             background-size: 15px 15px;
             margin: 0;
             padding: 0;
@@ -32,9 +33,11 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 10%;
-            color: honeydew;
+
             left: 0;
-            width: 100%;
+            width:100%;
+          
+          
         }
 
         .title {
@@ -112,18 +115,18 @@
         }
     </style>
 </head>
-<body class="bgPattern">
+<body class="container">
     <div id="cloud-intro">
         <form id="form1" runat="server">
-            <header class="w3-hide-small w3-hide-medium ">
+            <header class="w3-hide-small w3-hide-medium">
                 <a style="height: 15%; width: 15%;" href="/Main/NewHomePage.aspx">
                     <img style="height: 100%; width: 100%;" src="https://i.imgur.com/RvPd3UI.png" title="source: imgur.com" /></a>
                 <nav>
                     <ul class="nav_links">
 
-                        <li><a style="font-size: 25px; color: black;" class="fontfam" href="/Main/NewHomePage.aspx">Home</a></li>
-                        <li><a style="font-size: 25px; color: black;" class="fontfam" href="/Main/aboutUs.aspx">About Us</a></li>
-                        <li><a style="font-size: 25px; color: black;" class="fontfam" href="/Main/contacts.aspx">Contacts</a></li>
+                        <li><a style="font-size: 25px; color:white;" class="fontfam w3-button" href="/Main/NewHomePage.aspx">Home</a></li>
+                        <li><a style="font-size: 25px; color:white;" class="fontfam w3-button" href="/Main/aboutUs.aspx">About Us</a></li>
+                        <li><a style="font-size: 25px; color:white;" class="fontfam w3-button" href="/Main/contacts.aspx">Contacts</a></li>
                     </ul>
                 </nav>
                 <a class="button1 fontfam" href="/Main/Login/LogIn.aspx">LOGIN</a>
@@ -151,12 +154,11 @@
                 </asp:ContentPlaceHolder>
             </div>
         </form>
-
+       
     </div>
 </body>
 
-
+ <footer style="background-color: black; color: white; display: flex; flex-direction: column; align-items: center;">
+            <p>MATHiNIQUE by ARCIAGA,BANEZ,BLANCAFLOR, & MACARASIG 2022</p>
+        </footer>
 </html>
-<footer  style=" background-color: black; color: white; display: flex; flex-direction: column; align-items: center;">
-    <p>MATHiNIQUE by ARCIAGA,BANEZ,BLANCAFLOR, & MACARASIG 2022</p>
-</footer>

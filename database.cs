@@ -21,7 +21,36 @@ namespace MATH1
             set { role = value;  }
         }
         //methods
+        // QUERY
+        public string query2(string user)
+        {
+            try
+            {
+                string connectionString = "server=localhost;user id=root;database=math1";
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
 
+                    MySqlCommand cmd = new MySqlCommand(user, conn);
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        string wow = reader.GetString(0);
+                        return wow;
+                    }
+                    else
+                    {
+                        return null;
+                        //noice
+                    }
+                }
+            }
+            catch(Exception error)
+            {
+                return error.ToString();
+            }
+        }
 
         // QUERY
         public string query(string user)
@@ -41,7 +70,7 @@ namespace MATH1
                 }
                 else
                 {
-                    return  "error";
+                    return  null;
                     //noice
                 }
             }
@@ -80,24 +109,21 @@ namespace MATH1
             {
                 cons.Open();
 
-                string query = "SELECT score FROM students  where username =@user";
+                string query = "SELECT score FROM students where username =@user";
                 try
                 {
                     using (MySqlCommand cmd = new MySqlCommand(query, cons))
                     {
                         cmd.Parameters.AddWithValue("@user", val);
-
-                        if (cmd.ExecuteScalar() != null)
+                        score = cmd.ExecuteScalar().ToString();
+                        if (cmd.ExecuteScalar() == null)
                         {
-                            score = cmd.ExecuteScalar().ToString();
-                            return score;
-
+                            return "0";
                         }
                         else
                         {
-                            return "error";
+                            return score;
                         }
-
                     }
                 }
                 catch (Exception error)
@@ -223,7 +249,43 @@ namespace MATH1
             {
                 cons.Open();
 
-                string query = "SELECT teacher FROM classlist  where stud_id =@user";
+                string query = "SELECT teacher.FirstName FROM `classlist` inner join teacher on classlist.teacher_id = teacher.teacher_id where stud_id =@user";
+                try
+                {
+                    using (MySqlCommand cmd = new MySqlCommand(query, cons))
+                    {
+                        cmd.Parameters.AddWithValue("@user", val);
+
+                        if (cmd.ExecuteScalar() != null)
+                        {
+                            score = cmd.ExecuteScalar().ToString();
+                            return score;
+
+                        }
+                        else
+                        {
+                            return "No teacher assigned";
+                        }
+
+                    }
+                }
+                catch (Exception error)
+                {
+                    return error.ToString();
+                }
+            }
+
+        }
+        //geting teacherID from classlist
+        public string getTeacherID(string val)
+        {
+            string score = "";
+            string waow = "server=localhost;user id=root;database=math1";
+            using (MySqlConnection cons = new MySqlConnection(waow))
+            {
+                cons.Open();
+
+                string query = "SELECT teacher_id FROM `classlist` where stud_id =@user";
                 try
                 {
                     using (MySqlCommand cmd = new MySqlCommand(query, cons))
@@ -259,7 +321,7 @@ namespace MATH1
             {
                 cons.Open();
 
-                string query = "SELECT concat(FirsName,' ',Lastname) FROM students  where id =@user or username =@user";
+                string query = "SELECT concat(FirstName,' ',Lastname) FROM students  where stud_id =@user or username =@user";
                 try
                 {
                     using (MySqlCommand cmd = new MySqlCommand(query, cons))
@@ -293,7 +355,7 @@ namespace MATH1
             {
                 cons.Open();
 
-                string query = "SELECT id FROM students  where id =@user or username =@user";
+                string query = "SELECT stud_id FROM students  where stud_id =@user or username =@user";
                 try
                 {
                     using (MySqlCommand cmd = new MySqlCommand(query, cons))

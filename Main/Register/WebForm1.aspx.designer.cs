@@ -33,13 +33,13 @@ namespace MATH1.Main
         protected global::System.Web.UI.WebControls.TextBox lname;
 
         /// <summary>
-        /// age control.
+        /// bday control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age;
+        protected global::System.Web.UI.WebControls.TextBox bday;
 
         /// <summary>
         /// DropDownList1 control.

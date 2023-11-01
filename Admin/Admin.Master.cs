@@ -11,7 +11,12 @@ namespace MATH1.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["username"] == null)
+            {
+                Response.Redirect("/Main/Login/LogIn.aspx");
+            }
+            Label1.Text = Session["username"].ToString();
+            
         }
 
         protected void logout_Click(object sender, EventArgs e)

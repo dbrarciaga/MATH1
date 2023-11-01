@@ -79,19 +79,10 @@
     </style>
 
 
-    <center>
+    <center style="height:1000px">
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+     
         <div style="width: 50%" class="w3-panel w3-card w3-white w3-round-medium w3-animate-left">
 
             <div style="text-align: center;" class="w3-centered   w3-margin">
@@ -109,7 +100,8 @@
                <br />
                 </label>
                 <a href="#" class="w3-button">You forgot your password? click here</a>
-                <a href="/Main/Register/WebForm1.aspx" class="w3-button">New user? click here</a>
+                <a href="/Main/Login/LoginForTeacher.aspx" class="w3-button">Log-in as a Teacher</a>
+                
                 <center>
                     <asp:Label ID="Label1" runat="server" Text="" CssClass="red"></asp:Label></center>
                 <center>
@@ -119,6 +111,13 @@
 
 
 
+        </div>
+        <div style="width: 50%" class="w3-panel w3-card w3-white w3-round-medium w3-animate-right">
+            <h2>just getting started? </h2>
+            
+            <a href="/Main/Register/WebForm1.aspx" class="w3-button w3-black w3-round-large"><h1>Register here</h1></a>
+            <br />
+            <br />
         </div>
     </center>
    

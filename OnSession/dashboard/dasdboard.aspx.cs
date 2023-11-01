@@ -12,18 +12,27 @@ namespace MATH1.OnSession
     {
         database blue = new database();
         static int requestCount = 0;
+        string val = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-               numReq.Text = requestCount.ToString();
+        int id = blue.getId(Session["username"].ToString());
 
-            string val = Session["username"].ToString();
+            numReq.Text = requestCount.ToString();
+           if(Session["username"]!=null)
+            {
+               val = Session["username"].ToString();
+            }
+            else
+            {
+                Response.Redirect("/Main/Login/LogIn.aspx");
+            }
+
             string waow = "server=localhost;user id=root;database=math1";
             using (MySqlConnection cons = new MySqlConnection(waow))
             {
                 cons.Open();
 
-                string query = "SELECT id FROM students where username =@user";
+                string query = "SELECT stud_id FROM students where username =@user";
                 try
                 {
                     using (MySqlCommand cmd = new MySqlCommand(query, cons))
@@ -34,8 +43,8 @@ namespace MATH1.OnSession
                         {
                             val = cmd.ExecuteScalar().ToString();
                             //blue.query("select teacher from classlist where stud_id = '"+ Session["username"] + "'");
-                            teacher.Text = blue.getTeacher(val);
-                            //Label1.Text = blue.getInfo(val);
+                            teacher.Text = blue.getTeacher(val) +'('+ blue.getTeacherID(id.ToString())+')';
+                            Label1.Text = blue.getInfo(val);
                             cons.Close();
 
                         }
@@ -51,32 +60,26 @@ namespace MATH1.OnSession
 
             ///////////////////
 
-            if (teacher.Text == "No teacher assigned")//if no teacher assigned
-            {
-                chal.Visible = false;
-                learn.Visible = false;
-                prog.Visible = false;
-                soon.Visible = true;
-                no_teacher.Visible = true;
-                request.Visible = true;
-       
-            }
+            
+                if (teacher.Text == "No teacher assigned")//if no teacher assigned
+               {
+                   chal.Visible = false;
+                   learn.Visible = false;
+                   prog.Visible = false;
+                   soon.Visible = true;
+                   no_teacher.Visible = true;
+                   request.Visible = true;
+
+               }
+
+            
             if (Session["username"] == null)
             {
                 Response.Redirect("/Main/Login/LogIn.aspx");
             }
             //user.Text = Session["username"].ToString();            
-            else
-            {
-                if (blue.getValue(Session["username"].ToString()) == "teacher")
-                {
-                    Response.Redirect("/Teacher/WebForm1.aspx");
-                }
-                if (blue.getValue(Session["username"].ToString()) == "admin")
-                {
-                    Response.Redirect("/Admin/AdminDash.aspx");
-                }
-            }
+
+          
 
 
 
