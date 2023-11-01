@@ -85,6 +85,8 @@
     <Content Include="Admin\Grade.aspx" />
     <Content Include="Admin\ManageAccount.aspx" />
     <Content Include="Admin\SetTeacher.aspx" />
+    <Content Include="Admin\TeacherList.aspx" />
+    <Content Include="Admin\StudentList.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Main\cloud.css" />
     <Content Include="Main\AccountPge\AccountPge.aspx" />
@@ -202,6 +204,20 @@
     </Compile>
     <Compile Include="Admin\SetTeacher.aspx.designer.cs">
       <DependentUpon>SetTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TeacherList.aspx.cs">
+      <DependentUpon>TeacherList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TeacherList.aspx.designer.cs">
+      <DependentUpon>TeacherList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentList.aspx.cs">
+      <DependentUpon>StudentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentList.aspx.designer.cs">
+      <DependentUpon>StudentList.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Main\Login\LoginForTeacher.aspx.cs">

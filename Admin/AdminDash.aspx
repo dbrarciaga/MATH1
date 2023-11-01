@@ -6,79 +6,49 @@
     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 
     <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 1px;
-            padding: 20px;
-        }
-
-        .grid-item {
-            font-size: 30px;
-        }
-
-        .button2 {
-            display: grid;
-            gap: 1px;
-            padding: 20px;
-        }
-
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: all 0.3s ease 0s;
-            background-color: white;
-            width: 100%;
-            margin: 10px;
-            padding: 80px 40px 80px;
-            border-radius: 10px;
-            width: 300px;
-            height: 100%;
-        }
-
-        table.mygridview {
-            color: black;
-        }
-
-        able.mygridview th {
-            font-weight: lighter;
-            color: black;
-            font-size: 80%;
-        }
-
-        table.mygridview td {
-            font-size: 80%;
-            color: black;
-            padding: 3px;
-        }
-
-            table.mygridview td:nth-child(2) {
-                text-align: right;
-            }
+       
     </style>
 
 
-    <div style="height:1000px" class="w3-container">
-       <div>
+    <div style="height:1000px; margin-left:8%" class="w3-container">
+       <center>
             <h2 style="text-align: center">Welcome Admin!</h2>
             <br />
             <br />
             
-                <div style="width:1000px; " class="w3-row-padding">
-                <div class="w3-third w3-container w3-white w3-round-large">
-                    <h4>Teachers</h4>
-                    <h1><asp:Label ID="teacher" runat="server" Text="////"></asp:Label></h1>
+                <div class="w3-row-padding">
+                    <a style="width:500px;" href="TeacherList.aspx" class="w3-button w3-third w3-container w3-white w3-round-large w3-margin">
+                        <h4>Teachers</h4>
+                        <h1><b><asp:Label ID="teacher" runat="server" Text="////"></asp:Label></b></h1>
+                    </a>
+                     <a href="StudentList.aspx" style="width:500px;"  class="w3-button w3-third w3-container w3-white  w3-round-large w3-margin">
+                         <h4>Students</h4>
+                          <h1><b><asp:Label ID="students" runat="server" Text="////"></asp:Label></b></h1>
+                    </a>
+                     <a style="width:500px;"  class="w3-button w3-third w3-container w3-white  w3-round-large w3-margin">
+                            <h4>Request</h4>
+                         <h1> <b><asp:Label ID="request" runat="server" Text="////"></asp:Label></b></h1>
+                    </a>
                 </div>
-                 <div  class="w3-third w3-card w3-white  w3-round-large">
-                     <h4>Students</h4>
-                      <h1><asp:Label ID="students" runat="server" Text="////"></asp:Label></h1>
-                </div>
-                 <div  class="w3-third w3-card w3-white  w3-round-large">
-                        <h4>Request</h4>
-                      <asp:Label ID="request" runat="server" Text="////"></asp:Label>
-                </div>
-
-            </div>        
-       </div>
+           <div style="width:1000px;" class="w3-row-padding">
+                    <a style="width:40%" href="TeacherList.aspx" class="w3-button w3-quarter w3-container w3-white w3-round-large w3-margin">
+                        <h4>Enroll a student</h4>
+                        
+                    </a>
+                     <a style="width:40%"  class="w3-button w3-quarter w3-container w3-white  w3-round-large w3-margin">
+                         <h4>Placerholder</h4>
+                          
+                    </a>
+                     <a style="width:40%"  class="w3-button w3-quarter w3-container w3-white  w3-round-large w3-margin">
+                            <h4>Update user</h4>
+                         
+                    </a>
+                <a style="width:40%"  class="w3-button w3-quarter w3-container w3-white  w3-round-large w3-margin">
+                            <h4>Password Reset</h4>
+                         
+                    </a>
+                </div>        
+       </center>
 
         
        
