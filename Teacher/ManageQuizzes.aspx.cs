@@ -55,7 +55,7 @@ namespace MATH1.Teacher
                     }
                     catch (Exception error)
                     {
-
+                        Response.Write(error);
                     }
                 }
             }
