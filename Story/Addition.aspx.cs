@@ -29,7 +29,7 @@ namespace MATH1.Story
         static string ex1Img3;
         static string ex1Aud1;
         static int ans11;
-        
+
 
         static int counter = 1;
         
@@ -41,7 +41,9 @@ namespace MATH1.Story
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            string selectedValue = HiddenFieldValue.Value;
+            TextBox1.Text = selectedValue;
+
             if (Session["username"] == null)
             {
                 Response.Redirect("/Main/Login/LogIn.aspx");
@@ -90,7 +92,6 @@ namespace MATH1.Story
                                 ex1Img1 = reader.GetString("exercise_image");
                                 ex1Img2 = reader.GetString("exercise_image2");
                                 ex1Img3 = reader.GetString("exercise_image3");
-
                                 ex1Aud1 = reader.GetString("exercise_audio");
                                 ans11 = Int32.Parse(reader.GetString("answer"));
 
@@ -101,6 +102,10 @@ namespace MATH1.Story
                                 ex1Img3s.Src = ex1Img3;
                                 ex1Aud.Src = ex1Aud1;
                                 ans1 = ans11;
+                                rbImage3.Attributes["Value"] = reader.GetString("answer").ToString(); ; // Set the custom value
+
+                
+                                
 
                                 score = 0;
 
@@ -125,16 +130,17 @@ namespace MATH1.Story
 
             if (TextBox1.Text == "" || TextBox1.Text == "=")
             {
-                Label1.Text = "Please Answer on the required fields!";
+                Label1.Text = "Good Effort, don't worry You can always try again !";
+                TextBox1.Text = "=";
                 SoundPlayer player = new SoundPlayer();
-                player.Stream = MATH1.Properties.Resources.answer_required_fields;
+                player.Stream = MATH1.Properties.Resources.incorrect_try_again;
                 player.Play();
 
             }
             else if (TextBox1.Text == ans11.ToString())
             {
-               
 
+                
                 counter = counter + 1;
                 TextBox1.Text = "=";
                 Label1.Text = "Good Job your answer is correct, You Get (1) Star!";
@@ -183,17 +189,21 @@ namespace MATH1.Story
                                 qTitle11 = reader.GetString("questionTitle");
                                 addQ11 = reader.GetString("question");
                                 ex1Img1 = reader.GetString("exercise_image");
+                                ex1Img2 = reader.GetString("exercise_image2");
+                                ex1Img3 = reader.GetString("exercise_image3");
                                 ex1Aud1 = reader.GetString("exercise_audio");
                                 ans11 = Int32.Parse(reader.GetString("answer"));
-
 
                                 qTitle1.Text = qTitle11;
                                 addQ1.Text = addQ11;
                                 ex1Img.Src = ex1Img1;
+                                ex1Img2s.Src = ex1Img2;
+                                ex1Img3s.Src = ex1Img3;
                                 ex1Aud.Src = ex1Aud1;
                                 ans1 = ans11;
+                                rbImage3.Attributes["Value"] = reader.GetString("answer").ToString(); ; // Set the custom value
 
-                             
+
                             }
 
                         }
@@ -213,8 +223,7 @@ namespace MATH1.Story
             else
             {
                 Label1.Text = "Good Effort, don't worry You can always try again !";
-                TextBox1.Text = "=";
-                Label1.Text = "Please Answer on the required fields!";
+                TextBox1.Text = "=";         
                 SoundPlayer player = new SoundPlayer();
                 player.Stream = MATH1.Properties.Resources.incorrect_try_again;
                 player.Play();

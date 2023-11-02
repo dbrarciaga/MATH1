@@ -209,10 +209,10 @@
                 background-color: #04AA6D;
             }
 
-            .image{
-                height:80%;
-                width:80%;
-            }
+        .image {
+            height: 80%;
+            width: 80%;
+        }
 
 
 
@@ -340,33 +340,30 @@
                     animation-delay: -0.4s;
                 }
 
-                .input-hidden {
-  position: absolute;
-  left: -9999px;
-}
+        .input-hidden {
+            position: absolute;
+            left: -9999px;
+        }
 
-input[type=radio]:checked + label>img {
-  border: 1px solid #fff;
-  box-shadow: 0 0 3px 3px #090;
-}
+        input[type=radio]:checked + label > img {
+            border: 1px solid #fff;
+            box-shadow: 0 0 3px 3px #090;
+        }
 
-/* Stuff after this is only to make things more pretty */
-input[type=radio] + label>img {
-  width: 16px;
-  height: 16px;
-  transition: 500ms all;
-}
+        /* Stuff after this is only to make things more pretty */
+        input[type=radio] + label > img {
+            width: 16px;
+            height: 16px;
+            transition: 500ms all;
+        }
 
-input[type=radio]:checked + label>img {
-  transform: 
-    rotateZ(-10deg) 
-    rotateX(10deg);
-}
-
+        input[type=radio]:checked + label > img {
+            transform: rotateZ(-10deg) rotateX(10deg);
+        }
     </style>
 
 
-    
+
 
 
     <section style="text-align: center;" class="w3-container">
@@ -406,7 +403,7 @@ input[type=radio]:checked + label>img {
 
             <div class="w3-container w3-half w3-mobile">
                 <a>
-                 <img class="image" src="https://i.imgur.com/N40OD7K.png" title="source: imgur.com" /></a>
+                    <img class="image" src="https://i.imgur.com/N40OD7K.png" title="source: imgur.com" /></a>
             </div>
 
         </div>
@@ -420,7 +417,7 @@ input[type=radio]:checked + label>img {
 
 
     <div id="regForm">
-         <div id="fire" runat="server" class="firework"></div>
+        <div id="fire" runat="server" class="firework"></div>
         <div class="firework"></div>
         <div class="firework"></div>
         <div class="firework"></div>
@@ -437,8 +434,8 @@ input[type=radio]:checked + label>img {
         <div class="firework"></div>
         <div class="firework"></div>
         <div class="firework"></div>
-        
-      <!--Exercise1-->
+
+        <!--Exercise1-->
         <section class="secBlack">
             <div runat="server" id="xrsc" visible="true">
                 <script>
@@ -446,10 +443,10 @@ input[type=radio]:checked + label>img {
                     onFocus = "if (this.value == this.defaultValue) { this.value = ''; }"
                 </script>
                 <center>
-                    <asp:label runat="server" ID="exercisenum" class="w3-container w3-mobile second" style="font-family: 'Comic Sans MS'; margin-bottom: 25px; font-size: 500%"/>
+                    <asp:Label runat="server" ID="exercisenum" class="w3-container w3-mobile second" Style="font-family: 'Comic Sans MS'; margin-bottom: 25px; font-size: 500%" />
                 </center>
                 <!--first row-->
-                <div style="font-size: 30px;" class="w3-row w3-border w3-white w3-mobile">   
+                <div style="font-size: 30px;" class="w3-row w3-border w3-white w3-mobile">
                     <div style="font-family: 'Comic Sans MS'; text-align: center;" class="w3-container w3-half">
                         <h2 style="font-family: 'Comic Sans MS';">
                             <asp:Label runat="server" ID="qTitle1" Text=""></asp:Label>
@@ -464,59 +461,89 @@ input[type=radio]:checked + label>img {
                         </center>
                     </div>
                     <!--rad-->
-                    <div class="w3-container w3-half">
-                        <input  type="radio" name="opt" id="ew" class="input-hidden" value="12" onclick="displayRadioValue()"  />
-                        <label for="ew">
-                            <img  id="ex1Img" runat="server" style="height: 40%; width: 40%; padding: 1%;" src=""  />
-                        </label>
+                    <div>
+                        <style>
+                            .customRadioImage {
+                                cursor: pointer; /* Make the images cursor change to a pointer on hover to indicate they are clickable. */
+                            }
 
-                        <input  type="radio" name="opt" id="we" class="input-hidden" value="11" />
-                        <label for="we">
-                            <img  id="ex1Img2s" runat="server" style="height: 40%; width: 40%; padding: 1%;" src="" />
-                        </label>
-                         <input type="radio" name="opt" id="ww" class="input-hidden" value="13" />
-                        <label for="ww">
-                           <img  id="ex1Img3s" runat="server" style="height: 40%; width: 40%; padding: 1%;" src=""  />
-                        </label>
-                      
-                          <script>
-                              function displayRadioValue() {
-                                  var ele = document.getElementsByName('opt');
+                                .customRadioImage.selected {
+                                    /* Apply styles for the selected state, e.g., changing the image appearance. */
+                                    border: 2px solid #007bff; /* Add a border to the selected image. */
+                                }
+                        </style>
 
-                                  for (i = 0; i < ele.length; i++) {
-                                      if (ele[i].checked)
-                                          document.getElementById("TextBox1").innerHTML.t
-                                              = "Gender: " + ele[i].value;
-                                  }
-                              }
-                          </script>
 
+                        <asp:RadioButton ID="rbImage1" runat="server" ClientIDMode="Static" Style="display: none" Value="106" AutoPostBack="false"  />
+                        <img runat="server" src="https://i.imgur.com/N40OD7K.png" alt="Radio Button 1" id="ex1Img" class="customRadioImage" onclick="selectRadioButton(1)" style="height:20%; width:20%" />
+
+                        <asp:RadioButton ID="rbImage2" runat="server" ClientIDMode="Static" Style="display: none" Value="11" AutoPostBack="false"  />
+                        <img runat="server" src="https://i.imgur.com/N40OD7K.png" alt="Radio Button 2" id="ex1Img2s" class="customRadioImage" onclick="selectRadioButton(2)" style="height:20%; width:20%" />
+
+                        <asp:RadioButton ID="rbImage3" runat="server" ClientIDMode="Static" Style="display: none" Value="" AutoPostBack="false"  />
+                        <img runat="server" src="https://i.imgur.com/N40OD7K.png" alt="Radio Button 3" id="ex1Img3s" class="customRadioImage" onclick="selectRadioButton(3)" style="height:20%; width:20%" />
+
+                     
+
+                        <asp:HiddenField ID="HiddenFieldValue" runat="server" ClientIDMode="Static" />
+
+                        <script type="text/javascript">
+                            const customRadioImages = document.querySelectorAll('.customRadioImage');
+                            const hiddenField = document.getElementById('<%= HiddenFieldValue.ClientID %>');
+
+                            customRadioImages.forEach((image, index) => {
+                                image.addEventListener('click', () => {
+                                    // Deselect all radio buttons
+                                    customRadioImages.forEach((radioImage) => {
+                                        radioImage.classList.remove('selected');
+                                    });
+
+                                    // Select the clicked radio button
+                                    image.classList.add('selected');
+
+                                    // Check the associated hidden radio button
+                                    const radioButton = document.getElementById(`rbImage${index + 1}`);
+                                    radioButton.checked = true;
+
+                                    // Set the value of the hidden field
+                                    hiddenField.value = radioButton.value;
+
+                                    // Post back to update the TextBox value
+                                    __doPostBack('<%= HiddenFieldValue.ClientID %>', '');
+                                });
+                            });
+                        </script>
                     </div>
                     <!--rad-->
-                     <div>
-    
-                </div>
-                <!--2nd row-->
-                <div class="w3-row w3-border  w3-mobile">
-                    <center>
-                        <div class="w3-container w3-rest">
 
-                            <asp:TextBox Style="width: 30%" AutoCompleteType="Disabled" ID="TextBox1" runat="server" onFocus="if (this.value == this.defaultValue) { this.value = ''; }">=</asp:TextBox>
-                            <br />
-                           
-                            <asp:Button CssClass="button2" ID="Button2" runat="server" Text="SUBMIT" OnClick="submit_Click1" />
-                        </div>
-                    </center>
+                    <!--rad2-->
+
+                    <!--rad2-->
+
+
+
+                    <!--2nd row-->
+                    <div class="w3-row w3-border  w3-mobile">
+                        <center>
+                            <div class="w3-container w3-rest">
+
+                               <asp:TextBox Visible="false" Style="width: 30%" AutoCompleteType="Disabled" ID="TextBox1" runat="server" onFocus="if (this.value == this.defaultValue) { this.value = ''; }">=</asp:TextBox>
+                                <br />
+
+                                <asp:Button CssClass="button2" ID="Button2" runat="server" Text="SUBMIT" OnClick="submit_Click1" />
+                            </div>
+                        </center>
+                    </div>
+                    <h2>
+                        <asp:Label CssClass="fonts" ID="Label1" runat="server" Text=" "></asp:Label>
+                    </h2>
                 </div>
-                <h2>
-                    <asp:Label CssClass="fonts" ID="Label1" runat="server" Text=" "></asp:Label>
-                </h2>
             </div>
         </section>
 
-        
 
- <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
         <!--summary-->
@@ -543,7 +570,7 @@ input[type=radio]:checked + label>img {
                     <div style="text-align: center; padding: 10%; font-size: 300%; font-family: 'Comic Sans MS'" class="w3-container w3-half">
                         <h2></h2>
                         <h2>
-                            <asp:Label CssClass="fonts" ID="Label5" runat="server" Text=" " style="font-family: 'Comic Sans MS'; margin-bottom: 25px; font-size: 500%"></asp:Label>
+                            <asp:Label CssClass="fonts" ID="Label5" runat="server" Text=" " Style="font-family: 'Comic Sans MS'; margin-bottom: 25px; font-size: 500%"></asp:Label>
                         </h2>
                         <asp:Button class="button5" ID="Button5" runat="server" Text="Submit Answers" OnClick="submit_Click5" />
 
@@ -551,7 +578,7 @@ input[type=radio]:checked + label>img {
                 </div>
             </div>
         </section>
-       
+
 
     </div>
 
@@ -591,10 +618,10 @@ input[type=radio]:checked + label>img {
         <br />
         <br />
         <br />
-        
-        <audio id="mybg" controls autoplay loop hidden visible="false" >
-        <source src="https://feeds.soundcloud.com/stream/1654313922-rencee-c-banez-happy.mp3" loop="true" type="audio/mpeg" />
-    </audio>
+
+        <audio id="mybg" controls autoplay loop hidden visible="false">
+            <source src="https://feeds.soundcloud.com/stream/1654313922-rencee-c-banez-happy.mp3" loop="true" type="audio/mpeg" />
+        </audio>
         <script>
             var audio = document.getElementById("mybg");
             audio.volume = 0.1;
