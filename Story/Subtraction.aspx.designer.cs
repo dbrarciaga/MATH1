@@ -24,6 +24,15 @@ namespace MATH1.Story
         protected global::System.Web.UI.WebControls.Label title1;
 
         /// <summary>
+        /// fire control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl fire;
+
+        /// <summary>
         /// xrsc control.
         /// </summary>
         /// <remarks>
@@ -69,6 +78,15 @@ namespace MATH1.Story
         protected global::System.Web.UI.HtmlControls.HtmlAudio ex1Aud;
 
         /// <summary>
+        /// rbImage1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbImage1;
+
+        /// <summary>
         /// ex1Img control.
         /// </summary>
         /// <remarks>
@@ -76,6 +94,51 @@ namespace MATH1.Story
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlImage ex1Img;
+
+        /// <summary>
+        /// rbImage2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbImage2;
+
+        /// <summary>
+        /// ex1Img2s control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage ex1Img2s;
+
+        /// <summary>
+        /// rbImage3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rbImage3;
+
+        /// <summary>
+        /// ex1Img3s control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage ex1Img3s;
+
+        /// <summary>
+        /// HiddenFieldValue control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField HiddenFieldValue;
 
         /// <summary>
         /// TextBox1 control.
