@@ -12,6 +12,7 @@ namespace MATH1.Story
 
     public partial class WebForm2 : System.Web.UI.Page
     {
+
         database blue = new database();
         static string user = "";
 
@@ -24,12 +25,14 @@ namespace MATH1.Story
         static string qTitle11;
         static string addQ11;
         static string ex1Img1;
+        static string ex1Img2;
+        static string ex1Img3;
         static string ex1Aud1;
         static int ans11;
 
 
         static int counter = 1;
-        int isCompleted = 1;
+
 
 
         static int score = 0;
@@ -38,7 +41,9 @@ namespace MATH1.Story
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            score = 0;
+            string selectedValue = HiddenFieldValue.Value;
+            TextBox1.Text = selectedValue;
+
             if (Session["username"] == null)
             {
                 Response.Redirect("/Main/Login/LogIn.aspx");
@@ -85,16 +90,25 @@ namespace MATH1.Story
                                 qTitle11 = reader.GetString("questionTitle");
                                 addQ11 = reader.GetString("question");
                                 ex1Img1 = reader.GetString("exercise_image");
+                                ex1Img2 = reader.GetString("exercise_image2");
+                                ex1Img3 = reader.GetString("exercise_image3");
                                 ex1Aud1 = reader.GetString("exercise_audio");
                                 ans11 = Int32.Parse(reader.GetString("answer"));
 
                                 qTitle1.Text = qTitle11;
                                 addQ1.Text = addQ11;
                                 ex1Img.Src = ex1Img1;
+                                ex1Img2s.Src = ex1Img2;
+                                ex1Img3s.Src = ex1Img3;
                                 ex1Aud.Src = ex1Aud1;
                                 ans1 = ans11;
+                                rbImage3.Attributes["Value"] = reader.GetString("answer").ToString(); ; // Set the custom value
 
-                                
+
+
+
+                                score = 0;
+
                             }
 
                         }
@@ -113,30 +127,36 @@ namespace MATH1.Story
 
         {
 
+
             if (TextBox1.Text == "" || TextBox1.Text == "=")
             {
-                Label1.Text = "Please Answer on the required fields!";
+                Label1.Text = "Good Effort, don't worry You can always try again !";
+                TextBox1.Text = "=";
                 SoundPlayer player = new SoundPlayer();
-                player.Stream = MATH1.Properties.Resources.answer_required_fields;
+                player.Stream = MATH1.Properties.Resources.incorrect_try_again;
                 player.Play();
+
             }
             else if (TextBox1.Text == ans11.ToString())
             {
+
+
                 counter = counter + 1;
                 TextBox1.Text = "=";
                 Label1.Text = "Good Job your answer is correct, You Get (1) Star!";
                 score++;
+                Label1.Text = "Good Job your answer is correct, You Get (1) Star!";
                 SoundPlayer player = new SoundPlayer();
                 player.Stream = MATH1.Properties.Resources.correct_well_done;
                 player.Play();
 
                 //Answered Exercises will not gain stars.
-                if (baseScore < 8)
+                if (baseScore < 4)
                 {
                     blue.ScoreAdd(user, "1");
                     score = score + 1;
                 }
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////
+                ///////////////////////////////////////////////////asdasd///////////////////////////////////////////////////////
                 if (gradeLevel == 2)
                 {
                     gradeLevel = 1;
@@ -169,16 +189,21 @@ namespace MATH1.Story
                                 qTitle11 = reader.GetString("questionTitle");
                                 addQ11 = reader.GetString("question");
                                 ex1Img1 = reader.GetString("exercise_image");
+                                ex1Img2 = reader.GetString("exercise_image2");
+                                ex1Img3 = reader.GetString("exercise_image3");
                                 ex1Aud1 = reader.GetString("exercise_audio");
                                 ans11 = Int32.Parse(reader.GetString("answer"));
 
                                 qTitle1.Text = qTitle11;
                                 addQ1.Text = addQ11;
                                 ex1Img.Src = ex1Img1;
+                                ex1Img2s.Src = ex1Img2;
+                                ex1Img3s.Src = ex1Img3;
                                 ex1Aud.Src = ex1Aud1;
                                 ans1 = ans11;
+                                rbImage3.Attributes["Value"] = reader.GetString("answer").ToString(); ; // Set the custom value
 
-                                score = 0;
+
                             }
 
                         }
@@ -204,37 +229,41 @@ namespace MATH1.Story
                 player.Play();
 
 
+
             }
 
 
 
         }
-
         protected void submit_Click5(object sender, EventArgs e)
         {
 
             Label5.Text = score + "/4";
             Button5.Visible = false;
-
+            int id = blue.getId(Session["username"].ToString());
             //ex1 
             string connectionString = "server=localhost;user id=root;database=math1";
             MySqlConnection conn = new MySqlConnection(connectionString);
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO achievements(`score_title`, `score`,`stud_id`, `typeOfTask`) values ('" + title1.Text + "','" + score + "','" + blue.getId(Session["username"].ToString()) + "','" + "Exercise" + "');", conn);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO achievements(`score_title`, `score`,`stud_id`,`teacher_id`, `typeOfTask`) values ('" + title1.Text + "','" + score + "','" + id + "','" + blue.getTeacherID(id.ToString()) + "','" + "Exercise" + "');", conn);
 
             try
             {
 
                 conn.Open();
                 cmd.ExecuteNonQuery();
-                score = 0;
 
+                score = 0;
             }
             catch (Exception error)
             {
                 Label5.Text = error.ToString();
             }
 
-            
+
         }
+
+
+
+
     }
 }

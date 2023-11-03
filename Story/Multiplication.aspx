@@ -254,6 +254,10 @@
            </div> 
 
            <div class="w3-container w3-half w3-mobile">    
+                <br />
+                <br />
+                <br />
+                <br />
                <a><img  style="height:100%; width:100%;" src="https://i.imgur.com/i1Wt4fi.gif" title="source: imgur.com" /></a>     
           </div>
         </div>     
@@ -281,7 +285,11 @@
 
            </div> 
 
-           <div class="w3-container w3-half w3-mobile">    
+           <div class="w3-container w3-half w3-mobile"> 
+               <br />
+                <br />
+                <br />
+                <br />
                 <a><img  style="height:100%; width:100%;" src="https://i.imgur.com/kaKW6R0.gif" title="source: imgur.com" /></a>      
           </div> 
          </div>
@@ -292,9 +300,24 @@
 
 	
 
-  <div id="regForm">
-
-        <!-- 
+ <div id="regForm">
+        <div id="fire" runat="server" class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
 
       <!--Exercise1-->
         <section class="secBlack">
@@ -392,39 +415,42 @@
 
 
       <!--end-->
-    <section class="first" style="margin:10px" >
+    <section class="first" style="margin: 10px">
         <br />
         <br />
         <br />
         <br />
-         <br />
+        <h2 style="text-align: center; font-family: 'Copperplate Gothic'"><b>That's awesome! you learned something new today!</b></h2>
+        <div class="w3-container">
+            <center>
+                <div class="w3-rest">
+                    <a href="/OnSession/dashboard/dasdboard.aspx" class="button1 ">I'M FINISHED! YEY</a>
+                </div>
+            </center>
+        </div>
         <br />
         <br />
         <br />
         <br />
         <br />
-        <h2 style="text-align:center;font-family:'Copperplate Gothic'"><b>That's awesome! you learned something new today!</b></h2>
-         <div class="w3-container">
-             <center>
-                 <div class="w3-rest">
-                        <a href="/OnSession/dashboard/dasdboard.aspx" class="button1 "> I'M FINISHED! YEY</a>         
-                 </div> 
-             </center>           
-         </div>
-         <br />
-        <br />
-        <br />
-        <br />
-        <br /> <br />
         <br />
         <br />
         <br />
         <br />
-         <br />
         <br />
         <br />
         <br />
         <br />
+        <br />
+        <br />
+
+        <audio id="mybg" controls autoplay loop hidden visible="false">
+            <source src="https://feeds.soundcloud.com/stream/1654313922-rencee-c-banez-happy.mp3" loop="true" type="audio/mpeg" />
+        </audio>
+        <script>
+            var audio = document.getElementById("mybg");
+            audio.volume = 0.1;
+        </script>
     </section>
     <!--end-->
 	
