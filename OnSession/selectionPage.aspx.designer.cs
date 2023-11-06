@@ -24,6 +24,15 @@ namespace MATH1.OnSession
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
+        /// progressBar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label progressBar;
+
+        /// <summary>
         /// LinkButton1 control.
         /// </summary>
         /// <remarks>

@@ -236,6 +236,7 @@
       <DependentUpon>auditLog.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Achievement.cs" />
     <Compile Include="Main\Login\LoginForTeacher.aspx.cs">
       <DependentUpon>LoginForTeacher.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

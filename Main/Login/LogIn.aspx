@@ -100,7 +100,6 @@
                <br />
                 </label>
                 <a href="#" class="w3-button">You forgot your password? click here</a>
-                <a href="/Main/Login/LoginForTeacher.aspx" class="w3-button">Log-in as a Teacher</a>
                 
                 <center>
                     <asp:Label ID="Label1" runat="server" Text="" CssClass="red"></asp:Label></center>

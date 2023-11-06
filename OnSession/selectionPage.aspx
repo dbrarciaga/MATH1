@@ -52,9 +52,9 @@
         <a href="/OnSession/dashboard/dasdboard.aspx" class="w3-button w3-white w3-round-large"><h4><</h4>  </a>
 
         <h2  class="w3-container" style="color:black; text-align:center"><b><asp:Label ID="Label1" runat="server" Text="Grade" CssClass="w3-container"></asp:Label></b></h2>
-       
+       <br />
 
-       
+        <asp:Label ID="progressBar" runat="server" Text=" "></asp:Label>
            <center><i style="color:black">Select a topic</i> </center>
             <!-- first row -->
         
