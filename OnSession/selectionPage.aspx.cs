@@ -12,6 +12,7 @@ namespace MATH1.OnSession
         public partial class WebForm3 : System.Web.UI.Page
     {
         database blue = new database();
+        Achievement waow = new Achievement();
         int score = 0;
         string testing;
         int gradeLevel=0;
@@ -33,7 +34,8 @@ namespace MATH1.OnSession
             }
             //gradeLevel Condition
             if (gradeLevel == 1)
-            {         
+            {
+                progressBar.Text = waow.grade1(blue.getId(Session["username"].ToString()));
                 LinkButton5.Visible = false;
                 LinkButton6.Visible = false;
                 LinkButton7.Visible = false;

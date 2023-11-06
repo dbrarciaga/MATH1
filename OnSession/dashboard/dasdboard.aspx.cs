@@ -72,6 +72,7 @@ namespace MATH1.OnSession
                 request.Visible = true;
 
             }
+            //if existing
             if (check == id.ToString())
             {
                 no_teacher.Visible = false;
