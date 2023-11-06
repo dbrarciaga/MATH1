@@ -11,7 +11,7 @@ namespace MATH1.Admin
 {
 
 
-    public partial class WebForm1
+    public partial class WebForm8
     {
 
         /// <summary>
@@ -24,30 +24,12 @@ namespace MATH1.Admin
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// teacher control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label teacher;
-
-        /// <summary>
-        /// students control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label students;
-
-        /// <summary>
-        /// enrollCount control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label enrollCount;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

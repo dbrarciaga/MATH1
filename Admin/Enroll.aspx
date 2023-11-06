@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="w3-container">
+    <div style="height:1000px" class="w3-container">
         <h1>Enroll student</h1>
         <div class="w3-container w3-white">
             <h4>Select a student: </h4>

@@ -9,7 +9,9 @@ namespace MATH1.Main
 {
     public partial class WebForm11 : System.Web.UI.Page
     {
+        string ngayon = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
         RegisterClass blue = new RegisterClass();
+        database waow = new database();
         protected void Page_Load(object sender, EventArgs e)
         {
             email.Text = "Email: " +blue.Email1;
@@ -25,6 +27,7 @@ namespace MATH1.Main
         {
             try
             {
+                waow.query("insert into auditlog(actionTaken,username,dateaction) values('created account','" + user.Text + "','" + ngayon + "')");
                 blue.InputDetails(int.Parse(Label1.Text));
                 Response.Redirect("/Main/WelcomePage.aspx");
             }

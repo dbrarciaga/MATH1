@@ -88,6 +88,7 @@
     <Content Include="Admin\TeacherList.aspx" />
     <Content Include="Admin\StudentList.aspx" />
     <Content Include="Admin\Enroll.aspx" />
+    <Content Include="Admin\auditLog.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Main\cloud.css" />
     <Content Include="Main\AccountPge\AccountPge.aspx" />
@@ -226,6 +227,13 @@
     </Compile>
     <Compile Include="Admin\Enroll.aspx.designer.cs">
       <DependentUpon>Enroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\auditLog.aspx.cs">
+      <DependentUpon>auditLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\auditLog.aspx.designer.cs">
+      <DependentUpon>auditLog.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Main\Login\LoginForTeacher.aspx.cs">

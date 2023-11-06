@@ -73,7 +73,7 @@ namespace MATH1.Admin
 
                     cons.Open();
 
-                    MySqlCommand utos = new MySqlCommand("SELECT * FROM student where stud_id = '" + int.Parse(DropDownList1.SelectedValue) + "' ", cons);
+                    MySqlCommand utos = new MySqlCommand("SELECT * FROM students where stud_id = '" + int.Parse(DropDownList1.SelectedValue) + "' ", cons);
                     MySqlDataReader myRead = utos.ExecuteReader();
 
                     if (myRead.HasRows == true)
