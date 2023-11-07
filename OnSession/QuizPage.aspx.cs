@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
+using System.Media;
 
 namespace MATH1.OnSession
 {
@@ -114,7 +115,7 @@ namespace MATH1.OnSession
                 Button3.Visible = false;
                 check.Visible = false;
             }
-            score.Text = "your score: " + star.ToString();
+            score.Text = " Score: " + star.ToString();
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -123,12 +124,13 @@ namespace MATH1.OnSession
                 ans.Text = "✅" + answer;
                 star = star + 1;
                 mali = false;
+
             }
             else
             {
                 ans.Text = "❌";
                
-                
+
             }
         }
         protected void Button2_Click(object sender, EventArgs e)
@@ -171,16 +173,19 @@ namespace MATH1.OnSession
                 ans.Text = "no answer";
                 check.Visible = true;
                 TextBox1.Visible = true;
-                mali = false;
+                mali = false;///
             }
             else if (TextBox1.Text == answer)
             {
                 ans.Text = "✅" + answer;
                 star = star + 1;
                 TextBox1.Text = null;
-                mali = false;
+                mali = false;///
                 next.Visible = true;
                 next.Text = "next";
+                SoundPlayer player = new SoundPlayer();
+                player.Stream = MATH1.Properties.Resources.correct_well_done;
+                player.Play();
             }
             else
             {
@@ -188,10 +193,14 @@ namespace MATH1.OnSession
                 check.Visible = true;
                 TextBox1.Visible = true;
                 mali = false;
+                SoundPlayer player = new SoundPlayer();
+                player.Stream = MATH1.Properties.Resources.incorrect_try_again;
+                player.Play();
             }
         }
         protected void next_Click(object sender, EventArgs e)
         {
+            
             Button1.Visible = true;
             Button2.Visible = true;
             Button3.Visible = true;
@@ -215,23 +224,23 @@ namespace MATH1.OnSession
                         {
                             if (count >= Int32.Parse(waow) & !reader.Read())
                             {
-                                quest.Visible = false;
-                                ans.Text = "finished! your score is: <br /> " + star.ToString();
-                                score.Text = "";
-                                next.Visible = false;
-                                Button1.Visible = false;
-                                Button2.Visible = false;
-                                Button3.Visible = false;
+
                                 check.Visible = false;
                                 TextBox1.Visible = false;
                                 next.Visible = false;
+                                quest.Visible = false;
+                                ans.Text = "finished! your score is: <br /> " + star.ToString();
+                                score.Text = "";
+                                Button1.Visible = false;
+                                Button2.Visible = false;
+                                Button3.Visible = false;
                                 number.Visible = false;
                                 show.Visible = true;
 
                                 if (checkThis())
                                 {
                                     int id = blue.getId(Session["username"].ToString());
-                                    blue.query2("insert into achievements(score_title, score, stud_id, teacher_id, typeOfTask) values ('quiz'," + star + ",'" + blue.getId(Session["username"].ToString()) + "','" + blue.getTeacherID(id.ToString()) + "','quiz')");
+                                    blue.query2("insert into achievements(score_title, score, stud_id, teacher_id, typeOfTask) values ('Challenge'" + star + ",'" + blue.getId(Session["username"].ToString()) + "','" + blue.getTeacherID(id.ToString()) + "','quiz')"); ///scoretitle(should be quiz type)
                                 }
 
                                 star = 0;
@@ -252,7 +261,7 @@ namespace MATH1.OnSession
                     }
                     switch (quizType)
                     {
-                        ///case 1:
+                        ///case 2:
                             ///number.Text = count.ToString()+"/10" ;
                             ///quest.Text = question;
                             ///Button1.Text = op1;
@@ -261,17 +270,35 @@ namespace MATH1.OnSession
                             ///check.Visible = false;
                             ///TextBox1.Visible = false;
                             ///break;
-                        case 2:
+                        case 1:
                             {
-                                number.Text = count.ToString() + "/5" ;
-                                next.Visible = true;
-                                next.Text = "skip";
-                                Button1.Visible = false;
-                                Button2.Visible = false;
-                                Button3.Visible = false;
-                                quest.Text = question;
-                                check.Visible = true;
-                                TextBox1.Visible = true;
+                                if (count >= Int32.Parse(waow) + 1)
+                                {
+                                    next.Visible = false;
+                                    Button1.Visible = false;
+                                    Button2.Visible = false;
+                                    Button3.Visible = false;
+                                    check.Visible = false;
+                                    TextBox1.Visible = false;
+                                    next.Visible = false;
+                                    number.Visible = false;
+                                    show.Visible = true;
+                                }
+                                else if (count < Int32.Parse(waow)+1)
+                                {
+                                    number.Text = count.ToString() + "/5";
+                                    next.Visible = true;
+                                    next.Text = "skip";
+                                    Button1.Visible = false;
+                                    Button2.Visible = false;
+                                    Button3.Visible = false;
+                                    quest.Text = question;
+                                    check.Visible = true;
+                                    TextBox1.Visible = true;
+
+                                }
+                               
+                                
                             }
                             break;
                         default:

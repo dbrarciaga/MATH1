@@ -353,6 +353,13 @@
              </div>         
          </div>
     </section>
+     <audio id="mybg" controls autoplay loop hidden visible="false">
+            <source src="https://feeds.soundcloud.com/stream/1654313922-rencee-c-banez-happy.mp3" loop="true" type="audio/mpeg" />
+        </audio>
+        <script>
+            var audio = document.getElementById("mybg");
+            audio.volume = 0.01;
+        </script>
     <!--end-->
 
 
