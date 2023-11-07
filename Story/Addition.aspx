@@ -482,7 +482,7 @@
                         <asp:RadioButton ID="rbImage2" runat="server" ClientIDMode="Static" Style="display: none" Value="11" AutoPostBack="false" />
                         <img runat="server" src="" alt="Radio Button 2" id="ex1Img2s" class="customRadioImage" onclick="selectRadioButton(2)" style="height: 20%; width: 20%" />
 
-                        <asp:RadioButton ID="rbImage3" runat="server" ClientIDMode="Static" Style="display: none" Value="" AutoPostBack="false" />
+                        <asp:RadioButton ID="rbImage3" runat="server" ClientIDMode="Static" Style="display: none" Value="" AutoPostBack="false"  />
                         <img runat="server" src="" alt="Radio Button 3" id="ex1Img3s" class="customRadioImage" onclick="selectRadioButton(3)" style="height: 20%; width: 20%" />
 
                         <br />
@@ -492,6 +492,8 @@
                         <br />
                         <br />
                         
+                        
+
 
                         <asp:HiddenField ID="HiddenFieldValue" runat="server" ClientIDMode="Static" />
 
@@ -538,6 +540,9 @@
 
                                 <asp:Button CssClass="button2" ID="Button2" runat="server" Text="SUBMIT" OnClick="submit_Click1" />
                             </div>
+
+                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
                         </center>
                     </div>
                     <h2>
