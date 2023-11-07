@@ -20,7 +20,7 @@ namespace MATH1.OnSession
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                string query = "SELECT count(`id`) as brian FROM quizmultchoice";
+                string query = "SELECT count(`quiz_id`) as brian FROM quiz";
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     using (MySqlDataReader reader = command.ExecuteReader())
@@ -38,12 +38,14 @@ namespace MATH1.OnSession
         {
             if (count < 3)
             {
-                nxt.Visible = true;
+                nxt.Visible = false;///true
+                nxt.Visible = false;///
             }
             if (count == 1)
             {
                 prev.Visible = false;
                 noBut.Visible = true;
+                nxt.Visible = false;///
             }
             if (count == 3)
             {
@@ -51,12 +53,13 @@ namespace MATH1.OnSession
             }
             if (count > 1)
             {
-                prev.Visible = true;
+                prev.Visible = false;///true
                 noBut.Visible = false;
+                nxt.Visible = false;///
             }
 
             getQuizNumber();
-            select.Text = "Quiz # " + count.ToString();
+            select.Text = "Challenge # " + count.ToString();
         }
 
         protected void select_Click(object sender, EventArgs e)

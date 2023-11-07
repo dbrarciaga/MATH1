@@ -391,7 +391,7 @@
             <div class="w3-container w3-half">
                <p style="font-family:'Comic Sans MS'; text-align:center;font-size:45px;"><b>How?</b></p>
                 <p style="font-family:'Copperplate Gothic'; text-align:center;font-size:30px;">
-                   Subtractionn is taking away a number or amount from another number or amount. 
+                   Subtraction is taking away a number or amount from another number or amount. 
                     It is the inverse operation of addition. While addition adds or puts together numbers to find the sum, 
                     subtraction removes a number from another number to find the difference.
                 </p>
@@ -628,7 +628,7 @@
         </audio>
         <script>
             var audio = document.getElementById("mybg");
-            audio.volume = 0.1;
+            audio.volume = 0.01;
         </script>
     </section>
     <!--end-->
