@@ -107,7 +107,7 @@
               <div class="w3-col  w3-container" style="width:15%; height:53px;"></div>
             </div>
 
-            <div class="w3-dropdown-hover w3-container w3-hide-large w3-medium">
+            <div class="w3-dropdown-hover w3-container w3-hide-large w3-medium" >
                 <h1>≡</h1>
                 <div class="w3-dropdown-content">
                     <ul class="nav_links">
@@ -120,8 +120,6 @@
 
 
                         <li><a class="w3-button w3-black" style="font-size: 25px" href="/Main/Login/LogIn.aspx">Log-In</a></li>
-
-
                     </ul>
                 </div>
             </div>

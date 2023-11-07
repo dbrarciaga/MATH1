@@ -196,7 +196,7 @@ namespace MATH1.Story
             }
             else
             {
-                Label1.Text = "Good Effort, don't worry You can always try again !";
+                Label1.Text = "Try again !";
                 TextBox1.Text = "=";
                 SoundPlayer player = new SoundPlayer();
                 player.Stream = MATH1.Properties.Resources.incorrect_try_again;

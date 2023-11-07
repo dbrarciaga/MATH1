@@ -437,7 +437,7 @@
 
         <!--Exercise1-->
         <section class="secBlack">
-            <div runat="server" id="xrsc" visible="true">
+            <div runat="server" id="xrsc" visible="true" >
                 <script>
                     function clear()
                     onFocus = "if (this.value == this.defaultValue) { this.value = ''; }"
@@ -446,8 +446,8 @@
                     <asp:Label runat="server" ID="exercisenum" class="w3-container w3-mobile second" Style="font-family: 'Comic Sans MS'; margin-bottom: 25px; font-size: 500%" />
                 </center>
                 <!--first row-->
-                <div style="font-size: 30px;" class="w3-row w3-border w3-white w3-mobile">
-                    <div style="font-family: 'Comic Sans MS'; text-align: center;" class="w3-container w3-half">
+                <div style="font-size: 30px; " class="w3-row w3-border w3-white w3-mobile">
+                    <div style="font-family: 'Comic Sans MS'; text-align: center; " class="w3-container w3-half">
                         <h2 style="font-family: 'Comic Sans MS';">
                             <asp:Label runat="server" ID="qTitle1" Text=""></asp:Label>
                         </h2>
@@ -473,17 +473,25 @@
                                 }
                         </style>
 
-
+                        <br />
+                        <br />
+                        
                         <asp:RadioButton ID="rbImage1" runat="server" ClientIDMode="Static" Style="display: none" Value="106" AutoPostBack="false" />
-                        <img runat="server" src="https://i.imgur.com/N40OD7K.png" alt="Radio Button 1" id="ex1Img" class="customRadioImage" onclick="selectRadioButton(1)" style="height: 20%; width: 20%" />
+                        <img runat="server" src="" alt="Radio Button 1" id="ex1Img" class="customRadioImage" onclick="selectRadioButton(1)" style="height: 20%; width: 20%" />
 
                         <asp:RadioButton ID="rbImage2" runat="server" ClientIDMode="Static" Style="display: none" Value="11" AutoPostBack="false" />
-                        <img runat="server" src="https://i.imgur.com/N40OD7K.png" alt="Radio Button 2" id="ex1Img2s" class="customRadioImage" onclick="selectRadioButton(2)" style="height: 20%; width: 20%" />
+                        <img runat="server" src="" alt="Radio Button 2" id="ex1Img2s" class="customRadioImage" onclick="selectRadioButton(2)" style="height: 20%; width: 20%" />
 
                         <asp:RadioButton ID="rbImage3" runat="server" ClientIDMode="Static" Style="display: none" Value="" AutoPostBack="false" />
-                        <img runat="server" src="https://i.imgur.com/N40OD7K.png" alt="Radio Button 3" id="ex1Img3s" class="customRadioImage" onclick="selectRadioButton(3)" style="height: 20%; width: 20%" />
+                        <img runat="server" src="" alt="Radio Button 3" id="ex1Img3s" class="customRadioImage" onclick="selectRadioButton(3)" style="height: 20%; width: 20%" />
 
-
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        
 
                         <asp:HiddenField ID="HiddenFieldValue" runat="server" ClientIDMode="Static" />
 
