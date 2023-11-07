@@ -32,7 +32,7 @@ namespace MATH1.OnSession
             {
                 cons.Open();
 
-                string query = "SELECT * FROM achievement where stud_id =@user and IsCompleted ='1'";
+                string query = "SELECT * FROM achievements where stud_id =@user ";
                 using (MySqlCommand cmd = new MySqlCommand(query, cons))
                 {
                     cmd.Parameters.AddWithValue("@user", blue.getId(Session["username"].ToString()).ToString());
@@ -46,7 +46,7 @@ namespace MATH1.OnSession
                         {
                             return false;
                         }
-
+                        
                     }
 
                 }
@@ -58,14 +58,14 @@ namespace MATH1.OnSession
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                string query = "SELECT count(`number`) FROM quiz where Quiz_no ='" + blue.waow + "' and grade= '" + gradeLevel + "'";
+                string query = "SELECT count(`item_number`) FROM quiz where quiz_Number ='" + blue.waow + "' and gradeLevel= '" + gradeLevel + "'";
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     using (MySqlDataReader reader = command.ExecuteReader())
                     {
                         if (reader.Read())
                         {
-                            string s = reader.GetString("count(`number`)");
+                            string s = reader.GetString("count(`item_number`)");
                             waow = s;
                         }
                     }
@@ -208,7 +208,7 @@ namespace MATH1.OnSession
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT * FROM quiz where grade= '" + gradeLevel + "' and number= '" + count + "' and Quiz_no = '" + blue.waow + "'";
+                    string query = "SELECT * FROM quiz where gradeLevel= '" + gradeLevel + "' and item_number= '" + count + "' and quiz_Number = '" + blue.waow + "'";
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
                         using (MySqlDataReader reader = command.ExecuteReader())
@@ -230,7 +230,8 @@ namespace MATH1.OnSession
 
                                 if (checkThis())
                                 {
-                                    blue.Progress(blue.getId(Session["username"].ToString()).ToString(), "quiz " + blue.waow, star.ToString());
+                                    int id = blue.getId(Session["username"].ToString());
+                                    blue.query2("insert into achievements(score_title, score, stud_id, teacher_id, typeOfTask) values ('quiz'," + star + ",'" + blue.getId(Session["username"].ToString()) + "','" + blue.getTeacherID(id.ToString()) + "','quiz')");
                                 }
 
                                 star = 0;
@@ -240,26 +241,26 @@ namespace MATH1.OnSession
                             {
 
                                 question = reader.GetString("question");
-                                op1 = reader.GetString("option1");
-                                op2 = reader.GetString("option2");
-                                op3 = reader.GetString("option3");
+                                ///op1 = reader.GetString("option1");
+                               /// op2 = reader.GetString("option2");
+                               /// op3 = reader.GetString("option3");
                                 answer = reader.GetString("answer");
-                                quizType = reader.GetInt32("type");
+                                quizType = reader.GetInt32("quiz_Number");
                             }
 
                         }
                     }
                     switch (quizType)
                     {
-                        case 1:
-                            number.Text = count.ToString()+"/10" ;
-                            quest.Text = question;
-                            Button1.Text = op1;
-                            Button2.Text = op2;
-                            Button3.Text = op3;
-                            check.Visible = false;
-                            TextBox1.Visible = false;
-                            break;
+                        ///case 1:
+                            ///number.Text = count.ToString()+"/10" ;
+                            ///quest.Text = question;
+                            ///Button1.Text = op1;
+                            ///Button2.Text = op2;
+                            ///Button3.Text = op3;
+                            ///check.Visible = false;
+                            ///TextBox1.Visible = false;
+                            ///break;
                         case 2:
                             {
                                 number.Text = count.ToString() + "/5" ;

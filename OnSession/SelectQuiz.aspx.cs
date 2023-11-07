@@ -20,7 +20,7 @@ namespace MATH1.OnSession
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                string query = "SELECT count(`id`) as brian FROM quizmultchoice";
+                string query = "SELECT count(`quiz_id`) as brian FROM quiz";
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     using (MySqlDataReader reader = command.ExecuteReader())
