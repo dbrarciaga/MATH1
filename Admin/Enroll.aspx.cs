@@ -11,9 +11,16 @@ namespace MATH1.Admin
 {
     public partial class WebForm7 : System.Web.UI.Page
     {
+        database blue = new database();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            GradeLevel.Items.Add("1");
+            GradeLevel.Items.Add("2");
+            GradeLevel.Items.Add("3");
+            GradeLevel.Items.Add("4");
+            GradeLevel.Items.Add("5");
+            GradeLevel.Items.Add("6");
+            if (!IsPostBack)
             {
                 //dropdown for student
                 string waow = "server=localhost;user id=root;database=math1";
@@ -70,7 +77,6 @@ namespace MATH1.Admin
             {
                 try
                 {
-
                     cons.Open();
 
                     MySqlCommand utos = new MySqlCommand("SELECT * FROM students where stud_id = '" + int.Parse(DropDownList1.SelectedValue) + "' ", cons);
@@ -129,6 +135,14 @@ namespace MATH1.Admin
                 }
                 cons.Close();
             }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            blue.query2("insert into classlist(stud_id, teacher_id,section) values ('"+DropDownList1.SelectedValue+"','"+teacherList.SelectedValue+"','"+GradeLevel.SelectedValue+"')");
+            blue.query2("delete from enrollmentrequest where stud_id = '"+DropDownList1.SelectedValue+"'");
+            blue.query2("insert into auditlog(actionTaken,username,dateAction) values ('Enrolled a student','"+Session["username"].ToString()+"','"+DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss")+"')");
+            Label1.Text = "added ";
         }
     }
 }

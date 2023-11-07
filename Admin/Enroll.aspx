@@ -9,18 +9,25 @@
             <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                 <asp:ListItem>-- Select number --</asp:ListItem>
             </asp:DropDownList>
-            <asp:GridView ID="GridView1" runat="server" CssClass="w3-table"></asp:GridView>
+            <asp:GridView ID="GridView1" runat="server" CssClass="w3-table-all"></asp:GridView>
+            <br />
         </div>
         <br />
         <div class="w3-container w3-white">            
             <p>Enter section</p>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:DropDownList ID="GradeLevel" runat="server"></asp:DropDownList>
         </div>
           <div class="w3-container w3-white">            
             <p>Select teacher: </p>
               <asp:DropDownList ID="teacherList" runat="server" AutoPostBack="true" OnSelectedIndexChanged="teacherList_SelectedIndexChanged"></asp:DropDownList>
-              <asp:GridView ID="GridView2" runat="server" CssClass="w3-table"></asp:GridView>
+              <asp:GridView ID="GridView2" runat="server" CssClass="w3-table-all"></asp:GridView>
+            <br />
+
         </div>
         <asp:Label ID="Label1" runat="server" Text=" "></asp:Label>
+        <br />
+        <br />
+        <asp:Button ID="Button1" runat="server" Text="enroll student" OnClick="Button1_Click" />
+
     </div>
 </asp:Content>

@@ -12,7 +12,8 @@ namespace MATH1.Main
         database blue = new database();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write(blue.query2("SELECT * FROM `progress` WHERE gradelevel = 2 and topic = 'SUBTRACTION' and stud_id = 20231080"));
+            //int id = blue.getId(Session["username"].ToString());
+            //blue.query2("insert into achievements(score_title, score, stud_id, teacher_id, typeOfTask) values ('quiz',69,'"+blue.getId(Session["username"].ToString())+"','"+ blue.getTeacherID(id.ToString()) + "','quiz')");
         }
     }
 }

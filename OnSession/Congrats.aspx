@@ -7,7 +7,7 @@
             <h1>Congratulations You level up to Grade <asp:Label ID="Label1" runat="server" Text="0"></asp:Label></h1>
             <br />
             <br />
-            <a href="dashboard/dasdboard.aspx" class="w3-button w3-grey w3-margin w3-round-large"> Press here to Continue </a>
+            <a href="/OnSession/selectionPage.aspx" class="w3-button w3-grey w3-margin w3-round-large"> Press here to Continue </a>
            
 
         </div>
