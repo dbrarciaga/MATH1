@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2023 at 12:15 PM
+-- Generation Time: Nov 07, 2023 at 02:04 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.2.31
 
@@ -55,7 +55,27 @@ INSERT INTO `achievements` (`score_ID`, `score_title`, `score`, `stud_id`, `teac
 (15, 'Grade 1 and 2 Addition + +', 4, 20231020, 20232001, 'Exercise'),
 (16, 'Grade 1 and 2 Subtraction - -', 4, 20231020, 20232001, 'Exercise'),
 (17, 'Grade 1 and 2 Addition + +', 3, 20231020, 20232001, 'Exercise'),
-(18, 'Grade 1 and 2 Addition + +', 4, 20231020, 20232001, 'Exercise');
+(18, 'Grade 1 and 2 Addition + +', 4, 20231020, 20232001, 'Exercise'),
+(19, 'Grade 1 and 2 Subtraction - -', 4, 20231069, 20232001, 'Exercise'),
+(20, 'Grade 1 and 2 Multiplication x x', 4, 20231069, NULL, 'Exercise'),
+(21, 'Grade 1 and 2 Multiplication x x', 4, 20231069, NULL, 'Exercise'),
+(22, 'Grade 1 and 2 Multiplication x x', 4, 20231069, NULL, 'Exercise'),
+(23, 'Grade 1 and 2 Division ÷ ÷', 4, 20231069, NULL, 'Exercise'),
+(24, 'Grade 1 and 2 Addition + +', 4, 20231069, 20232001, 'Exercise'),
+(25, 'Grade 1 and 2 Addition + +', 4, 20231069, 20232001, 'Exercise'),
+(26, 'Grade 1 and 2 Addition + +', 4, 20231069, 20232001, 'Exercise'),
+(27, 'Grade 1 and 2 Subtraction - -', 4, 20231069, 20232001, 'Exercise'),
+(28, 'Grade 1 and 2 Multiplication x x', 4, 20231069, NULL, 'Exercise'),
+(29, 'Grade 1 and 2 Division ÷ ÷', 4, 20231069, NULL, 'Exercise'),
+(30, 'Grade 1 and 2 Division ÷ ÷', 4, 20231069, NULL, 'Exercise'),
+(31, 'Grade 1 and 2 Addition + +', 4, 20231069, 20232001, 'Exercise'),
+(32, 'Grade 1 and 2 Addition + +', 4, 20231080, 20232001, 'Exercise'),
+(33, 'Grade 1 and 2 Addition + +', 4, 20231069, 20232001, 'Exercise'),
+(34, 'Grade 1 and 2 Subtraction - -', 4, 20231069, 20232001, 'Exercise'),
+(35, 'Grade 1 and 2 Multiplication x x', 4, 20231069, NULL, 'Exercise'),
+(36, 'Grade 1 and 2 Division ÷ ÷', 4, 20231069, NULL, 'Exercise'),
+(37, ' ADDITION', 4, 20231069, 20232001, 'Exercise'),
+(38, 'SUBTRACTION', 4, 20231069, 20232001, 'Exercise');
 
 -- --------------------------------------------------------
 
@@ -67,7 +87,8 @@ CREATE TABLE `attempts` (
   `ID` int(11) NOT NULL,
   `Exercise` varchar(64) DEFAULT NULL,
   `dateOfAttempt` varchar(64) DEFAULT NULL,
-  `stud_id` int(11) DEFAULT NULL
+  `stud_id` int(11) DEFAULT NULL,
+  `grade` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -109,7 +130,42 @@ INSERT INTO `auditlog` (`ID`, `actionTaken`, `username`, `dateAction`) VALUES
 (23, 'student login', 'gumeroos', '11/06/2023 19:06:28'),
 (24, 'student login', 'dumon1', '11/06/2023 19:07:11'),
 (25, 'admin login', 'admin', '11/06/2023 19:08:08'),
-(26, 'admin login', 'admin', '11/06/2023 19:14:49');
+(26, 'admin login', 'admin', '11/06/2023 19:14:49'),
+(27, 'admin login', 'admin', '11/06/2023 21:03:21'),
+(28, 'admin login', 'admin', '11/06/2023 21:11:33'),
+(29, 'admin login', 'admin', '11/06/2023 21:22:24'),
+(30, 'admin login', 'admin', '11/06/2023 21:29:17'),
+(31, 'admin login', 'admin', '11/06/2023 21:32:00'),
+(32, 'student login', 'dumon1', '11/06/2023 21:32:35'),
+(33, 'student login', 'blue', '11/06/2023 22:58:53'),
+(34, 'student login', 'waow', '11/06/2023 22:59:33'),
+(35, 'student login', 'waow', '11/06/2023 23:00:44'),
+(36, 'student login', 'waow', '11/06/2023 23:02:46'),
+(37, 'student login', 'waow', '11/06/2023 23:05:03'),
+(38, 'student login', 'waow', '11/06/2023 23:08:24'),
+(39, 'student login', 'waow', '11/06/2023 23:10:04'),
+(40, 'student login', 'waow', '11/06/2023 23:10:12'),
+(41, 'student login', 'waow', '11/06/2023 23:16:56'),
+(42, 'student login', 'waow', '11/06/2023 23:20:26'),
+(43, 'student login', 'waow', '11/06/2023 23:24:25'),
+(44, 'student login', 'waow', '11/07/2023 01:56:50'),
+(45, 'student login', 'waow', '11/07/2023 02:01:11'),
+(46, 'student login', 'waow', '11/07/2023 02:02:05'),
+(47, 'student login', 'blue', '11/07/2023 17:34:23'),
+(48, 'student login', 'waow', '11/07/2023 17:34:37'),
+(49, 'student login', 'waow', '11/07/2023 17:39:51'),
+(50, 'student login', 'waow', '11/07/2023 18:41:40'),
+(51, 'student login', 'waow', '11/07/2023 18:43:41'),
+(52, 'student login', 'waow', '11/07/2023 18:47:01'),
+(53, 'student login', 'blue', '11/07/2023 18:56:11'),
+(54, 'student login', 'waow', '11/07/2023 18:56:51'),
+(55, 'student login', 'waow', '11/07/2023 18:59:42'),
+(56, 'student login', 'waow', '11/07/2023 19:05:30'),
+(57, 'student login', 'waow', '11/07/2023 19:12:24'),
+(58, 'student login', 'waow', '11/07/2023 19:14:37'),
+(59, 'student login', 'waow', '11/07/2023 20:50:07'),
+(60, 'student login', 'waow', '11/07/2023 20:50:44'),
+(61, 'student login', 'waow', '11/07/2023 20:51:45');
 
 -- --------------------------------------------------------
 
@@ -152,6 +208,36 @@ INSERT INTO `enrollmentrequest` (`enroll_id`, `stud_id`) VALUES
 (3, 20231023),
 (1, 20231099),
 (4, 202310349);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `progress`
+--
+
+CREATE TABLE `progress` (
+  `ID` int(11) NOT NULL,
+  `topic` varchar(64) DEFAULT NULL,
+  `gradeLevel` int(11) DEFAULT NULL,
+  `stud_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `progress`
+--
+
+INSERT INTO `progress` (`ID`, `topic`, `gradeLevel`, `stud_id`) VALUES
+(4, 'ADDITION', 1, 20231069),
+(5, 'SUBTRACTION', 1, 20231069),
+(6, 'MULTIPLICATION', 1, 20231069),
+(8, 'DIVISION', 1, 20231069),
+(9, 'ADDITION', 2, 20231080),
+(10, 'ADDITION', 2, 20231069),
+(11, 'SUBTRACTION', 2, 20231069),
+(12, 'MULTIPLICATION', 2, 20231069),
+(13, 'DIVISION', 2, 20231069),
+(14, 'ADDITION', 3, 20231069),
+(15, 'SUBTRACTION', 3, 20231069);
 
 -- --------------------------------------------------------
 
@@ -300,7 +386,7 @@ INSERT INTO `students` (`stud_id`, `username`, `pass`, `email`, `birthday`, `Fir
 (20231020, 'jun', '1111', 'email2@yahoo.com', '8/2/2010', 'rencee', 'banez', 2, 8, 'active'),
 (20231023, 'drea', '1111', 'email6@yahoo.com', '12/1/2010', 'andrea', 'babae', 4, 0, 'active'),
 (20231031, 'steben', '1111', 'email3@yahoo.com', '12/23/2010', 'steven', 'macarasig', 6, 0, 'active'),
-(20231069, 'waow', '1111', 'email@yahoo.com', '11/26/2010', 'Brian', 'Blancaflor', 5, 24, 'active'),
+(20231069, 'waow', '1111', 'email@yahoo.com', '11/26/2010', 'Brian', 'Blancaflor', 3, 24, 'active'),
 (20231080, 'blue', '1111', 'email1@yahoo.com', '7/26/2010', 'danniell blue', 'Arciaga', 2, 10, 'active'),
 (20231099, 'cindy', '1111', 'email5@yahoo.com', '5/13/2010', 'cynthia', 'random', 3, 0, 'active'),
 (202310349, 'dumon1', '1111', 'DCarter@email.com', '12', 'Dumon', 'Carter', 6, 0, 'active');
@@ -374,6 +460,13 @@ ALTER TABLE `enrollmentrequest`
   ADD KEY `stud_id` (`stud_id`);
 
 --
+-- Indexes for table `progress`
+--
+ALTER TABLE `progress`
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `stud_id` (`stud_id`);
+
+--
 -- Indexes for table `quiz`
 --
 ALTER TABLE `quiz`
@@ -407,7 +500,7 @@ ALTER TABLE `teacher`
 -- AUTO_INCREMENT for table `achievements`
 --
 ALTER TABLE `achievements`
-  MODIFY `score_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `score_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `attempts`
@@ -419,7 +512,7 @@ ALTER TABLE `attempts`
 -- AUTO_INCREMENT for table `auditlog`
 --
 ALTER TABLE `auditlog`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
 -- AUTO_INCREMENT for table `classlist`
@@ -432,6 +525,12 @@ ALTER TABLE `classlist`
 --
 ALTER TABLE `enrollmentrequest`
   MODIFY `enroll_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `progress`
+--
+ALTER TABLE `progress`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `quiz`
@@ -486,6 +585,12 @@ ALTER TABLE `classlist`
 --
 ALTER TABLE `enrollmentrequest`
   ADD CONSTRAINT `enrollmentrequest_ibfk_1` FOREIGN KEY (`stud_id`) REFERENCES `students` (`stud_id`);
+
+--
+-- Constraints for table `progress`
+--
+ALTER TABLE `progress`
+  ADD CONSTRAINT `progress_ibfk_1` FOREIGN KEY (`stud_id`) REFERENCES `students` (`stud_id`);
 
 --
 -- Constraints for table `quiz`

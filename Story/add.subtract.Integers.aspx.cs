@@ -212,7 +212,16 @@ namespace MATH1.Story
 
             Label5.Text = score + "/4";
             Button5.Visible = false;
-            
+            //----------progress----------------------
+            int id = blue.getId(Session["username"].ToString());
+            //progress checker
+            string check = blue.query2("select id from progress where stud_id = '" + id + "' and topic = 'ADDSUBINT' and gradeLevel = '" + blue.getGradeLevel(Session["username"].ToString()) + "'");
+            //mag iinsert ng row if walang laman si row, tapos if may laman si row, i-ignore na tong if-condition
+            if (check == null)
+            {
+                blue.query2("insert into progress(topic,gradelevel,stud_id) values ('ADDSUBINT','" + blue.getGradeLevel(Session["username"].ToString()) + "','" + id + "')");
+            }
+            //------------------end-in-progress------------------
 
             //ex1 
             string connectionString = "server=localhost;user id=root;database=math1";
