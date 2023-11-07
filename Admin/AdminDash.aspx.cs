@@ -16,7 +16,8 @@ namespace MATH1.Admin
 
             teacher.Text = blue.query2("select count(teacher_id) from teacher");
             students.Text = blue.query2("select count(stud_id) from students");
-
+            enrollCount.Text = blue.query2("select count(enroll_id) from enrollmentrequest");
+            Label1.Text = blue.query2("select count(ID) from auditlog");
         }
 
            

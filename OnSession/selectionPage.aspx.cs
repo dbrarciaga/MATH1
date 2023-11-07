@@ -12,6 +12,7 @@ namespace MATH1.OnSession
         public partial class WebForm3 : System.Web.UI.Page
     {
         database blue = new database();
+        Achievement waow = new Achievement();
         int score = 0;
         string testing;
         int gradeLevel=0;
@@ -33,7 +34,8 @@ namespace MATH1.OnSession
             }
             //gradeLevel Condition
             if (gradeLevel == 1)
-            {         
+            {
+                progressBar.Text = waow.grade1(blue.getId(Session["username"].ToString()), blue.getGradeLevel(Session["username"].ToString()));
                 LinkButton5.Visible = false;
                 LinkButton6.Visible = false;
                 LinkButton7.Visible = false;
@@ -42,6 +44,7 @@ namespace MATH1.OnSession
             }
             if (gradeLevel == 2)
             {
+                progressBar.Text = waow.grade1(blue.getId(Session["username"].ToString()), blue.getGradeLevel(Session["username"].ToString()));
                 LinkButton5.Visible = false;
                 LinkButton6.Visible = false;
                 LinkButton7.Visible = false;
@@ -50,12 +53,14 @@ namespace MATH1.OnSession
             }
             if (gradeLevel == 3)
             {
+                progressBar.Text = waow.grade3(blue.getId(Session["username"].ToString()), blue.getGradeLevel(Session["username"].ToString()));
                 LinkButton7.Visible = false;
                 LinkButton8.Visible = false;
                 LinkButton9.Visible = false;
             }
             if (gradeLevel == 4)
             {
+                progressBar.Text = waow.grade1(blue.getId(Session["username"].ToString()), blue.getGradeLevel(Session["username"].ToString()));
                 LinkButton7.Visible = false;
                 LinkButton8.Visible = false;
                 LinkButton9.Visible = false;
@@ -143,6 +148,11 @@ namespace MATH1.OnSession
             else if (score >= 32)
             {
                 Label9.Text = "Exercise Finised";
+            }
+            Button1.Visible = false;
+            if(progressBar.Text == "<div class='w3-border w3-white'><div class='w3-green' style='height:24px;width:100%'>100%</div></div>")
+            {
+                Button1.Visible = true;
             }
         }
 
@@ -266,8 +276,13 @@ namespace MATH1.OnSession
             }
 
         }
-       
-      
-      
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            int getGrade = int.Parse(blue.getGradeLevel(Session["username"].ToString()));
+            getGrade = getGrade + 1;
+            blue.query2("update students set gradeLevel = '"+getGrade+"' where username = '"+Session["username"].ToString()+"'");
+            Response.Redirect("Congrats.aspx");
+        }
     }
 }

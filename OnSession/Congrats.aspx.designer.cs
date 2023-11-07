@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MATH1.Main
+namespace MATH1.OnSession
 {
 
 
-    public partial class WebForm4
+    public partial class WebForm16
     {
 
         /// <summary>

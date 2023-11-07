@@ -10,6 +10,7 @@ namespace MATH1.Main
     public partial class WebForm9 : System.Web.UI.Page
     {
         RegisterClass blue = new RegisterClass();
+
         protected void Page_Load(object sender, EventArgs e)
         {
 

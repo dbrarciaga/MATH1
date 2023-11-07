@@ -77,15 +77,8 @@
         <div id="no_teacher" runat="server" visible="false">
         <center >
             <a runat="server" id="soon" style="width: 72%; height: 350px" class="w3-container w3-button w3-round-large w3-margin w3-white w3-card center" text="">
-                <h1>PLEASE SEND AN ENROLLMENT REQUEST</h1>
-                <h4>You have sent <asp:Label ID="numReq" runat="server" Text="0"></asp:Label>/3 requests</h4>
-                <br>
-                <label for="fname">First Name:</label>
-                <input class="TextBoxNiWaow" runat="server" type="text" id="fname" name="fname"><br>
-                <br>
-                <label for="lname">Last Name:</label>
-                <input class="TextBoxNiWaow" runat="server" type="text" id="lname" name="lname"><br>
-                <br>                      
+                <h1>PLEASE SEND AN ENROLLMENT REQUEST</h1>              
+                <br>                                 
                 <asp:Button  CssClass="w3-button w3-black w3-round-xlarge" Visible="false" ID="request" OnClick="request_Click" class="btn btn-info" runat="server" Text="Send Request" />
             </a>
         </center>
@@ -109,11 +102,9 @@
         <!-- ENROLLMENT REQUEST FORM -->
         <div id="Div1" runat="server" visible="false">
         <center >
-            <a runat="server" id="A1" style="width: 72%; height: 260px" class="w3-container w3-button w3-round-large w3-margin w3-white w3-card center" text="">
-                <h4>You have sent <asp:Label ID="Label2" runat="server" Text="0"></asp:Label>/3 requests</h4>
-                <h1>YOU HAVE EXCEEDED YOUR NUMBER OF  </h1>
-                 <h1>   REQUEST, PLEASE WAIT UNTIL A</h1>
-                <h1>TEACHER IS ASSIGNED TO YOU</h1>
+            <a runat="server" id="A1" style="width: 72%; height: 260px" class="w3-container w3-button w3-round-large w3-margin w3-white w3-card center" text="">                
+                <h1>You already send a request </h1>
+          
             </a>
             <br />
               <br />

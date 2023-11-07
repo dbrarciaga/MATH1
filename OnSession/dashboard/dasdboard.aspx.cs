@@ -11,13 +11,14 @@ namespace MATH1.OnSession
     public partial class WebForm1 : System.Web.UI.Page
     {
         database blue = new database();
-        static int requestCount = 0;
+        string requestCount = "";
         string val = "";
         protected void Page_Load(object sender, EventArgs e)
         {
         int id = blue.getId(Session["username"].ToString());
+          
 
-            numReq.Text = requestCount.ToString();
+            
            if(Session["username"]!=null)
             {
                val = Session["username"].ToString();
@@ -60,17 +61,23 @@ namespace MATH1.OnSession
 
             ///////////////////
 
-            
-                if (teacher.Text == "No teacher assigned")//if no teacher assigned
-               {
-                   chal.Visible = false;
-                   learn.Visible = false;
-                   prog.Visible = false;
-                   soon.Visible = true;
-                   no_teacher.Visible = true;
-                   request.Visible = true;
+            string check = blue.query2("select stud_id from enrollmentrequest where stud_id = '" + id + "'");
+            if (teacher.Text == "No teacher assigned")//if no teacher assigned
+            {
+                chal.Visible = false;
+                learn.Visible = false;
+                prog.Visible = false;
+                soon.Visible = true;
+                no_teacher.Visible = true;
+                request.Visible = true;
 
-               }
+            }
+            //if existing
+            if (check == id.ToString())
+            {
+                no_teacher.Visible = false;
+                Div1.Visible = true;
+            }
 
             
             if (Session["username"] == null)
@@ -90,50 +97,21 @@ namespace MATH1.OnSession
         }
         protected void request_Click(object sender, EventArgs eventArgs)
         {
-            string first = fname.Value;
-            string last = lname.Value;
-            int gradeLevel = Int32.Parse(blue.getGradeLevel(Session["username"].ToString()));
-            string glevel=gradeLevel.ToString();
- 
-            if (requestCount ==3)
+            string ngayon = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss"); 
+            int id = blue.getId(Session["username"].ToString());
+            string check = blue.query("select * from enrollmentrequest where stud_id = '"+id+"'");
+            if(check == null)
             {
-                Label2.Text=requestCount.ToString();
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('You have Exceeded your Maximum request try. Please Wait')", true);
-                no_teacher.Visible = false;
-                request.Visible = false;
                 Div1.Visible = true;
-            }
-            else if(first=="" || last=="")
-            {
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Please Enter All Fields')", true);
+                no_teacher.Visible = false;
 
             }
             else
             {
-                requestCount = requestCount + 1;
-                string connectionString = "server=localhost;user id=root;database=math1";
-                MySqlConnection conn = new MySqlConnection(connectionString);
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO enrollmentrequest(`stud_id`,`FirstName`, `LastName`, `GradeLevel`) values ('" + blue.getId(Session["username"].ToString()) + "','" + first + "','" + last + "','" + glevel + "');", conn);
-                MySqlCommand cmd2 = new MySqlCommand("INSERT INTO enrollmentrequest(`stud_id`,`FirstName`, `LastName`, `GradeLevel`) values ('" + blue.getId(Session["username"].ToString()) + "','" + first + "','" + last + "','" + glevel + "');", conn);
-                try
-                {
-
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    Response.Redirect("/OnSession/dashboard/dasdboard.aspx");
-
-                    cmd2.ExecuteNonQuery();
-
-                   
-                }
-                
-                catch (Exception error)
-                {
-                    error1.Text = error.ToString();
-                }
-                
+                blue.query2("insert into enrollmentrequest(stud_id) values ('"+id+"')");
+                blue.query2("insert into auditlog(actiontaken,username,dateAction) values ('request enrollment','"+Session["username"].ToString()+"','"+ngayon+"')");
+                Div1.Visible = true;
             }
-           
         }
     }
 }

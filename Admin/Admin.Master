@@ -88,10 +88,10 @@
               <div class="w3-col  w3-container" style="width:25%; height:53px;"><asp:Button ID="logOut" runat="server" Text="Log-out" style=" float:right;" CssClass="w3-bar-item w3-button" OnClick="logout_Click" /></div>
               <div class="w3-col  w3-container" style="width:15%; height:53px;"></div>
             </div>
-        <div>
+        
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
             </asp:ContentPlaceHolder>
-        </div>
+        
     </form>
     </div>
 </body>
