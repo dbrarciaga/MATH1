@@ -5,14 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace MATH1.Main
+namespace MATH1.OnSession
 {
-    public partial class WebForm4 : System.Web.UI.Page
+    public partial class WebForm16 : System.Web.UI.Page
     {
         database blue = new database();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write(blue.query2("SELECT * FROM `progress` WHERE gradelevel = 2 and topic = 'SUBTRACTION' and stud_id = 20231080"));
+            Label1.Text = blue.getGradeLevel(Session["username"].ToString());
         }
     }
 }

@@ -242,7 +242,7 @@ namespace MATH1.Story
             Button5.Visible = false;
             int id = blue.getId(Session["username"].ToString());
             //progress checker
-            string check = blue.query2("select id from progress where stud_id = '"+id+ "' and topic = 'ADDITION");
+            string check = blue.query2("select id from progress where stud_id = '"+id+ "' and topic = 'ADDITION' and gradeLevel = '"+ blue.getGradeLevel(Session["username"].ToString()) + "'");
             //mag iinsert ng row if walang laman si row, tapos if may laman si row, i-ignore na tong if-condition
             if(check == null)
             {
@@ -251,7 +251,7 @@ namespace MATH1.Story
             //ex1 
             string connectionString = "server=localhost;user id=root;database=math1";
             MySqlConnection conn = new MySqlConnection(connectionString);
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO achievements(`score_title`, `score`,`stud_id`,`teacher_id`, `typeOfTask`) values ('" + title1.Text + "','" + score + "','" + id  + "','"+blue.getTeacherID(id.ToString()) +"','" + "Exercise" + "');", conn);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO achievements(`score_title`, `score`,`stud_id`,`teacher_id`, `typeOfTask`) values (' ADDITION','" + score + "','" + id  + "','"+blue.getTeacherID(id.ToString()) +"','" + "Exercise" + "');", conn);
 
             try
             {

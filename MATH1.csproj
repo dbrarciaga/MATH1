@@ -118,6 +118,7 @@
     <Content Include="OnSession\progress.aspx" />
     <Content Include="OnSession\editGrade.aspx" />
     <Content Include="OnSession\ProfileEdit.aspx" />
+    <Content Include="OnSession\Congrats.aspx" />
     <Content Include="Responsive.css" />
     <Content Include="Story\add.subtract.Integers.aspx" />
     <Content Include="Story\Addition.aspx" />
@@ -243,6 +244,13 @@
     </Compile>
     <Compile Include="Main\Login\LoginForTeacher.aspx.designer.cs">
       <DependentUpon>LoginForTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnSession\Congrats.aspx.cs">
+      <DependentUpon>Congrats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnSession\Congrats.aspx.designer.cs">
+      <DependentUpon>Congrats.aspx</DependentUpon>
     </Compile>
     <Compile Include="Story_Class.cs" />
     <Compile Include="Roster.cs" />

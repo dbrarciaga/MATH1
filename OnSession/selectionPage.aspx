@@ -54,7 +54,9 @@
         <h2  class="w3-container" style="color:black; text-align:center"><b><asp:Label ID="Label1" runat="server" Text="Grade" CssClass="w3-container"></asp:Label></b></h2>
        <br />
 
-        <asp:Label ID="progressBar" runat="server" Text=" "></asp:Label>
+        <asp:Label ID="progressBar" runat="server" Text=" progress "></asp:Label>
+        <br />
+        <asp:Button ID="Button1" runat="server" Text="Level up" OnClick="Button1_Click" />
            <center><i style="color:black">Select a topic</i> </center>
             <!-- first row -->
         
