@@ -13,15 +13,17 @@ namespace MATH1.Admin
         database blue = new database();
         protected void Page_Load(object sender, EventArgs e)
         {
-            string waow = "server=localhost;user id=root;database=math1";
-            using (MySqlConnection cons = new MySqlConnection(waow))
+            
+            updatePanel.Visible = false;
+            string waow2 = "server=localhost;user id=root;database=math1";
+            using (MySqlConnection cons = new MySqlConnection(waow2))
             { 
                 try
                 {
 
                     cons.Open();
 
-                    MySqlCommand utos = new MySqlCommand("Select teacher_id, concat(FirstName,' ',LastName) as 'Name', username from teacher  ", cons);
+                    MySqlCommand utos = new MySqlCommand("Select teacher_id, concat(FirstName,' ',LastName) as 'Name', username, stats as 'Status' from teacher  ", cons);
                     MySqlDataReader myRead = utos.ExecuteReader();
 
                     if (myRead.HasRows == true)
@@ -47,41 +49,54 @@ namespace MATH1.Admin
         }
 
         protected void Button1_Click(object sender, EventArgs e)
-        {
-            if(TextBox1.Text == "")
+        {          
+            if(TextBox1.Text.Length == 0)
             {
                 Label1.Text = "Enter the required field ! ! !";
-            }
-            string waow = "server=localhost;user id=root;database=math1";
-            using (MySqlConnection cons = new MySqlConnection(waow))
-            {
-                try
+                updatePanel.Visible = false;
+            }                
+                string waow = "server=localhost;user id=root;database=math1";
+                using (MySqlConnection cons = new MySqlConnection(waow))
                 {
-
-                    cons.Open();
-
-                    MySqlCommand utos = new MySqlCommand("Select teacher_id as 'ID', concat(FirstName,' ',LastName) as 'Name', username from teacher where teacher_id = '" + TextBox1.Text + "' or username = '" + TextBox1.Text+"'  ", cons);
-                    MySqlDataReader myRead = utos.ExecuteReader();
-
-                    if (myRead.HasRows == true)
+                    try
                     {
-                        GridView1.DataSource = myRead;
-                        GridView1.DataBind();
-                        Label1.Text = " ";
+
+                        cons.Open();
+
+                        MySqlCommand utos = new MySqlCommand("Select teacher_id as 'ID', concat(FirstName,' ',LastName) as 'Name', username from teacher where teacher_id = '" + TextBox1.Text + "' or username = '" + TextBox1.Text + "'  ", cons);
+                        MySqlDataReader myRead = utos.ExecuteReader();
+
+                        if (myRead.HasRows == true)
+                        {
+                            GridView1.DataSource = myRead;
+                            GridView1.DataBind();
+                            Label1.Text = " ";
+                        }
+                        else
+                        {
+                            Label1.Text = "<div class='w3-button w3-red'> user not found! </div>";
+
+                        }
+
                     }
-                    else
+                    catch (Exception err)
                     {
-                        Label1.Text = "<div class='w3-button w3-red'> user not found! </div>";
-
+                        Response.Write(err);
                     }
+                    cons.Close();
+                }
+                statusList.Items.Add("active");
+                statusList.Items.Add("inactive");
+                updatePanel.Visible = true;
+                status.Text = blue.query2("select stats from teacher where username = '" + TextBox1.Text + "' or teacher_id = '" + TextBox1.Text + "'");
+                name.Text = blue.query2("select username from teacher where username ='" + TextBox1.Text + "' or teacher_id = '" + TextBox1.Text + "' ");
+            
+        }
 
-                }
-                catch (Exception err)
-                {
-                    Response.Write(err);
-                }
-                cons.Close();
-            }
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            blue.query2("update teacher set stats = '"+statusList.SelectedValue+"' where username = '"+name.Text+"'");
+            Label1.Text = "<div class='w3-button w3-green'> user updated </div>";
         }
     }
 }

@@ -20,7 +20,7 @@ namespace MATH1.Admin
 
                     cons.Open();
 
-                    MySqlCommand utos = new MySqlCommand("Select actionTaken,username, dateAction from auditlog  ", cons);
+                    MySqlCommand utos = new MySqlCommand("Select actionTaken,username, dateAction from auditlog  order by dateAction desc ", cons);
                     MySqlDataReader myRead = utos.ExecuteReader();
 
                     if (myRead.HasRows == true)

@@ -12,6 +12,16 @@
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <br />
         <br />
+        <div runat="server" id ="updatePanel" class="w3-container w3-white w3-round-large">
+            <h4 class="w3-margin">User details</h4>
+            <p>User: <asp:Label ID="name" runat="server" Text="Label"></asp:Label></p>
+            <p>Status: <asp:Label ID="status" runat="server" Text="Label"></asp:Label></p>
+            <asp:DropDownList ID="statusList" runat="server"></asp:DropDownList>
+            <asp:Button ID="Button2" runat="server" Text="Update" OnClick="Button2_Click" />
+            <br />
+        </div>
+        <br />
+        <br />
         <asp:GridView ID="GridView1" runat="server" CssClass="w3-table-all"></asp:GridView>
         <br />
         

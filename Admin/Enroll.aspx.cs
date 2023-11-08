@@ -32,10 +32,18 @@ namespace MATH1.Admin
                     {
                         using (MySqlCommand cmd = new MySqlCommand(query, cons))
                         {
-                            DropDownList1.DataSource = cmd.ExecuteReader();
-                            DropDownList1.DataTextField = "Student";
-                            DropDownList1.DataValueField = "ID";
-                            DropDownList1.DataBind();
+                            bool count = cmd.ExecuteReader().HasRows;
+                            if(count)
+                            {
+                                DropDownList1.DataSource = cmd.ExecuteReader();
+                                DropDownList1.DataTextField = "Student";
+                                DropDownList1.DataValueField = "ID";
+                                DropDownList1.DataBind();
+                            }
+                            else
+                            {
+                                DropDownList1.Items.Add("No requests");
+                            }
                         }
                     }
                     catch (Exception error)
