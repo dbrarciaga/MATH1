@@ -88,8 +88,9 @@ namespace MATH1.Admin
                 statusList.Items.Add("active");
                 statusList.Items.Add("inactive");
                 updatePanel.Visible = true;
-                status.Text = blue.query2("select stats from teacher where username = '" + TextBox1.Text + "' or teacher_id = '" + TextBox1.Text + "'");
-                name.Text = blue.query2("select username from teacher where username ='" + TextBox1.Text + "' or teacher_id = '" + TextBox1.Text + "' ");
+                status.Text ="Status: " + blue.query2("select stats from teacher where username = '" + TextBox1.Text + "' or teacher_id = '" + TextBox1.Text + "'");
+                fullname.Text = blue.query2("select concat(FirstName,' ',LastName) from teacher where username = '" + TextBox1.Text + "' or teacher_id = '" + TextBox1.Text + "'");
+                name.Text ="username: " + blue.query2("select username from teacher where username ='" + TextBox1.Text + "' or teacher_id = '" + TextBox1.Text + "' ");
             
         }
 

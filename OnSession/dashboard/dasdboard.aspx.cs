@@ -10,13 +10,15 @@ namespace MATH1.OnSession
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        database blue = new database();
-        string requestCount = "";
+        database blue = new database();       
         string val = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-        int id = blue.getId(Session["username"].ToString());
-          
+            int id = blue.getId(Session["username"].ToString());
+            if (blue.query2("select stats from students where stud_id = '" + id + "'") == "inactive")
+            {
+                Response.Redirect("/OnSession/Inactive.aspx");
+            }
 
             
            if(Session["username"]!=null)

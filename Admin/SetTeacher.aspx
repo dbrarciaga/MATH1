@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="margin-left:5%;">
+    <div style="margin-left:5%; width:500px" class="w3-container w3-white">
         <center>
             <h1 style="color:white"> Enroll a student</h1>
             <div style="margin-left:5%; width:500px; text-align:center;" class="w3-container w3-white w3-round-large">
