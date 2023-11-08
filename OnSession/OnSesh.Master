@@ -99,7 +99,7 @@
 
             <div class="w3-row w3-white w3-hide-small w3-hide-medium" style="height:53px;">
               <div class="w3-col  w3-container" style="width:15%; height:53px;"></div>
-              <div class="w3-col  w3-container" style="width:35%; height:53px;"><a href="dasdboard.aspx"><h3 class="w3-bar-item">MATHiNIQUE</h3></a></div>
+              <div class="w3-col  w3-container" style="width:35%; height:53px;"><a href="/OnSession/dashboard/dasdboard.aspx"><h3 class="w3-bar-item">MATHiNIQUE</h3></a></div>
               <div class="w3-col  w3-container" style="width:10%; height:53px;">
                 <img runat="server" src="https://i.imgur.com/AwHUIaV.png" title="source: imgur.com" style="height: 53px; width: 50px;" />
                 <asp:Label ID="Label1" runat="server" Text=""></asp:Label></div>
