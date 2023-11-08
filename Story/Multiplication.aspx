@@ -449,7 +449,7 @@
         </audio>
         <script>
             var audio = document.getElementById("mybg");
-            audio.volume = 0.1;
+            audio.volume = 0.01;
         </script>
     </section>
     <!--end-->

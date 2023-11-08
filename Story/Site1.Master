@@ -79,7 +79,7 @@
 <body class="bgPattern">
     <form id="form1" runat="server">
          <header>
-         <a href="/Main/Homepage/Homepage.aspx"><h1 style="font-family:Calibri,sans-serif;font-weight:500;color: #000000;text-decoration: none;">MATHiNIQUE</h1></a>
+         <a href="/OnSession/dashboard/dasdboard.aspx"><h1 style="font-family:Calibri,sans-serif;font-weight:500;color: #000000;text-decoration: none;">MATHiNIQUE</h1></a>
             <nav>
                 <ul class="nav_links">
                    

@@ -45,7 +45,7 @@ namespace MATH1.OnSession
                             val = cmd.ExecuteScalar().ToString();
                             //blue.query("select teacher from classlist where stud_id = '"+ Session["username"] + "'");
                             teacher.Text = blue.getTeacher(val);
-                            Label1.Text = blue.getInfo(val);
+                           // Label1.Text = blue.getInfo(val);
                             cons.Close();
 
                         }
