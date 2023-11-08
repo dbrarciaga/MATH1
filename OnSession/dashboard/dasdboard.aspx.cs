@@ -45,7 +45,7 @@ namespace MATH1.OnSession
                             val = cmd.ExecuteScalar().ToString();
                             //blue.query("select teacher from classlist where stud_id = '"+ Session["username"] + "'");
                             teacher.Text = blue.getTeacher(val);
-                           // Label1.Text = blue.getInfo(val);
+                            Label1.Text = blue.getInfo(val);
                             cons.Close();
 
                         }
@@ -107,11 +107,11 @@ namespace MATH1.OnSession
 
             }
             else
-            {
-                blue.query2("insert into enrollmentrequest(stud_id) values ('"+id+"')");
+            {   
                 blue.query2("insert into auditlog(actiontaken,username,dateAction) values ('request enrollment','"+Session["username"].ToString()+"','"+ngayon+"')");
                 Div1.Visible = true;
             }
+            blue.query2("insert into enrollmentrequest(stud_id) values ('" + id + "');");
         }
     }
 }

@@ -32,25 +32,21 @@ namespace MATH1.Admin
                     {
                         using (MySqlCommand cmd = new MySqlCommand(query, cons))
                         {
-                            bool count = cmd.ExecuteReader().HasRows;
-                            if(count)
-                            {
+                           
                                 DropDownList1.DataSource = cmd.ExecuteReader();
                                 DropDownList1.DataTextField = "Student";
                                 DropDownList1.DataValueField = "ID";
                                 DropDownList1.DataBind();
-                            }
-                            else
-                            {
-                                DropDownList1.Items.Add("No requests");
-                            }
+                            
+                          
+                            cons.Close();
                         }
                     }
                     catch (Exception error)
                     {
                         Response.Write(error);
                     }
-                    cons.Close();
+                    
                 }
                 //dropdown for teacher
                 using (MySqlConnection cons = new MySqlConnection(waow))
