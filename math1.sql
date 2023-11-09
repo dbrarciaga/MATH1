@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2023 at 02:32 AM
+-- Generation Time: Nov 09, 2023 at 08:57 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.2.31
 
@@ -79,7 +79,45 @@ INSERT INTO `achievements` (`score_ID`, `score_title`, `score`, `stud_id`, `teac
 (39, 'MULTIPLICATION', 4, 20231069, NULL, 'Exercise'),
 (40, 'DIVISION', 4, 20231069, NULL, 'Exercise'),
 (41, 'Addition and Subtraction of Integers + -', 0, 20231069, NULL, 'Exercise'),
-(42, 'Multiplication of Integers (+) x (-)', 4, 20231069, NULL, 'Exercise');
+(42, 'Multiplication of Integers (+) x (-)', 4, 20231069, NULL, 'Exercise'),
+(43, 'Drag and Drop', 5, 20231080, 20232001, 'Quiz'),
+(44, 'subtraction', 4, 20231080, 20232001, 'Quiz');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `activation`
+--
+
+CREATE TABLE `activation` (
+  `ID` int(11) NOT NULL,
+  `stud_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `activation`
+--
+
+INSERT INTO `activation` (`ID`, `stud_id`) VALUES
+(1, 20231011);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `activation_teacher`
+--
+
+CREATE TABLE `activation_teacher` (
+  `ID` int(11) NOT NULL,
+  `teacher_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `activation_teacher`
+--
+
+INSERT INTO `activation_teacher` (`ID`, `teacher_id`) VALUES
+(4, 20232076);
 
 -- --------------------------------------------------------
 
@@ -178,7 +216,173 @@ INSERT INTO `auditlog` (`ID`, `actionTaken`, `username`, `dateAction`) VALUES
 (67, 'student login', 'cindy', '11/07/2023 22:43:42'),
 (68, 'admin login', 'admin', '11/07/2023 22:45:28'),
 (69, 'admin login', 'admin', '11/08/2023 01:40:31'),
-(70, 'Enrolled a student', 'admin', '11/08/2023 01:40:47');
+(70, 'Enrolled a student', 'admin', '11/08/2023 01:40:47'),
+(71, 'admin login', 'admin', '11/08/2023 21:43:21'),
+(72, 'admin login', 'admin', '11/08/2023 21:51:01'),
+(73, 'admin login', 'admin', '11/08/2023 21:51:35'),
+(74, 'admin login', 'admin', '11/08/2023 21:52:52'),
+(75, 'admin login', 'admin', '11/08/2023 22:00:56'),
+(76, 'admin login', 'admin', '11/08/2023 22:01:37'),
+(77, 'student login', 'gumeroos', '11/08/2023 22:07:09'),
+(78, 'student login', 'gumeroos', '11/08/2023 22:11:20'),
+(79, 'student login', 'gumeroos', '11/08/2023 22:12:37'),
+(80, 'student login', 'gumeroos', '11/08/2023 22:13:54'),
+(81, 'student login', 'gumeroos', '11/08/2023 22:19:37'),
+(82, 'student login', 'gumeroos', '11/08/2023 22:21:09'),
+(83, 'student login', 'gumeroos', '11/08/2023 22:21:50'),
+(84, 'student login', 'gumeroos', '11/08/2023 22:27:07'),
+(85, 'teacher login', 'sirdm', '11/08/2023 22:36:11'),
+(86, 'teacher login', 'sirdm', '11/08/2023 22:42:20'),
+(87, 'teacher login', 'sirdm', '11/08/2023 22:43:06'),
+(88, 'teacher login', 'sirdm', '11/08/2023 22:48:14'),
+(89, 'teacher login', 'sirdm', '11/08/2023 22:56:26'),
+(90, 'student login', 'gumeroos', '11/08/2023 22:57:40'),
+(91, 'student login', 'gumeroos', '11/08/2023 22:59:05'),
+(92, 'student login', 'gumeroos', '11/08/2023 23:01:02'),
+(93, 'student login', 'gumeroos', '11/08/2023 23:02:27'),
+(94, 'teacher login', 'sirdm', '11/08/2023 23:03:28'),
+(95, 'teacher login', 'sirdm', '11/08/2023 23:04:12'),
+(96, 'teacher login', 'sirdm', '11/08/2023 23:04:48'),
+(97, 'teacher login', 'sirdm', '11/08/2023 23:06:02'),
+(98, 'teacher login', 'maambelen', '11/09/2023 14:12:29'),
+(99, 'teacher login', 'maambelen', '11/09/2023 14:26:26'),
+(100, 'teacher login', 'maambelen', '11/09/2023 14:28:35'),
+(101, 'teacher login', 'maambelen', '11/09/2023 14:29:33'),
+(102, 'teacher login', 'maambelen', '11/09/2023 14:31:09'),
+(103, 'teacher login', 'maambelen', '11/09/2023 14:32:18'),
+(104, 'teacher login', 'maambelen', '11/09/2023 14:33:02'),
+(105, 'teacher login', 'maambelen', '11/09/2023 14:35:00'),
+(106, 'teacher login', 'maambelen', '11/09/2023 14:36:54'),
+(107, 'teacher login', 'maambelen', '11/09/2023 14:37:44'),
+(108, 'teacher login', 'maambelen', '11/09/2023 14:42:16'),
+(109, 'teacher login', 'maambelen', '11/09/2023 14:43:20'),
+(110, 'teacher login', 'maambelen', '11/09/2023 14:44:29'),
+(111, 'teacher login', 'maambelen', '11/09/2023 14:45:40'),
+(112, 'teacher login', 'maambelen', '11/09/2023 15:14:55'),
+(113, 'teacher login', 'maambelen', '11/09/2023 15:15:29'),
+(114, 'teacher login', 'maambelen', '11/09/2023 15:15:55'),
+(115, 'teacher login', 'maambelen', '11/09/2023 15:19:08'),
+(116, 'teacher login', 'maambelen', '11/09/2023 15:20:06'),
+(117, 'teacher login', 'maambelen', '11/09/2023 17:06:12'),
+(118, 'teacher login', 'maambelen', '11/09/2023 17:25:57'),
+(119, 'teacher login', 'maambelen', '11/09/2023 17:28:12'),
+(120, 'student login', 'blue', '11/09/2023 22:26:06'),
+(121, 'student login', 'blue', '11/09/2023 22:32:29'),
+(122, 'student login', 'blue', '11/09/2023 22:35:52'),
+(123, 'student login', 'blue', '11/09/2023 22:37:21'),
+(124, 'student login', 'blue', '11/09/2023 22:46:05'),
+(125, 'student login', 'blue', '11/09/2023 22:56:27'),
+(126, 'student login', 'blue', '11/09/2023 23:04:55'),
+(127, 'student login', 'blue', '11/09/2023 23:05:53'),
+(128, 'student login', 'blue', '11/09/2023 23:06:41'),
+(129, 'student login', 'blue', '11/09/2023 23:09:02'),
+(130, 'student login', 'blue', '11/09/2023 23:09:03'),
+(131, 'student login', 'blue', '11/09/2023 23:09:49'),
+(132, 'student login', 'blue', '11/09/2023 23:10:28'),
+(133, 'student login', 'blue', '11/09/2023 23:12:38'),
+(134, 'student login', 'blue', '11/09/2023 23:15:50'),
+(135, 'student login', 'blue', '11/09/2023 23:16:45'),
+(136, 'student login', 'blue', '11/09/2023 23:17:13'),
+(137, 'student login', 'blue', '11/09/2023 23:18:55'),
+(138, 'student login', 'blue', '11/09/2023 23:20:00'),
+(139, 'student login', 'blue', '11/09/2023 23:21:41'),
+(140, 'student login', 'blue', '11/09/2023 23:22:13'),
+(141, 'student login', 'blue', '11/09/2023 23:23:03'),
+(142, 'student login', 'blue', '11/09/2023 23:24:18'),
+(143, 'student login', 'blue', '11/09/2023 23:25:33'),
+(144, 'student login', 'blue', '11/09/2023 23:27:36'),
+(145, 'student login', 'blue', '11/09/2023 23:28:05'),
+(146, 'student login', 'blue', '11/09/2023 23:28:55'),
+(147, 'student login', 'blue', '11/09/2023 23:29:30'),
+(148, 'student login', 'blue', '11/09/2023 23:29:57'),
+(149, 'student login', 'blue', '11/09/2023 23:31:29'),
+(150, 'student login', 'blue', '11/09/2023 23:41:38'),
+(151, 'student login', 'blue', '11/09/2023 23:42:33'),
+(152, 'student login', 'blue', '11/09/2023 23:43:19'),
+(153, 'student login', 'blue', '11/09/2023 23:44:57'),
+(154, 'student login', 'blue', '11/09/2023 23:45:52'),
+(155, 'student login', 'blue', '11/09/2023 23:49:12'),
+(156, 'student login', 'blue', '11/09/2023 23:49:39'),
+(157, 'student login', 'blue', '11/09/2023 23:51:51'),
+(158, 'student login', 'blue', '11/09/2023 23:52:50'),
+(159, 'student login', 'blue', '11/09/2023 23:54:08'),
+(160, 'student login', 'blue', '11/10/2023 00:02:01'),
+(161, 'student login', 'blue', '11/10/2023 00:02:45'),
+(162, 'student login', 'blue', '11/10/2023 00:03:19'),
+(163, 'student login', 'blue', '11/10/2023 00:08:48'),
+(164, 'student login', 'blue', '11/10/2023 00:18:28'),
+(165, 'student login', 'blue', '11/10/2023 00:21:38'),
+(166, 'student login', 'blue', '11/10/2023 00:22:16'),
+(167, 'student login', 'blue', '11/10/2023 00:24:13'),
+(168, 'student login', 'blue', '11/10/2023 00:26:04'),
+(169, 'student login', 'blue', '11/10/2023 00:27:24'),
+(170, 'student login', 'blue', '11/10/2023 00:30:41'),
+(171, 'student login', 'blue', '11/10/2023 00:32:22'),
+(172, 'student login', 'blue', '11/10/2023 00:33:18'),
+(173, 'student login', 'blue', '11/10/2023 00:50:17'),
+(174, 'student login', 'blue', '11/10/2023 00:50:55'),
+(175, 'student login', 'blue', '11/10/2023 00:51:43'),
+(176, 'student login', 'blue', '11/10/2023 00:53:04'),
+(177, 'student login', 'blue', '11/10/2023 00:54:48'),
+(178, 'student login', 'blue', '11/10/2023 00:55:48'),
+(179, 'student login', 'blue', '11/10/2023 00:57:53'),
+(180, 'student login', 'blue', '11/10/2023 00:58:38'),
+(181, 'student login', 'blue', '11/10/2023 01:00:06'),
+(182, 'student login', 'blue', '11/10/2023 01:01:24'),
+(183, 'student login', 'blue', '11/10/2023 01:02:37'),
+(184, 'student login', 'blue', '11/10/2023 01:04:47'),
+(185, 'student login', 'blue', '11/10/2023 01:07:22'),
+(186, 'student login', 'blue', '11/10/2023 01:08:34'),
+(187, 'student login', 'blue', '11/10/2023 01:10:39'),
+(188, 'student login', 'blue', '11/10/2023 01:11:22'),
+(189, 'student login', 'blue', '11/10/2023 01:12:52'),
+(190, 'student login', 'blue', '11/10/2023 01:14:46'),
+(191, 'student login', 'blue', '11/10/2023 01:15:19'),
+(192, 'student login', 'blue', '11/10/2023 01:16:03'),
+(193, 'student login', 'blue', '11/10/2023 01:17:18'),
+(194, 'student login', 'blue', '11/10/2023 01:21:14'),
+(195, 'student login', 'blue', '11/10/2023 01:23:07'),
+(196, 'student login', 'blue', '11/10/2023 01:24:05'),
+(197, 'student login', 'blue', '11/10/2023 01:24:36'),
+(198, 'student login', 'blue', '11/10/2023 01:26:03'),
+(199, 'student login', 'blue', '11/10/2023 01:27:08'),
+(200, 'student login', 'blue', '11/10/2023 01:27:58'),
+(201, 'student login', 'blue', '11/10/2023 01:28:44'),
+(202, 'student login', 'blue', '11/10/2023 01:30:21'),
+(203, 'student login', 'blue', '11/10/2023 01:31:44'),
+(204, 'student login', 'blue', '11/10/2023 01:33:27'),
+(205, 'student login', 'blue', '11/10/2023 01:34:49'),
+(206, 'student login', 'blue', '11/10/2023 01:36:19'),
+(207, 'student login', 'blue', '11/10/2023 01:37:15'),
+(208, 'student login', 'blue', '11/10/2023 01:39:48'),
+(209, 'student login', 'blue', '11/10/2023 01:41:10'),
+(210, 'student login', 'blue', '11/10/2023 01:42:57'),
+(211, 'student login', 'blue', '11/10/2023 01:44:29'),
+(212, 'student login', 'blue', '11/10/2023 01:50:20'),
+(213, 'student login', 'blue', '11/10/2023 01:51:06'),
+(214, 'student login', 'blue', '11/10/2023 01:54:10'),
+(215, 'student login', 'blue', '11/10/2023 02:01:13'),
+(216, 'student login', 'blue', '11/10/2023 02:04:20'),
+(217, 'student login', 'blue', '11/10/2023 02:07:36'),
+(218, 'student login', 'blue', '11/10/2023 02:12:19'),
+(219, 'student login', 'blue', '11/10/2023 02:14:08'),
+(220, 'student login', 'blue', '11/10/2023 02:14:52'),
+(221, 'student login', 'blue', '11/10/2023 02:26:00'),
+(222, 'student login', 'blue', '11/10/2023 02:27:06'),
+(223, 'student login', 'blue', '11/10/2023 02:28:09'),
+(224, 'student login', 'blue', '11/10/2023 02:40:04'),
+(225, 'student login', 'blue', '11/10/2023 02:42:37'),
+(226, 'student login', 'blue', '11/10/2023 02:43:26'),
+(227, 'teacher login', 'maambelen', '11/10/2023 03:17:48'),
+(228, 'teacher login', 'maambelen', '11/10/2023 03:20:20'),
+(229, 'teacher login', 'maambelen', '11/10/2023 03:22:09'),
+(230, 'teacher login', 'maambelen', '11/10/2023 03:23:18'),
+(231, 'teacher login', 'maambelen', '11/10/2023 03:35:20'),
+(232, 'teacher login', 'maambelen', '11/10/2023 03:41:22'),
+(233, 'teacher login', 'maambelen', '11/10/2023 03:46:53'),
+(234, 'teacher login', 'maambelen', '11/10/2023 03:49:14'),
+(235, 'teacher login', 'maambelen', '11/10/2023 03:53:27'),
+(236, 'teacher login', 'maambelen', '11/10/2023 03:55:19');
 
 -- --------------------------------------------------------
 
@@ -213,31 +417,29 @@ INSERT INTO `classlist` (`class_id`, `stud_id`, `teacher_id`, `section`) VALUES
 CREATE TABLE `dragdrop` (
   `id` int(11) NOT NULL,
   `q1` text NOT NULL,
-  `op1` text NOT NULL,
   `a1` text NOT NULL,
   `q2` text NOT NULL,
-  `op2` text NOT NULL,
   `a2` text NOT NULL,
   `q3` text NOT NULL,
-  `op3` text NOT NULL,
   `a3` text NOT NULL,
   `q4` text NOT NULL,
-  `op4` text NOT NULL,
   `a4` text NOT NULL,
   `q5` text NOT NULL,
-  `op5` text NOT NULL,
   `a5` text NOT NULL,
   `type` int(11) DEFAULT NULL,
   `quiz_no` int(11) DEFAULT NULL,
-  `number` int(11) DEFAULT NULL
+  `number` int(11) DEFAULT NULL,
+  `grade` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `dragdrop`
 --
 
-INSERT INTO `dragdrop` (`id`, `q1`, `op1`, `a1`, `q2`, `op2`, `a2`, `q3`, `op3`, `a3`, `q4`, `op4`, `a4`, `q5`, `op5`, `a5`, `type`, `quiz_no`, `number`) VALUES
-(1, '1 +2', '3', '3', '3 + 3', '6', '6', '8 x 9', '72', '72', '300 / 25', '12', '12', '53 + 45', '98', '98', 3, 3, 1);
+INSERT INTO `dragdrop` (`id`, `q1`, `a1`, `q2`, `a2`, `q3`, `a3`, `q4`, `a4`, `q5`, `a5`, `type`, `quiz_no`, `number`, `grade`) VALUES
+(1, '1 +2', '3', '3 + 3', '6', '1+1', '2', '30 / 6', '5', '53 + 45', '98', 3, 3, 1, 1),
+(2, '123 + 154 ', '277', '286 - 223', '263', '544 x 8', '4352', '810 ÷ 30', '27', '357 - (-914)', '1271', 3, 3, 1, 3),
+(3, '21³', '9261', '(-3²)+265', '256', '540 ÷ (-60)', '-9', '23x(23²÷23)', '529', '1²-1', '1', 3, 3, 1, 5);
 
 -- --------------------------------------------------------
 
@@ -308,6 +510,20 @@ CREATE TABLE `quiz` (
   `class_id` int(11) DEFAULT NULL,
   `teacher_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `quiz`
+--
+
+INSERT INTO `quiz` (`quiz_id`, `quiz_Number`, `quiz_title`, `item_number`, `question`, `answer`, `gradeLevel`, `class_id`, `teacher_id`) VALUES
+(1, 1, 'addition', 1, '1 + 1?', '2', 1, 1, 20232001),
+(2, 1, 'addition', 2, '3 + 2?', '5', 1, 1, 20232001),
+(3, 1, 'addition', 3, '15 + 5?', '20', 1, 1, 20232001),
+(4, 1, 'addition', 4, '53 + 32?', '85', 1, 1, 20232001),
+(5, 2, 'subtraction', 1, '5 - 2?', '3', 1, 1, 20232001),
+(6, 2, 'subtraction', 2, '10 - 3?', '7', 1, 1, 20232001),
+(7, 2, 'subtraction', 3, '15 - 7?', '8', 1, 1, 20232001),
+(8, 2, 'subtraction', 4, '53 - 32?', '21', 1, 1, 20232001);
 
 -- --------------------------------------------------------
 
@@ -434,7 +650,7 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`stud_id`, `username`, `pass`, `email`, `birthday`, `FirstName`, `LastName`, `GradeLevel`, `score`, `stats`) VALUES
-(20231011, 'gumeroos', '1111', 'email4@yahoo.com', '10/3/2010', 'ced', 'flores', 1, 0, 'active'),
+(20231011, 'gumeroos', '1111', 'email4@yahoo.com', '10/3/2010', 'ced', 'flores', 1, 0, 'inactive'),
 (20231020, 'jun', '1111', 'email2@yahoo.com', '8/2/2010', 'rencee', 'banez', 2, 8, 'active'),
 (20231023, 'drea', '1111', 'email6@yahoo.com', '12/1/2010', 'andrea', 'babae', 4, 0, 'active'),
 (20231031, 'steben', '1111', 'email3@yahoo.com', '12/23/2010', 'steven', 'macarasig', 6, 0, 'active'),
@@ -469,7 +685,7 @@ INSERT INTO `teacher` (`teacher_id`, `username`, `pass`, `email`, `FirstName`, `
 (20232010, 'sireman', '1111', 'email3@yahoo.com', 'Emannuel', 'Transmission', NULL, 'active'),
 (20232045, 'maamrhea', '1111', 'email2@yahoo.com', 'Rhea', 'Tortor', NULL, 'active'),
 (20232062, 'sirilao', '1111', 'email4@yahoo.com', 'Adomar', 'ilao', NULL, 'active'),
-(20232076, 'sirdm', '1111', 'email@yahoo.com', 'Dennis', 'Martillano', NULL, 'active');
+(20232076, 'sirdm', '1111', 'email@yahoo.com', 'Dennis', 'Martillano', NULL, 'inactive');
 
 --
 -- Indexes for dumped tables
@@ -481,6 +697,20 @@ INSERT INTO `teacher` (`teacher_id`, `username`, `pass`, `email`, `FirstName`, `
 ALTER TABLE `achievements`
   ADD PRIMARY KEY (`score_ID`),
   ADD KEY `stud_id` (`stud_id`),
+  ADD KEY `teacher_id` (`teacher_id`);
+
+--
+-- Indexes for table `activation`
+--
+ALTER TABLE `activation`
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `stud_id` (`stud_id`);
+
+--
+-- Indexes for table `activation_teacher`
+--
+ALTER TABLE `activation_teacher`
+  ADD PRIMARY KEY (`ID`),
   ADD KEY `teacher_id` (`teacher_id`);
 
 --
@@ -546,7 +776,19 @@ ALTER TABLE `teacher`
 -- AUTO_INCREMENT for table `achievements`
 --
 ALTER TABLE `achievements`
-  MODIFY `score_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `score_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+
+--
+-- AUTO_INCREMENT for table `activation`
+--
+ALTER TABLE `activation`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `activation_teacher`
+--
+ALTER TABLE `activation_teacher`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `attempts`
@@ -558,7 +800,7 @@ ALTER TABLE `attempts`
 -- AUTO_INCREMENT for table `auditlog`
 --
 ALTER TABLE `auditlog`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=237;
 
 --
 -- AUTO_INCREMENT for table `classlist`
@@ -582,7 +824,7 @@ ALTER TABLE `progress`
 -- AUTO_INCREMENT for table `quiz`
 --
 ALTER TABLE `quiz`
-  MODIFY `quiz_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `quiz_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `students`
@@ -606,6 +848,18 @@ ALTER TABLE `teacher`
 ALTER TABLE `achievements`
   ADD CONSTRAINT `achievements_ibfk_1` FOREIGN KEY (`stud_id`) REFERENCES `students` (`stud_id`),
   ADD CONSTRAINT `achievements_ibfk_2` FOREIGN KEY (`teacher_id`) REFERENCES `teacher` (`teacher_id`);
+
+--
+-- Constraints for table `activation`
+--
+ALTER TABLE `activation`
+  ADD CONSTRAINT `activation_ibfk_1` FOREIGN KEY (`stud_id`) REFERENCES `students` (`stud_id`);
+
+--
+-- Constraints for table `activation_teacher`
+--
+ALTER TABLE `activation_teacher`
+  ADD CONSTRAINT `activation_teacher_ibfk_1` FOREIGN KEY (`teacher_id`) REFERENCES `teacher` (`teacher_id`);
 
 --
 -- Constraints for table `attempts`
