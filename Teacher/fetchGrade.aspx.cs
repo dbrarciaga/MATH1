@@ -10,151 +10,215 @@ namespace MATH1.Teacher
 {
     public partial class WebForm3 : System.Web.UI.Page
     {
-
         database blue = new database();
-        static int num = 0;
-        public int Num
-        {
-            get { return num; }
-            set { num = value; }
-        }
-        bool checkList(string user, int grade)
-        {
-            try
-            {
-                string conn = "server=localhost;user id=root;database=math1";
-                using (MySqlConnection cons = new MySqlConnection(conn))
-                {
-                    cons.Open();
-                    MySqlCommand utos = new MySqlCommand("select * from classlist where teacher = '"+user+"' and Gradelevel = '"+grade+"'",cons);
-                    MySqlDataReader myRead = utos.ExecuteReader();
-                    if(myRead.HasRows == true)
-                    {
-                        return true;
-                    }
-
-                }
-            }
-            catch(Exception e)
-            {
-                return false;
-            }
-            return false;
-        }
+        Achievement waow = new Achievement();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-            string teacher = blue.query2("select teacher_id from teacher where username='" + Session["username"] + "'");
-            LinkButton1.Visible = false;
-            LinkButton2.Visible = false;
-            LinkButton3.Visible = false;
-            LinkButton4.Visible = false;
-            LinkButton5.Visible = false;
-            LinkButton6.Visible = false;
-            if (Session["username"] == null)
+            tasks.Visible = false;
+            tasks2.Visible = false;
+            tasks3.Visible = false;
+            tasks4.Visible = false;
+            con1.Visible = false;
+            string id = blue.query2("select teacher_id from teacher where username = '"+Session["username"].ToString()+"'");
+           if(!IsPostBack)
             {
-                Response.Redirect("/Main/Login/LogIn.aspx");
-            }
-            if(checkList(Session["username"].ToString(), 1))
-            {
-                LinkButton1.Visible = true;
-            }
-            if (checkList(Session["username"].ToString(), 2))
-            {
-                LinkButton2.Visible = true;
-            }
-            if (checkList(Session["username"].ToString(), 3))
-            {
-                LinkButton3.Visible = true;
-            }
-            if (checkList(Session["username"].ToString(), 4))
-            {
-                LinkButton4.Visible = true;
-            }
-            if (checkList(Session["username"].ToString(), 5))
-            {
-                LinkButton5.Visible = true;
-            }
-            if (checkList(Session["username"].ToString(), 6))
-            {
-                LinkButton6.Visible = true;
-            }
-        }
-
-        protected void search_Click(object sender, EventArgs e)
-        {
-            if (search.Text == "")
-            {
-                Label1.Text = "Enter the required fields!";
-                return;
-            }
-            string waow = "server=localhost;user id=root;database=math1";
-            using (MySqlConnection cons = new MySqlConnection(waow))
-            {
-                try
+                //dropdown for student
+                string waow = "server=localhost;user id=root;database=math1";
+                using (MySqlConnection cons = new MySqlConnection(waow))
                 {
-
                     cons.Open();
-
-                    MySqlCommand utos = new MySqlCommand("select concat(students.FirstName,' ',students.LastName) as 'Student', score_title as 'Activity', achievements.score as 'Score' from achievements inner join students on achievements.stud_id = students.stud_id where achievements.stud_id = '" + TextBox1.Text + "' or students.username = '"+TextBox1.Text+"' ", cons);
-                    MySqlDataReader myRead = utos.ExecuteReader();
-                    if (myRead.HasRows == true)
+                    string query = "SELECT classlist.stud_id as 'ID', concat(students.FirstName,' ', students.LastName) as 'Student' FROM `classlist` Inner join students on classlist.stud_id = students.stud_id where classlist.teacher_id = '" + id + "'";
+                    try
                     {
-                        GridView1.DataSource = myRead;
-                        GridView1.DataBind();
-                        Label1.Text = "scores of " + blue.getInfo(TextBox1.Text) ;
-                    }
-                    else
-                    {
-                        Label1.Text = "<div class='button1'> user not found! </div>";
+                        using (MySqlCommand cmd = new MySqlCommand(query, cons))
+                        {
 
+                            DropDownList1.DataSource = cmd.ExecuteReader();
+                            DropDownList1.DataTextField = "Student";
+                            DropDownList1.DataValueField = "ID";
+                            DropDownList1.DataBind();
+
+
+                            cons.Close();
+                        }
                     }
+                    catch (Exception error)
+                    {
+                        Response.Write(error);
+                    }
+
                 }
-                catch (Exception err)
+            }
+
+        }
+        //this will appear the progress bar
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            con1.Visible = true;
+            student.Text = "Student: " + blue.query2("select concat(FirstName,' ',LastName) as 'Name' from students where stud_id='"+DropDownList1.SelectedValue+"'");
+            string grade = blue.query2("select gradeLevel from progress where stud_id = '"+DropDownList1.SelectedValue+"'");
+
+            switch(grade)
+            {
+                case "1":
+                    progressBar.Text = waow.grade1(int.Parse(DropDownList1.SelectedValue),grade);
+                    break;
+                case "2":
+                    progressBar.Text = waow.grade1(int.Parse(DropDownList1.SelectedValue), grade);
+                    break;
+                case "3":
+                    progressBar.Text = waow.grade3(int.Parse(DropDownList1.SelectedValue), grade);
+                    break;
+                case "4":
+                    progressBar.Text = waow.grade3(int.Parse(DropDownList1.SelectedValue), grade);
+                    break;
+                default:
+                    progressBar.Text = waow.grade3(int.Parse(DropDownList1.SelectedValue), grade);
+                    break;
+
+            }            
+            
+            //grade1
+            ADDITION.Visible = false;
+            SUBTRATION.Visible = false;
+            MULTIPLICATION.Visible = false;
+            DIVISION.Visible = false;
+            if (blue.query2("select gradeLevel from progress where stud_id = '" + DropDownList1.SelectedValue + "' and gradelevel = 1") == "1")
+            {
+                tasks.Visible = true;
+                //addition
+                if(blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'ADDITION'") == "ADDITION")
                 {
-                    Label1.Text = err.ToString();
+                    ADDITION.Visible = true;
+                }
+                //subraction
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'SUBTRACTION'") == "SUBTRACTION")
+                {
+                    SUBTRATION.Visible = true;
+                }
+                //multiplication
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'MULTIPLICATION'") == "MULTIPLICATION")
+                {
+                    MULTIPLICATION.Visible = true;
+                }
+                //division
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'DIVISION'") == "DIVISION")
+                {
+                    DIVISION.Visible = true;
+                }
+            }
+            // grade 2
+            ADDITION2.Visible = false;
+            SUBTRATION2.Visible = false;
+            MULTIPLICATION2.Visible = false;
+            DIVISION2.Visible = false;
+            if (blue.query2("select gradeLevel from progress where stud_id = '" + DropDownList1.SelectedValue + "' and gradelevel = 2") == "2")
+            {
+                tasks2.Visible = true;
+                //addition
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'ADDITION'") == "ADDITION")
+                {
+                    ADDITION2.Visible = true;
+                }
+                //subraction
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'SUBTRACTION'") == "SUBTRACTION")
+                {
+                    SUBTRATION2.Visible = true;
+                }
+                //multiplication
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'MULTIPLICATION'") == "MULTIPLICATION")
+                {
+                    MULTIPLICATION2.Visible = true;
+                }
+                //division
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'DIVISION'") == "DIVISION")
+                {
+                    DIVISION2.Visible = true;
+                }
+            }
+            // grade 3
+            ADDITION3.Visible = false;
+            SUBTRATION3.Visible = false;
+            MULTIPLICATION3.Visible = false;
+            DIVISION3.Visible = false;
+            ADDSUBINT.Visible = false;
+            MULTIINT.Visible = false;
+            if (blue.query2("select gradeLevel from progress where stud_id = '" + DropDownList1.SelectedValue + "' and gradelevel = 3") == "3")
+            {
+                tasks3.Visible = true;
+                //addition
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'ADDITION'") == "ADDITION")
+                {
+                    ADDITION2.Visible = true;
+                }
+                //subraction
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'SUBTRACTION'") == "SUBTRACTION")
+                {
+                    SUBTRATION2.Visible = true;
+                }
+                //multiplication
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'MULTIPLICATION'") == "MULTIPLICATION")
+                {
+                    MULTIPLICATION2.Visible = true;
+                }
+                //division
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'DIVISION'") == "DIVISION")
+                {
+                    DIVISION2.Visible = true;
+                }
+                //addsub_int
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'ADDSUBINT'") == "ADDSUBINT")
+                {
+                    ADDSUBINT.Visible = true;
+                }
+                //multi_int
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'MULTIINT'") == "MULTIINT")
+                {
+                    MULTIINT.Visible = true;
+                }
+            }
+            // grade 4
+            ADDITION4.Visible = false;
+            SUBTRATION4.Visible = false;
+            MULTIPLICATION4.Visible = false;
+            DIVISION4.Visible = false;
+            ADDSUBINT4.Visible = false;
+            MULTIINT4.Visible = false;
+            if (blue.query2("select gradeLevel from progress where stud_id = '" + DropDownList1.SelectedValue + "' and gradelevel = 4") == "4")
+            {
+                tasks4.Visible = true;
+                //addition
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'ADDITION'") == "ADDITION")
+                {
+                    ADDITION4.Visible = true;
+                }
+                //subraction
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'SUBTRACTION'") == "SUBTRACTION")
+                {
+                    SUBTRATION4.Visible = true;
+                }
+                //multiplication
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'MULTIPLICATION'") == "MULTIPLICATION")
+                {
+                    MULTIPLICATION4.Visible = true;
+                }
+                //division
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'DIVISION'") == "DIVISION")
+                {
+                    DIVISION4.Visible = true;
+                }
+                //addsub_int
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'ADDSUBINT'") == "ADDSUBINT")
+                {
+                    ADDSUBINT4.Visible = true;
+                }
+                //multi_int
+                if (blue.query2("select topic from progress where stud_id = '" + DropDownList1.SelectedValue + "' and topic = 'MULTIINT'") == "MULTIINT")
+                {
+                    MULTIINT4.Visible = true;
                 }
             }
         }
-        protected void LinkButton1_Click(object sender, EventArgs e)
-        {
-            Roster obj = new Roster(1);
-            Response.Redirect("ViewGradePerRoster.aspx");
-        }
-        protected void LinkButton2_Click(object sender, EventArgs e)
-        {
-            Roster obj = new Roster(2);
-            Response.Redirect("ViewGradePerRoster.aspx");
-        }
-        protected void LinkButton3_Click(object sender, EventArgs e)
-        {
-            Roster obj = new Roster(3);
-            Response.Redirect("ViewGradePerRoster.aspx");
-        }
-        protected void LinkButton4_Click(object sender, EventArgs e)
-        {
-            Roster obj = new Roster(4);
-            Response.Redirect("ViewGradePerRoster.aspx");
-        }
-
-        protected void LinkButton5_Click(object sender, EventArgs e)
-        {
-            Roster obj = new Roster(5);
-            Response.Redirect("ViewGradePerRoster.aspx");
-        }
-
-        protected void LinkButton6_Click(object sender, EventArgs e)
-        {
-            Roster obj = new Roster(6);
-            Response.Redirect("ViewGradePerRoster.aspx");
-        }
-
-     
-
-    
-       
-
-      
-
-      
     }
 }
