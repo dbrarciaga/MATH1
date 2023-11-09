@@ -119,6 +119,7 @@
     <Content Include="OnSession\editGrade.aspx" />
     <Content Include="OnSession\ProfileEdit.aspx" />
     <Content Include="OnSession\Congrats.aspx" />
+    <Content Include="OnSession\Inactive.aspx" />
     <Content Include="Responsive.css" />
     <Content Include="Story\add.subtract.Integers.aspx" />
     <Content Include="Story\Addition.aspx" />
@@ -140,6 +141,7 @@
     <Content Include="Teacher\UpdateQuizzes.aspx" />
     <Content Include="Teacher\ViewGradePerRoster.aspx" />
     <Content Include="Teacher\WebForm1.aspx" />
+    <Content Include="Teacher\Inactive.aspx" />
     <Content Include="voice\add_ex1.mp3" />
     <Content Include="voice\add_ex2.mp3" />
     <Content Include="voice\add_ex3.mp3" />
@@ -251,6 +253,13 @@
     </Compile>
     <Compile Include="OnSession\Congrats.aspx.designer.cs">
       <DependentUpon>Congrats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnSession\Inactive.aspx.cs">
+      <DependentUpon>Inactive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnSession\Inactive.aspx.designer.cs">
+      <DependentUpon>Inactive.aspx</DependentUpon>
     </Compile>
     <Compile Include="Story_Class.cs" />
     <Compile Include="Roster.cs" />
@@ -609,6 +618,13 @@
     </Compile>
     <Compile Include="Teacher\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\Inactive.aspx.cs">
+      <DependentUpon>Inactive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\Inactive.aspx.designer.cs">
+      <DependentUpon>Inactive.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

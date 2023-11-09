@@ -21,7 +21,7 @@ namespace MATH1
             string multiplication = blue.query2("select * from progress where stud_id = '" + val + "' and topic = 'MULTIPLICATION'  and gradeLevel = '" + grade + "'");
             string division = blue.query2("select * from progress where stud_id = '" + val + "' and topic = 'DIVISION'  and gradeLevel = '" + grade + "'");
             int num = 0;
-            string final = "<div class='w3-border w3-white'><div class='w3-green' style='height:24px;width:1%'></div></div>";
+            string final = "<div class='w3-border w3-white'><div class='w3-green' style='height:24px;width:1%'>0%</div></div>";
             if(addition != null)
             {
                 num = num + 1;
@@ -53,7 +53,7 @@ namespace MATH1
                     final = "<div class='w3-border w3-white'><div class='w3-green' style='height:24px;width:100%'>100%</div></div>";
                     break;
                 default:
-                    final = "<div class='w3-border w3-white'><div class='w3-green' style='height:24px;width:1%'></div></div>";
+                    final = "<div class='w3-border w3-white'><div class='w3-green' style='height:24px;width:1%'>0%</div></div>";
                     break;
             }
             return final;
@@ -69,7 +69,7 @@ namespace MATH1
             string addsubInt = blue.query2("select * from progress where stud_id = '" + val + "' and topic = 'ADDSUBINT'  and gradeLevel = '" + grade + "'");
             string multiInt = blue.query2("select * from progress where stud_id = '" + val + "' and topic = 'MULTIINT'  and gradeLevel = '" + grade + "'");
             int num = 0;
-            string final = "<div class='w3-border w3-white'><div class='w3-green' style='height:24px;width:1%'></div></div>";
+            string final = "<div class='w3-border w3-white'><div class='w3-green' style='height:24px;width:1%'>0%</div></div>";
             if (addition != null)
             {
                 num = num + 1;
@@ -115,7 +115,7 @@ namespace MATH1
                     final = "<div class='w3-border w3-white'><div class='w3-green' style='height:24px;width:100%'>100%</div></div>";
                     break;
                 default:
-                    final = "<div class='w3-border w3-white'><div class='w3-green' style='height:24px;width:1%'></div></div>";
+                    final = "<div class='w3-border w3-white'><div class='w3-green' style='height:24px;width:1%'>0%</div></div>";
                     break;
             }
             return final;

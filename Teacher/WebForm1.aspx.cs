@@ -56,6 +56,11 @@ namespace MATH1.Teacher
         }
         protected void Page_Load(object sender, EventArgs e)
         {
+            string id = blue.query2("select teacher_id from teacher where username='"+Session["username"].ToString()+"'");
+            if (blue.query2("select stats from teacher where teacher_id = '" + id + "'") == "inactive")
+            {
+                Response.Redirect("/Teacher/Inactive.aspx");
+            }
             LinkButton1.Visible = false;
             LinkButton2.Visible = false;
             LinkButton3.Visible = false;
