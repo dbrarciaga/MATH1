@@ -126,7 +126,7 @@
 
                         <li><a style="font-size: 25px; color:white;" class="fontfam w3-button" href="/Main/NewHomePage.aspx">Home</a></li>
                         <li><a style="font-size: 25px; color:white;" class="fontfam w3-button" href="/Main/aboutUs.aspx">About Us</a></li>
-                        <li><a style="font-size: 25px; color:white;" class="fontfam w3-button" href="/Main/contacts.aspx">Contacts</a></li>
+                        <li><a style="font-size: 25px; color:white;" class="fontfam w3-button" href="/Main/contacts.aspx">User Guide</a></li>
                     </ul>
                 </nav>
                 <a class="button1 fontfam" href="/Main/Login/LogIn.aspx">LOGIN</a>
@@ -140,7 +140,7 @@
                         <li><a class="w3-button w3-black" style="font-size: 25px" href="/Main/testing.aspx">About Us</a></li>
 
 
-                        <li><a class="w3-button w3-black" style="font-size: 25px" href="/Main/contacts.aspx">Contacts</a></li>
+                        <li><a class="w3-button w3-black" style="font-size: 25px" href="/Main/contacts.aspx">User Guide</a></li>
 
 
                         <li><a class="w3-button w3-black" style="font-size: 25px" href="/Main/Login/LogIn.aspx">Log-In</a></li>
