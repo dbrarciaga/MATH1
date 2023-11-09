@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 07, 2023 at 02:04 PM
+-- Generation Time: Nov 08, 2023 at 02:32 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.2.31
 
@@ -75,7 +75,11 @@ INSERT INTO `achievements` (`score_ID`, `score_title`, `score`, `stud_id`, `teac
 (35, 'Grade 1 and 2 Multiplication x x', 4, 20231069, NULL, 'Exercise'),
 (36, 'Grade 1 and 2 Division ÷ ÷', 4, 20231069, NULL, 'Exercise'),
 (37, ' ADDITION', 4, 20231069, 20232001, 'Exercise'),
-(38, 'SUBTRACTION', 4, 20231069, 20232001, 'Exercise');
+(38, 'SUBTRACTION', 4, 20231069, 20232001, 'Exercise'),
+(39, 'MULTIPLICATION', 4, 20231069, NULL, 'Exercise'),
+(40, 'DIVISION', 4, 20231069, NULL, 'Exercise'),
+(41, 'Addition and Subtraction of Integers + -', 0, 20231069, NULL, 'Exercise'),
+(42, 'Multiplication of Integers (+) x (-)', 4, 20231069, NULL, 'Exercise');
 
 -- --------------------------------------------------------
 
@@ -165,7 +169,16 @@ INSERT INTO `auditlog` (`ID`, `actionTaken`, `username`, `dateAction`) VALUES
 (58, 'student login', 'waow', '11/07/2023 19:14:37'),
 (59, 'student login', 'waow', '11/07/2023 20:50:07'),
 (60, 'student login', 'waow', '11/07/2023 20:50:44'),
-(61, 'student login', 'waow', '11/07/2023 20:51:45');
+(61, 'student login', 'waow', '11/07/2023 20:51:45'),
+(62, 'student login', 'waow', '11/07/2023 21:37:49'),
+(63, 'student login', 'waow', '11/07/2023 21:41:57'),
+(64, 'admin login', 'admin', '11/07/2023 22:29:59'),
+(65, 'admin login', 'admin', '11/07/2023 22:34:20'),
+(66, 'admin login', 'admin', '11/07/2023 22:42:31'),
+(67, 'student login', 'cindy', '11/07/2023 22:43:42'),
+(68, 'admin login', 'admin', '11/07/2023 22:45:28'),
+(69, 'admin login', 'admin', '11/08/2023 01:40:31'),
+(70, 'Enrolled a student', 'admin', '11/08/2023 01:40:47');
 
 -- --------------------------------------------------------
 
@@ -187,7 +200,44 @@ CREATE TABLE `classlist` (
 INSERT INTO `classlist` (`class_id`, `stud_id`, `teacher_id`, `section`) VALUES
 (1, 20231020, 20232001, 1),
 (2, 20231080, 20232001, 1),
-(3, 20231069, 20232001, 1);
+(3, 20231069, 20232001, 1),
+(4, 20231099, 20232045, 6),
+(7, 20231023, 20232001, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dragdrop`
+--
+
+CREATE TABLE `dragdrop` (
+  `id` int(11) NOT NULL,
+  `q1` text NOT NULL,
+  `op1` text NOT NULL,
+  `a1` text NOT NULL,
+  `q2` text NOT NULL,
+  `op2` text NOT NULL,
+  `a2` text NOT NULL,
+  `q3` text NOT NULL,
+  `op3` text NOT NULL,
+  `a3` text NOT NULL,
+  `q4` text NOT NULL,
+  `op4` text NOT NULL,
+  `a4` text NOT NULL,
+  `q5` text NOT NULL,
+  `op5` text NOT NULL,
+  `a5` text NOT NULL,
+  `type` int(11) DEFAULT NULL,
+  `quiz_no` int(11) DEFAULT NULL,
+  `number` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `dragdrop`
+--
+
+INSERT INTO `dragdrop` (`id`, `q1`, `op1`, `a1`, `q2`, `op2`, `a2`, `q3`, `op3`, `a3`, `q4`, `op4`, `a4`, `q5`, `op5`, `a5`, `type`, `quiz_no`, `number`) VALUES
+(1, '1 +2', '3', '3', '3 + 3', '6', '6', '8 x 9', '72', '72', '300 / 25', '12', '12', '53 + 45', '98', '98', 3, 3, 1);
 
 -- --------------------------------------------------------
 
@@ -205,8 +255,6 @@ CREATE TABLE `enrollmentrequest` (
 --
 
 INSERT INTO `enrollmentrequest` (`enroll_id`, `stud_id`) VALUES
-(3, 20231023),
-(1, 20231099),
 (4, 202310349);
 
 -- --------------------------------------------------------
@@ -237,7 +285,11 @@ INSERT INTO `progress` (`ID`, `topic`, `gradeLevel`, `stud_id`) VALUES
 (12, 'MULTIPLICATION', 2, 20231069),
 (13, 'DIVISION', 2, 20231069),
 (14, 'ADDITION', 3, 20231069),
-(15, 'SUBTRACTION', 3, 20231069);
+(15, 'SUBTRACTION', 3, 20231069),
+(16, 'MULTIPLICATION', 3, 20231069),
+(17, 'DIVISION', 3, 20231069),
+(18, 'ADDSUBINT', 3, 20231069),
+(19, 'MULTIINT', 3, 20231069);
 
 -- --------------------------------------------------------
 
@@ -287,36 +339,36 @@ INSERT INTO `storyboard` (`id`, `grade_level`, `topic`, `title`, `questionTitle`
 (2, 1, 'addition', 'Grade 1 and 2 Addition + +', '<b>Big Boy\'s Shoe Collection</b>', '  Big Boy\'s shoe collection consist of <b>seventeen (17)</b> Air Jordan 1\'s and <b>fourteen (14)</b> Vans off the wall shoes. Big Boy wants to buy shoeboxes to store his shoes. How many shoebox should Big Boy buy in order to store his shoe collection properly?', 31, 'https://feeds.soundcloud.com/stream/1635927024-rencee-c-banez-add-ex2.mp3', 'https://i.imgur.com/FXmLgpY.png', 'https://i.imgur.com/xR1hwgw.png', 'https://i.imgur.com/DcyJn83.png', 2),
 (3, 1, 'addition', 'Grade 1 and 2 Addition + +', '<b>Mikey\'s Birthday Gifts</b>\r\n', 'On Mikey\'s Birthday there were many people who gave him gifts, both on his mother\'s and father\'s side. On Mikey\'s mother side he received <b>12</b> gifts and on his father side he received <b>6</b> gifts. How many gifts did Mikey receive in total?', 18, 'https://feeds.soundcloud.com/stream/1635944193-rencee-c-banez-g1add3.mp3', 'https://i.imgur.com/N1pOqfB.png', 'https://i.imgur.com/KDxcYgT.png', 'https://i.imgur.com/JGhXpyB.png', 3),
 (4, 1, 'addition', 'Grade 1 and 2 Addition + +', '<b>Mary and Joel\'s Piggy Bank</b>', 'Mary and Joel just started saving their money, Mary who saves a lot of her money has <b>$ 74</b> in her piggy bank and Joel who saves a bit of money has <b>$ 32</b> in his piggy bank. How much money will they have if they merge their piggy banks?', 106, 'https://feeds.soundcloud.com/stream/1635959442-rencee-c-banez-g1add4.mp3', 'https://i.imgur.com/omFpBtQ.png', 'https://i.imgur.com/isGna8m.png', 'https://i.imgur.com/nM6fKuR.png', 4),
-(5, 3, 'addition', 'Grade 3 and 4 Addition + +', '<b>Santa\'s Dinner Party</b>', 'On a cold Christmas night Santa invited <b>Sixty Five (65)</b> Elfs and <b>Eighty Nine (89)</b> Humans to eat dinner and drink hot chocolate at his house. How many guests will Santa have in total?', 154, 'https://feeds.soundcloud.com/stream/1636732941-rencee-c-banez-g3add1-2.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 1),
-(6, 3, 'addition', 'Grade 3 and 4 Addition + +', '<b>Big Boy\'s Shoe Collection</b>', 'Big Boy\'s shoe collection consist of <b>One Hundred Seventy Three (173)</b> Air Jordan 1\'s and <b>Fifty Four (54)</b> Vans off the wall shoes. Big Boy wants to buy shoeboxes to store his shoes. How many shoebox should Big Boy buy in order to store his shoe collection properly?', 227, 'https://feeds.soundcloud.com/stream/1636739622-rencee-c-banez-g3add2.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 2),
-(7, 3, 'addition', 'Grade 3 and 4 Addition + +', '<b>Mikey\'s Birthday Gifts</b>\r\n', 'On Mikey\'s Birthday there were many people who gave him gifts, both on his mother\'s and father\'s side. On Mikey\'s mother side he received <b>122</b> gifts and on his father side he received <b>167</b> gifts. How many gifts did Mikey receive in total?', 289, 'https://feeds.soundcloud.com/stream/1636746852-rencee-c-banez-g3add3.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 3),
-(8, 3, 'addition', 'Grade 3 and 4 Addition + +', '<b>Mary and Joel\'s Piggy Bank</b>', 'Mary and Joel just started saving their money, Mary who saves a lot of her money has <b>$ 976</b> in her piggy bank and Joel who saves a bit of money has <b>$ 648</b> in his piggy bank. How much money will they have if they merge their piggy banks?', 1624, 'https://feeds.soundcloud.com/stream/1636753092-rencee-c-banez-g3add4.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 4),
-(9, 5, 'addition', 'Grade 5 and 6 Addition + +', '<b>Santa\'s Dinner Party</b>', 'On a cold Christmas night Santa invited <b>984</b> Elfs and <b>1276</b> Humans to eat dinner and drink hot chocolate at his house. How many guests will Santa have in total?', 2260, 'https://feeds.soundcloud.com/stream/1636763829-rencee-c-banez-g5add1.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 1),
-(10, 5, 'addition', 'Grade 5 and 6 Addition + +', '<b>Big Boy\'s Shoe Collection</b>', '  Big Boy\'s shoe collection consist of <b>1719</b> Air Jordan 1\'s and <b>1217</b> Vans off the wall shoes. Big Boy wants to buy shoeboxes to store his shoes. How many shoebox should Big Boy buy in order to store his shoe collection properly?', 2936, 'https://feeds.soundcloud.com/stream/1636771086-rencee-c-banez-g5add2.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 2),
-(11, 5, 'addition', 'Grade 5 and 6 Addition + +', '<b>Mikey\'s Birthday Gifts</b>\r\n', 'On Mikey\'s Birthday there were many people who gave him gifts, both on his mother\'s and father\'s side. On Mikey\'s mother side he received <b>7331</b> gifts and on his father side he received <b>8863</b> gifts. How many gifts did Mikey receive in total?', 16194, 'https://feeds.soundcloud.com/stream/1636778727-rencee-c-banez-g5add3.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 3),
-(12, 5, 'addition', 'Grade 5 and 6 Addition + +', '<b>Mary and Joel\'s Piggy Bank</b>', 'Mary and Joel just started saving their money, Mary who saves a lot of her money has <b>$ 43,334</b> in her piggy bank and Joel who saves a bit of money has <b>$ 22,768</b> in his piggy bank. How much money will they have if they merge their piggy banks?', 66102, 'https://feeds.soundcloud.com/stream/1636785600-rencee-c-banez-g5add4.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 4),
+(5, 3, 'addition', 'Grade 3 and 4 Addition + +', '<b>Santa\'s Dinner Party</b>', 'On a cold Christmas night Santa invited <b>Sixty Five (65)</b> Elfs and <b>Eighty Nine (89)</b> Humans to eat dinner and drink hot chocolate at his house. How many guests will Santa have in total?', 154, 'https://feeds.soundcloud.com/stream/1636732941-rencee-c-banez-g3add1-2.mp3', 'https://i.imgur.com/MGi6m9i.png', 'https://i.imgur.com/qyEendi.png', 'https://i.imgur.com/AP41dZP.png', 1),
+(6, 3, 'addition', 'Grade 3 and 4 Addition + +', '<b>Big Boy\'s Shoe Collection</b>', 'Big Boy\'s shoe collection consist of <b>One Hundred Seventy Three (173)</b> Air Jordan 1\'s and <b>Fifty Four (54)</b> Vans off the wall shoes. Big Boy wants to buy shoeboxes to store his shoes. How many shoebox should Big Boy buy in order to store his shoe collection properly?', 227, 'https://feeds.soundcloud.com/stream/1636739622-rencee-c-banez-g3add2.mp3', 'https://i.imgur.com/pc4mIOj.png', 'https://i.imgur.com/FvzHfVZ.png', 'https://i.imgur.com/ndEIznH.png', 2),
+(7, 3, 'addition', 'Grade 3 and 4 Addition + +', '<b>Mikey\'s Birthday Gifts</b>\r\n', 'On Mikey\'s Birthday there were many people who gave him gifts, both on his mother\'s and father\'s side. On Mikey\'s mother side he received <b>122</b> gifts and on his father side he received <b>167</b> gifts. How many gifts did Mikey receive in total?', 289, 'https://feeds.soundcloud.com/stream/1636746852-rencee-c-banez-g3add3.mp3', 'https://i.imgur.com/353kgum.png', 'https://i.imgur.com/QwiNNbA.png', 'https://i.imgur.com/B9gkqJB.png', 3),
+(8, 3, 'addition', 'Grade 3 and 4 Addition + +', '<b>Mary and Joel\'s Piggy Bank</b>', 'Mary and Joel just started saving their money, Mary who saves a lot of her money has <b>$ 976</b> in her piggy bank and Joel who saves a bit of money has <b>$ 648</b> in his piggy bank. How much money will they have if they merge their piggy banks?', 1624, 'https://feeds.soundcloud.com/stream/1636753092-rencee-c-banez-g3add4.mp3', 'https://i.imgur.com/avDxFqT.png', 'https://i.imgur.com/x8Xv6cl.png', 'https://i.imgur.com/4u4s3ls.png', 4),
+(9, 5, 'addition', 'Grade 5 and 6 Addition + +', '<b>Santa\'s Dinner Party</b>', 'On a cold Christmas night Santa invited <b>984</b> Elfs and <b>1276</b> Humans to eat dinner and drink hot chocolate at his house. How many guests will Santa have in total?', 2260, 'https://feeds.soundcloud.com/stream/1636763829-rencee-c-banez-g5add1.mp3', 'https://i.imgur.com/hkWIufC.png', 'https://i.imgur.com/pL1j3v6.png', 'https://i.imgur.com/g7AvtIb.png', 1),
+(10, 5, 'addition', 'Grade 5 and 6 Addition + +', '<b>Big Boy\'s Shoe Collection</b>', '  Big Boy\'s shoe collection consist of <b>1719</b> Air Jordan 1\'s and <b>1217</b> Vans off the wall shoes. Big Boy wants to buy shoeboxes to store his shoes. How many shoebox should Big Boy buy in order to store his shoe collection properly?', 2936, 'https://feeds.soundcloud.com/stream/1636771086-rencee-c-banez-g5add2.mp3', 'https://i.imgur.com/O54thiO.png', 'https://i.imgur.com/kMjXNXK.png', 'https://i.imgur.com/rL6KJgk.png', 2),
+(11, 5, 'addition', 'Grade 5 and 6 Addition + +', '<b>Mikey\'s Birthday Gifts</b>\r\n', 'On Mikey\'s Birthday there were many people who gave him gifts, both on his mother\'s and father\'s side. On Mikey\'s mother side he received <b>7331</b> gifts and on his father side he received <b>8863</b> gifts. How many gifts did Mikey receive in total?', 16194, 'https://feeds.soundcloud.com/stream/1636778727-rencee-c-banez-g5add3.mp3', 'https://i.imgur.com/8gybQB9.png', 'https://i.imgur.com/c0TrMsH.png', 'https://i.imgur.com/etRQNAd.png', 3),
+(12, 5, 'addition', 'Grade 5 and 6 Addition + +', '<b>Mary and Joel\'s Piggy Bank</b>', 'Mary and Joel just started saving their money, Mary who saves a lot of her money has <b>$ 43,334</b> in her piggy bank and Joel who saves a bit of money has <b>$ 22,768</b> in his piggy bank. How much money will they have if they merge their piggy banks?', 66102, 'https://feeds.soundcloud.com/stream/1636785600-rencee-c-banez-g5add4.mp3', 'https://i.imgur.com/CShbgMF.png', 'https://i.imgur.com/QKezMtR.png', 'https://i.imgur.com/1ehh5Rx.png', 4),
 (13, 1, 'subtraction', 'Grade 1 and 2 Subtraction - -', '<b>Farmer\'s Apples</b>', 'A farmer Picked <b>seven (7)</b> apples from his farm. As he got back to his home he saw and counted that <b>three (3)</b> apples were rotten. How many apples does the farmer have left?', 4, 'https://feeds.soundcloud.com/stream/1636810098-rencee-c-banez-g1sub1.mp3', 'https://i.imgur.com/dj7KAWB.png', 'https://i.imgur.com/Z2Iy4pZ.png', 'https://i.imgur.com/PZUjpSC.png', 1),
 (14, 1, 'subtraction', 'Grade 1 and 2 Subtraction - -', '<b>Joel\'s Candies</b>', 'Joel just got back home from trick or treating, he counted his candies that he got and found that he collected <b>9</b> bags of candies. Before Joel sleeps he ate <b>3</b> bags of candies. How many candies does Joel have left?\r\n', 6, 'https://feeds.soundcloud.com/stream/1636821795-rencee-c-banez-g1sub2.mp3', 'https://i.imgur.com/lW00VjX.png', 'https://i.imgur.com/uMSAfz6.png', 'https://i.imgur.com/01MduCO.png', 2),
 (15, 1, 'subtraction', 'Grade 1 and 2 Subtraction - -', '<b>Mr. John\'s Pension</b>', 'Mr John just received <b>$ 95</b> for his monthly pension, so Mr John did what he does every month, Mr John pays his bills and buys groceries which totals to <b>$ 47</b>. How much money does Mr. John have left?', 48, 'https://feeds.soundcloud.com/stream/1636830147-rencee-c-banez-g1sub3.mp3', 'https://i.imgur.com/gTx9LY8.png', 'https://i.imgur.com/mdhMLyA.png', 'https://i.imgur.com/cWTHgNq.png', 3),
 (16, 1, 'subtraction', 'Grade 1 and 2 Subtraction - -', '<b>The Pandemic</b>', 'In a factory, there were <b>73</b> workers but because of the pandemic <b>9</b> workers got sick and was forced to stay at home. How many workers are left in the Factory?', 64, 'https://feeds.soundcloud.com/stream/1636832007-rencee-c-banez-g1sub4.mp3', 'https://i.imgur.com/JYmEc9W.png', 'https://i.imgur.com/Zjw2bXV.png', 'https://i.imgur.com/AvyvWhE.png', 4),
-(17, 3, 'subtraction', 'Grade 3 and 4 Subtraction - -', '<b>Farmer\'s Apples</b>', 'A farmer Picked <b>seventy four (74)</b> apples from his farm. As he got back to his home he saw and counted that <b>thirty five (35)</b> apples were rotten. How many apples does the farmer have left?', 39, 'https://feeds.soundcloud.com/stream/1636838121-rencee-c-banez-g3sub1.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 1),
-(18, 3, 'subtraction', 'Grade 3 and 4 Subtraction - -', '<b>Joel\'s Candies</b>', 'Joel just got back home from trick or treating, he counted his candies that he got and found that he collected <b>19</b> bags of candies. Before Joel sleeps he ate <b>2</b> bags of candies. How many candies does Joel have left?\r\n', 17, 'https://feeds.soundcloud.com/stream/1636850736-rencee-c-banez-g3sub2.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 2),
-(19, 3, 'subtraction', 'Grade 3 and 4 Subtraction - -', '<b>Mr. John\'s Pension</b>', 'Mr John just received <b>$ 956</b> for his monthly pension, so Mr John did what he does every month, Mr John pays his bills and buys groceries which totals to <b>$ 91</b>. How much money does Mr. John have left?', 865, 'https://feeds.soundcloud.com/stream/1636857084-rencee-c-banez-g3sub3.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 3),
-(20, 3, 'subtraction', 'Grade 3 and 4 Subtraction - -', '<b>The Pandemic</b>', 'In a factory, there were <b>739</b> workers but because of the pandemic <b>694</b> workers got sick and was forced to stay at home. How many workers are left in the Factory?', 45, 'https://feeds.soundcloud.com/stream/1636858431-rencee-c-banez-g3sub4.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 4),
-(21, 5, 'subtraction', 'Grade 5 and 6 Subtraction - -', '<b>Farmer\'s Apples</b>', 'A farmer Picked <b>742242</b> apples from his farm. As he got back to his home he saw and counted that <b>352321</b> apples were rotten. How many apples does the farmer have left?', 389921, 'https://feeds.soundcloud.com/stream/1636862382-rencee-c-banez-g5sub1.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 1),
-(22, 5, 'subtraction', 'Grade 5 and 6 Subtraction - -', '<b>Joel\'s Candies</b>', 'Joel and friends just got back home from trick or treating, they counted their candies that they got and found that they collected <b>2212412</b> bags of candies. Before Joel sleeps he ate <b>1345</b> bags of candies. How many candies does Joel have left?\r\n', 2211067, 'https://feeds.soundcloud.com/stream/1636864482-rencee-c-banez-g5sub2.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 2),
-(23, 5, 'subtraction', 'Grade 5 and 6 Subtraction - -', '<b>Mr. John\'s Pension</b>', 'Mr John just received <b>$ 95,645,875</b> for his monthly pension, so Mr John did what he does every month, Mr John pays his bills and buys groceries which totals to <b>$ 43,546,876</b>. How much money does Mr. John have left?', 52098999, 'https://feeds.soundcloud.com/stream/1636866819-rencee-c-banez-g5sub3.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 3),
-(24, 5, 'subtraction', 'Grade 5 and 6 Subtraction - -', '<b>The Pandemic</b>', 'In a factory, there were <b>739,365,330</b> workers but because of the pandemic <b>694,870,553</b> workers got sick and was forced to stay at home. How many workers are left in the Factory?', 44494777, 'https://feeds.soundcloud.com/stream/1636868022-rencee-c-banez-g5sub4.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 4),
+(17, 3, 'subtraction', 'Grade 3 and 4 Subtraction - -', '<b>Farmer\'s Apples</b>', 'A farmer Picked <b>seventy four (74)</b> apples from his farm. As he got back to his home he saw and counted that <b>thirty five (35)</b> apples were rotten. How many apples does the farmer have left?', 39, 'https://feeds.soundcloud.com/stream/1636838121-rencee-c-banez-g3sub1.mp3', 'https://i.imgur.com/4CBF6xY.png', 'https://i.imgur.com/EsLXdj4.png', 'https://i.imgur.com/0Jd9qVs.png', 1),
+(18, 3, 'subtraction', 'Grade 3 and 4 Subtraction - -', '<b>Joel\'s Candies</b>', 'Joel just got back home from trick or treating, he counted his candies that he got and found that he collected <b>19</b> bags of candies. Before Joel sleeps he ate <b>2</b> bags of candies. How many candies does Joel have left?\r\n', 17, 'https://feeds.soundcloud.com/stream/1636850736-rencee-c-banez-g3sub2.mp3', 'https://i.imgur.com/8B8Jmmo.png', 'https://i.imgur.com/XyOWJ2p.png', 'https://i.imgur.com/WxeCnlO.png', 2),
+(19, 3, 'subtraction', 'Grade 3 and 4 Subtraction - -', '<b>Mr. John\'s Pension</b>', 'Mr John just received <b>$ 956</b> for his monthly pension, so Mr John did what he does every month, Mr John pays his bills and buys groceries which totals to <b>$ 91</b>. How much money does Mr. John have left?', 865, 'https://feeds.soundcloud.com/stream/1636857084-rencee-c-banez-g3sub3.mp3', 'https://i.imgur.com/ckCGbnq.png', 'https://i.imgur.com/azyAfsP.png\r\n', 'https://i.imgur.com/eh27zzK.png', 3),
+(20, 3, 'subtraction', 'Grade 3 and 4 Subtraction - -', '<b>The Pandemic</b>', 'In a factory, there were <b>739</b> workers but because of the pandemic <b>694</b> workers got sick and was forced to stay at home. How many workers are left in the Factory?', 45, 'https://feeds.soundcloud.com/stream/1636858431-rencee-c-banez-g3sub4.mp3', 'https://i.imgur.com/cw04MDn.png', 'https://i.imgur.com/TEni8fP.png', 'https://i.imgur.com/oqCbBCq.png', 4),
+(21, 5, 'subtraction', 'Grade 5 and 6 Subtraction - -', '<b>Farmer\'s Apples</b>', 'A farmer Picked <b>742242</b> apples from his farm. As he got back to his home he saw and counted that <b>352321</b> apples were rotten. How many apples does the farmer have left?', 389921, 'https://feeds.soundcloud.com/stream/1636862382-rencee-c-banez-g5sub1.mp3', 'https://i.imgur.com/a5dqOYi.png', 'https://i.imgur.com/tiMYnM3.png', 'https://i.imgur.com/skHDgT1.png', 1),
+(22, 5, 'subtraction', 'Grade 5 and 6 Subtraction - -', '<b>Joel\'s Candies</b>', 'Joel and friends just got back home from trick or treating, they counted their candies that they got and found that they collected <b>2212412</b> bags of candies. Before Joel sleeps he ate <b>1345</b> bags of candies. How many candies does Joel have left?\r\n', 2211067, 'https://feeds.soundcloud.com/stream/1636864482-rencee-c-banez-g5sub2.mp3', 'https://i.imgur.com/Gqd8wcE.png', 'https://i.imgur.com/4n8nRM9.png', 'https://i.imgur.com/0JsQMZH.png', 2),
+(23, 5, 'subtraction', 'Grade 5 and 6 Subtraction - -', '<b>Mr. John\'s Pension</b>', 'Mr John just received <b>$ 95,645,875</b> for his monthly pension, so Mr John did what he does every month, Mr John pays his bills and buys groceries which totals to <b>$ 43,546,876</b>. How much money does Mr. John have left?', 52098999, 'https://feeds.soundcloud.com/stream/1636866819-rencee-c-banez-g5sub3.mp3', 'https://i.imgur.com/YWev99y.png', 'https://i.imgur.com/wMXcz8n.png', 'https://i.imgur.com/gFTJmIX.png', 3),
+(24, 5, 'subtraction', 'Grade 5 and 6 Subtraction - -', '<b>The Pandemic</b>', 'In a factory, there were <b>739,365,330</b> workers but because of the pandemic <b>694,870,553</b> workers got sick and was forced to stay at home. How many workers are left in the Factory?', 44494777, 'https://feeds.soundcloud.com/stream/1636868022-rencee-c-banez-g5sub4.mp3', 'https://i.imgur.com/ZVnkh4K.png', 'https://i.imgur.com/82SNCqV.png', 'https://i.imgur.com/zF7Rlg8.png', 4),
 (25, 1, 'multiplication', 'Grade 1 and 2 Multiplication x x', '', '', 30, '', 'https://i.imgur.com/8XLD3Z2.gif', '', '', 1),
 (26, 1, 'multiplication', 'Grade 1 and 2 Multiplication x x', '', '', 116, '', 'https://i.imgur.com/TvwqnSR.gif', '', '', 2),
 (30, 1, 'multiplication', 'Grade 1 and 2 Multiplication x x', '<b>Cindy\'s apple</b>', 'Cindy, a farmer\'s daughter was asked to put exactly <b>76</b> apples each in <b>7</b> boxes so it can be delivered to the market. How many apples are there in total?', 532, 'https://feeds.soundcloud.com/stream/1637276802-rencee-c-banez-g1mult1.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 3),
 (31, 1, 'multiplication', 'Grade 1 and 2 Multiplication x x', '<b> Disney Land</b>', ' Mickey mouse  had so much fun in his Disneyland that he decided to make <b>11</b> more Disnelands across the country. Each Disneyland needs <b>94</b> staff to operate. how many additional staff will Mickey mouse need to hire for his new Disneylands?', 1034, 'https://feeds.soundcloud.com/stream/1637277996-rencee-c-banez-g1mult2.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 4),
-(32, 3, 'multiplication', 'Grade 3 and 4 Multiplication x x', '', '', 0, '', '', '', '', 1),
-(33, 3, 'multiplication', 'Grade 3 and 4 Multiplication x x', '', '', 0, '', '', '', '', 2),
+(32, 3, 'multiplication', 'Grade 3 and 4 Multiplication x x', '', '', 18326, '', 'https://i.imgur.com/1a7ALwf.gif', '', '', 1),
+(33, 3, 'multiplication', 'Grade 3 and 4 Multiplication x x', '', '', 0, '', 'https://i.imgur.com/51iyvkk.gif', '', '', 2),
 (34, 3, 'multiplication', 'Grade 3 and 4 Multiplication x x', '<b>Cindy\'s apple</b>', 'Cindy, a farmer\'s daughter was asked to put exactly <b>3568</b> apples each in <b>264</b> boxes so it can be delivered to the market. How many apples are there in total?', 945520, 'https://feeds.soundcloud.com/stream/1637286237-rencee-c-banez-g3mult3.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 3),
 (35, 3, 'multiplication', 'Grade 3 and 4 Multiplication x x', '<b> Disney Land</b>', ' Mickey mouse  had so much fun in his Disneyland that he decided to make <b>1011</b> more Disnelands across the country. Each Disneyland needs <b>9543</b> staff to operate. how many additional staff will Mickey mouse need to hire for his new Disneylands?', 965568693, 'https://feeds.soundcloud.com/stream/1637289381-rencee-c-banez-g3mult4.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 4),
-(36, 5, 'multiplication', 'Grade 5 and 6 Multiplication x x', '', '', 0, '', '', '', '', 1),
-(37, 5, 'multiplication', 'Grade 5 and 6 Multiplication x x', '', '', 0, '', '', '', '', 1),
+(36, 5, 'multiplication', 'Grade 5 and 6 Multiplication x x', '', '', 18357620, '', 'https://i.imgur.com/JJVQiln.gif', '', '', 1),
+(37, 5, 'multiplication', 'Grade 5 and 6 Multiplication x x', '', '', 0, '', 'https://i.imgur.com/gmXbDrV.gif', '', '', 1),
 (38, 5, 'multiplication', 'Grade 5 and 6 Multiplication x x', '<b>Cindy\'s apple</b>', 'Cindy, a farmer\'s daughter was asked to put exactly <b>3568</b> apples each in <b>264</b> boxes so it can be delivered to the market. How many apples are there in total?', 945520, 'https://feeds.soundcloud.com/stream/1637286237-rencee-c-banez-g3mult3.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 3),
 (39, 5, 'multiplication', 'Grade 5 and 6 Multiplication x x', '<b> Disney Land</b>', ' Mickey mouse  had so much fun in his Disneyland that he decided to make <b>1011</b> more Disnelands across the country. Each Disneyland needs <b>9543</b> staff to operate. how many additional staff will Mickey mouse need to hire for his new Disneylands?', 965568693, 'https://feeds.soundcloud.com/stream/1637289381-rencee-c-banez-g3mult4.mp3', 'https://i.imgur.com/2GWGYkm.gif', '', '', 4),
 (40, 1, 'division', 'Grade 1 and 2 Division ÷ ÷', '', '', 3, '', 'https://i.imgur.com/bcGeBjh.gif', '', '', 1),
@@ -386,7 +438,7 @@ INSERT INTO `students` (`stud_id`, `username`, `pass`, `email`, `birthday`, `Fir
 (20231020, 'jun', '1111', 'email2@yahoo.com', '8/2/2010', 'rencee', 'banez', 2, 8, 'active'),
 (20231023, 'drea', '1111', 'email6@yahoo.com', '12/1/2010', 'andrea', 'babae', 4, 0, 'active'),
 (20231031, 'steben', '1111', 'email3@yahoo.com', '12/23/2010', 'steven', 'macarasig', 6, 0, 'active'),
-(20231069, 'waow', '1111', 'email@yahoo.com', '11/26/2010', 'Brian', 'Blancaflor', 3, 24, 'active'),
+(20231069, 'waow', '1111', 'email@yahoo.com', '11/26/2010', 'Brian', 'Blancaflor', 4, 24, 'active'),
 (20231080, 'blue', '1111', 'email1@yahoo.com', '7/26/2010', 'danniell blue', 'Arciaga', 2, 10, 'active'),
 (20231099, 'cindy', '1111', 'email5@yahoo.com', '5/13/2010', 'cynthia', 'random', 3, 0, 'active'),
 (202310349, 'dumon1', '1111', 'DCarter@email.com', '12', 'Dumon', 'Carter', 6, 0, 'active');
@@ -475,12 +527,6 @@ ALTER TABLE `quiz`
   ADD KEY `teacher_id` (`teacher_id`);
 
 --
--- Indexes for table `storyboard`
---
-ALTER TABLE `storyboard`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `students`
 --
 ALTER TABLE `students`
@@ -500,7 +546,7 @@ ALTER TABLE `teacher`
 -- AUTO_INCREMENT for table `achievements`
 --
 ALTER TABLE `achievements`
-  MODIFY `score_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `score_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `attempts`
@@ -512,13 +558,13 @@ ALTER TABLE `attempts`
 -- AUTO_INCREMENT for table `auditlog`
 --
 ALTER TABLE `auditlog`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT for table `classlist`
 --
 ALTER TABLE `classlist`
-  MODIFY `class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `enrollmentrequest`
@@ -530,19 +576,13 @@ ALTER TABLE `enrollmentrequest`
 -- AUTO_INCREMENT for table `progress`
 --
 ALTER TABLE `progress`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `quiz`
 --
 ALTER TABLE `quiz`
   MODIFY `quiz_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `storyboard`
---
-ALTER TABLE `storyboard`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
 -- AUTO_INCREMENT for table `students`
