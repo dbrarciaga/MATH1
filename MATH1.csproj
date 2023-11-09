@@ -107,7 +107,7 @@
     <Content Include="OnSession\dashboard\EditClassList.aspx" />
     <Content Include="OnSession\dashboard\teacher.aspx" />
     <Content Include="OnSession\AdditionPage.aspx" />
-    <Content Include="OnSession\DragAnd Drop.aspx" />
+    <Content Include="OnSession\DragAndDrop.aspx" />
     <Content Include="OnSession\selectionPage.aspx" />
     <Content Include="OnSession\SubtractionPage.aspx" />
     <Content Include="OnSession\QuizPage.aspx" />
@@ -274,12 +274,12 @@
     <Compile Include="Main\Register\WebForm11.aspx.designer.cs">
       <DependentUpon>WebForm11.aspx</DependentUpon>
     </Compile>
-    <Compile Include="OnSession\DragAnd Drop.aspx.cs">
-      <DependentUpon>DragAnd Drop.aspx</DependentUpon>
+    <Compile Include="OnSession\DragAndDrop.aspx.cs">
+      <DependentUpon>DragAndDrop.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="OnSession\DragAnd Drop.aspx.designer.cs">
-      <DependentUpon>DragAnd Drop.aspx</DependentUpon>
+    <Compile Include="OnSession\DragAndDrop.aspx.designer.cs">
+      <DependentUpon>DragAndDrop.aspx</DependentUpon>
     </Compile>
     <Compile Include="RegisterClass.cs" />
     <Compile Include="Main\NestedMasterPage1.master.cs">

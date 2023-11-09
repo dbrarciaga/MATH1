@@ -240,7 +240,7 @@ namespace MATH1.OnSession
                                 if (checkThis())
                                 {
                                     int id = blue.getId(Session["username"].ToString());
-                                    blue.query2("insert into achievements(score_title, score, stud_id, teacher_id, typeOfTask) values ('Challenge'" + star + ",'" + blue.getId(Session["username"].ToString()) + "','" + blue.getTeacherID(id.ToString()) + "','quiz')"); ///scoretitle(should be quiz type)
+                                    blue.query2("insert into achievements(score_title, score, stud_id, teacher_id, typeOfTask) values ('Fill in the Blanks'" + star + ",'" + blue.getId(Session["username"].ToString()) + "','" + blue.getTeacherID(id.ToString()) + "','quiz')"); ///scoretitle(should be quiz type)
                                 }
 
                                 star = 0;

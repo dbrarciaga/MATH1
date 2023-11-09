@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <a href="/OnSession/dashboard/dasdboard.aspx" class="w3-button w3-white w3-round-large"><h4>< back</h4>  </a>
+     <a href="/OnSession/dashboard/dasdboard.aspx" class="w3-button w3-white w3-round-large"><h4><b>back</b></h4>  </a>
     <div style="height:1000px" class="w3-card w3-white w3-margin">
         <center><h1 style="font-family:'Gill Sans MT'; font-size:80px; text-decoration:underline">Select Challlenge</h1></center>
         <br />
@@ -17,8 +17,8 @@
       
 
 
-            <div class="w3-third" visible="false">
-                <asp:ImageButton Visible="false" ID="prev" ImageUrl="https://i.imgur.com/ljxDMhZ.png" runat="server" Text="<<<<"  Height="50%" Width="50%" OnClick="prev_Click" />
+            <div class="w3-third" >
+                <asp:ImageButton  ID="prev" ImageUrl="https://i.imgur.com/ljxDMhZ.png" runat="server" Text="<<<<"  Height="50%" Width="50%" OnClick="prev_Click" />
                 <img id="noBut" src="https://i.imgur.com/doArb9F.png" runat="server"   style="height:50%; width:50%" />
             </div>
         
@@ -31,8 +31,8 @@
           
 
 
-            <div class="w3-third" visible="false">
-                <asp:ImageButton Visible="false" ID="nxt" ImageUrl="https://i.imgur.com/qnuhWgg.png" runat="server" Text=">>>>" Height="50%" Width="50%" OnClick="nxt_Click" /> 
+            <div class="w3-third" >
+                <asp:ImageButton  ID="nxt" ImageUrl="https://i.imgur.com/qnuhWgg.png" runat="server" Text=">>>>" Height="50%" Width="50%" OnClick="nxt_Click" /> 
             </div>
         
 

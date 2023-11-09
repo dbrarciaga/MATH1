@@ -182,9 +182,10 @@ namespace MATH1.OnSession
 
 
                 //ex1 
+                int id = blue.getId(Session["username"].ToString());
                 string connectionString = "server=localhost;user id=root;database=math1";
                 MySqlConnection conn = new MySqlConnection(connectionString);
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO achievement(`stud_id`, `topic`, `isCompleted`, `score`, `typeOfTask`) values ('" + blue.getId(Session["username"].ToString()) + "','" + "Drag and Drop" + "','" + isCompleted + "','" + whatScore + "','" + "quiz" + "');", conn);
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO achievements(`stud_id`, `score_title`, `teacher_id`, `score`, `typeOfTask`) values ('" + blue.getId(Session["username"].ToString()) + "','" + "Drag and Drop" + "','" + blue.getTeacherID(id.ToString()) + "','" + whatScore + "','" + "Quiz" + "');", conn);
 
                 try
                 {
