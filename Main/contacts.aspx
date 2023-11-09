@@ -29,7 +29,7 @@
    
        <center>
 
-        <a style="height:1140px; width:424px;" href="https://imgur.com/NmWHV0j"><img src="https://i.imgur.com/NmWHV0j.png" title="source: imgur.com" /></a><br />------------------------------------------------------------------------------------------------------------------<br />
+        <a  href="https://imgur.com/NmWHV0j"><img src="https://i.imgur.com/NmWHV0j.png" title="source: imgur.com" /></a><br />------------------------------------------------------------------------------------------------------------------<br />
         <a  href="https://imgur.com/1e9wdbW"><img src="https://i.imgur.com/1e9wdbW.png" title="source: imgur.com" /></a><br />------------------------------------------------------------------------------------------------------------------<br />
         <a  href="https://imgur.com/sTuk33N"><img src="https://i.imgur.com/sTuk33N.png" title="source: imgur.com" /></a><br />------------------------------------------------------------------------------------------------------------------<br />
         <a  href="https://imgur.com/ax1C10r"><img src="https://i.imgur.com/ax1C10r.png" title="source: imgur.com" /></a><br />------------------------------------------------------------------------------------------------------------------<br />
