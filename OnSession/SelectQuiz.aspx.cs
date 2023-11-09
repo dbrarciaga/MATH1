@@ -38,14 +38,14 @@ namespace MATH1.OnSession
         {
             if (count < 3)
             {
-                nxt.Visible = false;///true
-                nxt.Visible = false;///
+                nxt.Visible = true;///true
+ 
             }
             if (count == 1)
             {
                 prev.Visible = false;
                 noBut.Visible = true;
-                nxt.Visible = false;///
+
             }
             if (count == 3)
             {
@@ -53,9 +53,9 @@ namespace MATH1.OnSession
             }
             if (count > 1)
             {
-                prev.Visible = false;///true
+                prev.Visible = true;///true
                 noBut.Visible = false;
-                nxt.Visible = false;///
+
             }
 
             getQuizNumber();
@@ -66,7 +66,7 @@ namespace MATH1.OnSession
         {
             if (count == 3)
             {
-                Response.Redirect("/OnSession/DragAnd Drop.aspx");
+                Response.Redirect("/OnSession/DragAndDrop.aspx");
             }
             blue.waow = count;
             Response.Redirect("/OnSession/QuizPage.aspx");
@@ -76,7 +76,7 @@ namespace MATH1.OnSession
         {
             if (count > 1)
             {
-                count = count - 1;
+                count = count - 2;
                 select.Text = "Quiz # "+count.ToString();
                 
 
@@ -98,12 +98,13 @@ namespace MATH1.OnSession
 
             if (Int32.Parse(number) > count)
             {
-                count = count + 1;
-                select.Text = "Quiz # " + count.ToString();
+                count = count + 2;
+                select.Text = "Challenge # " + count.ToString();
             }
             if(count==3)
             {
                 nxt.Visible = false;
+                select.Text = "Challenge # 2";
             }
             if (count > 1)
             {
