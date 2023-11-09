@@ -3,7 +3,7 @@
 </asp:Content>
    
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="w3-container">
+     <div  class="w3-container">
         <center>
          <h1 style="color:white;">Progress</h1>
         </center>
