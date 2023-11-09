@@ -106,33 +106,7 @@
         <asp:TextBox ID="answer" runat="server"></asp:TextBox><p> </p><asp:CheckBox ID="CheckBox2" runat="server" />
         <br />
         <br />
-        <br />
-        <h4><asp:Label ID="Label1" runat="server" Text="For Multiple choice"></asp:Label></h4>
-        <div class="w3-row-padding">
-            <div class="w3-third">
-                <p>Question #1</p>
-                <p><b><asp:Label ID="o1" runat="server" Text="option 1"></asp:Label></b></p>               
-                <asp:TextBox ID="a1" runat="server"></asp:TextBox> <p> </p><asp:CheckBox ID="CheckBox3" runat="server" />
-        <br />
-            </div>
-             <div class="w3-third">
-                 <p>Question #2</p>
-                 <p><b><asp:Label ID="o2" runat="server" Text="option 2"></asp:Label></b></p>                
-                <asp:TextBox ID="a2" runat="server"></asp:TextBox><p> </p><asp:CheckBox ID="CheckBox4" runat="server" />
-        <br />
-            </div>
-             <div class="w3-third">
-                 <p>Question #3</p>
-                 <p><b><asp:Label ID="o3" runat="server" Text="option 3"></asp:Label></b></p>                  
-                <asp:TextBox ID="a3" runat="server"></asp:TextBox><p> </p><asp:CheckBox ID="CheckBox5" runat="server" />
-        <br />
-            </div>
-        </div>
-        <br />
-        <br />        
-        <asp:Button ID="update" runat="server" Text="Save" OnClientClick="showAlert();" CssClass="w3-button w3-gray w3-round-large" OnClick="update_Click"/><asp:Label ID="Label2" runat="server" Text=" "></asp:Label>
-       <br />
-       <br />
+        <br />      
     </div>
        
     <br />
