@@ -61,7 +61,7 @@
                 <h1>Learn</h1>
             </div>
              <div style="text-align:center;" class="w3-third">
-                <a runat="server" id="chal" href="/OnSession/SelectQuiz.aspx" style="width: 400px; height: 150px" class="w3-container w3-button w3-round-large w3-margin w3-white w3-card">
+                <a runat="server" id="chal" href="/OnSession/NEW_QUIZ.aspx" style="width: 400px; height: 150px" class="w3-container w3-button w3-round-large w3-margin w3-white w3-card">
                 <h1>🚀</h1>
                 </a>
                 <h1>Challenge</h1>

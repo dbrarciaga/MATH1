@@ -120,6 +120,7 @@
     <Content Include="OnSession\ProfileEdit.aspx" />
     <Content Include="OnSession\Congrats.aspx" />
     <Content Include="OnSession\Inactive.aspx" />
+    <Content Include="OnSession\NEW_QUIZ.aspx" />
     <Content Include="Responsive.css" />
     <Content Include="Story\add.subtract.Integers.aspx" />
     <Content Include="Story\Addition.aspx" />
@@ -260,6 +261,13 @@
     </Compile>
     <Compile Include="OnSession\Inactive.aspx.designer.cs">
       <DependentUpon>Inactive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnSession\NEW_QUIZ.aspx.cs">
+      <DependentUpon>NEW_QUIZ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnSession\NEW_QUIZ.aspx.designer.cs">
+      <DependentUpon>NEW_QUIZ.aspx</DependentUpon>
     </Compile>
     <Compile Include="Story_Class.cs" />
     <Compile Include="Roster.cs" />

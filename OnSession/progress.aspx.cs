@@ -61,7 +61,7 @@ namespace MATH1.OnSession
                 {
                     cons.Open();
 
-                    MySqlCommand utos = new MySqlCommand("select distinct score_title, score from achievements where stud_id ='" + blue.getId(Session["username"].ToString()) + "' and typeOfTask ='quiz'", cons);
+                    MySqlCommand utos = new MySqlCommand("select distinct score_title, score from achievements where stud_id ='" + blue.getId(Session["username"].ToString()) + "' and typeOfTask ='Quiz'", cons);
                     MySqlDataReader myRead = utos.ExecuteReader();
                     if (myRead.HasRows == true)
                     {

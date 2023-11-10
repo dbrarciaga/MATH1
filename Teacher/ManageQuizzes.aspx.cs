@@ -24,14 +24,14 @@ namespace MATH1.Teacher
                 {
                     cons.Open();
 
-                    string query = "SELECT Quiz_no, count(Quiz_no) FROM `quiz` group by Quiz_no having count(Quiz_no) > 0";
+                    string query = "SELECT quiz_number, count(quiz_number) FROM `quiz` group by quiz_number having count(quiz_number) > 0";
                     try
                     {
                         using (MySqlCommand cmd = new MySqlCommand(query, cons))
                         {
                             DropDownList1.DataSource = cmd.ExecuteReader();
-                            DropDownList1.DataTextField = "Quiz_no";
-                            DropDownList1.DataValueField = "Quiz_no";
+                            DropDownList1.DataTextField = "quiz_number";
+                            DropDownList1.DataValueField = "quiz_number";
                             DropDownList1.DataBind();
 
                         }
@@ -41,7 +41,7 @@ namespace MATH1.Teacher
                         {
 
 
-                            string query1 = "select Quiz_no as 'Quiz no', title as 'Title' , number as 'Number',  question as 'Question' , option1 as 'Option 1', option2 as 'Option 2' , option3 as 'Option 3', answer as 'Answer', Type as 'Type', grade as 'Grade' from quiz where Quiz_no=" + int.Parse(DropDownList1.Text);
+                            string query1 = "select quiz_number as 'Quiz no', quiz_title as 'Title' , item_number as 'Number',  question as 'Question', answer as 'Answer', gradeLevel as 'Grade' from quiz where quiz_number=" + int.Parse(DropDownList1.Text);
                             MySqlCommand sqlcom1 = new MySqlCommand(query1, cons1);
                             cons1.Open();
                             MySqlDataAdapter sda = new MySqlDataAdapter(sqlcom1);
@@ -72,7 +72,7 @@ namespace MATH1.Teacher
             {
 
 
-                string query = "select Quiz_no as 'Quiz no', title as 'Title' , number as 'Number',  question as 'Question' , option1 as 'Option 1', option2 as 'Option 2' , option3 as 'Option 3', answer as 'Answer', Type as 'Type', grade as 'Grade' from quiz where Quiz_no=" + int.Parse(DropDownList1.SelectedItem.Text);
+                string query = "select quiz_number as 'Quiz no', quiz_title as 'Title' , item_number as 'Number',  question as 'Question', answer as 'Answer', gradeLevel as 'Grade' from quiz where quiz_number=" + int.Parse(DropDownList1.SelectedItem.Text);
                 MySqlCommand sqlcom = new MySqlCommand(query, cons);
                 cons.Open();
                 MySqlDataAdapter sda = new MySqlDataAdapter(sqlcom);

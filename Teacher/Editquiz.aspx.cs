@@ -15,10 +15,10 @@ namespace MATH1.Teacher
     public partial class WebForm6 : System.Web.UI.Page
     {
         QuizClass blue = new QuizClass();
-        
+        database testing = new database();
+
         protected void Page_Load(object sender, EventArgs e)
-        {
-            Label2.Text = "";
+        {           
             //dropdownlist value
             quizNo.Text = blue.Selected.ToString();
             if (!IsPostBack)
@@ -31,14 +31,14 @@ namespace MATH1.Teacher
                 {
                     cons.Open();
 
-                    string query = "SELECT number, count(number) FROM `quiz`where Quiz_no = '" + blue.Selected + "' group by number having count(number) > 0";
+                    string query = "SELECT item_number FROM `quiz`where quiz_number = '" + blue.Selected + "';";
                     try
                     {
                         using (MySqlCommand cmd = new MySqlCommand(query, cons))
                         {
                             DropDownList1.DataSource = cmd.ExecuteReader();
-                            DropDownList1.DataTextField = "number";
-                            DropDownList1.DataValueField = "number";
+                            DropDownList1.DataTextField = "item_number";
+                            DropDownList1.DataValueField = "item_number";
                             DropDownList1.DataBind();
 
                         }
@@ -46,9 +46,7 @@ namespace MATH1.Teacher
                         string waow1 = "server=localhost;user id=root;database=math1";
                         using (MySqlConnection cons1 = new MySqlConnection(waow1))
                         {
-
-
-                            string query1 = "select  number as 'Item Number ', title as 'Title ' ,  question as 'Question ' , option1 as 'Option 1 ', option2 as 'Option 2 ' , option3 as 'Option 3 ', answer as 'Answer ', Type as 'Type ', grade as 'Grade ' from quiz where Quiz_no='" + blue.Selected + "' and number ='" + DropDownList1.Text + "'";
+                            string query1 = "select  item_number as 'Item Number ', quiz_title as 'Title ' ,  question as 'Question ', answer as 'Answer ', gradeLevel as 'Grade ' from quiz where quiz_number='" + blue.Selected + "' and item_number ='" + DropDownList1.Text + "'";
                             MySqlCommand sqlcom1 = new MySqlCommand(query1, cons1);
                             cons1.Open();
                             MySqlDataAdapter sda = new MySqlDataAdapter(sqlcom1);
@@ -66,53 +64,20 @@ namespace MATH1.Teacher
                     }
                 }
             }
-            //filling the text box from database
-            string waow2 = "server=localhost;user id=root;database=math1";
-            using (MySqlConnection cons = new MySqlConnection(waow2))
-            {
-                
-                try
-                {
-                    cons.Open();
-                    string queryWaow = "select question, answer, option1, option2, option3 from quiz where Quiz_no= '"+blue.Selected+"' and number = '" + DropDownList1.Text + "'";
-                    using (MySqlCommand utos = new MySqlCommand(queryWaow, cons))
-                    {
-                        using (MySqlDataReader basa = utos.ExecuteReader())
-                        {
-                            if(basa.Read())
-                            {
-                                q.Text = basa.GetString(0);
-                                a.Text = basa.GetString(1);
-                                o1.Text = basa.GetString(2);
-                                o2.Text = basa.GetString(3);
-                                o3.Text = basa.GetString(4);
-
-                            }
-                           
-                        }
-                    }
-                    cons.Close();                  
-
-                }
-                catch(Exception err)
-                {
-                    testing1.Text = err.ToString();
-                }
-            }
         }
-
+            //filling the text box from database          
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
           
             string selectedquizno = DropDownList1.SelectedItem.Text;
-            database testing = new database();
-
+            
+            //table
             string waow = "server=localhost;user id=root;database=math1";
             using (MySqlConnection cons = new MySqlConnection(waow))
             {
 
 
-                string query = "select  number as 'Item Number ', title as 'Title ' ,  question as 'Question ' , option1 as 'Option 1 ', option2 as 'Option 2 ' , option3 as 'Option 3 ', answer as 'Answer ', Type as 'Type ', grade as 'Grade ' from quiz where Quiz_no='" + blue.Selected + "' and number ='" + DropDownList1.Text + "'";
+                string query = "select  item_number as 'Item Number ', quiz_title as 'Title ' ,  question as 'Question ', answer as 'Answer ', gradelevel as 'Grade ' from quiz where Quiz_number='" + blue.Selected + "' and item_number ='" + DropDownList1.Text + "'";
                 MySqlCommand sqlcom = new MySqlCommand(query, cons);
                 cons.Open();
                 MySqlDataAdapter sda = new MySqlDataAdapter(sqlcom);
@@ -123,6 +88,8 @@ namespace MATH1.Teacher
 
                 cons.Close();
             }
+            q.Text = testing.query2("select question from quiz where item_number = '"+DropDownList1.SelectedValue+"'");
+            a.Text = testing.query2("select answer from quiz where item_number = '" + DropDownList1.SelectedValue + "'");
 
         }
 
@@ -136,41 +103,7 @@ namespace MATH1.Teacher
             {
                 answer.Text = a.Text;                
             }
-            if (!CheckBox3.Checked)
-            {
-                a1.Text = o1.Text  ;
-            }
-            if (!CheckBox4.Checked)
-            {
-                a2.Text = o2.Text;
-            }
-            if (!CheckBox5.Checked)
-            {
-                a3.Text = o3.Text;
-            }
-            string conString = "server=localhost;user id=root;database=math1";
-            using (MySqlConnection connect = new MySqlConnection(conString))
-            {
-                connect.Open();
-                string updateQuery = "update quiz set question = '" + question.Text + "', option1 = '" + a1.Text + "',option2 = '" + a2.Text + "',option3 = '" + a3.Text + "', answer = '" + answer.Text + "' where Quiz_no='" + blue.Selected.ToString() + "' and number ='" + DropDownList1.SelectedValue.ToString() + "' ";
-                using (MySqlCommand utos = new MySqlCommand(updateQuery, connect))
-                {
-                    int rowsAffected = utos.ExecuteNonQuery();
-                    if (rowsAffected > 0)
-                    {
-                        Label2.Text = "Great Success for item number: " + DropDownList1.SelectedValue + "in QUIZ #" + blue.Selected;
-                    }
-                    else
-                    {
-                        Label2.Text = "Failed";
-                    }
-                }
-                connect.Close();
-
-            }
-
-
-
+           
 
         }
     }
