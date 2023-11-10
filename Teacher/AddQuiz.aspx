@@ -12,16 +12,12 @@
         <p>Quiz number: </p>
         <asp:TextBox ID="QuizNum" runat="server"></asp:TextBox>
         <br /> 
-        <p>Grade Level: </p>
-        <asp:TextBox ID="GradeLevel" runat="server"></asp:TextBox>
+        <p>Class: </p>
+        <asp:DropDownList ID="DropDownList1" runat="server" >      
+        </asp:DropDownList>
         <br />
         <p>Title: </p>
         <asp:TextBox ID="title" runat="server"></asp:TextBox>
-        <br />
-        <p>Type of quiz</p>      
-        <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="true" >      
-        </asp:DropDownList>
-         <br />
         <br />
         <br />
     </div>
@@ -38,23 +34,6 @@
         <br />
         <p>Answer: </p>
         <asp:TextBox ID="ans" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        <div class="w3-row-padding">
-            <h4><asp:Label ID="Label4" runat="server" Text="For multiple choice"></asp:Label></h4>
-            <div class="w3-third">
-                <asp:Label ID="Label1" runat="server" Text="Option 1"></asp:Label>
-                <asp:TextBox ID="op1" runat="server"></asp:TextBox>
-            </div>
-             <div class="w3-third">
-                  <asp:Label ID="Label2" runat="server" Text="Option 2"></asp:Label>
-                  <asp:TextBox ID="op2" runat="server"></asp:TextBox>
-            </div>
-             <div class="w3-third">
-                  <asp:Label ID="Label3" runat="server" Text="Option 3"></asp:Label>
-                    <asp:TextBox ID="op3" runat="server"></asp:TextBox>
-            </div>
-        </div>
         <br />
         <br />
     </div>
