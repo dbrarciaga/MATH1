@@ -533,9 +533,9 @@
                     <!--2nd row-->
                     <div class="w3-row w3-border  w3-mobile">
                         <center>
-                            <div class="w3-container w3-rest">
+                            <div style="height:30px" class= "w3-rest">
 
-                                <asp:TextBox Visible="true" Style="width: 30%" AutoCompleteType="Disabled" ID="TextBox1" runat="server" onFocus="if (this.value == this.defaultValue) { this.value = ''; }">=</asp:TextBox>
+                                <asp:TextBox Visible="false" Style="width: 30%" AutoCompleteType="Disabled" ID="TextBox1" runat="server" onFocus="if (this.value == this.defaultValue) { this.value = ''; }">=</asp:TextBox>
                                 <br />
 
                                 <asp:Button CssClass="button2" ID="Button2" runat="server" Text="SUBMIT" OnClick="submit_Click1" />
