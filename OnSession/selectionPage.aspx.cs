@@ -60,7 +60,7 @@ namespace MATH1.OnSession
             }
             if (gradeLevel == 4)
             {
-                progressBar.Text = waow.grade1(blue.getId(Session["username"].ToString()), blue.getGradeLevel(Session["username"].ToString()));
+                progressBar.Text = waow.grade3(blue.getId(Session["username"].ToString()), blue.getGradeLevel(Session["username"].ToString()));
                 LinkButton7.Visible = false;
                 LinkButton8.Visible = false;
                 LinkButton9.Visible = false;
@@ -107,20 +107,20 @@ namespace MATH1.OnSession
             //addsub int
             if (score < 16)
             {
-                Label6.Text = "LOCKED";
+                Label7.Text = "LOCKED";
             }
             else if (score >= 20)
             {
-                Label6.Text = "Exercise Finised";
+                Label7.Text = "Exercise Finised";
             }
             //mult int
             if (score <  20)
             {
-               Label7.Text = "LOCKED";
+               Label6.Text = "LOCKED";
             }
             else if (score >= 24)
             {
-                Label7.Text = "Exercise Finised";
+                Label6.Text = "Exercise Finised";
             }
             //div int
             if (score <  24)
@@ -280,7 +280,7 @@ namespace MATH1.OnSession
         protected void Button1_Click(object sender, EventArgs e)
         {
             int getGrade = int.Parse(blue.getGradeLevel(Session["username"].ToString()));
-            getGrade = getGrade + 1;
+            getGrade = getGrade + 2;
             blue.query2("update students set gradeLevel = '"+getGrade+"' where username = '"+Session["username"].ToString()+"'");
             Response.Redirect("Congrats.aspx");
         }

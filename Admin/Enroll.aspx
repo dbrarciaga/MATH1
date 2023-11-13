@@ -2,8 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <a href="AdminDash.aspx" class="w3-button w3-white w3-margin w3-round-large"> Dashboard</a>
     <div style="height:1000px" class="w3-container">
-        <h1>Enroll student</h1>
+        <h1>Enroll</h1>
         <div class="w3-container w3-white">
             <h4>Select a student: </h4>
             <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
@@ -14,7 +15,7 @@
         </div>
         <br />
         <div class="w3-container w3-white">            
-            <p>Enter section</p>
+            <p>Enter grade</p>
             <asp:DropDownList ID="GradeLevel" runat="server"></asp:DropDownList>
         </div>
           <div class="w3-container w3-white">            
@@ -24,10 +25,10 @@
             <br />
 
         </div>
-        <asp:Label ID="Label1" runat="server" Text=" "></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text=" " CssClass="w3-card w3-margin w3-white w3-round-large w3-xlarge"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="Button1" runat="server" Text="enroll student" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" Text="enroll student" CssClass="w3-white w3-button w3-round-large   " OnClick="Button1_Click" />
 
     </div>
 </asp:Content>

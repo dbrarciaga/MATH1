@@ -103,7 +103,7 @@
         <div id="Div1" runat="server" visible="false">
         <center >
             <a runat="server" id="A1" style="width: 72%; height: 260px" class="w3-container w3-button w3-round-large w3-margin w3-white w3-card center" text="">                
-                <h1>You already send a request </h1>
+                <h1>You already sent a request </h1>
           
             </a>
             <br />

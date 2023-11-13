@@ -146,7 +146,7 @@ namespace MATH1.Admin
             blue.query2("insert into classlist(stud_id, teacher_id,section) values ('"+DropDownList1.SelectedValue+"','"+teacherList.SelectedValue+"','"+GradeLevel.SelectedValue+"')");
             blue.query2("delete from enrollmentrequest where stud_id = '"+DropDownList1.SelectedValue+"'");
             blue.query2("insert into auditlog(actionTaken,username,dateAction) values ('Enrolled a student','"+Session["username"].ToString()+"','"+DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss")+"')");
-            Label1.Text = "added ";
+            Label1.Text = "Enrolled Student ";
         }
     }
 }

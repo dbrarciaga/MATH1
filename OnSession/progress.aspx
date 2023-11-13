@@ -3,7 +3,8 @@
 </asp:Content>
    
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div  class="w3-container">
+     <div style="height:1000px">
+         <div  class="w3-container">
         <center>
          <h1 style="color:white;">Progress</h1>
         </center>
@@ -29,5 +30,6 @@
             <asp:GridView ID="GridView2" CssClass="w3-table-all w3-hoverable w3-round-large" runat="server"></asp:GridView>
         </div>
     </center>
+     </div>
 
 </asp:Content>

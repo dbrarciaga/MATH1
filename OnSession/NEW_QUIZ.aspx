@@ -15,7 +15,7 @@
         <div runat="server" id="quizPanel" style="width:800px;" class="w3-card w3-white w3-round-large">
             <br />
            <div class="w3-margin">
-                <asp:Label ID="testing" runat="server" Text="Question: "></asp:Label>  <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:Label ID="testing" runat="server" Text="Question: "></asp:Label>  <asp:TextBox ID="TextBox1" runat="server" autocomplete="off" ></asp:TextBox>
                <p><asp:Label ID="Label2" runat="server" Text=" "></asp:Label></p>
                <asp:Button ID="ans" runat="server" CssClass="w3-button w3-green w3-margin w3-round-large" Text="Answer" OnClick="ans_Click" /> 
                <asp:Button ID="Button1" runat="server" Text="Next" CssClass="w3-button w3-blue w3-margin w3-round-large" OnClick="Button1_Click" />

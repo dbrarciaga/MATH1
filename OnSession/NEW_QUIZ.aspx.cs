@@ -20,17 +20,20 @@ namespace MATH1.OnSession
         static List<string> answerKey = new List<string>();
         static string ident = "";
         static string ident2 = "";
+        static string teacher = "";
          
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             string id = blue.query2("select stud_id from students where username = '"+Session["username"].ToString()+"'");
-            string teacher = blue.query2("select teacher_id from classlist where stud_id = '"+id+"'");
+            teacher = blue.query2("select teacher_id from classlist where stud_id = '"+id+"'");
             waow = blue.query2("SELECT count(DISTINCT(quiz_Number)) FROM `quiz` where teacher_id = '"+teacher+"'");
             ident = id;
             ident2 = teacher;
             next.Text = "start";
             if (!IsPostBack)
             {
+                
                 prev.Visible = false;
                 //Label1.Visible = false;
                 quizPanel.Visible = false;
@@ -38,12 +41,13 @@ namespace MATH1.OnSession
                 go.Visible = false;
                 
             }
-            Response.Write(num);
+            Response.Write(num+" "+waow);
 
         }
      
         protected void next_Click(object sender, EventArgs e)
         {
+            waow = blue.query2("SELECT count(DISTINCT(quiz_Number)) FROM `quiz` where teacher_id = '" + teacher + "'");
             prev.Visible = true;
             //Label1.Visible = true;
             go.Visible = true;
@@ -81,6 +85,7 @@ namespace MATH1.OnSession
 
         protected void go_Click(object sender, EventArgs e)
         {
+            
             select.Visible = false;
             quizPanel.Visible = true;
             string counter = blue.query2("SELECT count(item_number) FROM `quiz` where quiz_number = '" + count + "'");
@@ -155,7 +160,11 @@ namespace MATH1.OnSession
 
         protected void submit_Click(object sender, EventArgs e)
         {
+       
             blue.query("insert into achievements(score_title,score,stud_id,teacher_id,TypeofTask) values ('"+title.Text+"','"+score+"','"+ident+"','"+ident2+"','Quiz')");
+            count = 0;
+            waow = "";
+            Response.Redirect("/OnSession/progress.aspx");
         }
     }
 }

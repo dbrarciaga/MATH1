@@ -63,21 +63,21 @@
             <div style="color:black;" class="w3-row-padding">
                 <asp:LinkButton ID="LinkButton1" runat="server" CssClass="w3-third w3-mobile w3-margin-top" OnClick="LinkButton1_Click" class="no-refresh">
   	                <img src="https://i.imgur.com/FmXDahQ.png" style="width:350px; height:350px" class="w3-round-large">
-  	                <div style="width:350px; text-align:center; color:white;">
+  	                <div class="w3-white w3-card w3-round-large" style="width:350px; text-align:center; color:white;">
   		                <h4>ADDITION</h4>      
                            <asp:Label ID="Label11" runat="server" Text=" "></asp:Label>
   	                </div>
                 </asp:LinkButton> 
                 <asp:LinkButton ID="LinkButton2"  runat="server"  CssClass="w3-third w3-mobile w3-margin-top" OnClick="LinkButton2_Click" class="no-refresh">
   	                <img src="https://i.imgur.com/w2JtBcx.png" style="width:350px; height:350px"  class="w3-round-large">
-  	                <div style="width:350px; text-align:center; color:white;">
+  	                <div class="w3-white w3-card w3-round-large" style="width:350px; text-align:center; color:white;">
   		                <h4>SUBTRACTION</h4>
                         <asp:Label ID="Label3" runat="server" Text=" "></asp:Label>
   	                </div>
                 </asp:LinkButton> 
                 <asp:LinkButton ID="LinkButton3" runat="server"  CssClass="w3-third w3-mobile w3-margin-top" OnClick="LinkButton3_Click" class="no-refresh">
   	                <img src="https://i.imgur.com/yH1VCDi.png" style="width:350px; height:350px"  class="w3-round-large">
-  	                <div style="width:350px; text-align:center; color:white;">
+  	                <div class="w3-white w3-card w3-round-large" style="width:350px; text-align:center; color:white;">
   		                <h4>MULTIPLICATION</h4>
                         <asp:Label ID="Label4" runat="server" Text=" "></asp:Label>
   	                </div>
@@ -90,21 +90,21 @@
             <div class="w3-row-padding">
                  <asp:LinkButton ID="LinkButton4" runat="server"  CssClass="w3-third w3-mobile w3-margin-top" OnClick="LinkButton4_Click" class="no-refresh">
   	                <img src="https://i.imgur.com/m1ICHiY.png " style="width:350px; height:350px"  class="w3-round-large">
-  	                <div style="width:350px; text-align:center; color:white;">
+  	                <div class="w3-white w3-card w3-round-large" style="width:350px; text-align:center; color:white;">
   		                <h4>DIVISION</h4>
                         <asp:Label ID="Label5" runat="server" Text=" "></asp:Label>
   	                </div>
                 </asp:LinkButton> 
                 <asp:LinkButton ID="LinkButton5" runat="server"  CssClass="w3-third w3-mobile w3-margin-top" OnClick="LinkButton5_Click" class="no-refresh">
   	                <img src="https://i.imgur.com/FmXDahQ.png" style="width:350px; height:350px"  class="w3-round-large">
-  	                <div style="width:350px; text-align:center; color:white;">
+  	                <div  class="w3-white w3-card w3-round-large" style="width:350px; text-align:center; color:white;">
   		                <h4 style="font-size:19px;">ADD AND SUBTRACT INTEGER</h4>
                         <asp:Label ID="Label7" runat="server" Text=" "></asp:Label>
   	                </div>
                 </asp:LinkButton> 
                 <asp:LinkButton ID="LinkButton6" runat="server"  CssClass="w3-third w3-mobile w3-margin-top" OnClick="LinkButton6_Click" class="no-refresh">
   	                <img src="https://i.imgur.com/FmXDahQ.png" style="width:350px; height:350px"  class="w3-round-large">
-  	                <div style="width:350px; text-align:center; color:white;">
+  	                <div class="w3-white w3-card w3-round-large" style="width:350px; text-align:center; color:white;">
   		                <h4>MULTIPLY INTEGER</h4>
                         <asp:Label ID="Label6" runat="server" Text=" "></asp:Label>
   	                </div>
@@ -118,7 +118,7 @@
                 
                    <asp:LinkButton ID="LinkButton7" runat="server"  CssClass="w3-third w3-mobile w3-margin-top" OnClick="LinkButton7_Click" class="no-refresh">
   	                <img src="https://i.imgur.com/FmXDahQ.png" style="width:350px; height:350px"  class="w3-round-large">
-  	                <div style="width:350px; text-align:center; color:white;">
+  	                <div class="w3-white w3-card w3-round-large" style="width:350px; text-align:center; color:white;">
   		                <h4>DIVISION OF INTEGER</h4>
                         <asp:Label ID="Label2" runat="server" Text=" "></asp:Label>
                         
@@ -127,7 +127,7 @@
 
                  <asp:LinkButton ID="LinkButton8" runat="server"  CssClass="w3-third w3-mobile w3-margin-top" OnClick="LinkButton8_Click" class="no-refresh">
   	                <img src="https://i.imgur.com/FmXDahQ.png" style="width:350px; height:350px"  class="w3-round-large">
-  	                <div style="width:350px; text-align:center; color:white;">
+  	                <div class="w3-white w3-card w3-round-large" style="width:350px; text-align:center; color:white;">
   		                <h4>EXPONENT</h4>
                         <asp:Label ID="Label9" runat="server" Text=" "></asp:Label>
                        
@@ -135,7 +135,7 @@
                 </asp:LinkButton> 
                 <asp:LinkButton ID="LinkButton9" runat="server"  CssClass="w3-third w3-mobile w3-margin-top" OnClick="LinkButton9_Click" class="no-refresh">
   	                <img src="https://i.imgur.com/FmXDahQ.png" style="width:350px; height:350px"  class="w3-round-large">
-  	                <div style="width:350px; text-align:center; color:white;">
+  	                <div class="w3-white w3-card w3-round-large" style="width:350px; text-align:center; color:white;">
   		                <h4>OPERATIONS</h4>
                         <asp:Label ID="Label8" runat="server" Text=" "></asp:Label>
   	                </div>

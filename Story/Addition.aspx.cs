@@ -41,6 +41,7 @@ namespace MATH1.Story
         
         protected void Page_Load(object sender, EventArgs e)
         {
+            Button5.Visible = true;
             string selectedValue = HiddenFieldValue.Value;
             TextBox1.Text = selectedValue;
 
@@ -126,8 +127,9 @@ namespace MATH1.Story
         protected void submit_Click1(object sender, EventArgs e)
 
         {
-   
 
+            div1.Visible = false;
+            chapter1.Visible = false;
             if (TextBox1.Text == "" || TextBox1.Text == "=")
             {
                 Label1.Text = "Good Effort, don't worry You can always try again !";
@@ -239,7 +241,7 @@ namespace MATH1.Story
         {
 
             Label5.Text = score + "/4";
-            Button5.Visible = false;
+            
             int id = blue.getId(Session["username"].ToString());
             //progress checker
             string check = blue.query2("select id from progress where stud_id = '"+id+ "' and topic = 'ADDITION' and gradeLevel = '"+ blue.getGradeLevel(Session["username"].ToString()) + "'");
@@ -265,7 +267,7 @@ namespace MATH1.Story
             {
                 Label5.Text = error.ToString();
             }
-
+            Response.Redirect("/OnSession/progress.aspx");
             
         }
 

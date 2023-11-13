@@ -27,7 +27,7 @@ namespace MATH1.Main
         {
             try
             {
-                waow.query("insert into auditlog(actionTaken,username,dateaction) values('created account','" + user.Text + "','" + ngayon + "')");
+                waow.query2("insert into auditlog(actionTaken,username,dateaction) values('created account','" + user.Text + "','" + ngayon + "')");
                 blue.InputDetails(int.Parse(Label1.Text));
                 Response.Redirect("/Main/WelcomePage.aspx");
             }

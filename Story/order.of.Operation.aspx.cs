@@ -234,8 +234,8 @@ namespace MATH1.Story
             {
                 Label5.Text = error.ToString();
             }
+            Response.Redirect("/OnSession/progress.aspx");
 
-            
         }
     }
 }

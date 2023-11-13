@@ -151,7 +151,8 @@ namespace MATH1.Story
                 player.Play();
 
                 //Answered Exercises will not gain stars.
-                if (baseScore < 4)
+                
+                if (baseScore < 8)
                 {
                     blue.ScoreAdd(user, "1");
                     score = score + 1;
@@ -265,7 +266,7 @@ namespace MATH1.Story
             {
                 Label5.Text = error.ToString();
             }
-
+            Response.Redirect("/OnSession/progress.aspx");
 
         }
 

@@ -120,7 +120,7 @@ namespace MATH1
         }
         public void InputDetails(int getIdNow)
         {
-            blue.query("insert into students(stud_id,username,pass,email,birthday,FirstName,LastName,GradeLevel,score) values('"+getIdNow+"','"+username+"','"+password+"','"+email+"','"+age+"','"+F_name+"','"+L_name+"','"+GradeLevel+"',0)");
+            blue.query2("insert into students(stud_id,username,pass,email,birthday,FirstName,LastName,GradeLevel,score) values('"+getIdNow+"','"+username+"','"+password+"','"+email+"','"+age+"','"+F_name+"','"+L_name+"','"+GradeLevel+"',0)");
         }
         //checks if the string has special char
         public bool hasSpecialChar(string val)

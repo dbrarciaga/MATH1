@@ -366,7 +366,7 @@
 
 
 
-    <section style="text-align: center;" class="w3-container">
+    <section runat="server" id="chapter1" style="text-align: center;" class="w3-container">
         <div style="margin-bottom: 15px;" class="first">
             <h1 style="font-size: 250%" class="fonts">Chapter 1 </h1>
             <h4 style="font-size: 150%" class="fonts">
@@ -381,7 +381,7 @@
 
 
     <!--HOW-->
-    <section class="secBlack">
+    <section runat="server" id="div1" class="secBlack">
         <h3 class="second fonts w3-container" style="margin-bottom: 25px; font-size: 500%; text-align: center;">Addition of Whole Numbers</h3>
 
         <div class="w3-row w3-border w3-white w3-mobile">
@@ -533,7 +533,7 @@
                     <!--2nd row-->
                     <div class="w3-row w3-border  w3-mobile">
                         <center>
-                            <div style="height:30px" class= "w3-rest">
+                            <div class= "w3-rest">
 
                                 <asp:TextBox Visible="false" Style="width: 30%" AutoCompleteType="Disabled" ID="TextBox1" runat="server" onFocus="if (this.value == this.defaultValue) { this.value = ''; }">=</asp:TextBox>
                                 <br />
@@ -639,7 +639,9 @@
         </script>
     </section>
     <!--end-->
-
+     <audio controls>
+                            <source src="https://feeds.soundcloud.com/stream/1654265469-rencee-c-banez-addg1.mp3" type="audio/mpeg" />
+                        </audio>
 
 
 
