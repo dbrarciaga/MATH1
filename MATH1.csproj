@@ -101,6 +101,7 @@
     <Content Include="Main\Register\WebForm9.aspx" />
     <Content Include="Main\Register\WebForm11.aspx" />
     <Content Include="Main\Login\LoginForTeacher.aspx" />
+    <Content Include="Main\RegisterTeacher.aspx" />
     <Content Include="Main\WelcomePage.aspx" />
     <Content Include="OnSession\dashboard\addQuiz.aspx" />
     <Content Include="OnSession\dashboard\dasdboard.aspx" />
@@ -247,6 +248,13 @@
     </Compile>
     <Compile Include="Main\Login\LoginForTeacher.aspx.designer.cs">
       <DependentUpon>LoginForTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\RegisterTeacher.aspx.cs">
+      <DependentUpon>RegisterTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\RegisterTeacher.aspx.designer.cs">
+      <DependentUpon>RegisterTeacher.aspx</DependentUpon>
     </Compile>
     <Compile Include="OnSession\Congrats.aspx.cs">
       <DependentUpon>Congrats.aspx</DependentUpon>

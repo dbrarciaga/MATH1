@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="height:1000px;">
-        <div class="w3-card w3-white">
+    <center style="height:1000px;">
+        <div style="width:1000px;" class="w3-card w3-white w3-round-large">
             <h1>Congratulations You level up to Grade <asp:Label ID="Label1" runat="server" Text="0"></asp:Label></h1>
             <br />
             <br />
@@ -11,5 +11,5 @@
            
 
         </div>
-    </div>
+    </center>
 </asp:Content>

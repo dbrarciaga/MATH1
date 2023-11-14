@@ -14,7 +14,15 @@ namespace MATH1.OnSession
         string val = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            int id = blue.getId(Session["username"].ToString());
+            int id = 0;
+            try
+            {
+                id = blue.getId(Session["username"].ToString());
+            }
+            catch(Exception error)
+            {
+                Response.Redirect("/Main/Login/LogIn.aspx");
+            }
             if (blue.query2("select stats from students where stud_id = '" + id + "'") == "inactive")
             {
                 Response.Redirect("/OnSession/Inactive.aspx");
