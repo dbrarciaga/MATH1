@@ -81,6 +81,7 @@
           <div style="width:800px;" class="w3-card w3-white w3-round-large">
            <br />
               <h4>Account</h4>
+              <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
               <br />
               <p>Username: </p>
               <asp:TextBox ID="username" runat="server"></asp:TextBox>
@@ -90,8 +91,20 @@
               <br />
               <p>Birthday: </p>
               <asp:TextBox ID="age" runat="server" TextMode="Date"></asp:TextBox>
-            </div>
+              <br />
+              <br />
+             <asp:Label ID="error2" runat="server" Text=""></asp:Label>
+            </div>         
+          <br />
+           <asp:Button ID="register" runat="server" Text="Register" CssClass="w3-button w3-xxlarge w3-blue w3-round-large w3-card" OnClick="register_Click"/>
      </div>
+     <div  runat="server" id="div3">
+         <div style="width:800px;" class="w3-card w3-white w3-round-large">
+             <h1>Teacher has been registered! </h1>
+             <br />
+             <a href="AdminDash.aspx" class="w3-button w3-blue w3-xxlarge w3-round-large w3-margin">Back to dashboard</a>
+         </div>
+     </div>   
    </center>
       
    

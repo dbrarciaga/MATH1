@@ -33,7 +33,7 @@
             </a>
         </div>   
        <div style="margin-left:15%" class="w3-row-padding">
-           <a href="/Admin/Applications.aspx" width:40%" class="w3-half w3-card w3-white w3-margin w3-button  w3-round-large">
+           <a href="/Admin/Applications.aspx" style="width:40%" class="w3-half w3-card w3-white w3-margin w3-button  w3-round-large">
                 <h4>Teacher Application</h4>
                <h1>
                    <b><asp:Label ID="app" runat="server" Text="Label"></asp:Label></b>

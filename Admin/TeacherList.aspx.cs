@@ -23,7 +23,7 @@ namespace MATH1.Admin
 
                     cons.Open();
 
-                    MySqlCommand utos = new MySqlCommand("Select teacher_id, concat(FirstName,' ',LastName) as 'Name', username, stats as 'Status' from teacher  ", cons);
+                    MySqlCommand utos = new MySqlCommand("Select teacher_id, concat(FirstName,' ',LastName) as 'Name', username as 'Username', stats as 'Status' from teacher  ", cons);
                     MySqlDataReader myRead = utos.ExecuteReader();
 
                     if (myRead.HasRows == true)
@@ -90,7 +90,7 @@ namespace MATH1.Admin
                 updatePanel.Visible = true;
                 status.Text ="Status: " + blue.query2("select stats from teacher where username = '" + TextBox1.Text + "' or teacher_id = '" + TextBox1.Text + "'");
                 fullname.Text = blue.query2("select concat(FirstName,' ',LastName) from teacher where username = '" + TextBox1.Text + "' or teacher_id = '" + TextBox1.Text + "'");
-                name.Text ="username: " + blue.query2("select username from teacher where username ='" + TextBox1.Text + "' or teacher_id = '" + TextBox1.Text + "' ");
+                name.Text = blue.query2("select username from teacher where username ='" + TextBox1.Text + "' or teacher_id = '" + TextBox1.Text + "' ");
             
         }
 

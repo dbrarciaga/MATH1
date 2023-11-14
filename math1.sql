@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 09, 2023 at 08:57 PM
+-- Generation Time: Nov 14, 2023 at 08:25 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.2.31
 
@@ -81,7 +81,9 @@ INSERT INTO `achievements` (`score_ID`, `score_title`, `score`, `stud_id`, `teac
 (41, 'Addition and Subtraction of Integers + -', 0, 20231069, NULL, 'Exercise'),
 (42, 'Multiplication of Integers (+) x (-)', 4, 20231069, NULL, 'Exercise'),
 (43, 'Drag and Drop', 5, 20231080, 20232001, 'Quiz'),
-(44, 'subtraction', 4, 20231080, 20232001, 'Quiz');
+(44, 'subtraction', 4, 20231080, 20232001, 'Quiz'),
+(45, 'addition', 4, 20231080, 20232001, 'Quiz'),
+(46, 'MULTIPLICATION', 6, 20231080, NULL, 'Exercise');
 
 -- --------------------------------------------------------
 
@@ -118,6 +120,27 @@ CREATE TABLE `activation_teacher` (
 
 INSERT INTO `activation_teacher` (`ID`, `teacher_id`) VALUES
 (4, 20232076);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `applicants`
+--
+
+CREATE TABLE `applicants` (
+  `ID` int(11) NOT NULL,
+  `FirstName` varchar(64) DEFAULT NULL,
+  `LastName` varchar(64) DEFAULT NULL,
+  `email` varchar(64) DEFAULT NULL,
+  `pitch` varchar(64) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `applicants`
+--
+
+INSERT INTO `applicants` (`ID`, `FirstName`, `LastName`, `email`, `pitch`) VALUES
+(1, 'Dumon', 'The Titser', 'dumon2@gmail.com', 'Mabait akong teacher, mabait sa bata at di abusado thank you.');
 
 -- --------------------------------------------------------
 
@@ -382,7 +405,63 @@ INSERT INTO `auditlog` (`ID`, `actionTaken`, `username`, `dateAction`) VALUES
 (233, 'teacher login', 'maambelen', '11/10/2023 03:46:53'),
 (234, 'teacher login', 'maambelen', '11/10/2023 03:49:14'),
 (235, 'teacher login', 'maambelen', '11/10/2023 03:53:27'),
-(236, 'teacher login', 'maambelen', '11/10/2023 03:55:19');
+(236, 'teacher login', 'maambelen', '11/10/2023 03:55:19'),
+(237, 'student login', 'blue', '11/13/2023 19:34:24'),
+(238, 'student login', 'blue', '11/13/2023 19:36:37'),
+(239, 'student login', 'blue', '11/13/2023 20:16:59'),
+(240, 'student login', 'blue', '11/13/2023 21:08:27'),
+(241, 'student login', 'blue', '11/14/2023 16:46:08'),
+(242, 'student login', 'gumeroos', '11/14/2023 16:52:29'),
+(243, 'student login', 'blue', '11/14/2023 16:52:46'),
+(244, 'admin login', 'admin', '11/14/2023 22:07:06'),
+(245, 'admin login', 'admin', '11/14/2023 22:21:49'),
+(246, 'admin login', 'admin', '11/14/2023 22:26:01'),
+(247, 'admin login', 'admin', '11/14/2023 22:26:32'),
+(248, 'admin login', 'admin', '11/14/2023 22:28:31'),
+(249, 'admin login', 'admin', '11/14/2023 22:29:22'),
+(250, 'admin login', 'admin', '11/14/2023 22:34:27'),
+(251, 'admin login', 'admin', '11/14/2023 22:37:29'),
+(252, 'admin login', 'admin', '11/14/2023 22:39:53'),
+(253, 'admin login', 'admin', '11/14/2023 22:44:14'),
+(254, 'admin login', 'admin', '11/14/2023 22:47:49'),
+(255, 'admin login', 'admin', '11/14/2023 22:48:39'),
+(256, 'admin login', 'admin', '11/14/2023 22:49:19'),
+(257, 'admin login', 'admin', '11/14/2023 22:50:29'),
+(258, 'admin login', 'admin', '11/14/2023 22:50:53'),
+(259, 'admin login', 'admin', '11/14/2023 22:51:38'),
+(260, 'admin login', 'admin', '11/14/2023 22:52:06'),
+(261, 'admin login', 'admin', '11/14/2023 22:53:05'),
+(262, 'admin login', 'admin', '11/14/2023 22:56:14'),
+(263, 'admin login', 'admin', '11/14/2023 23:11:53'),
+(264, 'admin login', 'admin', '11/14/2023 23:14:48'),
+(265, 'admin login', 'admin', '11/14/2023 23:16:17'),
+(266, 'admin login', 'admin', '11/14/2023 23:19:48'),
+(267, 'admin login', 'admin', '11/14/2023 23:21:35'),
+(268, 'admin login', 'admin', '11/14/2023 23:22:28'),
+(269, 'admin login', 'admin', '11/14/2023 23:35:07'),
+(270, 'admin login', 'admin', '11/14/2023 23:36:19'),
+(271, 'admin login', 'admin', '11/14/2023 23:36:56'),
+(272, 'admin login', 'admin', '11/14/2023 23:37:19'),
+(273, 'admin login', 'admin', '11/14/2023 23:37:59'),
+(274, 'admin login', 'admin', '11/14/2023 23:39:46'),
+(275, 'admin login', 'admin', '11/14/2023 23:40:43'),
+(276, 'admin login', 'admin', '11/14/2023 23:41:32'),
+(277, 'admin login', 'admin', '11/15/2023 02:21:43'),
+(278, 'admin login', 'admin', '11/15/2023 02:32:14'),
+(279, 'admin login', 'admin', '11/15/2023 02:57:42'),
+(280, 'admin login', 'admin', '11/15/2023 02:59:26'),
+(281, 'admin login', 'admin', '11/15/2023 03:00:48'),
+(282, 'admin login', 'admin', '11/15/2023 03:03:47'),
+(283, 'admin login', 'admin', '11/15/2023 03:07:51'),
+(284, 'admin login', 'admin', '11/15/2023 03:12:37'),
+(285, 'teacher login', 'testing6', '11/15/2023 03:15:16'),
+(286, 'admin login', 'admin', '11/15/2023 03:15:33'),
+(287, 'teacher login', 'testing6', '11/15/2023 03:16:05'),
+(288, 'admin login', 'admin', '11/15/2023 03:16:14'),
+(289, 'teacher login', 'testing6', '11/15/2023 03:20:04'),
+(290, 'teacher login', 'testing6', '11/15/2023 03:20:37'),
+(291, 'admin login', 'admin', '11/15/2023 03:21:22'),
+(292, 'student login', 'blue', '11/15/2023 03:24:30');
 
 -- --------------------------------------------------------
 
@@ -491,7 +570,8 @@ INSERT INTO `progress` (`ID`, `topic`, `gradeLevel`, `stud_id`) VALUES
 (16, 'MULTIPLICATION', 3, 20231069),
 (17, 'DIVISION', 3, 20231069),
 (18, 'ADDSUBINT', 3, 20231069),
-(19, 'MULTIINT', 3, 20231069);
+(19, 'MULTIINT', 3, 20231069),
+(20, 'MULTIPLICATION', 2, 20231080);
 
 -- --------------------------------------------------------
 
@@ -655,7 +735,7 @@ INSERT INTO `students` (`stud_id`, `username`, `pass`, `email`, `birthday`, `Fir
 (20231023, 'drea', '1111', 'email6@yahoo.com', '12/1/2010', 'andrea', 'babae', 4, 0, 'active'),
 (20231031, 'steben', '1111', 'email3@yahoo.com', '12/23/2010', 'steven', 'macarasig', 6, 0, 'active'),
 (20231069, 'waow', '1111', 'email@yahoo.com', '11/26/2010', 'Brian', 'Blancaflor', 4, 24, 'active'),
-(20231080, 'blue', '1111', 'email1@yahoo.com', '7/26/2010', 'danniell blue', 'Arciaga', 2, 10, 'active'),
+(20231080, 'blue', '1111', 'email1@yahoo.com', '7/26/2010', 'danniell blue', 'Arciaga', 2, 12, 'active'),
 (20231099, 'cindy', '1111', 'email5@yahoo.com', '5/13/2010', 'cynthia', 'random', 3, 0, 'active'),
 (202310349, 'dumon1', '1111', 'DCarter@email.com', '12', 'Dumon', 'Carter', 6, 0, 'active');
 
@@ -685,7 +765,8 @@ INSERT INTO `teacher` (`teacher_id`, `username`, `pass`, `email`, `FirstName`, `
 (20232010, 'sireman', '1111', 'email3@yahoo.com', 'Emannuel', 'Transmission', NULL, 'active'),
 (20232045, 'maamrhea', '1111', 'email2@yahoo.com', 'Rhea', 'Tortor', NULL, 'active'),
 (20232062, 'sirilao', '1111', 'email4@yahoo.com', 'Adomar', 'ilao', NULL, 'active'),
-(20232076, 'sirdm', '1111', 'email@yahoo.com', 'Dennis', 'Martillano', NULL, 'inactive');
+(20232076, 'sirdm', '1111', 'email@yahoo.com', 'Dennis', 'Martillano', NULL, 'inactive'),
+(202320638, 'bankerist', '1111', 'WB@gmail.com', 'Waow', 'Banker', '2023-11-03', 'inactive');
 
 --
 -- Indexes for dumped tables
@@ -712,6 +793,12 @@ ALTER TABLE `activation`
 ALTER TABLE `activation_teacher`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `teacher_id` (`teacher_id`);
+
+--
+-- Indexes for table `applicants`
+--
+ALTER TABLE `applicants`
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indexes for table `attempts`
@@ -776,7 +863,7 @@ ALTER TABLE `teacher`
 -- AUTO_INCREMENT for table `achievements`
 --
 ALTER TABLE `achievements`
-  MODIFY `score_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `score_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `activation`
@@ -788,7 +875,13 @@ ALTER TABLE `activation`
 -- AUTO_INCREMENT for table `activation_teacher`
 --
 ALTER TABLE `activation_teacher`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `applicants`
+--
+ALTER TABLE `applicants`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `attempts`
@@ -800,7 +893,7 @@ ALTER TABLE `attempts`
 -- AUTO_INCREMENT for table `auditlog`
 --
 ALTER TABLE `auditlog`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=237;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=293;
 
 --
 -- AUTO_INCREMENT for table `classlist`
@@ -818,7 +911,7 @@ ALTER TABLE `enrollmentrequest`
 -- AUTO_INCREMENT for table `progress`
 --
 ALTER TABLE `progress`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `quiz`
@@ -836,7 +929,7 @@ ALTER TABLE `students`
 -- AUTO_INCREMENT for table `teacher`
 --
 ALTER TABLE `teacher`
-  MODIFY `teacher_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20232077;
+  MODIFY `teacher_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=202320921;
 
 --
 -- Constraints for dumped tables

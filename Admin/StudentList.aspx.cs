@@ -59,7 +59,7 @@ namespace MATH1.Admin
 
                     cons.Open();
 
-                    MySqlCommand utos = new MySqlCommand("Select stud_id as 'ID', concat(FirstName,' ',LastName) as 'Name', username from students where stud_id = '" + TextBox1.Text + "' or username = '" + TextBox1.Text + "'  ", cons);
+                    MySqlCommand utos = new MySqlCommand("Select stud_id as 'ID', concat(FirstName,' ',LastName) as 'Name', username as 'Username' from students where stud_id = '" + TextBox1.Text + "' or username = '" + TextBox1.Text + "'  ", cons);
                     MySqlDataReader myRead = utos.ExecuteReader();
 
                     if (myRead.HasRows == true)

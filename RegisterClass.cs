@@ -118,6 +118,33 @@ namespace MATH1
             } while (!checker(id));
             return id;
         }
+        //generate ID for teacher
+        bool checker_teacher(string val)
+        {
+            if (blue.query("select teacher_id from teacher where teacher_id ='" + val + "'") == null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public string getId_Teacher()
+        {
+            Random waowRand = new Random();
+            DateTime MyTime = DateTime.Now;
+            string id = "";
+            string formattedTime = "";
+            int selected = waowRand.Next(10, 1001);
+            do
+            {
+                formattedTime = MyTime.ToString("yyyy");
+                id = formattedTime + "20" + selected.ToString();
+            } while (!checker_teacher(id));
+            return id;
+        }
+        // end for generate ID for teacher
         public void InputDetails(int getIdNow)
         {
             blue.query2("insert into students(stud_id,username,pass,email,birthday,FirstName,LastName,GradeLevel,score) values('"+getIdNow+"','"+username+"','"+password+"','"+email+"','"+age+"','"+F_name+"','"+L_name+"','"+GradeLevel+"',0)");

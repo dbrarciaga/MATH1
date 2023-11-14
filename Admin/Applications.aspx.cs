@@ -12,6 +12,8 @@ namespace MATH1.Admin
     public partial class WebForm9 : System.Web.UI.Page
     {
         database blue = new database();
+        RegisterClass waow = new RegisterClass();
+        static string selected = "";
         protected void Page_Load(object sender, EventArgs e)
         {
            
@@ -46,6 +48,7 @@ namespace MATH1.Admin
                 }
                 //end of dropdownlist datasource
                 div2.Visible = false;
+                div3.Visible = false;
             }
 
 
@@ -58,6 +61,7 @@ namespace MATH1.Admin
             L_name.Text = blue.query2("select LastName from applicants where ID = '" + DropDownList1.SelectedValue + "'");
             email.Text = blue.query2("select email from applicants where ID = '" + DropDownList1.SelectedValue + "'");
             pitch1.Text = blue.query2("select pitch from applicants where ID = '" + DropDownList1.SelectedValue + "'");
+            selected = DropDownList1.SelectedValue;
             //2nd page
             F_name2.Text = F_name.Text;
             L_name2.Text = L_name.Text;
@@ -79,6 +83,7 @@ namespace MATH1.Admin
                     reject.Visible = false;
                     accept.Text = "Back";
                     error.Text = " ";
+                    Label1.Text = waow.getId_Teacher();
                 }
                 else
                 {
@@ -87,6 +92,24 @@ namespace MATH1.Admin
                     reject.Visible = true;
                     accept.Text = "Accept";
                 }
+            }
+        }
+
+        protected void register_Click(object sender, EventArgs e)
+        {
+            if (username.Text == "" && password.Text == "")
+            {
+                username.CssClass = "w3-red";
+                password.CssClass = "w3-red";
+                error2.Text = "Enter the requred fields! ";
+            }
+            else
+            {
+                div3.Visible = true;
+                div2.Visible = false;
+                register.Visible = false;
+                blue.query2("insert into teacher(teacher_id,username,pass,email,FirstName,LastName,birthday,stats) values ('"+Label1.Text+"','"+username.Text+"','"+password.Text+"','"+email2.Text+"','"+F_name2.Text+"','"+L_name2.Text+"','"+age.Text+"','inactive')");
+                blue.query2("delete from applicants where ID = '"+selected+"'");
             }
         }
     }
