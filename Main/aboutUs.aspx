@@ -4,8 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    
-
+    <asp:Button ID="Button1" runat="server" Text="Button1" />
+  
    
 
     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
