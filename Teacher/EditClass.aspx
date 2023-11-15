@@ -2,33 +2,26 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="height:1000px">
-         <div>
-       <center>
-            <h1 style="text-align:center; width:50%" class="w3-container w3-white w3-round w3-card">
-            Edit Class list
-            </h1>
-       </center>
-             <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True">
-                  <asp:ListItem>-- Select number --</asp:ListItem>
-             </asp:DropDownList>
-             
-            <asp:TextBox ID="search" runat="server" CssClass="w3-half w3-card w3-margin">         
-            </asp:TextBox>
-            <asp:Button ID="Button1" runat="server" Text="search" CssClass="w3-quarter w3-button w3-white w3-card w3-margin" OnClick="Button1_Click" /> 
+    <center style="height:1000px">
+        <h1>Manage student</h1>
+        <br />
+        <div style="width:500px" class="w3-card w3-white w3-round-large ">
+            <br />
+            <h4>Select student</h4>
+            <asp:DropDownList ID="studentList" runat="server" AutoPostBack ="true" OnSelectedIndexChanged="studentList_SelectedIndexChanged"></asp:DropDownList>  <asp:Button ID="drop" runat="server" Text="Drop" CssClass="w3-button w3-blue w3-card w3-round-large" OnClick="drop_Click"/>
+            <br />
             <asp:Label ID="Label1" runat="server" Text=" "></asp:Label>
+            <br />
         </div>
-           <div class="w3-row-padding">
-        <asp:Button ID="Add" runat="server" Text="Enroll"  CssClass="w3-quarter w3-button w3-white w3-card w3-margin" OnClick="Add_Click" />
-        <asp:Button ID="Remove" runat="server" Text="Drop" CssClass="w3-quarter w3-button w3-white w3-card w3-margin" OnClick="Remove_Click" />        
-        </div>
-        <div class="w3-row-padding">
+        
         <br />
         <br />
-        <div class="w3-container">
-            <asp:GridView ID="GridView1" runat="server" CssClass="w3-table-all " Width="300px"></asp:GridView>
+        <div style="width:800px" class="w3-card w3-white w3-round-large ">
+            <br />
+            <asp:GridView ID="GridView1" runat="server" Width="500px" CssClass="w3-table w3-margin"></asp:GridView>
+            <br />
+            
         </div>
+    </center>
 
-        </div>
-    </div>
 </asp:Content>

@@ -12,213 +12,87 @@ namespace MATH1.Teacher
     {
         database blue = new database();
         string user = "";
+        static string ID = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-           if(!IsPostBack)
+            ID = blue.query2("select teacher_id from teacher where username = '"+ Session["username"].ToString() + "'");
+            if (!IsPostBack)
             {
-                Label1.Text = DropDownList1.SelectedValue;
-                try
+                //dropdown for student
+                string waow = "server=localhost;user id=root;database=math1";
+                Response.Write(ID);
+                using (MySqlConnection cons = new MySqlConnection(waow))
                 {
-
-                    string waow1 = "server=localhost;user id=root;database=math1";
-                    using (MySqlConnection cons = new MySqlConnection(waow1))
+                    cons.Open();
+                    string query = "SELECT classlist.stud_id as 'ID', concat(students.FirstName,' ',students.LastName) as 'Name' FROM `classlist` inner join students on classlist.stud_id = students.stud_id where classlist.teacher_id ='" + ID+"';";
+                    try
                     {
-                        cons.Open();
-
-                        string query = "SELECT stud_id, count(stud_id) FROM `classlist` group by stud_id having count(stud_id) > 0";
-
                         using (MySqlCommand cmd = new MySqlCommand(query, cons))
                         {
-                            DropDownList1.DataSource = cmd.ExecuteReader();
-                            DropDownList1.DataTextField = "stud_id";
-                            DropDownList1.DataValueField = "stud_id";
-                            DropDownList1.DataBind();
 
+                            studentList.DataSource = cmd.ExecuteReader();
+                            studentList.DataTextField = "Name";
+                            studentList.DataValueField = "ID";
+                            studentList.DataBind();
+                            studentList.Items.Add("select");
+
+                            cons.Close();
                         }
                     }
+                    catch (Exception error)
+                    {
+                        Response.Write(error);
+                    }
+
+                }
+                //end of dropdownlist datasource
 
 
-                }
-                catch (Exception err)
-                {
-                    Label1.Text = err.ToString();
-                }
+
             }
-            try
-            {
-                if (Session["username"] == null)
-                {
-                    Response.Redirect("/Main/Login/LogIn.aspx");
-                }
-                else
-                {
-                    Label1.Text = Session["username"].ToString();
-                    user = Session["username"].ToString();
-                }
-            }
-            catch (Exception wow)
-            {
-                Response.Redirect("/Main/NewHomePage.aspx");
-            }
-            //////////////////////////////////////////
-            ///
-            string waow = "server=localhost;user id=root;database=math1";
-            using (MySqlConnection cons = new MySqlConnection(waow))
+
+
+        }
+
+        protected void studentList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string waow2 = "server=localhost;user id=root;database=math1";
+            using (MySqlConnection cons = new MySqlConnection(waow2))
             {
                 try
                 {
 
                     cons.Open();
 
-                    MySqlCommand utos = new MySqlCommand("select * from classlist where teacher = '" + Session["username"].ToString() + "'", cons);
+                    MySqlCommand utos = new MySqlCommand("select students.stud_id as 'ID', concat(students.FirstName,' ',students.LastName) as 'Student Name' from classlist inner join students on classlist.stud_id = students.stud_id where classlist.stud_id ='"+studentList.SelectedValue+"'", cons);
                     MySqlDataReader myRead = utos.ExecuteReader();
+
                     if (myRead.HasRows == true)
                     {
                         GridView1.DataSource = myRead;
                         GridView1.DataBind();
-                        Label1.Text = "    ";
+                        Label1.Text = " ";
                     }
                     else
                     {
                         Label1.Text = "<div class='button1'> user not found! </div>";
 
                     }
+
                 }
                 catch (Exception err)
                 {
-                    Label1.Text = err.ToString();
+                    Response.Write(err);
                 }
-            }
-
-
-
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            if (search.Text == "")
-            {
-                Label1.Text = "Enter the required fields!";
-                return;
-            }
-            string waow = "server=localhost;user id=root;database=math1";
-            using (MySqlConnection cons = new MySqlConnection(waow))
-            {
-                try
-                {
-
-                    cons.Open();
-
-                    MySqlCommand utos = new MySqlCommand("select id,username,gradeLevel from students where username = '" + search.Text + "' or id = '" + search.Text + "' ", cons);
-                    MySqlDataReader myRead = utos.ExecuteReader();
-                    if (myRead.HasRows == true)
-                    {
-                        GridView1.DataSource = myRead;
-                        GridView1.DataBind();
-                        Label1.Text = "    ";
-                    }
-                    else
-                    {
-                        Label1.Text = "<div class='button1'> user not found! </div>";
-
-                    }
-                }
-                catch (Exception err)
-                {
-                    Label1.Text = err.ToString();
-                }
+                cons.Close();
             }
         }
 
-        protected void Add_Click(object sender, EventArgs e)
+        protected void drop_Click(object sender, EventArgs e)
         {
-            if (search.Text == "")
-            {
-                Label1.Text = "Enter the required fields!";
-                return;
-            }
-            database blue = new database();
-            string connectionString = "server=localhost;user id=root;database=math1";
-            MySqlConnection conn = new MySqlConnection(connectionString);
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO classlist(`class_id`,`teacher`,`stud_id`,`f_name`) values ('" + search.Text + "','" + Session["username"].ToString() + "','" + blue.getId(search.Text) + "','" + blue.getInfo(search.Text) + "');", conn);
-
-            try
-            {
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                Label1.Text = "student has been added to your class";
-                conn.Close();
-
-            }
-            catch (Exception error)
-            {
-                Label1.Text = error.ToString();
-            }
-
-        }
-
-        protected void Remove_Click(object sender, EventArgs e)
-        {
-            if (search.Text == "")
-            {
-                Label1.Text = "Enter the required fields!";
-                return;
-            }
-            string connectionString = "server=localhost;user id=root;database=math1";
-            MySqlConnection conn = new MySqlConnection(connectionString);
-            MySqlCommand cmd = new MySqlCommand("DELETE FROM classlist where stud_id = '" + search.Text + "'", conn);
-            try
-            {
-                conn.Open();
-                int waow = cmd.ExecuteNonQuery();
-                if (waow > 0)
-                {
-                    Label1.Text = "Student has been dropped";
-                }
-                else
-                {
-                    Label1.Text = "No rows affected";
-                }
-
-            }
-            catch (Exception err)
-            {
-                Label1.Text = err.ToString();
-            }
-        }
-
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int testing = int.Parse(DropDownList1.SelectedValue);
-            string waow = "server=localhost;user id=root;database=math1";
-            using (MySqlConnection cons = new MySqlConnection(waow))
-            {
-                try
-                {
-
-                    cons.Open();
-
-                    MySqlCommand utos = new MySqlCommand("select * from classlist where stud_id = '"+ testing +"'", cons);
-                    Response.Write(testing);
-                    MySqlDataReader myRead = utos.ExecuteReader();
-                    if (myRead.HasRows == true)
-                    {
-                        GridView1.DataSource = myRead;
-                        GridView1.DataBind();
-                        Label1.Text = DropDownList1.SelectedValue;
-                    }
-                    else
-                    {
-                        Label1.Text = "<div class='button1'> user not found! </div>";
-
-                    }
-                }
-                catch (Exception err)
-                {
-                    Label1.Text = err.ToString();
-                }
-            }
+            blue.query2("delete from classlist where stud_id ='"+studentList.SelectedValue+"'");
+            blue.query2("insert into auditlog(actionTaken, username, dateAction) values ('Dropped a student ','"+Session["username"].ToString()+"','"+DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss")+"')");
+            Label1.Text = "Student has been dropped!";
         }
     }
 }

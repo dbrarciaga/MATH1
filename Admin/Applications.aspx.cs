@@ -110,6 +110,7 @@ namespace MATH1.Admin
                 register.Visible = false;
                 blue.query2("insert into teacher(teacher_id,username,pass,email,FirstName,LastName,birthday,stats) values ('"+Label1.Text+"','"+username.Text+"','"+password.Text+"','"+email2.Text+"','"+F_name2.Text+"','"+L_name2.Text+"','"+age.Text+"','inactive')");
                 blue.query2("delete from applicants where ID = '"+selected+"'");
+                blue.query2("insert into auditlog(actionTaken, username, dateAction) values ('Registered a teacher ','" + Session["username"].ToString() + "','" + DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss") + "')");
             }
         }
     }
