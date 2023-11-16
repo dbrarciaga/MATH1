@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <center style="height:1000px;">
         <br />
-        <h1> Apply for a position as a Teacher! </h1>
+        <h1> Apply for a position as a Tutor! </h1>
         <br />
 
         <div runat="server" id="div1" style="width:500px" class="w3-card w3-white w3-round-large">

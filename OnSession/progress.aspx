@@ -25,8 +25,8 @@
         </div>
     </center>
       <center>
-        <div style="width:500px" class="w3-card w3-white w3-margin w3-round-large">
-            <h4>quizes</h4>
+        <div style="max-height:600px;overflow-y:scroll; width:500px;" class="w3-card w3-white w3-margin w3-round-large">
+            <h4>Challenges </h4>
             <asp:GridView ID="GridView2" CssClass="w3-table-all w3-hoverable w3-round-large" runat="server"></asp:GridView>
         </div>
     </center>

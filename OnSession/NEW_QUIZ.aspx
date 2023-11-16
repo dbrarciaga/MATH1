@@ -25,7 +25,7 @@
         <br />
         <div runat="server" id="summary" style="width:500px" class="w3-card w3-white w3-round-large">
             <h1> you're finished!</h1>
-            <p>You got  <asp:Label ID="scoreDisnut" runat="server" Text="Label"></asp:Label> stars! </p>          
+            <p> Score:  <asp:Label ID="scoreDisnut" runat="server" Text="Label"></asp:Label></p>          
             <asp:Button ID="submit" runat="server" Text="Go back to dashboard" CssClass="w3-button w3-blue w3-round-large w3-margin" OnClick="submit_Click" />
             <br />
             <br />

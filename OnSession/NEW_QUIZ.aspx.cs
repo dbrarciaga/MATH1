@@ -48,6 +48,10 @@ namespace MATH1.OnSession
         protected void next_Click(object sender, EventArgs e)
         {
             waow = blue.query2("SELECT count(DISTINCT(quiz_Number)) FROM `quiz` where teacher_id = '" + teacher + "'");
+            if(waow == "")
+            {
+                title.Text = "No Challenges available.";
+            }
             prev.Visible = true;
             //Label1.Visible = true;
             go.Visible = true;
@@ -56,30 +60,30 @@ namespace MATH1.OnSession
             {
                 count = int.Parse(waow);
                 //Label1.Text = waow;
-                title.Text = blue.query2("SELECT quiz_title FROM `quiz` where quiz_number = '" + count + "'");
+                title.Text = blue.query2("SELECT quiz_title FROM `quiz` where quiz_number = '" + count + "' and teacher_id = '" + teacher + "'");
             }
             else
             {
                 count = count + 1;
                 //Label1.Text = count.ToString();
-                title.Text = blue.query2("SELECT quiz_title FROM `quiz` where quiz_number = '" + count + "'");
+                title.Text = blue.query2("SELECT quiz_title FROM `quiz` where quiz_number = '" + count + "' and teacher_id = '" + teacher + "'");
             }
         }
 
         protected void prev_Click(object sender, EventArgs e)
         {
-            waow = blue.query2("SELECT count(DISTINCT(quiz_Number)) FROM `quiz`");
+            waow = blue.query2("SELECT count(DISTINCT(quiz_Number)) FROM `quiz` where teacher_id = '" + teacher + "' and teacher_id = '" + teacher + "'");
             if (count <= 1)
             {
                 count = 1;
-                //Label1.Text = "1";
-                title.Text = blue.query2("SELECT quiz_title FROM `quiz` where quiz_number = '" + count + "'");
+                //Label1.Text = "1"; 
+                title.Text = blue.query2("SELECT quiz_title FROM `quiz` where quiz_number = '" + count + "' and teacher_id = '" + teacher + "'");
             }
             else
             {
                 count = count - 1;
                 //Label1.Text = count.ToString();
-                title.Text = blue.query2("SELECT quiz_title FROM `quiz` where quiz_number = '" + count + "'");
+                title.Text = blue.query2("SELECT quiz_title FROM `quiz` where quiz_number = '" + count + "' and teacher_id = '" + teacher + "'");
             }
         }
 
@@ -88,7 +92,7 @@ namespace MATH1.OnSession
             
             select.Visible = false;
             quizPanel.Visible = true;
-            string counter = blue.query2("SELECT count(item_number) FROM `quiz` where quiz_number = '" + count + "'");
+            string counter = blue.query2("SELECT count(item_number) FROM `quiz` where quiz_number = '" + count + "' and teacher_id = '" + teacher + "'");
             string connectionString = "server=localhost;user id=root;database=math1";
             //from mysql to a List variable
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -96,7 +100,7 @@ namespace MATH1.OnSession
                 connection.Open();
 
                 // SQL query
-                string query = "SELECT question, answer FROM quiz where quiz_number ='" + count + "'";
+                string query = "SELECT question, answer FROM quiz where quiz_number ='" + count + "' and teacher_id = '" + teacher + "'";
 
                 // Create a command and execute the query
                 using (MySqlCommand command = new MySqlCommand(query, connection))

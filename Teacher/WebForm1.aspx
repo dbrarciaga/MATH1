@@ -13,7 +13,7 @@
     <div style="height:1000px;" class="w3-display-middle"> 
         <div class="box" style="margin-top:20%">
                 <center>
-                    <h1 style="font-weight:bold; color:white;">Welcome Teacher <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label> !</h1>
+                    <h1 style="font-weight:bold; color:white;">Welcome Tutor <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label> !</h1>
                 </center>          
 
             </div>
@@ -27,7 +27,7 @@
                     <h2>Quizzes</h2> 
                 </a>
                 <a  href="/Teacher/EditClass.aspx" class="w3-third w3-card w3-white w3-margin waow w3-round-large w3-button">                
-                    <h2>Enroll/Drop 
+                    <h2>Drop 
                         <p>student</p>
                     </h2> 
                 </a>
