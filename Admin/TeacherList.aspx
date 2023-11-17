@@ -10,7 +10,8 @@
     <center>
          <div style="width:500px;" class="w3-card w3-white w3-round-large">
      
-            <h1>Teachers</h1>
+            <h1>Tutors</h1>
+             <p>Enter username or tutor ID</p>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><p> </p><asp:Button ID="Button1" runat="server" CssClass=" w3-round-large w3-button w3-grey" Text="search" OnClick="Button1_Click" />
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
             <br />

@@ -86,7 +86,7 @@
               <p>Username: </p>
               <asp:TextBox ID="username" runat="server"></asp:TextBox>
               <br />
-              <p>Passowrd: </p>
+              <p>Password: </p>
               <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
               <br />
               <p>Birthday: </p>
