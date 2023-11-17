@@ -112,7 +112,7 @@
 
         </div>
         <div style="width: 50%" class="w3-panel w3-card w3-white w3-round-medium w3-animate-right">
-            <h2>just getting started? </h2>
+            <h2>Just Getting Started? </h2>
             
             <a href="/Main/Register/WebForm1.aspx" class="w3-button w3-black w3-round-large"><h1>Register here</h1></a>
             <br />

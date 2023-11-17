@@ -103,8 +103,9 @@ namespace MATH1.Teacher
             {
                 answer.Text = a.Text;                
             }
-           
-
+            testing.query2("update quiz set question = '"+question.Text+"', answer = '"+answer.Text+"' where quiz_number = '"+blue.Selected+"' and item_number = '"+DropDownList1.SelectedValue+"'");
+            testing.query2("insert into auditlog(actionTaken, username,dateAction ) values ('Updated quiz','"+Session["username"].ToString()+"','"+DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss")+"')");
+            Response.Redirect("/Teacher/Editquiz.aspx");
         }
     }
 }
