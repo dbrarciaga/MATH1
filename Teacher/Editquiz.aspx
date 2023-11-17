@@ -108,7 +108,8 @@
         <br />
         <br />      
     </div>
-       
+       <asp:Button ID="update" runat="server" Text="Update" OnClick="update_Click" CssClass="w3-card w3-button w3-blue w3-margin" />
+
     <br />
     <br />
    </center>
