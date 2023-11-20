@@ -7,8 +7,8 @@
         <h1> Register as Tutor Now </h1>
         <br />
 
-        <div runat="server" id="div1" style="width:500px" class="w3-card w3-white w3-round-large">
-            <br />
+        <div runat="server" id="div1" style="width:500px" class="w3-card w3-white w3-round-large">           
+            <h4>Enter details</h4>
             <div class="w3-row">
                 <div class="w3-half">
                       <p>First Name: </p>

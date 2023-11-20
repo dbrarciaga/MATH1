@@ -43,7 +43,31 @@
             border-radius: 10px 10px; /* <---------- use this to round the opposite corners */
         }
     </style>
+     <div style="text-align: center;">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+         <h2>Welcome to</h2>
+        <br />
+        <br />
+        <a  href="/Main/AccountPge/AccountPge.aspx"><img  style="height: 50%; width: 50%;" class="center-fit" src="logo.png" title="source: imgur.com" /></a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
+
+    </div>
+    <!--first-->
+    <br />
+    <br />
+    <br />
 
 
 
@@ -61,13 +85,7 @@
         <br />
         <a  href="/Main/AccountPge/AccountPge.aspx"><img  style="height: 100%; width: 100%;" class="center-fit" src="https://i.imgur.com/ysE7Raj.png" title="source: imgur.com" /></a>
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+       
 
 
     </div>
@@ -356,7 +374,7 @@
 
     <section style="color: black;" class="first">
         <p>Want to join?</p>
-        <a class="button2" href="/Main/AccountPge/AccountPge.aspx" style="font-size:50px;font-family: 'Gill Sans MT';"><b>Learn math now!</b></a>
+        <a class="button2" href="/Main/Login/LogIn.aspx" style="font-size:50px;font-family: 'Gill Sans MT';"><b>Learn math now!</b></a>
     </section>
 
 

@@ -89,7 +89,7 @@
             <h1>Join MATHiNIQUE now or already a user?</h1>
             <div class="w3-row-padding w3-block">
                  <div class="w3-half w3-animate-left">
-                   <a href="../Register.aspx" class="w3-card-4 w3-button w3-round-large w3-margin" style="width:100%;">
+                   <a href="../Register/WebForm1.aspx" class="w3-card-4 w3-button w3-round-large w3-margin" style="width:100%;">
                        <div class="w3-container">
                       <p> Not a yet a student? Register now!</p>
                     </div>
