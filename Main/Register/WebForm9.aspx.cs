@@ -10,7 +10,8 @@ namespace MATH1.Main
     public partial class WebForm9 : System.Web.UI.Page
     {
         RegisterClass blue = new RegisterClass();
-
+        database waow = new database();
+        static string IsExisting = "";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -18,7 +19,8 @@ namespace MATH1.Main
 
         protected void next_Click(object sender, EventArgs e)
         {
-            if(blue.Email_Checker(email.Text))
+            
+            if (blue.Email_Checker(email.Text))
             {
                 Label1.Text = "invalid email!";
             }
@@ -28,11 +30,16 @@ namespace MATH1.Main
             }
             if (username.Text.Length < 2)
             {
-                Label1.Text = "password should be more than 2 characters ";
+                Label1.Text = "password should be more than 2 characters. ";
             }
             if (pass.Text.Length < 4)
             {
-                Label1.Text = "password should be more than 4 characters ";
+                Label1.Text = "password should be more than 4 characters. ";
+            }
+            IsExisting = waow.query2("SELECT email FROM students where email = '"+ email.Text+"'");
+            if (IsExisting == email.Text)
+            {
+                Label1.Text = "This email is already in use.";
             }
             else
             {
@@ -55,6 +62,11 @@ namespace MATH1.Main
                 }
             }
          
+        }
+
+        protected void email_TextChanged(object sender, EventArgs e)
+        {
+            Response.Write(IsExisting);
         }
     }
 }

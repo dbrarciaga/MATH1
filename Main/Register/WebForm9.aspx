@@ -5,7 +5,7 @@
             <h4>Account</h4> 
             <br />           
             <p>Email: </p>
-            <asp:TextBox ID="email" runat="server"></asp:TextBox>
+            <asp:TextBox ID="email" runat="server" OnTextChanged="email_TextChanged" AutoPostBack="true"></asp:TextBox>
             <br />
             <p>User name:</p>
             <asp:TextBox ID="username" runat="server"></asp:TextBox>
