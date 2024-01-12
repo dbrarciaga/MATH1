@@ -39,6 +39,12 @@
                    <b><asp:Label ID="app" runat="server" Text="Label"></asp:Label></b>
                </h1>
            </a>
+           <a style="width:40%" class="w3-half w3-card w3-white w3-margin w3-button  w3-round-large">
+               <h4>Search</h4>
+               <h1>
+                   <b>Users</b>
+               </h1>
+           </a>
        </div>
     </center>
 </asp:Content>
