@@ -21,7 +21,10 @@ namespace MATH1.OnSession
         static string ident = "";
         static string ident2 = "";
         static string teacher = "";
-         
+       
+        
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -85,10 +88,18 @@ namespace MATH1.OnSession
 
         protected void go_Click(object sender, EventArgs e)
         {
-            
+            Random random = new Random();
+            int minRange = 1;
+            int maxRange = 9;
+            int randomInRange = random.Next(minRange, maxRange);
+
+
+
+
+
             select.Visible = false;
             quizPanel.Visible = true;
-            string counter = blue.query2("SELECT count(item_number) FROM `quiz` where quiz_number = '" + count + "' and teacher_id = '" + teacher + "'");
+            string counter = blue.query2("SELECT item_number FROM `quiz` where quiz_number = '" + count + "' and teacher_id = '" + teacher + "'");
             string connectionString = "server=localhost;user id=root;database=math1";
             //from mysql to a List variable
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -96,7 +107,7 @@ namespace MATH1.OnSession
                 connection.Open();
 
                 // SQL query
-                string query = "SELECT question, answer FROM quiz where quiz_number ='" + count + "' and teacher_id = '" + teacher + "'";
+                string query = "SELECT question, answer FROM quiz where item_number = '" + randomInRange + "' and quiz_number ='" + count + "' and teacher_id = '" + teacher + "'";
 
                 // Create a command and execute the query
                 using (MySqlCommand command = new MySqlCommand(query, connection))
