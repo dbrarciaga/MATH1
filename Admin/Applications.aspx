@@ -4,7 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <center style="height:1000px">        
       <div runat="server" id="div1">
-          <h1> Applications </h1>
+          <h1> <b>TUTOR APPLICATIONS</b> </h1>
+          <asp:GridView ID="GridView1" runat="server" CssClass="w3-table-all"></asp:GridView>
+          <br />
            <div style="width:800px;" class="w3-card w3-white w3-round-large">
            <br />
            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
@@ -13,14 +15,14 @@
                <div class="w3-half">
                    <p>First Name: 
                         <b>
-                           <asp:Label ID="F_name" runat="server" Text="Label"></asp:Label>
+                           <asp:Label ID="F_name" runat="server" Text=""></asp:Label>
                         </b> 
                    </p>
                </div>
                  <div class="w3-half">
                    <p>Last Name: 
                        <b>
-                           <asp:Label ID="L_name" runat="server" Text="Label"></asp:Label>
+                           <asp:Label ID="L_name" runat="server" Text=""></asp:Label>
                        </b>
                    </p>
                </div>
@@ -28,16 +30,16 @@
            <br />
            <p>E-mail: 
                <b>
-                    <asp:Label ID="email" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="email" runat="server" Text=""></asp:Label>
                </b>
            </p>
            <br />
        </div>
        <br />
        <div style="width:800px;" class="w3-card w3-white w3-round-large">
-           <h4>Pitch</h4>
+           <h4><b>Applicant's Pitch</b></h4>
            <p>
-           <asp:Label ID="pitch1" runat="server" Text="Label"></asp:Label>
+           <asp:Label ID="pitch1" runat="server" Text=""></asp:Label>
            </p>
            <br />
        </div>

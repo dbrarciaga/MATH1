@@ -35,7 +35,7 @@ namespace MATH1.Admin
                             DropDownList1.DataTextField = "Applicant name";
                             DropDownList1.DataValueField = "ID";
                             DropDownList1.DataBind();
-                            DropDownList1.Items.Add("select");
+                            
 
                             cons.Close();
                         }
@@ -49,6 +49,39 @@ namespace MATH1.Admin
                 //end of dropdownlist datasource
                 div2.Visible = false;
                 div3.Visible = false;
+
+
+           
+                using (MySqlConnection cons = new MySqlConnection(waow))
+                {
+                    try
+                    {
+
+                        cons.Open();
+
+                        MySqlCommand utos = new MySqlCommand("Select ID as 'Applicant Number' ,  concat(FirstName,' ',LastName) as 'Name', email as 'Email Address' from applicants  ", cons);
+                        MySqlDataReader myRead = utos.ExecuteReader();
+
+                        if (myRead.HasRows == true)
+                        {
+                            GridView1.DataSource = myRead;
+                            GridView1.DataBind();
+                            Label1.Text = " ";
+                        }
+                        else
+                        {
+                            Label1.Text = "<div class='button1'> user not found! </div>";
+
+                        }
+
+                    }
+                    catch (Exception err)
+                    {
+                        Response.Write(err);
+                    }
+                    cons.Close();
+                }
+
             }
 
 

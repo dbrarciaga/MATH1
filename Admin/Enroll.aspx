@@ -4,8 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <a href="AdminDash.aspx" class="w3-button w3-white w3-margin w3-round-large"> Dashboard</a>
     <div style="height:1000px" class="w3-container">
-        <h1>Enroll</h1>
-        <div class="w3-container w3-white">
+        <h1><b>ENROLL</b></h1>
+        <div style="width:40%" class="w3-container w3-white">
             <h4>Select a student: </h4>
             <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                 <asp:ListItem>-- Select number --</asp:ListItem>
@@ -14,11 +14,11 @@
             <br />
         </div>
         <br />
-        <div class="w3-container w3-white">            
+        <div style="width:40%" class="w3-container w3-white">            
             <p>Enter grade</p>
             <asp:DropDownList ID="GradeLevel" runat="server"></asp:DropDownList>
         </div>
-          <div class="w3-container w3-white">            
+          <div style="width:40%" class="w3-container w3-white">            
             <p>Select teacher: </p>
               <asp:DropDownList ID="teacherList" runat="server" AutoPostBack="true" OnSelectedIndexChanged="teacherList_SelectedIndexChanged"></asp:DropDownList>
               <asp:GridView ID="GridView2" runat="server" CssClass="w3-table-all"></asp:GridView>
