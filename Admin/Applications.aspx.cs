@@ -21,34 +21,6 @@ namespace MATH1.Admin
            
            if(!IsPostBack)
             {
-                //dropdown for student
-                string waow = "server=localhost;user id=root;database=math1";
-
-                using (MySqlConnection cons = new MySqlConnection(waow))
-                {
-                    cons.Open();
-                    string query = "SELECT ID, concat(FirstName,' ',LastName) as 'Applicant name' FROM `applicants`";
-                    try
-                    {
-                        using (MySqlCommand cmd = new MySqlCommand(query, cons))
-                        {
-
-                            DropDownList1.DataSource = cmd.ExecuteReader();
-                            DropDownList1.DataTextField = "Applicant name";
-                            DropDownList1.DataValueField = "ID";
-                            DropDownList1.DataBind();
-                            DropDownList1.Items.Add("select");
-
-                            cons.Close();
-                        }
-                    }
-                    catch (Exception error)
-                    {
-                        Response.Write(error);
-                    }
-
-                }
-                //end of dropdownlist datasource
                 div2.Visible = false;
                 div3.Visible = false;
                 
@@ -77,7 +49,8 @@ namespace MATH1.Admin
                                 Text = pangalan,
                                 ID = "btn_" + pangalan, // Assign a unique ID for each button
                                 OnClientClick = "buttonClick('" + pangalan + "');", // Add client-side click event
-                                CommandArgument = pangalan // Set the associated value
+                                CommandArgument = pangalan, // Set the associated value
+                                CssClass= "w3-button w3-card w3-margin w3-grey w3-round-large"
                             };
                             this.Controls.Add(NewButton);
                             vert += 40;
@@ -108,43 +81,34 @@ namespace MATH1.Admin
             L_name.Text = blue.query2("select LastName from applicants where email = '" + buttonValue + "'");
             email.Text = blue.query2("select email from applicants where email = '" + buttonValue + "'");
             pitch1.Text = blue.query2("select pitch from applicants where email = '" + buttonValue + "'");
-            selected = DropDownList1.SelectedValue;
+           
             //2nd page
             F_name2.Text = F_name.Text;
             L_name2.Text = L_name.Text;
             email2.Text = email.Text;
         }
-
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
-        }
+      
 
         protected void accept_Click(object sender, EventArgs e)
         {
-            if(DropDownList1.SelectedItem.ToString() == "select")
+            if (div1.Visible)
             {
-               error.Text= "Select a applicant first! ";
+                div1.Visible = false;
+                div2.Visible = true;
+                reject.Visible = false;
+                accept.Text = "Back";
+                error.Text = " ";
+                Label1.Text = waow.getId_Teacher();
             }
             else
             {
-                if (div1.Visible)
-                {
-                    div1.Visible = false;
-                    div2.Visible = true;
-                    reject.Visible = false;
-                    accept.Text = "Back";
-                    error.Text = " ";
-                    Label1.Text = waow.getId_Teacher();
-                }
-                else
-                {
-                    div1.Visible = true;
-                    div2.Visible = false;
-                    reject.Visible = true;
-                    accept.Text = "Accept";
-                }
+                div1.Visible = true;
+                div2.Visible = false;
+                reject.Visible = true;
+                accept.Text = "Accept";
             }
+
+
         }
 
         protected void register_Click(object sender, EventArgs e)

@@ -13,14 +13,14 @@
            <div style="width:800px;" class="w3-card w3-white w3-round-large">
                <div class="w3-row-padding">
                    <div class="w3-half">
-                       <h4> left</h4>
+                       <h4> Select</h4>
                        <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
                    </div>
                    <div class="w3-half">
-                       <h4> right
+                       <h4> Applicant's Information
 
                        </h4>
-                        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
+                        
            <br />
            <div class="w3-row">
                <div class="w3-half">
