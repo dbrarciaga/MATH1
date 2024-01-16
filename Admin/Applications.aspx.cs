@@ -14,6 +14,8 @@ namespace MATH1.Admin
         database blue = new database();
         RegisterClass waow = new RegisterClass();
         static string selected = "";
+        static string dynamiceName = "";
+        static string pangalan = "";
         protected void Page_Load(object sender, EventArgs e)
         {
            
@@ -49,23 +51,73 @@ namespace MATH1.Admin
                 //end of dropdownlist datasource
                 div2.Visible = false;
                 div3.Visible = false;
+                
+
+            }
+            // dynamice buttons ~
+            try
+            {
+                int vert = 10;
+                string connectionString = "server=localhost;user id=root;database=math1";
+
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "SELECT email FROM applicants";
+                    MySqlCommand utos = new MySqlCommand(query, conn);
+
+                    using (MySqlDataReader myRead = utos.ExecuteReader())
+                    {
+                        while (myRead.Read())
+                        {
+                            pangalan = myRead["email"].ToString();
+
+                            Button NewButton = new Button
+                            {
+                                Text = pangalan,
+                                ID = "btn_" + pangalan, // Assign a unique ID for each button
+                                OnClientClick = "buttonClick('" + pangalan + "');", // Add client-side click event
+                                CommandArgument = pangalan // Set the associated value
+                            };
+                            this.Controls.Add(NewButton);
+                            vert += 40;
+                            NewButton.Click += new EventHandler(NewButton_Click);
+
+                            PlaceHolder1.Controls.Add(new LiteralControl("<br />"));
+                            PlaceHolder1.Controls.Add(NewButton);
+                        }
+
+                    }
+
+                }
+
+            }
+            catch (Exception error)
+            {
+                Response.Write(error);
             }
 
 
-
         }
-
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        private void NewButton_Click(object sender, EventArgs e)
         {
-            F_name.Text = blue.query2("select FirstName from applicants where ID = '"+DropDownList1.SelectedValue+"'");
-            L_name.Text = blue.query2("select LastName from applicants where ID = '" + DropDownList1.SelectedValue + "'");
-            email.Text = blue.query2("select email from applicants where ID = '" + DropDownList1.SelectedValue + "'");
-            pitch1.Text = blue.query2("select pitch from applicants where ID = '" + DropDownList1.SelectedValue + "'");
+            Button clickedButton = (Button)sender;           
+            string buttonValue = clickedButton.CommandArgument;
+            Response.Write(buttonValue);
+            F_name.Text = blue.query2("select FirstName from applicants where email = '" + buttonValue + "'");
+            L_name.Text = blue.query2("select LastName from applicants where email = '" + buttonValue + "'");
+            email.Text = blue.query2("select email from applicants where email = '" + buttonValue + "'");
+            pitch1.Text = blue.query2("select pitch from applicants where email = '" + buttonValue + "'");
             selected = DropDownList1.SelectedValue;
             //2nd page
             F_name2.Text = F_name.Text;
             L_name2.Text = L_name.Text;
             email2.Text = email.Text;
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
         }
 
         protected void accept_Click(object sender, EventArgs e)

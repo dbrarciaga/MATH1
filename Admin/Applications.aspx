@@ -2,12 +2,25 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script type="text/javascript">
+    function buttonClick(pangalan) {
+        alert('Client-side Click: ' + pangalan);
+    }
+    </script>
     <center style="height:1000px">        
       <div runat="server" id="div1">
           <h1> Applications </h1>
            <div style="width:800px;" class="w3-card w3-white w3-round-large">
-           <br />
-           <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
+               <div class="w3-row-padding">
+                   <div class="w3-half">
+                       <h4> left</h4>
+                       <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+                   </div>
+                   <div class="w3-half">
+                       <h4> right
+
+                       </h4>
+                        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
            <br />
            <div class="w3-row">
                <div class="w3-half">
@@ -32,6 +45,10 @@
                </b>
            </p>
            <br />
+                   </div>
+               </div>
+           <br />
+          
        </div>
        <br />
        <div style="width:800px;" class="w3-card w3-white w3-round-large">
