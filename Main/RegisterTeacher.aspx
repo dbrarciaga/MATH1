@@ -20,6 +20,8 @@
                 </div>
             </div>
             <br />
+            <p>Birthday </p>
+            <asp:TextBox ID="bday" runat="server" TextMode="Date"></asp:TextBox>
             <p>Email: </p>
             <asp:TextBox ID="email" runat="server"></asp:TextBox>
             <br />
@@ -30,6 +32,14 @@
             
             <h4>Make your pitch!</h4>
             <asp:TextBox ID="pitch" runat="server" TextMode="MultiLine"></asp:TextBox>
+        </div>
+        <br />
+        <div runat="server" id="div3" style="width:500px" class="w3-card w3-white w3-round-large">
+            <h4>Create a account</h4>
+            <p>Username: <asp:TextBox ID="username" runat="server"></asp:TextBox></p>
+            
+            <p>Password: <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox></p>
+            <br />
         </div>
         <br />
         <asp:Label ID="Label1" runat="server" Text=" " CssClass="w3-margin"></asp:Label>
