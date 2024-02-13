@@ -36,7 +36,7 @@
             <div class="w3-row">
                 
                 <div style="width:96%; text-align:center;" class="w3-card w3-white w3-round-large w3-rest w3-margin">
-                <h2 style="font-weight:bold;">Your class</h2>  
+                <h2 style="font-weight:bold;">Class</h2>  
                     <br />
                     <center>
                         <asp:GridView ID="GridView1" runat="server" CssClass="w3-table-all" Width="500px"></asp:GridView>

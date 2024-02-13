@@ -47,7 +47,7 @@ namespace MATH1.Admin
                             Button NewButton = new Button
                             {
                                 Text = pangalan,
-                                ID = "btn_" + pangalan, // Assign a unique ID for each button
+                                ID = "btn_" + pangalan.ToString(), // Assign a unique ID for each button
                                 OnClientClick = "buttonClick('" + pangalan + "');", // Add client-side click event
                                 CommandArgument = pangalan, // Set the associated value
                                 CssClass= "w3-button w3-card w3-margin w3-grey w3-round-large"
