@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2023 at 08:25 PM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.2.31
+-- Generation Time: Feb 13, 2024 at 04:33 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,7 +34,7 @@ CREATE TABLE `achievements` (
   `stud_id` int(11) DEFAULT NULL,
   `teacher_id` int(11) DEFAULT NULL,
   `TypeOfTask` varchar(64) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `achievements`
@@ -94,7 +94,7 @@ INSERT INTO `achievements` (`score_ID`, `score_title`, `score`, `stud_id`, `teac
 CREATE TABLE `activation` (
   `ID` int(11) NOT NULL,
   `stud_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `activation`
@@ -112,7 +112,7 @@ INSERT INTO `activation` (`ID`, `stud_id`) VALUES
 CREATE TABLE `activation_teacher` (
   `ID` int(11) NOT NULL,
   `teacher_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `activation_teacher`
@@ -133,14 +133,15 @@ CREATE TABLE `applicants` (
   `LastName` varchar(64) DEFAULT NULL,
   `email` varchar(64) DEFAULT NULL,
   `pitch` varchar(64) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `applicants`
 --
 
 INSERT INTO `applicants` (`ID`, `FirstName`, `LastName`, `email`, `pitch`) VALUES
-(1, 'Dumon', 'The Titser', 'dumon2@gmail.com', 'Mabait akong teacher, mabait sa bata at di abusado thank you.');
+(1, 'Dumon', 'The Titser', 'dumon2@gmail.com', 'Mabait akong teacher, mabait sa bata at di abusado thank you.'),
+(4, 'FName', 'LName', 'testing@email.com', 'asdsadasdas');
 
 -- --------------------------------------------------------
 
@@ -154,7 +155,7 @@ CREATE TABLE `attempts` (
   `dateOfAttempt` varchar(64) DEFAULT NULL,
   `stud_id` int(11) DEFAULT NULL,
   `grade` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -167,7 +168,7 @@ CREATE TABLE `auditlog` (
   `actionTaken` varchar(64) DEFAULT NULL,
   `username` varchar(64) DEFAULT NULL,
   `dateAction` varchar(64) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `auditlog`
@@ -461,7 +462,24 @@ INSERT INTO `auditlog` (`ID`, `actionTaken`, `username`, `dateAction`) VALUES
 (289, 'teacher login', 'testing6', '11/15/2023 03:20:04'),
 (290, 'teacher login', 'testing6', '11/15/2023 03:20:37'),
 (291, 'admin login', 'admin', '11/15/2023 03:21:22'),
-(292, 'student login', 'blue', '11/15/2023 03:24:30');
+(292, 'student login', 'blue', '11/15/2023 03:24:30'),
+(293, 'admin login', 'admin', '02/05/2024 16:56:16'),
+(294, 'student login', 'blue', '02/05/2024 16:56:28'),
+(295, 'teacher login', 'maambelen', '02/06/2024 16:29:43'),
+(296, 'teacher login', 'maambelen', '02/06/2024 16:31:36'),
+(297, 'student login', 'gumeroos', '02/06/2024 16:49:33'),
+(298, 'teacher login', 'sirdm', '02/06/2024 16:50:06'),
+(299, 'created account', 'Username: testing1', '02/06/2024 17:23:30'),
+(300, 'admin login', 'admin', '02/13/2024 19:35:35'),
+(301, 'student login', 'blue', '02/13/2024 19:38:43'),
+(302, 'teacher login', 'maambelen', '02/13/2024 19:42:07'),
+(303, 'admin login', 'admin', '02/13/2024 23:08:26'),
+(304, 'admin login', 'admin', '02/13/2024 23:10:05'),
+(305, 'admin login', 'admin', '02/13/2024 23:11:49'),
+(306, 'admin login', 'admin', '02/13/2024 23:14:23'),
+(307, 'admin login', 'admin', '02/13/2024 23:17:44'),
+(308, 'admin login', 'admin', '02/13/2024 23:21:01'),
+(309, 'admin login', 'admin', '02/13/2024 23:25:36');
 
 -- --------------------------------------------------------
 
@@ -474,7 +492,7 @@ CREATE TABLE `classlist` (
   `stud_id` int(11) DEFAULT NULL,
   `teacher_id` int(11) DEFAULT NULL,
   `section` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `classlist`
@@ -509,7 +527,7 @@ CREATE TABLE `dragdrop` (
   `quiz_no` int(11) DEFAULT NULL,
   `number` int(11) DEFAULT NULL,
   `grade` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `dragdrop`
@@ -529,7 +547,7 @@ INSERT INTO `dragdrop` (`id`, `q1`, `a1`, `q2`, `a2`, `q3`, `a3`, `q4`, `a4`, `q
 CREATE TABLE `enrollmentrequest` (
   `enroll_id` int(11) NOT NULL,
   `stud_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `enrollmentrequest`
@@ -549,7 +567,7 @@ CREATE TABLE `progress` (
   `topic` varchar(64) DEFAULT NULL,
   `gradeLevel` int(11) DEFAULT NULL,
   `stud_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `progress`
@@ -589,7 +607,7 @@ CREATE TABLE `quiz` (
   `gradeLevel` int(11) DEFAULT NULL,
   `class_id` int(11) DEFAULT NULL,
   `teacher_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `quiz`
@@ -624,7 +642,7 @@ CREATE TABLE `storyboard` (
   `exercise_image2` text NOT NULL,
   `exercise_image3` text NOT NULL,
   `exercise_num` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `storyboard`
@@ -722,22 +740,24 @@ CREATE TABLE `students` (
   `LastName` varchar(65) DEFAULT NULL,
   `GradeLevel` int(11) DEFAULT NULL,
   `score` int(11) DEFAULT NULL,
-  `stats` varchar(64) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `stats` varchar(64) DEFAULT NULL,
+  `notes` varchar(69) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`stud_id`, `username`, `pass`, `email`, `birthday`, `FirstName`, `LastName`, `GradeLevel`, `score`, `stats`) VALUES
-(20231011, 'gumeroos', '1111', 'email4@yahoo.com', '10/3/2010', 'ced', 'flores', 1, 0, 'inactive'),
-(20231020, 'jun', '1111', 'email2@yahoo.com', '8/2/2010', 'rencee', 'banez', 2, 8, 'active'),
-(20231023, 'drea', '1111', 'email6@yahoo.com', '12/1/2010', 'andrea', 'babae', 4, 0, 'active'),
-(20231031, 'steben', '1111', 'email3@yahoo.com', '12/23/2010', 'steven', 'macarasig', 6, 0, 'active'),
-(20231069, 'waow', '1111', 'email@yahoo.com', '11/26/2010', 'Brian', 'Blancaflor', 4, 24, 'active'),
-(20231080, 'blue', '1111', 'email1@yahoo.com', '7/26/2010', 'danniell blue', 'Arciaga', 2, 12, 'active'),
-(20231099, 'cindy', '1111', 'email5@yahoo.com', '5/13/2010', 'cynthia', 'random', 3, 0, 'active'),
-(202310349, 'dumon1', '1111', 'DCarter@email.com', '12', 'Dumon', 'Carter', 6, 0, 'active');
+INSERT INTO `students` (`stud_id`, `username`, `pass`, `email`, `birthday`, `FirstName`, `LastName`, `GradeLevel`, `score`, `stats`, `notes`) VALUES
+(20231011, 'gumeroos', '1111', 'email4@yahoo.com', '10/3/2010', 'ced', 'flores', 1, 0, 'inactive', NULL),
+(20231020, 'jun', '1111', 'email2@yahoo.com', '8/2/2010', 'rencee', 'banez', 2, 8, 'active', NULL),
+(20231023, 'drea', '1111', 'email6@yahoo.com', '12/1/2010', 'andrea', 'babae', 4, 0, 'active', NULL),
+(20231031, 'steben', '1111', 'email3@yahoo.com', '12/23/2010', 'steven', 'macarasig', 6, 0, 'active', NULL),
+(20231069, 'waow', '1111', 'email@yahoo.com', '11/26/2010', 'Brian', 'Blancaflor', 4, 24, 'active', NULL),
+(20231080, 'blue', '1111', 'email1@yahoo.com', '7/26/2010', 'danniell blue', 'Arciaga', 2, 12, 'active', NULL),
+(20231099, 'cindy', '1111', 'email5@yahoo.com', '5/13/2010', 'cynthia', 'random', 3, 0, 'active', NULL),
+(202310349, 'dumon1', '1111', 'DCarter@email.com', '12', 'Dumon', 'Carter', 6, 0, 'active', NULL),
+(202410344, 'testing1', 'testing1', 'testing@mail.com', '21', 'FName', 'LName', 4, 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -753,20 +773,22 @@ CREATE TABLE `teacher` (
   `FirstName` varchar(64) DEFAULT NULL,
   `LastName` varchar(65) DEFAULT NULL,
   `birthday` varchar(64) DEFAULT NULL,
-  `stats` varchar(64) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `stats` varchar(64) DEFAULT NULL,
+  `notes` varchar(69) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `teacher`
 --
 
-INSERT INTO `teacher` (`teacher_id`, `username`, `pass`, `email`, `FirstName`, `LastName`, `birthday`, `stats`) VALUES
-(20232001, 'maambelen', '1111', 'email6@yahoo.com', 'Belen', 'Ladesma', NULL, 'active'),
-(20232010, 'sireman', '1111', 'email3@yahoo.com', 'Emannuel', 'Transmission', NULL, 'active'),
-(20232045, 'maamrhea', '1111', 'email2@yahoo.com', 'Rhea', 'Tortor', NULL, 'active'),
-(20232062, 'sirilao', '1111', 'email4@yahoo.com', 'Adomar', 'ilao', NULL, 'active'),
-(20232076, 'sirdm', '1111', 'email@yahoo.com', 'Dennis', 'Martillano', NULL, 'inactive'),
-(202320638, 'bankerist', '1111', 'WB@gmail.com', 'Waow', 'Banker', '2023-11-03', 'inactive');
+INSERT INTO `teacher` (`teacher_id`, `username`, `pass`, `email`, `FirstName`, `LastName`, `birthday`, `stats`, `notes`) VALUES
+(20232001, 'maambelen', '1111', 'email6@yahoo.com', 'Belen', 'Ladesma', NULL, 'active', NULL),
+(20232010, 'sireman', '1111', 'email3@yahoo.com', 'Emannuel', 'Transmission', NULL, 'active', NULL),
+(20232045, 'maamrhea', '1111', 'email2@yahoo.com', 'Rhea', 'Tortor', NULL, 'active', NULL),
+(20232062, 'sirilao', '1111', 'email4@yahoo.com', 'Adomar', 'ilao', NULL, 'active', NULL),
+(20232076, 'sirdm', '1111', 'email@yahoo.com', 'Dennis', 'Martillano', NULL, 'inactive', NULL),
+(202320638, 'bankerist', '1111', 'WB@gmail.com', 'Waow', 'Banker', '2023-11-03', 'inactive', NULL),
+(202420648, 'tite', '1111', 'testing@email.com', 'FName', 'LName', '2024-02-12', 'inactive', NULL);
 
 --
 -- Indexes for dumped tables
@@ -881,7 +903,7 @@ ALTER TABLE `activation_teacher`
 -- AUTO_INCREMENT for table `applicants`
 --
 ALTER TABLE `applicants`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `attempts`
@@ -893,7 +915,7 @@ ALTER TABLE `attempts`
 -- AUTO_INCREMENT for table `auditlog`
 --
 ALTER TABLE `auditlog`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=293;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=310;
 
 --
 -- AUTO_INCREMENT for table `classlist`
@@ -923,13 +945,13 @@ ALTER TABLE `quiz`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `stud_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=202310350;
+  MODIFY `stud_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=202410345;
 
 --
 -- AUTO_INCREMENT for table `teacher`
 --
 ALTER TABLE `teacher`
-  MODIFY `teacher_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=202320921;
+  MODIFY `teacher_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=202420649;
 
 --
 -- Constraints for dumped tables
