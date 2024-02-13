@@ -57,7 +57,7 @@
         <asp:Label ID="progressBar" runat="server" Text=" progress "></asp:Label>
         <br />
         <asp:Button ID="Button1" runat="server" Text="Level up" OnClick="Button1_Click" />
-           <center><i style="color:black">Select a topic</i> </center>
+           <center><h2><i style="color:black">Select a topic</i> </h2></center>
             <!-- first row -->
         
             <div style="color:black;" class="w3-row-padding">
