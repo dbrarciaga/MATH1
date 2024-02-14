@@ -90,6 +90,7 @@
     <Content Include="Admin\Enroll.aspx" />
     <Content Include="Admin\auditLog.aspx" />
     <Content Include="Admin\Applications.aspx" />
+    <Content Include="Admin\WebForm10.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Main\cloud.css" />
     <Content Include="Main\AccountPge\AccountPge.aspx" />
@@ -247,6 +248,13 @@
     </Compile>
     <Compile Include="Admin\Applications.aspx.designer.cs">
       <DependentUpon>Applications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm10.aspx.cs">
+      <DependentUpon>WebForm10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm10.aspx.designer.cs">
+      <DependentUpon>WebForm10.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Achievement.cs" />
