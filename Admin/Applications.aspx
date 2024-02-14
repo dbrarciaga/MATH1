@@ -62,7 +62,7 @@
         <br />
       <div class="w3-row">
           <asp:Label ID="error" runat="server" Text=" "></asp:Label>          
-          <asp:Button ID="reject" runat="server" Text="Reject" CssClass="w3-button w3-xxlarge w3-red w3-round-large" />
+          <asp:Button ID="reject" runat="server" Text="Reject" CssClass="w3-button w3-xxlarge w3-red w3-round-large" OnClick="reject_Click" />
           <asp:Button ID="accept" runat="server" Text="Accept" CssClass="w3-button w3-xxlarge w3-white w3-round-large" OnClick="accept_Click" />
       </div>
         <br />
