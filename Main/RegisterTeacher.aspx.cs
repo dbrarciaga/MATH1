@@ -25,6 +25,7 @@ namespace MATH1.Main
             {
                 Label1.Text = "<div class='w3-red'> Enter the required fields! </div>";
             }
+            //check this (2/16/2024)
             else if(int.Parse(validation) >= 1)
             {
                 Label1.Text = "<div class='w3-red'> The email is already exist </div>";
