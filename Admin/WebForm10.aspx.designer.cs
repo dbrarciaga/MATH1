@@ -42,6 +42,15 @@ namespace MATH1.Admin
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div1;
 
         /// <summary>
+        /// active control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label active;
+
+        /// <summary>
         /// F_name control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace MATH1.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label F_name;
+
+        /// <summary>
+        /// email control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label email;
 
         /// <summary>
         /// GradeLevel control.

@@ -19,10 +19,25 @@ namespace MATH1.Admin
         protected void Button1_Click(object sender, EventArgs e)
         {
             div1.Visible = true;
-            F_name.Text = "Student: " + blue.query2("select concat(FirstName,' ',LastName) as 'Name' from students where stud_id='" +search.Text + "' or username = '" + search.Text + "'");
+            //full name
+            F_name.Text = blue.query2("select concat(FirstName,' ',LastName) as 'Name' from students where stud_id='" +search.Text + "' or username = '" + search.Text + "'");
+            //email
+            email.Text = blue.query2("select email from students where username = '"+search.Text+"' or stud_id = '"+search.Text+"'");
+            //ID getter
             string GetStudId = blue.query2("select stud_id from students where username ='"+search.Text+"'");
             GradeLevel.Text = blue.query2("select gradeLevel from progress where stud_id = '" + GetStudId + "'");
-
+            //if enrolled
+            string isEnrolled = blue.query2("select stats from students where username = '"+search.Text+"' or stud_id = '"+search.Text+"'");
+            Response.Write(isEnrolled);
+            if(isEnrolled == "inactive")
+            {
+                
+                active.Text = "<button class='w3-button w3-red w3-round-large'>Not Enrolled </button>";
+            }
+            else
+            {
+                active.Text = "";
+            }
             try
             {
                 switch (GradeLevel.Text)

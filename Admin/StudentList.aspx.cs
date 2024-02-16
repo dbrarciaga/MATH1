@@ -20,7 +20,7 @@ namespace MATH1.Admin
 
                     cons.Open();
 
-                    MySqlCommand utos = new MySqlCommand("Select stud_id as 'ID', concat(FirstName,' ',LastName) as 'Name', username from students  ", cons);
+                    MySqlCommand utos = new MySqlCommand("Select stud_id as 'ID', concat(FirstName,' ',LastName) as 'Name',stats as 'Status', username from students  ", cons);
                     MySqlDataReader myRead = utos.ExecuteReader();
 
                     if (myRead.HasRows == true)
