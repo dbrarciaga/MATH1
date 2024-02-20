@@ -23,7 +23,7 @@
             <p>Birthday </p>
             <asp:TextBox ID="bday" runat="server" TextMode="Date"></asp:TextBox>
             <p>Email: </p>
-            <asp:TextBox ID="email" runat="server"></asp:TextBox>
+            <asp:TextBox ID="email" runat="server" OnTextChanged="email_TextChanged"></asp:TextBox>
             <br />
             <br />
         </div>

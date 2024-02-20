@@ -11,6 +11,7 @@ namespace MATH1.Main
     {
         database blue = new database();
         RegisterClass waow = new RegisterClass();
+        static string validation = "";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -18,7 +19,7 @@ namespace MATH1.Main
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            string validation = blue.query2("Select * from applicants where email = '"+email.Text+"'");
+            validation = blue.query2("Select email from teacher where email = '"+email.Text+"'");
             Response.Write(validation);
             string TempId = waow.getId_Teacher() ;
             if(F_Name.Text == "" && L_Name.Text == "" && email.Text == "")
@@ -26,7 +27,7 @@ namespace MATH1.Main
                 Label1.Text = "<div class='w3-red'> Enter the required fields! </div>";
             }
             //check this (2/16/2024)
-            else if(int.Parse(validation) >= 1)
+            if(validation == email.Text)
             {
                 Label1.Text = "<div class='w3-red'> The email is already exist </div>";
             }
@@ -44,6 +45,12 @@ namespace MATH1.Main
                 Label1.Text = "<h1> You sent a application "+TempId+" </h1>";
 
             }
+        }
+
+        protected void email_TextChanged(object sender, EventArgs e)
+        {
+            validation = blue.query2("Select email from teacher where email = '" + email.Text + "'");
+            Response.Write(validation);
         }
     }
 }
