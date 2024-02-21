@@ -1,6 +1,8 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -26,9 +28,10 @@ namespace MATH1.Admin
             //ID getter
             string GetStudId = blue.query2("select stud_id from students where username ='"+search.Text+"'");
             GradeLevel.Text = blue.query2("select gradeLevel from progress where stud_id = '" + GetStudId + "'");
+            ID.Text = GetStudId;
             //if enrolled
             string isEnrolled = blue.query2("select stats from students where username = '"+search.Text+"' or stud_id = '"+search.Text+"'");
-            Response.Write(isEnrolled);
+            
             if(isEnrolled == "inactive")
             {
                 
@@ -58,6 +61,32 @@ namespace MATH1.Admin
                         progressBar.Text = waow.grade3(int.Parse(GetStudId), GradeLevel.Text);
                         break;
 
+                }
+
+                string waow2 = "server=localhost;user id=root;database=math1";
+                using (MySqlConnection cons = new MySqlConnection(waow2))
+                {
+                    try
+                    {
+
+                        cons.Open();
+
+                        MySqlCommand utos = new MySqlCommand("Select stud_id as 'ID', topic from progress where stud_id = '"+GetStudId+"'  ", cons);
+                        MySqlDataReader myRead = utos.ExecuteReader();
+
+                        if (myRead.HasRows == true)
+                        {
+                            GridView1.DataSource = myRead;
+                            GridView1.DataBind();
+                            //Label1.Text = " ";
+                        }                      
+
+                    }
+                    catch (Exception err)
+                    {
+                        Response.Write(err);
+                    }
+                    cons.Close();
                 }
             }
             catch(Exception error)
