@@ -28,6 +28,7 @@ namespace MATH1.OnSession
             Label1.Text = blue.getScore(Session["username"].ToString());
             /////////////
             ///
+            // exercises
             string waow = "server=localhost;user id=root;database=math1";
             using (MySqlConnection cons = new MySqlConnection(waow))
             {
@@ -55,6 +56,7 @@ namespace MATH1.OnSession
                 }
 
             }
+            //quizes
             using (MySqlConnection cons = new MySqlConnection(waow))
             {
                 try
