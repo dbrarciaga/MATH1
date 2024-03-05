@@ -16,6 +16,7 @@ namespace MATH1.Admin
         static string selected = "";
         static string dynamiceName = "";
         static string pangalan = "";
+        static string id = "";
         protected void Page_Load(object sender, EventArgs e)
         {
            
@@ -23,10 +24,10 @@ namespace MATH1.Admin
             {
                 div2.Visible = false;
                 div3.Visible = false;
-                
+                id = "";
 
             }
-            // dynamice buttons ~
+            // dynamic buttons ~
             try
             {
                 int vert = 10;
@@ -72,6 +73,7 @@ namespace MATH1.Admin
 
 
         }
+        // dynamic buttons ~ PT2
         private void NewButton_Click(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;           
@@ -81,7 +83,9 @@ namespace MATH1.Admin
             L_name.Text = blue.query2("select LastName from applicants where email = '" + buttonValue + "'");
             email.Text = blue.query2("select email from applicants where email = '" + buttonValue + "'");
             pitch1.Text = blue.query2("select pitch from applicants where email = '" + buttonValue + "'");
-           
+            id = blue.query2("select teacher_id from teacher where email ='" + email.Text + "'");
+            selected = email.Text;
+            Response.Write(id);
             //2nd page
             F_name2.Text = F_name.Text;
             L_name2.Text = L_name.Text;
@@ -91,6 +95,7 @@ namespace MATH1.Admin
 
         protected void accept_Click(object sender, EventArgs e)
         {
+           
             if (div1.Visible)
             {
                 div1.Visible = false;
@@ -98,7 +103,7 @@ namespace MATH1.Admin
                 reject.Visible = false;
                 accept.Text = "Back";
                 error.Text = " ";
-                Label1.Text = waow.getId_Teacher();
+                Label1.Text = id;
             }
             else
             {
@@ -110,29 +115,25 @@ namespace MATH1.Admin
 
 
         }
-
+        // register (FINAL)
         protected void register_Click(object sender, EventArgs e)
         {
-            if (username.Text == "" && password.Text == "")
-            {
-                username.CssClass = "w3-red";
-                password.CssClass = "w3-red";
-                error2.Text = "Enter the requred fields! ";
-            }
-            else
-            {
                 div3.Visible = true;
                 div2.Visible = false;
                 register.Visible = false;
                 //blue.query2("insert into teacher(teacher_id,username,pass,email,FirstName,LastName,birthday,stats) values ('"+Label1.Text+"','"+username.Text+"','"+password.Text+"','"+email2.Text+"','"+F_name2.Text+"','"+L_name2.Text+"','"+age.Text+"','inactive')");
-                blue.query2("delete from applicants where ID = '"+selected+"'");
+                blue.query2("delete from applicants where email = '"+selected+"'");
                 blue.query2("insert into auditlog(actionTaken, username, dateAction) values ('Registered a teacher ','" + Session["username"].ToString() + "','" + DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss") + "')");
-            }
+            
         }
-
+        // reject button
         protected void reject_Click(object sender, EventArgs e)
         {
-
+            Response.Write(blue.query2("delete from applicants where email = '" + selected + "'")) ;
+            Response.Write(blue.query2("insert into auditlog(actionTaken, username, dateAction) values ('REJECTED APPLICATION ','" + Session["username"].ToString() + "','" + DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss") + "')"));
+            Response.Write(blue.query2("UPDATE teacher SET notes = 'rejected' where teacher_id ='" + id + "'")) ;
+            Response.Write(blue.query2("INSERT INTO rejections (`teacher_id`,`notes`) values ('" + id + "', 'insert here why is it rejected.')"));
+            //Response.Redirect("AdminDash.aspx");
         }
     }
 }

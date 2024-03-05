@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <center style="height:1000px">
         <center runat="server" id="active" style="width:700px;" class="w3-card w3-white w3-round-large">
-            <h1>Wait for your account to be activated </h1>
+            <h1><asp:Label ID="Label1" runat="server" Text="Wait for your account to be activated"></asp:Label></h1>            
         </center>
         <br />
         <center runat="server" id="inactive" style="width:700px;" class="w3-card w3-white w3-round-large">

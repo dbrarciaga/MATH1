@@ -26,14 +26,14 @@
                <div class="w3-half">
                    <p>First Name: 
                         <b>
-                           <asp:Label ID="F_name" runat="server" Text="Label"></asp:Label>
+                           <asp:Label ID="F_name" runat="server" Text=" "></asp:Label>
                         </b> 
                    </p>
                </div>
                  <div class="w3-half">
                    <p>Last Name: 
                        <b>
-                           <asp:Label ID="L_name" runat="server" Text="Label"></asp:Label>
+                           <asp:Label ID="L_name" runat="server" Text=" "></asp:Label>
                        </b>
                    </p>
                </div>
@@ -41,7 +41,7 @@
            <br />
            <p>E-mail: 
                <b>
-                    <asp:Label ID="email" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="email" runat="server" Text=" "></asp:Label>
                </b>
            </p>
            <br />
@@ -74,14 +74,14 @@
                <div class="w3-half">
                    <p>First Name: 
                         <b>
-                           <asp:Label ID="F_name2" runat="server" Text="Label"></asp:Label>
+                           <asp:Label ID="F_name2" runat="server" Text=" "></asp:Label>
                         </b> 
                    </p>
                </div>
                  <div class="w3-half">
                    <p>Last Name: 
                        <b>
-                           <asp:Label ID="L_name2" runat="server" Text="Label"></asp:Label>
+                           <asp:Label ID="L_name2" runat="server" Text=" "></asp:Label>
                        </b>
                    </p>
                </div>
@@ -89,29 +89,15 @@
            <br />
            <p>E-mail: 
                <b>
-                    <asp:Label ID="email2" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="email2" runat="server" Text=" "></asp:Label>
                </b>
            </p>
-           <br />              
-          </div>
-          <br />
-          <div style="width:800px;" class="w3-card w3-white w3-round-large">
            <br />
-              <h4>Account</h4>
-              <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-              <br />
-              <p>Username: </p>
-              <asp:TextBox ID="username" runat="server"></asp:TextBox>
-              <br />
-              <p>Password: </p>
-              <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
-              <br />
-              <p>Birthday: </p>
-              <asp:TextBox ID="age" runat="server" TextMode="Date"></asp:TextBox>
-              <br />
-              <br />
-             <asp:Label ID="error2" runat="server" Text=""></asp:Label>
-            </div>         
+              <h4>Teacher ID: </h4>
+               <h4>  <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label> </h4>
+                <br />
+          </div>
+          <br />        
           <br />
            <asp:Button ID="register" runat="server" Text="Register" CssClass="w3-button w3-xxlarge w3-blue w3-round-large w3-card" OnClick="register_Click"/>
      </div>

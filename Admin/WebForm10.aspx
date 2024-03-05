@@ -31,6 +31,7 @@
                                  <h4>Grade Level: <b><asp:Label ID="GradeLevel" runat="server" Text="0"></asp:Label></b></h4>           
                                  <h4 style="text-align:center;">Progress</h4>
                                  <br />
+
                                  <asp:Label ID="progressBar" runat="server" Text="Progress"></asp:Label>
                                  <br />
                                  <h4> Overall task</h4>
