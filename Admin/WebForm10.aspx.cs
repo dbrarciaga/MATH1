@@ -8,6 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
 using System.Web.Routing;
+using System.Configuration;
 
 namespace MATH1.Admin
 {
@@ -17,6 +18,8 @@ namespace MATH1.Admin
         database blue = new database();
         static string GetStudId = "";
         static string IsFinished = "";
+        static int g = 0;
+        static string grd = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack)
@@ -39,7 +42,10 @@ namespace MATH1.Admin
             email.Text = blue.query2("select email from students where username = '"+search.Text+"' or stud_id = '"+search.Text+"'");
             //ID getter
             GetStudId = blue.query2("select stud_id from students where username ='"+search.Text+"'");
-            GradeLevel.Text = blue.query2("select gradeLevel from progress where stud_id = '" + GetStudId + "'");
+            //get gradelevel from progress table
+            grd= blue.query2("select gradeLevel from progress where stud_id = '" + GetStudId + "'");
+            //get gradelevel from students table
+            GradeLevel.Text = blue.query2("select GradeLevel from students where username = '" + search.Text + "' or stud_id = '" + search.Text + "'");
             ID.Text = GetStudId;
             //if enrolled
             string isEnrolled = blue.query2("select stats from students where username = '"+search.Text+"' or stud_id = '"+search.Text+"'");
@@ -55,7 +61,7 @@ namespace MATH1.Admin
             }
             try
             {
-                switch (GradeLevel.Text)
+                switch (grd)
                 {
                     case "1":
                         progressBar.Text = waow.grade1(int.Parse(GetStudId), GradeLevel.Text);
@@ -74,8 +80,14 @@ namespace MATH1.Admin
                         break;
 
                 }
+                //edit button
+                Edit.Visible = false;
+                if (progressBar.Text == "<div class='w3-border w3-white'><div class='w3-green' style='height:24px;width:100%'>100%</div></div>")
+                {
+                    Edit.Visible = true;
+                }
 
-                string waow2 = "server=localhost;user id=root;database=math1";
+                    string waow2 = "server=localhost;user id=root;database=math1";
                 using (MySqlConnection cons = new MySqlConnection(waow2))
                 {
                     try
@@ -229,6 +241,15 @@ namespace MATH1.Admin
             {
                 Response.Write(err);
             }
+        }
+
+        protected void Edit_Click(object sender, EventArgs e)
+        {
+            g = int.Parse(GradeLevel.Text);
+            g = g + 1;
+            Response.Write(blue.query2("update students set gradelevel = '" + g + "' where stud_id = '" + ID + "' or username = '" + search.Text + "'")+ g);
+            Edit.Text = "Student has been enrolled to higher grade.";
+
         }
     }
 }

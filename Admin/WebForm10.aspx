@@ -12,7 +12,7 @@
 
         .centered-div {
           /* Styles for your centered div */
-}
+        }
     </style>
       <br />
    <div class="flex-container" style="height:1500px">
@@ -51,9 +51,10 @@
                                        </div>
                                     <br />
                                  <br />
+                                 <h4>Options: </h4>
                                 <div class="w3-row-padding">
                                     <asp:Button ID="print" runat="server" Text="Print" Css="w3-half w3-button" OnClick="print_Click"/>
-                                    <asp:Button ID="Edit" runat="server" Text="Edit"  Css="w3-half w3-button"/>
+                                    <asp:Button ID="Edit" runat="server" Text="Eligible to Level up"  Css="w3-half w3-button" OnClick="Edit_Click"/>
                                 </div>     
                                 <br />
                              </div>
