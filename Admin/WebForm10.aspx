@@ -14,7 +14,6 @@
           /* Styles for your centered div */
         }
     </style>
-      <br />
    <div class="flex-container" style="height:1500px">
        <div class="centered-div" >             
                 <h1 style="text-align:center;"> Student Information</h1>

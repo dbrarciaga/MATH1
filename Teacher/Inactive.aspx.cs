@@ -29,6 +29,7 @@ namespace MATH1.Teacher
                 reason =blue.query2("select notes from rejections where teacher_id = '"+id+"'");
                 Label1.Text = "you application got rejected " + reason;
                 active.Visible = true;
+                inactive.Visible=false;
             }
             else
             {
