@@ -9,6 +9,8 @@ using System.Web.UI.WebControls;
 using System.IO;
 using System.Web.Routing;
 using System.Configuration;
+using System.IO;
+using System.Data;
 
 namespace MATH1.Admin
 {
@@ -95,7 +97,7 @@ namespace MATH1.Admin
                         GridView1.Visible = false;
                         cons.Open();
 
-                        MySqlCommand utos = new MySqlCommand("Select stud_id as 'ID', topic from progress where stud_id = '"+ID.Text+"'  ", cons);
+                        MySqlCommand utos = new MySqlCommand("SELECT score_title as 'Title',score as 'Score',TypeOfTask as 'Type' FROM `achievements` where stud_id = '"+ID.Text+"' ORDER BY `achievements`.`TypeOfTask` ASC;", cons);
                         MySqlDataReader myRead = utos.ExecuteReader();
 
                         if (myRead.HasRows == true)
@@ -206,7 +208,16 @@ namespace MATH1.Admin
             }
             catch(Exception error)
             {
-                Response.Write(error);
+                DataTable ds = new DataTable();
+                ds = null;
+                GridView1.DataSource = ds;
+                GridView1.DataBind();
+                GridView2.DataSource = ds;
+                GridView2.DataBind();
+                GridView3.DataSource = ds;
+                GridView3.DataBind();
+                F_name.Text = "NOT FOUND";
+          
             }
         }
 
@@ -222,25 +233,40 @@ namespace MATH1.Admin
             }
             try
             {
-                // Create a string array with the lines of text
+                Response.Clear();
+                Response.Buffer = true;
+                Response.ContentType = "application/ms-excel";
+                Response.AddHeader("content-disposition", "attachment; filename="+F_name.Text+".xls");
+                Response.Charset = "";
+                StringWriter sw = new StringWriter();
+                HtmlTextWriter htw = new HtmlTextWriter(sw);
+                GridView1.RenderControl(htw);
+                Response.Output.Write(sw.ToString());
+                Response.End();
+
+               /*
                 string[] lines = { F_name.Text, ID.Text, GradeLevel.Text, IsFinished };
 
-                // Set a variable to the Documents path.
                 string docPath =
                   Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
-                // Write the string array to a new file named "WriteLines.txt".
+                
                 using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "Student "+ID.Text+" "+DateTime.Now.ToString("MM dd yyyy")+".txt")))
                 {
                     foreach (string line in lines)
                         outputFile.WriteLine(line);
                     print.Text = "file printed!";
                 }
+                */
             }
             catch(Exception err)
             {
-                Response.Write(err);
+                
             }
+        }
+        public override void VerifyRenderingInServerForm(Control control)
+        {
+            
         }
 
         protected void Edit_Click(object sender, EventArgs e)

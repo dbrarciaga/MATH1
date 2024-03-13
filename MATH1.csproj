@@ -91,6 +91,8 @@
     <Content Include="Admin\auditLog.aspx" />
     <Content Include="Admin\Applications.aspx" />
     <Content Include="Admin\WebForm10.aspx" />
+    <Content Include="Admin\TypeOfSearch.aspx" />
+    <Content Include="Admin\Multiple_Search.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Main\cloud.css" />
     <Content Include="Main\AccountPge\AccountPge.aspx" />
@@ -255,6 +257,20 @@
     </Compile>
     <Compile Include="Admin\WebForm10.aspx.designer.cs">
       <DependentUpon>WebForm10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TypeOfSearch.aspx.cs">
+      <DependentUpon>TypeOfSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TypeOfSearch.aspx.designer.cs">
+      <DependentUpon>TypeOfSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Multiple_Search.aspx.cs">
+      <DependentUpon>Multiple_Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Multiple_Search.aspx.designer.cs">
+      <DependentUpon>Multiple_Search.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Achievement.cs" />

@@ -132,7 +132,8 @@ namespace MATH1.Admin
             Response.Write(blue.query2("delete from applicants where email = '" + selected + "'")) ;
             Response.Write(blue.query2("insert into auditlog(actionTaken, username, dateAction) values ('REJECTED APPLICATION ','" + Session["username"].ToString() + "','" + DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss") + "')"));
             Response.Write(blue.query2("UPDATE teacher SET notes = 'rejected' where teacher_id ='" + id + "'")) ;
-            Response.Write(blue.query2("INSERT INTO rejections (`teacher_id`,`notes`) values ('" + id + "', 'insert here why is it rejected.')"));
+            Response.Write(blue.query2("INSERT INTO rejections (`teacher_id`,`notes`) values ('" + id + "', 'YOU HAVE BEEN REJECTED: insert reason here)"));
+            reject.Text = "User has been rejected!";
             //Response.Redirect("AdminDash.aspx");
         }
     }
