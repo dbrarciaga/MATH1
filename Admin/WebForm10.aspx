@@ -20,8 +20,13 @@
                  <br />
                  <h3 style="text-align:center;"> Search student's username or student ID</h3>
                  <br />
-                 <center><asp:TextBox ID="search" runat="server"></asp:TextBox><span>   </span><asp:Button ID="Button1" runat="server" Text="search" CssClass="w3-button w3-white w3-round-large" OnClick="Button1_Click"/></center>
+                 <center><asp:TextBox ID="search" runat="server"></asp:TextBox><span>   </span><asp:Button ID="Button1" runat="server" Text="search" CssClass="w3-button w3-white w3-round-large" OnClick="Button1_Click"/>
+                     <asp:RadioButton ID="RadioButton1" runat="server" Text="Single" GroupName="SearchType"/>
+                     <asp:RadioButton ID="RadioButton2" runat="server" Text="Multiple" GroupName="SearchType"/>
+                 </center>
+                 
                 <br />
+                 <!-- div1 -->
                  <div ID="div1" runat="server" style="width:720px" class="w3-card w3-white w3-round-large">
                              <div class="w3-margin">
                                   <h4><asp:Label ID="active" runat="server" Text=" "></asp:Label> Name <b><asp:Label ID="F_name" runat="server" Text=" Name here "></asp:Label></b></h4>  
@@ -52,13 +57,25 @@
                                  <br />
                                  <h4>Options: </h4>
                                 <div class="w3-row-padding">
-                                    <asp:Button ID="print" runat="server" Text="Print" Css="w3-half w3-button" OnClick="print_Click"/>
+                                    <asp:Button ID="print" runat="server" Text="Export to Excel file" Css="w3-half w3-button" OnClick="print_Click"/>
                                     <asp:Button ID="Edit" runat="server" Text="Eligible to Level up"  Css="w3-half w3-button" OnClick="Edit_Click"/>
                                 </div>     
                                 <br />
                              </div>
                          
                         </div>
+           <!-- div2 -->
+             <div id="div2" runat="server" style="width:720px" class="w3-card w3-white w3-round-large">
+                
+                 <div class="w3-margin">
+                      <h1>Multiple list</h1>
+                     <div style="max-height:200px;overflow-y:scroll;">
+                            <asp:GridView ID="multiple_search" runat="server" CssClass="w3-table w3-striped w3-bordered"  Height="150px"></asp:GridView>
+                        </div>                       
+                        <asp:Button ID="Button2" runat="server" Text="Export to Excel file" Css="w3-button" OnClick="Button2_Click"/>
+                 </div>
+                 
+             </div>
                  
              </div>
            
