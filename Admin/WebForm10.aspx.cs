@@ -38,7 +38,15 @@ namespace MATH1.Admin
         }
 
         protected void Button1_Click(object sender, EventArgs e)
-        {
+        {           
+            if(!RadioButton1.Checked && !RadioButton2.Checked)
+            {
+                Label1.Text = "Select type of search first.";
+            }
+            else
+            {
+                Label1.Text = " ";
+            }
             if(RadioButton1.Checked)
             {
                 print.Visible = true;
@@ -242,24 +250,31 @@ namespace MATH1.Admin
                     {
                         case "grade 1":
                             cmd = "SELECT concat(FirstName,' ',LastName) as 'Full Name', GradeLevel as 'Grade', stats as 'Status' FROM `students` WHERE GradeLevel = 1";
+                            Label2.Text = "List of Grade 1";
                             break;
                         case "grade 2":
                             cmd = "SELECT concat(FirstName,' ',LastName) as 'Full Name', GradeLevel as 'Grade', stats as 'Status' FROM `students` WHERE GradeLevel = 2";
+                            Label2.Text = "List of Grade 2";
                             break;
                         case "grade 3":
                             cmd = "SELECT concat(FirstName,' ',LastName) as 'Full Name', GradeLevel as 'Grade', stats as 'Status' FROM `students` WHERE GradeLevel = 3";
+                            Label2.Text = "List of Grade 3";
                             break;
                         case "grade 4":
                             cmd = "SELECT concat(FirstName,' ',LastName) as 'Full Name', GradeLevel as 'Grade', stats as 'Status' FROM `students` WHERE GradeLevel = 4";
+                            Label2.Text = "List of Grade 4";
                             break;
                         case "grade 5":
                             cmd = "SELECT concat(FirstName,' ',LastName) as 'Full Name', GradeLevel as 'Grade', stats as 'Status' FROM `students` WHERE GradeLevel = 5";
+                            Label2.Text = "List of Grade 5";
                             break;
                         case "grade 6":
                             cmd = "SELECT concat(FirstName,' ',LastName) as 'Full Name', GradeLevel as 'Grade', stats as 'Status' FROM `students` WHERE GradeLevel = 6";
+                            Label2.Text = "List of Grade 6";
                             break;
                         default:
-                            cmd = "Select * from classlist where teacher_id = '" + search.Text + "'";
+                            cmd = "SELECT concat(students.FirstName,' ', students.LastName) as 'Student Name', students.GradeLevel as 'Grade' FROM classlist INNER JOIN students on classlist.stud_id = students.stud_id INNER JOIN teacher on classlist.teacher_id =teacher.teacher_id where classlist.teacher_id = '"+search.Text+"' or teacher.username = '"+search.Text+"';";
+                            Label2.Text = "Class List of "+search.Text;
                             break;
                     }
                     try
@@ -357,7 +372,7 @@ namespace MATH1.Admin
             Response.Clear();
             Response.Buffer = true;
             Response.ContentType = "application/ms-excel";
-            Response.AddHeader("content-disposition", "attachment; filename= Result search of " + search.Text + ".xls");
+            Response.AddHeader("content-disposition", "attachment; filename= Result search of " + Label2.Text + ".xls");
             Response.Charset = "";
             StringWriter sw = new StringWriter();
             HtmlTextWriter htw = new HtmlTextWriter(sw);
