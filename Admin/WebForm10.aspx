@@ -23,6 +23,7 @@
                  <center><asp:TextBox ID="search" runat="server"></asp:TextBox><span>   </span><asp:Button ID="Button1" runat="server" Text="search" CssClass="w3-button w3-white w3-round-large" OnClick="Button1_Click"/>
                      <asp:RadioButton ID="RadioButton1" runat="server" Text="Single" GroupName="SearchType"/>
                      <asp:RadioButton ID="RadioButton2" runat="server" Text="Multiple" GroupName="SearchType"/>
+                     <asp:Label ID="Label1" runat="server" Text=" " CssClass="w3-card w3-amber"></asp:Label>
                  </center>
                  
                 <br />
@@ -69,6 +70,8 @@
                 
                  <div class="w3-margin">
                       <h1>Multiple list</h1>
+                     <h4><asp:Label ID="Label2" runat="server" Text=" "></asp:Label> </h4>
+                     
                      <div style="max-height:200px;overflow-y:scroll;">
                             <asp:GridView ID="multiple_search" runat="server" CssClass="w3-table w3-striped w3-bordered"  Height="150px"></asp:GridView>
                         </div>                       
